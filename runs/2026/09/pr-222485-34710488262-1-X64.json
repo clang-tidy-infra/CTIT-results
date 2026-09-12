@@ -1,0 +1,29 @@
+{
+  "artifact_url": "https://github.com/clang-tidy-infra/CTIT/actions/runs/34710488262/artifacts/10302814998",
+  "baseline": null,
+  "check_config": {},
+  "check_name": "readability-redundant-control-flow",
+  "duration_seconds": 2027.90914,
+  "finished_at": "2026-09-12T18:46:46.909140Z",
+  "github_run_attempt": 1,
+  "github_run_id": 34710488262,
+  "llvm_revision": "5618cfdae27157a48ea670e6d817310404afb746+patch:68781dc12f7c73e6811c8cb30f76e16c441f1941b708e5bd7f781c9e695c69b5",
+  "pr_number": 222485,
+  "project_runs": [
+    {
+      "diagnostics": [],
+      "duration_seconds": 75.044483,
+      "project": "cppcheck",
+      "status": "COMPLETED"
+    },
+    {
+      "diagnostics": [],
+      "duration_seconds": null,
+      "project": "llvm-project",
+      "status": "COMPLETED"
+    }
+  ],
+  "runner_arch": "X64",
+  "started_at": "2026-09-12T18:12:59+00:00",
+  "status": "CANCELLED"
+}
