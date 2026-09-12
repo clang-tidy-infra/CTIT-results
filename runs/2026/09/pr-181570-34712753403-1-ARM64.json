@@ -1,0 +1,59 @@
+{
+  "artifact_url": "https://github.com/clang-tidy-infra/CTIT/actions/runs/34712753403/artifacts/10303854711",
+  "baseline": null,
+  "check_config": {},
+  "check_name": "bugprone-smart-ptr-initialization",
+  "duration_seconds": 2041.6619,
+  "finished_at": "2026-09-12T20:13:01.661900Z",
+  "github_run_attempt": 1,
+  "github_run_id": 34712753403,
+  "llvm_revision": "5618cfdae27157a48ea670e6d817310404afb746+patch:0a4b9831cb4a3f57fea2ecd8f2dccb54e637766e5f7b13093bd0e0f6bcd63460",
+  "pr_number": 181570,
+  "project_runs": [
+    {
+      "diagnostics": [],
+      "duration_seconds": 14.012886,
+      "project": "abseil-cpp",
+      "status": "COMPLETED"
+    },
+    {
+      "diagnostics": [],
+      "duration_seconds": 15.43492,
+      "project": "cppcheck",
+      "status": "COMPLETED"
+    },
+    {
+      "diagnostics": [],
+      "duration_seconds": 2.643709,
+      "project": "curl",
+      "status": "COMPLETED"
+    },
+    {
+      "diagnostics": [],
+      "duration_seconds": 38.652693,
+      "project": "doxygen",
+      "status": "COMPLETED"
+    },
+    {
+      "diagnostics": [],
+      "duration_seconds": 362.929185,
+      "project": "llvm-project",
+      "status": "COMPLETED"
+    },
+    {
+      "diagnostics": [],
+      "duration_seconds": 44.364128,
+      "project": "poco",
+      "status": "COMPLETED"
+    },
+    {
+      "diagnostics": [],
+      "duration_seconds": 9.782892,
+      "project": "stdexec",
+      "status": "COMPLETED"
+    }
+  ],
+  "runner_arch": "ARM64",
+  "started_at": "2026-09-12T19:39:00+00:00",
+  "status": "COMPLETED"
+}
