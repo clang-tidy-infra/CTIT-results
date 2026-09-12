@@ -1,0 +1,231 @@
+{
+  "artifact_url": "https://github.com/clang-tidy-infra/CTIT/actions/runs/34710465290/artifacts/10303970575",
+  "baseline": null,
+  "check_config": {},
+  "check_name": "performance-inefficient-container-assignment",
+  "duration_seconds": 2308.06054,
+  "finished_at": "2026-09-12T18:50:50.060540Z",
+  "github_run_attempt": 1,
+  "github_run_id": 34710465290,
+  "llvm_revision": "5618cfdae27157a48ea670e6d817310404afb746+patch:c03e26e78097559ab01f9164c1dfdc0fa80bf7723d04e9d99ef6973424f759c3",
+  "pr_number": 222159,
+  "project_runs": [
+    {
+      "diagnostics": [
+        {
+          "column": 13,
+          "file": "absl/flags/parse.cc",
+          "line": 668,
+          "message": "inefficient assignment from a temporary 'std::vector'; assign the initializer list directly to reuse the existing storage",
+          "verdict": "TP"
+        }
+      ],
+      "duration_seconds": 12.017336,
+      "project": "abseil-cpp",
+      "status": "COMPLETED"
+    },
+    {
+      "diagnostics": [],
+      "duration_seconds": 13.012168,
+      "project": "cppcheck",
+      "status": "COMPLETED"
+    },
+    {
+      "diagnostics": [],
+      "duration_seconds": 2.570817,
+      "project": "curl",
+      "status": "COMPLETED"
+    },
+    {
+      "diagnostics": [
+        {
+          "column": 13,
+          "file": "src/qcstring.h",
+          "line": 196,
+          "message": "inefficient assignment from a temporary 'std::basic_string'; use 'assign' to reuse the existing storage",
+          "verdict": "TP"
+        },
+        {
+          "column": 19,
+          "file": "src/docbookgen.cpp",
+          "line": 1421,
+          "message": "inefficient assignment from a temporary 'std::vector'; use 'assign' to reuse the existing storage",
+          "verdict": "TP"
+        },
+        {
+          "column": 19,
+          "file": "src/htmlgen.cpp",
+          "line": 3703,
+          "message": "inefficient assignment from a temporary 'std::vector'; use 'assign' to reuse the existing storage",
+          "verdict": "TP"
+        }
+      ],
+      "duration_seconds": 34.531234,
+      "project": "doxygen",
+      "status": "COMPLETED"
+    },
+    {
+      "diagnostics": [
+        {
+          "column": 19,
+          "file": "clang/lib/Driver/CreateInvocationFromArgs.cpp",
+          "line": 111,
+          "message": "inefficient assignment from a temporary 'std::vector'; use 'assign' to reuse the existing storage",
+          "verdict": "TP"
+        },
+        {
+          "column": 10,
+          "file": "clang/lib/Tooling/CompilationDatabase.cpp",
+          "line": 313,
+          "message": "inefficient assignment from a temporary 'std::vector'; use 'assign' to reuse the existing storage",
+          "verdict": "TP"
+        },
+        {
+          "column": 22,
+          "file": "clang/lib/Serialization/ASTReader.cpp",
+          "line": 5459,
+          "message": "inefficient assignment from a temporary 'std::basic_string'; use 'assign' to reuse the existing storage",
+          "verdict": "TP"
+        },
+        {
+          "column": 21,
+          "file": "clang/lib/Serialization/ASTReader.cpp",
+          "line": 5460,
+          "message": "inefficient assignment from a temporary 'std::basic_string'; use 'assign' to reuse the existing storage",
+          "verdict": "TP"
+        },
+        {
+          "column": 33,
+          "file": "clang/tools/clang-format/ClangFormat.cpp",
+          "line": 472,
+          "message": "inefficient assignment from a temporary 'std::vector'; use 'assign' to reuse the existing storage",
+          "verdict": "TP"
+        },
+        {
+          "column": 23,
+          "file": "clang/lib/APINotes/APINotesReader.cpp",
+          "line": 108,
+          "message": "inefficient assignment from a temporary 'std::basic_string'; use 'assign' to reuse the existing storage",
+          "verdict": "TP"
+        },
+        {
+          "column": 18,
+          "file": "clang/lib/APINotes/APINotesReader.cpp",
+          "line": 115,
+          "message": "inefficient assignment from a temporary 'std::basic_string'; use 'assign' to reuse the existing storage",
+          "verdict": "TP"
+        },
+        {
+          "column": 19,
+          "file": "clang/lib/APINotes/APINotesReader.cpp",
+          "line": 382,
+          "message": "inefficient assignment from a temporary 'std::basic_string'; use 'assign' to reuse the existing storage",
+          "verdict": "TP"
+        },
+        {
+          "column": 29,
+          "file": "clang/lib/APINotes/APINotesReader.cpp",
+          "line": 387,
+          "message": "inefficient assignment from a temporary 'std::basic_string'; use 'assign' to reuse the existing storage",
+          "verdict": "TP"
+        },
+        {
+          "column": 35,
+          "file": "clang/lib/Frontend/FrontendAction.cpp",
+          "line": 1131,
+          "message": "inefficient assignment from a temporary 'std::basic_string'; assign the source directly to reuse the existing storage",
+          "verdict": "TP"
+        }
+      ],
+      "duration_seconds": 402.829849,
+      "project": "llvm-project",
+      "status": "COMPLETED"
+    },
+    {
+      "diagnostics": [
+        {
+          "column": 12,
+          "file": "Zip/src/ZipArchiveInfo.cpp",
+          "line": 77,
+          "message": "inefficient assignment from a temporary 'std::basic_string'; use 'assign' to reuse the existing storage",
+          "verdict": "TP"
+        },
+        {
+          "column": 15,
+          "file": "Zip/src/ZipArchiveInfo.cpp",
+          "line": 169,
+          "message": "inefficient assignment from a temporary 'std::basic_string'; use 'assign' to reuse the existing storage",
+          "verdict": "TP"
+        },
+        {
+          "column": 15,
+          "file": "Zip/include/Poco/Zip/ZipFileInfo.h",
+          "line": 413,
+          "message": "inefficient assignment from a temporary 'std::basic_string'; use 'assign' to reuse the existing storage",
+          "verdict": "TP"
+        },
+        {
+          "column": 14,
+          "file": "Zip/include/Poco/Zip/ZipLocalFileHeader.h",
+          "line": 273,
+          "message": "inefficient assignment from a temporary 'std::basic_string'; use 'assign' to reuse the existing storage",
+          "verdict": "TP"
+        },
+        {
+          "column": 7,
+          "file": "Foundation/include/Poco/Dynamic/VarHolder.h",
+          "line": 2919,
+          "message": "inefficient assignment from a temporary 'std::basic_string'; use 'assign' to reuse the existing storage",
+          "verdict": "TP"
+        },
+        {
+          "column": 13,
+          "file": "Zip/src/ZipFileInfo.cpp",
+          "line": 110,
+          "message": "inefficient assignment from a temporary 'std::basic_string'; use 'assign' to reuse the existing storage",
+          "verdict": "TP"
+        },
+        {
+          "column": 16,
+          "file": "Zip/src/ZipFileInfo.cpp",
+          "line": 119,
+          "message": "inefficient assignment from a temporary 'std::basic_string'; use 'assign' to reuse the existing storage",
+          "verdict": "TP"
+        },
+        {
+          "column": 16,
+          "file": "Zip/src/ZipFileInfo.cpp",
+          "line": 160,
+          "message": "inefficient assignment from a temporary 'std::basic_string'; use 'assign' to reuse the existing storage",
+          "verdict": "TP"
+        },
+        {
+          "column": 16,
+          "file": "Zip/src/ZipLocalFileHeader.cpp",
+          "line": 141,
+          "message": "inefficient assignment from a temporary 'std::basic_string'; use 'assign' to reuse the existing storage",
+          "verdict": "TP"
+        },
+        {
+          "column": 16,
+          "file": "Zip/src/ZipLocalFileHeader.cpp",
+          "line": 158,
+          "message": "inefficient assignment from a temporary 'std::basic_string'; use 'assign' to reuse the existing storage",
+          "verdict": "TP"
+        }
+      ],
+      "duration_seconds": 47.93129,
+      "project": "poco",
+      "status": "COMPLETED"
+    },
+    {
+      "diagnostics": [],
+      "duration_seconds": 8.349481,
+      "project": "stdexec",
+      "status": "COMPLETED"
+    }
+  ],
+  "runner_arch": "ARM64",
+  "started_at": "2026-09-12T18:12:22+00:00",
+  "status": "COMPLETED"
+}
