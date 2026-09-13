@@ -1,0 +1,105 @@
+{
+  "artifact_url": "https://github.com/clang-tidy-infra/CTIT/actions/runs/34732648329/artifacts/10310560547",
+  "baseline": {
+    "llvm_revision": "148ee2b266b73a49f1f31d0bd17d4818b91bee9f",
+    "project_runs": [
+      {
+        "diagnostics": [],
+        "duration_seconds": 13.349961,
+        "project": "abseil-cpp",
+        "status": "COMPLETED"
+      },
+      {
+        "diagnostics": [],
+        "duration_seconds": 14.400407,
+        "project": "cppcheck",
+        "status": "COMPLETED"
+      },
+      {
+        "diagnostics": [],
+        "duration_seconds": 2.659597,
+        "project": "curl",
+        "status": "COMPLETED"
+      },
+      {
+        "diagnostics": [],
+        "duration_seconds": 35.977224,
+        "project": "doxygen",
+        "status": "COMPLETED"
+      },
+      {
+        "diagnostics": [],
+        "duration_seconds": 406.198242,
+        "project": "llvm-project",
+        "status": "COMPLETED"
+      },
+      {
+        "diagnostics": [],
+        "duration_seconds": 47.810242,
+        "project": "poco",
+        "status": "COMPLETED"
+      },
+      {
+        "diagnostics": [],
+        "duration_seconds": 8.602037,
+        "project": "stdexec",
+        "status": "COMPLETED"
+      }
+    ]
+  },
+  "check_config": {},
+  "check_name": "bugprone-multiple-statement-macro",
+  "duration_seconds": 1825.806615,
+  "finished_at": "2026-09-13T02:47:44.806615Z",
+  "github_run_attempt": 1,
+  "github_run_id": 34732648329,
+  "llvm_revision": "148ee2b266b73a49f1f31d0bd17d4818b91bee9f+patch:71f09bfe7dd31001a7bec3a2930b9cafa2d97e0a99d5ef5d5f4b56e3416dd522",
+  "pr_number": 223197,
+  "project_runs": [
+    {
+      "diagnostics": [],
+      "duration_seconds": 11.041791,
+      "project": "abseil-cpp",
+      "status": "COMPLETED"
+    },
+    {
+      "diagnostics": [],
+      "duration_seconds": 14.542464,
+      "project": "cppcheck",
+      "status": "COMPLETED"
+    },
+    {
+      "diagnostics": [],
+      "duration_seconds": 2.654443,
+      "project": "curl",
+      "status": "COMPLETED"
+    },
+    {
+      "diagnostics": [],
+      "duration_seconds": 41.446197,
+      "project": "doxygen",
+      "status": "COMPLETED"
+    },
+    {
+      "diagnostics": [],
+      "duration_seconds": 415.808429,
+      "project": "llvm-project",
+      "status": "COMPLETED"
+    },
+    {
+      "diagnostics": [],
+      "duration_seconds": 47.366676,
+      "project": "poco",
+      "status": "COMPLETED"
+    },
+    {
+      "diagnostics": [],
+      "duration_seconds": 8.556296,
+      "project": "stdexec",
+      "status": "COMPLETED"
+    }
+  ],
+  "runner_arch": "ARM64",
+  "started_at": "2026-09-13T02:17:19+00:00",
+  "status": "COMPLETED"
+}
