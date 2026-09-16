@@ -1,0 +1,95 @@
+{
+  "artifact_url": "https://github.com/clang-tidy-infra/CTIT/actions/runs/35095524456/artifacts/10448048259",
+  "baseline": null,
+  "check_config": {},
+  "check_name": "modernize-use-if-consteval",
+  "duration_seconds": 1500.26096,
+  "finished_at": "2026-09-16T13:17:40.260960Z",
+  "github_run_attempt": 1,
+  "github_run_id": 35095524456,
+  "llvm_revision": "73a4eae01c881603a880c3eb46ca34e11f534db8+patch:f5adccded18b1ddfadf5a48d2b2135524e7fac8fc7bd2050a9060eed51599190",
+  "pr_number": 189743,
+  "project_runs": [
+    {
+      "diagnostics": [],
+      "duration_seconds": 10.110215,
+      "project": "abseil-cpp",
+      "status": "COMPLETED"
+    },
+    {
+      "diagnostics": [],
+      "duration_seconds": 28.210923,
+      "project": "assimp",
+      "status": "COMPLETED"
+    },
+    {
+      "diagnostics": [],
+      "duration_seconds": 4.42287,
+      "project": "catch2",
+      "status": "COMPLETED"
+    },
+    {
+      "diagnostics": [],
+      "duration_seconds": 13.591991,
+      "project": "cppcheck",
+      "status": "COMPLETED"
+    },
+    {
+      "diagnostics": [],
+      "duration_seconds": 2.457135,
+      "project": "curl",
+      "status": "COMPLETED"
+    },
+    {
+      "diagnostics": [],
+      "duration_seconds": 35.1719,
+      "project": "doxygen",
+      "status": "COMPLETED"
+    },
+    {
+      "diagnostics": [],
+      "duration_seconds": 1.565267,
+      "project": "libgit2",
+      "status": "COMPLETED"
+    },
+    {
+      "diagnostics": [],
+      "duration_seconds": 0.820617,
+      "project": "libuv",
+      "status": "COMPLETED"
+    },
+    {
+      "diagnostics": [],
+      "duration_seconds": 377.310069,
+      "project": "llvm-project",
+      "status": "COMPLETED"
+    },
+    {
+      "diagnostics": [],
+      "duration_seconds": 44.524092,
+      "project": "poco",
+      "status": "COMPLETED"
+    },
+    {
+      "diagnostics": [],
+      "duration_seconds": 9.132239,
+      "project": "stdexec",
+      "status": "COMPLETED"
+    },
+    {
+      "diagnostics": [],
+      "duration_seconds": 3.25301,
+      "project": "yaml-cpp",
+      "status": "COMPLETED"
+    },
+    {
+      "diagnostics": [],
+      "duration_seconds": 2.494187,
+      "project": "zstd",
+      "status": "COMPLETED"
+    }
+  ],
+  "runner_arch": "ARM64",
+  "started_at": "2026-09-16T12:52:40+00:00",
+  "status": "COMPLETED"
+}
