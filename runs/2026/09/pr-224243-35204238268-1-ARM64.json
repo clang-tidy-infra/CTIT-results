@@ -1,0 +1,221 @@
+{
+  "artifact_url": "https://github.com/clang-tidy-infra/CTIT/actions/runs/35204238268/artifacts/10490449118",
+  "baseline": {
+    "llvm_revision": "1a9ff38b0765598add24cfed6a9e8760fef2ca69",
+    "project_runs": [
+      {
+        "diagnostics": [
+          {
+            "column": 28,
+            "file": "absl/hash/internal/hash.h",
+            "line": 1419,
+            "message": "static variable initialization cycle detected involving 'kSeed'",
+            "verdict": null
+          },
+          {
+            "column": 29,
+            "file": "absl/status/internal/statusor_internal.h",
+            "line": 618,
+            "message": "static variable initialization cycle detected involving 'kRandomBraces'",
+            "verdict": null
+          },
+          {
+            "column": 25,
+            "file": "absl/container/internal/raw_hash_set.cc",
+            "line": 139,
+            "message": "static variable initialization cycle detected involving 'seed'",
+            "verdict": null
+          }
+        ],
+        "duration_seconds": 12.350168,
+        "project": "abseil-cpp",
+        "status": "COMPLETED"
+      },
+      {
+        "diagnostics": [],
+        "duration_seconds": 20.705055,
+        "project": "assimp",
+        "status": "COMPLETED"
+      },
+      {
+        "diagnostics": [],
+        "duration_seconds": 4.459225,
+        "project": "catch2",
+        "status": "COMPLETED"
+      },
+      {
+        "diagnostics": [],
+        "duration_seconds": 12.903876,
+        "project": "cppcheck",
+        "status": "COMPLETED"
+      },
+      {
+        "diagnostics": [],
+        "duration_seconds": 2.723778,
+        "project": "curl",
+        "status": "COMPLETED"
+      },
+      {
+        "diagnostics": [],
+        "duration_seconds": 33.027495,
+        "project": "doxygen",
+        "status": "COMPLETED"
+      },
+      {
+        "diagnostics": [],
+        "duration_seconds": 1.499838,
+        "project": "libgit2",
+        "status": "COMPLETED"
+      },
+      {
+        "diagnostics": [],
+        "duration_seconds": 0.780175,
+        "project": "libuv",
+        "status": "COMPLETED"
+      },
+      {
+        "diagnostics": [],
+        "duration_seconds": 412.023685,
+        "project": "llvm-project",
+        "status": "COMPLETED"
+      },
+      {
+        "diagnostics": [],
+        "duration_seconds": 47.97805,
+        "project": "poco",
+        "status": "COMPLETED"
+      },
+      {
+        "diagnostics": [],
+        "duration_seconds": 7.794398,
+        "project": "stdexec",
+        "status": "COMPLETED"
+      },
+      {
+        "diagnostics": [],
+        "duration_seconds": 2.885216,
+        "project": "yaml-cpp",
+        "status": "COMPLETED"
+      },
+      {
+        "diagnostics": [],
+        "duration_seconds": 2.382455,
+        "project": "zstd",
+        "status": "COMPLETED"
+      }
+    ]
+  },
+  "check_config": {},
+  "check_name": "misc-static-initialization-cycle",
+  "duration_seconds": 2558.184745,
+  "finished_at": "2026-09-17T09:59:51.184745Z",
+  "github_run_attempt": 1,
+  "github_run_id": 35204238268,
+  "llvm_revision": "1a9ff38b0765598add24cfed6a9e8760fef2ca69+patch:bafbcc6f8e009f186b94cd4cd26c5de7f67045b253ea5d0a1fb7b20c22b77a03",
+  "pr_number": 224243,
+  "project_runs": [
+    {
+      "diagnostics": [
+        {
+          "column": 29,
+          "file": "absl/status/internal/statusor_internal.h",
+          "line": 618,
+          "message": "static variable initialization cycle detected involving 'kRandomBraces'",
+          "verdict": null
+        },
+        {
+          "column": 25,
+          "file": "absl/container/internal/raw_hash_set.cc",
+          "line": 139,
+          "message": "static variable initialization cycle detected involving 'seed'",
+          "verdict": null
+        },
+        {
+          "column": 28,
+          "file": "absl/hash/internal/hash.h",
+          "line": 1419,
+          "message": "static variable initialization cycle detected involving 'kSeed'",
+          "verdict": null
+        }
+      ],
+      "duration_seconds": 12.022471,
+      "project": "abseil-cpp",
+      "status": "COMPLETED"
+    },
+    {
+      "diagnostics": [],
+      "duration_seconds": 32.191664,
+      "project": "assimp",
+      "status": "COMPLETED"
+    },
+    {
+      "diagnostics": [],
+      "duration_seconds": 4.564584,
+      "project": "catch2",
+      "status": "COMPLETED"
+    },
+    {
+      "diagnostics": [],
+      "duration_seconds": 13.677797,
+      "project": "cppcheck",
+      "status": "COMPLETED"
+    },
+    {
+      "diagnostics": [],
+      "duration_seconds": 3.042861,
+      "project": "curl",
+      "status": "COMPLETED"
+    },
+    {
+      "diagnostics": [],
+      "duration_seconds": 42.84496,
+      "project": "doxygen",
+      "status": "COMPLETED"
+    },
+    {
+      "diagnostics": [],
+      "duration_seconds": 1.647711,
+      "project": "libgit2",
+      "status": "COMPLETED"
+    },
+    {
+      "diagnostics": [],
+      "duration_seconds": 0.768497,
+      "project": "libuv",
+      "status": "COMPLETED"
+    },
+    {
+      "diagnostics": [],
+      "duration_seconds": 415.957121,
+      "project": "llvm-project",
+      "status": "COMPLETED"
+    },
+    {
+      "diagnostics": [],
+      "duration_seconds": 49.065596,
+      "project": "poco",
+      "status": "COMPLETED"
+    },
+    {
+      "diagnostics": [],
+      "duration_seconds": 7.962368,
+      "project": "stdexec",
+      "status": "COMPLETED"
+    },
+    {
+      "diagnostics": [],
+      "duration_seconds": 2.959617,
+      "project": "yaml-cpp",
+      "status": "COMPLETED"
+    },
+    {
+      "diagnostics": [],
+      "duration_seconds": 2.410348,
+      "project": "zstd",
+      "status": "COMPLETED"
+    }
+  ],
+  "runner_arch": "ARM64",
+  "started_at": "2026-09-17T09:17:13+00:00",
+  "status": "COMPLETED"
+}
