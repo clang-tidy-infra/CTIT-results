@@ -1,0 +1,110 @@
+{
+  "artifact_url": "https://github.com/clang-tidy-infra/CTIT/actions/runs/35297150398/artifacts/10528644202",
+  "baseline": null,
+  "check_config": {},
+  "check_name": "bugprone-misplaced-pointer-arithmetic-in-alloc",
+  "duration_seconds": 1956.021548,
+  "finished_at": "2026-09-18T02:26:46.021548Z",
+  "github_run_attempt": 1,
+  "github_run_id": 35297150398,
+  "llvm_revision": "fd606c15d0d3131209357e6eeeee4bba025c45a9",
+  "pr_number": null,
+  "project_runs": [
+    {
+      "diagnostics": [],
+      "duration_seconds": 10.109365,
+      "project": "abseil-cpp",
+      "status": "COMPLETED"
+    },
+    {
+      "diagnostics": [
+        {
+          "column": 24,
+          "file": "code/Common/VertexTriangleAdjacency.cpp",
+          "line": 76,
+          "message": "arithmetic operation is applied to the result of operator new[]() instead of its size-like argument",
+          "verdict": "FP"
+        },
+        {
+          "column": 29,
+          "file": "code/Common/VertexTriangleAdjacency.cpp",
+          "line": 78,
+          "message": "arithmetic operation is applied to the result of operator new[]() instead of its size-like argument",
+          "verdict": "FP"
+        }
+      ],
+      "duration_seconds": 25.42909,
+      "project": "assimp",
+      "status": "COMPLETED"
+    },
+    {
+      "diagnostics": [],
+      "duration_seconds": 4.195398,
+      "project": "catch2",
+      "status": "COMPLETED"
+    },
+    {
+      "diagnostics": [],
+      "duration_seconds": 17.258509,
+      "project": "cppcheck",
+      "status": "COMPLETED"
+    },
+    {
+      "diagnostics": [],
+      "duration_seconds": 2.862539,
+      "project": "curl",
+      "status": "COMPLETED"
+    },
+    {
+      "diagnostics": [],
+      "duration_seconds": 36.544557,
+      "project": "doxygen",
+      "status": "COMPLETED"
+    },
+    {
+      "diagnostics": [],
+      "duration_seconds": 1.466764,
+      "project": "libgit2",
+      "status": "COMPLETED"
+    },
+    {
+      "diagnostics": [],
+      "duration_seconds": 0.847224,
+      "project": "libuv",
+      "status": "COMPLETED"
+    },
+    {
+      "diagnostics": [],
+      "duration_seconds": 382.543723,
+      "project": "llvm-project",
+      "status": "COMPLETED"
+    },
+    {
+      "diagnostics": [],
+      "duration_seconds": 44.08759,
+      "project": "poco",
+      "status": "COMPLETED"
+    },
+    {
+      "diagnostics": [],
+      "duration_seconds": 7.497799,
+      "project": "stdexec",
+      "status": "COMPLETED"
+    },
+    {
+      "diagnostics": [],
+      "duration_seconds": 2.711124,
+      "project": "yaml-cpp",
+      "status": "COMPLETED"
+    },
+    {
+      "diagnostics": [],
+      "duration_seconds": 2.502215,
+      "project": "zstd",
+      "status": "COMPLETED"
+    }
+  ],
+  "runner_arch": "ARM64",
+  "started_at": "2026-09-18T01:54:10+00:00",
+  "status": "COMPLETED"
+}
