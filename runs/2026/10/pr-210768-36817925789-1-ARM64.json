@@ -1,0 +1,789 @@
+{
+  "artifact_url": "https://github.com/clang-tidy-infra/CTIT/actions/runs/36817925789/artifacts/11143875368",
+  "baseline": null,
+  "check_config": {},
+  "check_name": "bugprone-macro-condition",
+  "duration_seconds": 2090.162168,
+  "finished_at": "2026-10-01T05:38:12.162168Z",
+  "github_run_attempt": 1,
+  "github_run_id": 36817925789,
+  "llvm_revision": "2a1a6d12b51e7d2abe72d796c3efafc249792a0c+patch:c847c46acbcf5bb2ddedb2345369ad83162f1e859b758f7423e22befe5602519",
+  "pr_number": 210768,
+  "project_runs": [
+    {
+      "diagnostics": [
+        {
+          "column": 29,
+          "file": "absl/base/config.h",
+          "line": 157,
+          "message": "Macro 'ABSL_OPTION_USE_INLINE_NAMESPACE' checked here for value after being checked for definition",
+          "verdict": "FP"
+        },
+        {
+          "column": 7,
+          "file": "absl/base/config.h",
+          "line": 556,
+          "message": "Macro 'ABSL_OPTION_USE_STD_ORDERING' checked here for value after being checked for definition",
+          "verdict": "FP"
+        },
+        {
+          "column": 5,
+          "file": "absl/debugging/symbolize_elf.inc",
+          "line": 1537,
+          "message": "Macro 'ABSL_HAVE_VDSO_SUPPORT' checked here for value after being checked for definition",
+          "verdict": "TP"
+        }
+      ],
+      "duration_seconds": 11.135113,
+      "project": "abseil-cpp",
+      "status": "COMPLETED"
+    },
+    {
+      "diagnostics": [
+        {
+          "column": 5,
+          "file": "code/../contrib/rapidjson/include/rapidjson/rapidjson.h",
+          "line": 161,
+          "message": "Macro 'RAPIDJSON_HAS_STDSTRING' checked here for value after being checked for definition",
+          "verdict": "FP"
+        },
+        {
+          "column": 9,
+          "file": "code/../contrib/rapidjson/include/rapidjson/rapidjson.h",
+          "line": 248,
+          "message": "Macro '__BYTE_ORDER__' checked here for value after being checked for definition",
+          "verdict": "FP"
+        },
+        {
+          "column": 25,
+          "file": "code/AssetLib/glTF/glTFAsset.h",
+          "line": 84,
+          "message": "Macro '__GNUC__' checked here for definition after being checked for value",
+          "verdict": "FP"
+        },
+        {
+          "column": 25,
+          "file": "code/AssetLib/glTF2/glTF2Asset.h",
+          "line": 98,
+          "message": "Macro '__GNUC__' checked here for definition after being checked for value",
+          "verdict": "FP"
+        }
+      ],
+      "duration_seconds": 24.797484,
+      "project": "assimp",
+      "status": "COMPLETED"
+    },
+    {
+      "diagnostics": [],
+      "duration_seconds": 4.852581,
+      "project": "catch2",
+      "status": "COMPLETED"
+    },
+    {
+      "diagnostics": [],
+      "duration_seconds": 13.018766,
+      "project": "cppcheck",
+      "status": "COMPLETED"
+    },
+    {
+      "diagnostics": [
+        {
+          "column": 10,
+          "file": "include/curl/system.h",
+          "line": 345,
+          "message": "Macro '__GNUC__' checked here for value after being checked for definition",
+          "verdict": "FP"
+        },
+        {
+          "column": 5,
+          "file": "lib/curl_setup.h",
+          "line": 529,
+          "message": "Macro 'SIZEOF_CURL_SOCKET_T' checked here for value after being checked for definition",
+          "verdict": "FP"
+        },
+        {
+          "column": 5,
+          "file": "lib/vauth/../curl_setup.h",
+          "line": 529,
+          "message": "Macro 'SIZEOF_CURL_SOCKET_T' checked here for value after being checked for definition",
+          "verdict": "FP"
+        },
+        {
+          "column": 5,
+          "file": "lib/vssh/../curl_setup.h",
+          "line": 529,
+          "message": "Macro 'SIZEOF_CURL_SOCKET_T' checked here for value after being checked for definition",
+          "verdict": "FP"
+        },
+        {
+          "column": 5,
+          "file": "lib/vquic/../curl_setup.h",
+          "line": 529,
+          "message": "Macro 'SIZEOF_CURL_SOCKET_T' checked here for value after being checked for definition",
+          "verdict": "FP"
+        },
+        {
+          "column": 5,
+          "file": "lib/vtls/../curl_setup.h",
+          "line": 529,
+          "message": "Macro 'SIZEOF_CURL_SOCKET_T' checked here for value after being checked for definition",
+          "verdict": "FP"
+        },
+        {
+          "column": 5,
+          "file": "lib/curlx/../curl_setup.h",
+          "line": 529,
+          "message": "Macro 'SIZEOF_CURL_SOCKET_T' checked here for value after being checked for definition",
+          "verdict": "FP"
+        },
+        {
+          "column": 5,
+          "file": "docs/examples/http2-serverpush.c",
+          "line": 159,
+          "message": "Macro 'CURLPIPE_MULTIPLEX' checked here for value after being checked for definition",
+          "verdict": "FP"
+        },
+        {
+          "column": 6,
+          "file": "lib/cf-socket.c",
+          "line": 835,
+          "message": "Macro 'EAGAIN' checked here for value after being checked for definition",
+          "verdict": "FP"
+        }
+      ],
+      "duration_seconds": 2.523068,
+      "project": "curl",
+      "status": "COMPLETED"
+    },
+    {
+      "diagnostics": [
+        {
+          "column": 6,
+          "file": "deps/liblodepng/lodepng.cpp",
+          "line": 825,
+          "message": "Macro 'USE_BRUTE_FORCE_ENCODING' checked here for definition after being checked for value",
+          "verdict": "TP"
+        },
+        {
+          "column": 6,
+          "file": "deps/sqlite3/sqlite3.c",
+          "line": 21452,
+          "message": "Macro 'SQLITE_DEFAULT_MEMSTATUS' checked here for value after being checked for definition",
+          "verdict": "FP"
+        },
+        {
+          "column": 2,
+          "file": "deps/sqlite3/sqlite3.c",
+          "line": 21456,
+          "message": "Macro 'SQLITE_DEFAULT_MMAP_SIZE' checked here for definition after being checked for value",
+          "verdict": "FP"
+        },
+        {
+          "column": 2,
+          "file": "deps/sqlite3/sqlite3.c",
+          "line": 21459,
+          "message": "Macro 'SQLITE_DEFAULT_PAGE_SIZE' checked here for definition after being checked for value",
+          "verdict": "FP"
+        },
+        {
+          "column": 2,
+          "file": "deps/sqlite3/sqlite3.c",
+          "line": 21486,
+          "message": "Macro 'SQLITE_DEFAULT_WORKER_THREADS' checked here for definition after being checked for value",
+          "verdict": "FP"
+        },
+        {
+          "column": 2,
+          "file": "deps/sqlite3/sqlite3.c",
+          "line": 21731,
+          "message": "Macro 'SQLITE_MAX_ATTACHED' checked here for definition after being checked for value",
+          "verdict": "FP"
+        },
+        {
+          "column": 2,
+          "file": "deps/sqlite3/sqlite3.c",
+          "line": 21740,
+          "message": "Macro 'SQLITE_MAX_DEFAULT_PAGE_SIZE' checked here for definition after being checked for value",
+          "verdict": "FP"
+        },
+        {
+          "column": 2,
+          "file": "deps/sqlite3/sqlite3.c",
+          "line": 21743,
+          "message": "Macro 'SQLITE_MAX_EXPR_DEPTH' checked here for definition after being checked for value",
+          "verdict": "FP"
+        },
+        {
+          "column": 2,
+          "file": "deps/sqlite3/sqlite3.c",
+          "line": 21758,
+          "message": "Macro 'SQLITE_MAX_MMAP_SIZE' checked here for definition after being checked for value",
+          "verdict": "FP"
+        },
+        {
+          "column": 2,
+          "file": "deps/sqlite3/sqlite3.c",
+          "line": 21767,
+          "message": "Macro 'SQLITE_MAX_PAGE_SIZE' checked here for definition after being checked for value",
+          "verdict": "FP"
+        },
+        {
+          "column": 2,
+          "file": "deps/sqlite3/sqlite3.c",
+          "line": 21779,
+          "message": "Macro 'SQLITE_MAX_VARIABLE_NUMBER' checked here for definition after being checked for value",
+          "verdict": "FP"
+        },
+        {
+          "column": 2,
+          "file": "deps/sqlite3/sqlite3.c",
+          "line": 21785,
+          "message": "Macro 'SQLITE_MAX_WORKER_THREADS' checked here for definition after being checked for value",
+          "verdict": "FP"
+        },
+        {
+          "column": 6,
+          "file": "deps/sqlite3/sqlite3.c",
+          "line": 22010,
+          "message": "Macro 'SQLITE_POWERSAFE_OVERWRITE' checked here for value after being checked for definition",
+          "verdict": "FP"
+        },
+        {
+          "column": 2,
+          "file": "deps/sqlite3/sqlite3.c",
+          "line": 22056,
+          "message": "Macro 'SQLITE_TEMP_STORE' checked here for definition after being checked for value",
+          "verdict": "FP"
+        },
+        {
+          "column": 5,
+          "file": "deps/sqlite3/sqlite3.c",
+          "line": 22062,
+          "message": "Macro 'SQLITE_THREADSAFE' checked here for definition after being checked for value",
+          "verdict": "FP"
+        },
+        {
+          "column": 5,
+          "file": "deps/sqlite3/sqlite3.c",
+          "line": 35819,
+          "message": "Macro 'SQLITE_MALLOC_SOFT_LIMIT' checked here for value after being checked for definition",
+          "verdict": "FP"
+        },
+        {
+          "column": 5,
+          "file": "deps/sqlite3/sqlite3.c",
+          "line": 71925,
+          "message": "Macro 'SQLITE_DEFAULT_SYNCHRONOUS' checked here for value after being checked for definition",
+          "verdict": "FP"
+        },
+        {
+          "column": 33,
+          "file": "deps/sqlite3/sqlite3.c",
+          "line": 71925,
+          "message": "Macro 'SQLITE_DEFAULT_WAL_SYNCHRONOUS' checked here for value after being checked for definition",
+          "verdict": "FP"
+        },
+        {
+          "column": 6,
+          "file": "deps/sqlite3/sqlite3.c",
+          "line": 134359,
+          "message": "Macro 'SQLITE_ENABLE_LOCKING_STYLE' checked here for definition after being checked for value",
+          "verdict": "FP"
+        },
+        {
+          "column": 5,
+          "file": "deps/sqlite3/sqlite3.c",
+          "line": 177715,
+          "message": "Macro 'SQLITE_MAX_LENGTH' checked here for value after being checked for definition",
+          "verdict": "FP"
+        },
+        {
+          "column": 5,
+          "file": "deps/sqlite3/sqlite3.c",
+          "line": 177718,
+          "message": "Macro 'SQLITE_MAX_SQL_LENGTH' checked here for value after being checked for definition",
+          "verdict": "FP"
+        },
+        {
+          "column": 5,
+          "file": "deps/sqlite3/sqlite3.c",
+          "line": 177724,
+          "message": "Macro 'SQLITE_MAX_COMPOUND_SELECT' checked here for value after being checked for definition",
+          "verdict": "FP"
+        },
+        {
+          "column": 5,
+          "file": "deps/sqlite3/sqlite3.c",
+          "line": 177727,
+          "message": "Macro 'SQLITE_MAX_VDBE_OP' checked here for value after being checked for definition",
+          "verdict": "FP"
+        },
+        {
+          "column": 5,
+          "file": "deps/sqlite3/sqlite3.c",
+          "line": 177730,
+          "message": "Macro 'SQLITE_MAX_FUNCTION_ARG' checked here for value after being checked for definition",
+          "verdict": "FP"
+        },
+        {
+          "column": 5,
+          "file": "deps/sqlite3/sqlite3.c",
+          "line": 177736,
+          "message": "Macro 'SQLITE_MAX_LIKE_PATTERN_LENGTH' checked here for value after being checked for definition",
+          "verdict": "FP"
+        },
+        {
+          "column": 5,
+          "file": "deps/sqlite3/sqlite3.c",
+          "line": 177739,
+          "message": "Macro 'SQLITE_MAX_COLUMN' checked here for value after being checked for definition",
+          "verdict": "FP"
+        },
+        {
+          "column": 5,
+          "file": "deps/sqlite3/sqlite3.c",
+          "line": 177742,
+          "message": "Macro 'SQLITE_MAX_TRIGGER_DEPTH' checked here for value after being checked for definition",
+          "verdict": "FP"
+        },
+        {
+          "column": 5,
+          "file": "deps/sqlite3/sqlite3.c",
+          "line": 178228,
+          "message": "Macro 'SQLITE_DEFAULT_FILE_FORMAT' checked here for value after being checked for definition",
+          "verdict": "FP"
+        },
+        {
+          "column": 5,
+          "file": "deps/sqlite3/sqlite3.c",
+          "line": 178234,
+          "message": "Macro 'SQLITE_DEFAULT_RECURSIVE_TRIGGERS' checked here for value after being checked for definition",
+          "verdict": "FP"
+        }
+      ],
+      "duration_seconds": 30.782442,
+      "project": "doxygen",
+      "status": "COMPLETED"
+    },
+    {
+      "diagnostics": [
+        {
+          "column": 5,
+          "file": "include/git2/common.h",
+          "line": 65,
+          "message": "Macro '__GNUC__' checked here for definition after being checked for value",
+          "verdict": "FP"
+        },
+        {
+          "column": 8,
+          "file": "src/util/cc-compat.h",
+          "line": 19,
+          "message": "Macro '__GNUC__' checked here for value after being checked for definition",
+          "verdict": "FP"
+        },
+        {
+          "column": 5,
+          "file": "deps/pcre2/pcre2.h",
+          "line": 1060,
+          "message": "Macro 'PCRE2_CODE_UNIT_WIDTH' checked here for value after being checked for definition",
+          "verdict": "FP"
+        },
+        {
+          "column": 5,
+          "file": "src/util/hash/sha1dc/sha1.c",
+          "line": 54,
+          "message": "Macro '__BYTE_ORDER__' checked here for value after being checked for definition",
+          "verdict": "FP"
+        },
+        {
+          "column": 23,
+          "file": "src/util/hash/sha1dc/sha1.c",
+          "line": 54,
+          "message": "Macro '__ORDER_BIG_ENDIAN__' checked here for value after being checked for definition",
+          "verdict": "FP"
+        }
+      ],
+      "duration_seconds": 1.478131,
+      "project": "libgit2",
+      "status": "COMPLETED"
+    },
+    {
+      "diagnostics": [
+        {
+          "column": 44,
+          "file": "src/unix/getaddrinfo.c",
+          "line": 70,
+          "message": "Macro 'EAI_NONAME' checked here for value after being checked for definition",
+          "verdict": "FP"
+        },
+        {
+          "column": 5,
+          "file": "src/unix/fs.c",
+          "line": 1493,
+          "message": "Macro '_XOPEN_SOURCE' checked here for definition after being checked for value",
+          "verdict": "FP"
+        }
+      ],
+      "duration_seconds": 0.881043,
+      "project": "libuv",
+      "status": "COMPLETED"
+    },
+    {
+      "diagnostics": [
+        {
+          "column": 5,
+          "file": "clang/lib/Interpreter/IncrementalExecutor.cpp",
+          "line": 217,
+          "message": "Macro 'LLVM_ON_UNIX' checked here for value after being checked for definition",
+          "verdict": "TP"
+        }
+      ],
+      "duration_seconds": 336.479027,
+      "project": "llvm-project",
+      "status": "COMPLETED"
+    },
+    {
+      "diagnostics": [
+        {
+          "column": 9,
+          "file": "Foundation/include/Poco/UTFString.h",
+          "line": 277,
+          "message": "Macro '__SIZEOF_WCHAR_T__' checked here for value after being checked for definition",
+          "verdict": "FP"
+        },
+        {
+          "column": 5,
+          "file": "dependencies/png/src/pngpriv.h",
+          "line": 160,
+          "message": "Macro 'PNG_ARM_NEON_OPT' checked here for value after being checked for definition",
+          "verdict": "FP"
+        },
+        {
+          "column": 5,
+          "file": "dependencies/pcre2/src/pcre2.h",
+          "line": 1060,
+          "message": "Macro 'PCRE2_CODE_UNIT_WIDTH' checked here for value after being checked for definition",
+          "verdict": "FP"
+        },
+        {
+          "column": 5,
+          "file": "dependencies/pcre2/src/pcre2_intmodedep.h",
+          "line": 98,
+          "message": "Macro 'PCRE2_CODE_UNIT_WIDTH' checked here for value after being checked for definition",
+          "verdict": "FP"
+        },
+        {
+          "column": 7,
+          "file": "dependencies/zlib/src/crc32.c",
+          "line": 90,
+          "message": "Macro 'W' checked here for value after being checked for definition",
+          "verdict": "FP"
+        },
+        {
+          "column": 5,
+          "file": "dependencies/zlib/src/crc32.h",
+          "line": 61,
+          "message": "Macro 'W' checked here for value after being checked for definition",
+          "verdict": "FP"
+        },
+        {
+          "column": 9,
+          "file": "dependencies/7zip/src/CpuArch.h",
+          "line": 304,
+          "message": "Macro 'MY_CPU_SIZEOF_POINTER' checked here for value after being checked for definition",
+          "verdict": "FP"
+        },
+        {
+          "column": 34,
+          "file": "dependencies/7zip/src/CpuArch.h",
+          "line": 304,
+          "message": "Macro '__SIZEOF_POINTER__' checked here for value after being checked for definition",
+          "verdict": "FP"
+        },
+        {
+          "column": 29,
+          "file": "dependencies/sqlite3/src/sqlite3.c",
+          "line": 15327,
+          "message": "Macro 'SQLITE_THREADSAFE' checked here for value after being checked for definition",
+          "verdict": "FP"
+        },
+        {
+          "column": 6,
+          "file": "dependencies/sqlite3/src/sqlite3.c",
+          "line": 22720,
+          "message": "Macro 'SQLITE_DEFAULT_MEMSTATUS' checked here for value after being checked for definition",
+          "verdict": "FP"
+        },
+        {
+          "column": 2,
+          "file": "dependencies/sqlite3/src/sqlite3.c",
+          "line": 22724,
+          "message": "Macro 'SQLITE_DEFAULT_MMAP_SIZE' checked here for definition after being checked for value",
+          "verdict": "FP"
+        },
+        {
+          "column": 2,
+          "file": "dependencies/sqlite3/src/sqlite3.c",
+          "line": 22727,
+          "message": "Macro 'SQLITE_DEFAULT_PAGE_SIZE' checked here for definition after being checked for value",
+          "verdict": "FP"
+        },
+        {
+          "column": 2,
+          "file": "dependencies/sqlite3/src/sqlite3.c",
+          "line": 22754,
+          "message": "Macro 'SQLITE_DEFAULT_WORKER_THREADS' checked here for definition after being checked for value",
+          "verdict": "FP"
+        },
+        {
+          "column": 2,
+          "file": "dependencies/sqlite3/src/sqlite3.c",
+          "line": 23020,
+          "message": "Macro 'SQLITE_MAX_ATTACHED' checked here for definition after being checked for value",
+          "verdict": "FP"
+        },
+        {
+          "column": 2,
+          "file": "dependencies/sqlite3/src/sqlite3.c",
+          "line": 23023,
+          "message": "Macro 'SQLITE_MAX_COLUMN' checked here for definition after being checked for value",
+          "verdict": "FP"
+        },
+        {
+          "column": 2,
+          "file": "dependencies/sqlite3/src/sqlite3.c",
+          "line": 23029,
+          "message": "Macro 'SQLITE_MAX_DEFAULT_PAGE_SIZE' checked here for definition after being checked for value",
+          "verdict": "FP"
+        },
+        {
+          "column": 2,
+          "file": "dependencies/sqlite3/src/sqlite3.c",
+          "line": 23032,
+          "message": "Macro 'SQLITE_MAX_EXPR_DEPTH' checked here for definition after being checked for value",
+          "verdict": "FP"
+        },
+        {
+          "column": 2,
+          "file": "dependencies/sqlite3/src/sqlite3.c",
+          "line": 23047,
+          "message": "Macro 'SQLITE_MAX_MMAP_SIZE' checked here for definition after being checked for value",
+          "verdict": "FP"
+        },
+        {
+          "column": 2,
+          "file": "dependencies/sqlite3/src/sqlite3.c",
+          "line": 23056,
+          "message": "Macro 'SQLITE_MAX_PAGE_SIZE' checked here for definition after being checked for value",
+          "verdict": "FP"
+        },
+        {
+          "column": 2,
+          "file": "dependencies/sqlite3/src/sqlite3.c",
+          "line": 23068,
+          "message": "Macro 'SQLITE_MAX_VARIABLE_NUMBER' checked here for definition after being checked for value",
+          "verdict": "FP"
+        },
+        {
+          "column": 2,
+          "file": "dependencies/sqlite3/src/sqlite3.c",
+          "line": 23074,
+          "message": "Macro 'SQLITE_MAX_WORKER_THREADS' checked here for definition after being checked for value",
+          "verdict": "FP"
+        },
+        {
+          "column": 6,
+          "file": "dependencies/sqlite3/src/sqlite3.c",
+          "line": 23302,
+          "message": "Macro 'SQLITE_POWERSAFE_OVERWRITE' checked here for value after being checked for definition",
+          "verdict": "FP"
+        },
+        {
+          "column": 2,
+          "file": "dependencies/sqlite3/src/sqlite3.c",
+          "line": 23348,
+          "message": "Macro 'SQLITE_TEMP_STORE' checked here for definition after being checked for value",
+          "verdict": "FP"
+        },
+        {
+          "column": 5,
+          "file": "dependencies/sqlite3/src/sqlite3.c",
+          "line": 37850,
+          "message": "Macro 'SQLITE_MALLOC_SOFT_LIMIT' checked here for value after being checked for definition",
+          "verdict": "FP"
+        },
+        {
+          "column": 5,
+          "file": "dependencies/sqlite3/src/sqlite3.c",
+          "line": 43886,
+          "message": "Macro 'SQLITE_ATOMIC_INTRINSICS' checked here for value after being checked for definition",
+          "verdict": "FP"
+        },
+        {
+          "column": 5,
+          "file": "dependencies/sqlite3/src/sqlite3.c",
+          "line": 75680,
+          "message": "Macro 'SQLITE_DEFAULT_SYNCHRONOUS' checked here for value after being checked for definition",
+          "verdict": "FP"
+        },
+        {
+          "column": 33,
+          "file": "dependencies/sqlite3/src/sqlite3.c",
+          "line": 75680,
+          "message": "Macro 'SQLITE_DEFAULT_WAL_SYNCHRONOUS' checked here for value after being checked for definition",
+          "verdict": "FP"
+        },
+        {
+          "column": 5,
+          "file": "dependencies/sqlite3/src/sqlite3.c",
+          "line": 97115,
+          "message": "Macro 'SQLITE_MAX_LENGTH' checked here for value after being checked for definition",
+          "verdict": "FP"
+        },
+        {
+          "column": 6,
+          "file": "dependencies/sqlite3/src/sqlite3.c",
+          "line": 141916,
+          "message": "Macro 'SQLITE_ENABLE_LOCKING_STYLE' checked here for definition after being checked for value",
+          "verdict": "FP"
+        },
+        {
+          "column": 5,
+          "file": "dependencies/sqlite3/src/sqlite3.c",
+          "line": 187821,
+          "message": "Macro 'SQLITE_MAX_SQL_LENGTH' checked here for value after being checked for definition",
+          "verdict": "FP"
+        },
+        {
+          "column": 5,
+          "file": "dependencies/sqlite3/src/sqlite3.c",
+          "line": 187827,
+          "message": "Macro 'SQLITE_MAX_COMPOUND_SELECT' checked here for value after being checked for definition",
+          "verdict": "FP"
+        },
+        {
+          "column": 5,
+          "file": "dependencies/sqlite3/src/sqlite3.c",
+          "line": 187830,
+          "message": "Macro 'SQLITE_MAX_VDBE_OP' checked here for value after being checked for definition",
+          "verdict": "FP"
+        },
+        {
+          "column": 5,
+          "file": "dependencies/sqlite3/src/sqlite3.c",
+          "line": 187833,
+          "message": "Macro 'SQLITE_MAX_FUNCTION_ARG' checked here for value after being checked for definition",
+          "verdict": "FP"
+        },
+        {
+          "column": 5,
+          "file": "dependencies/sqlite3/src/sqlite3.c",
+          "line": 187839,
+          "message": "Macro 'SQLITE_MAX_LIKE_PATTERN_LENGTH' checked here for value after being checked for definition",
+          "verdict": "FP"
+        },
+        {
+          "column": 5,
+          "file": "dependencies/sqlite3/src/sqlite3.c",
+          "line": 187845,
+          "message": "Macro 'SQLITE_MAX_TRIGGER_DEPTH' checked here for value after being checked for definition",
+          "verdict": "FP"
+        },
+        {
+          "column": 5,
+          "file": "dependencies/sqlite3/src/sqlite3.c",
+          "line": 188334,
+          "message": "Macro 'SQLITE_DEFAULT_FILE_FORMAT' checked here for value after being checked for definition",
+          "verdict": "FP"
+        },
+        {
+          "column": 5,
+          "file": "dependencies/sqlite3/src/sqlite3.c",
+          "line": 188340,
+          "message": "Macro 'SQLITE_DEFAULT_RECURSIVE_TRIGGERS' checked here for value after being checked for definition",
+          "verdict": "FP"
+        },
+        {
+          "column": 9,
+          "file": "dependencies/expat/src/expat_config.h",
+          "line": 13,
+          "message": "Macro '__BYTE_ORDER__' checked here for value after being checked for definition",
+          "verdict": "FP"
+        },
+        {
+          "column": 27,
+          "file": "dependencies/expat/src/expat_config.h",
+          "line": 13,
+          "message": "Macro '__ORDER_LITTLE_ENDIAN__' checked here for value after being checked for definition",
+          "verdict": "FP"
+        },
+        {
+          "column": 29,
+          "file": "dependencies/expat/src/expat_config.h",
+          "line": 15,
+          "message": "Macro '__ORDER_BIG_ENDIAN__' checked here for value after being checked for definition",
+          "verdict": "FP"
+        },
+        {
+          "column": 9,
+          "file": "dependencies/expat/src/internal.h",
+          "line": 128,
+          "message": "Macro 'ULONG_MAX' checked here for value after being checked for definition",
+          "verdict": "FP"
+        },
+        {
+          "column": 45,
+          "file": "dependencies/quill/include/quill/bundled/fmt/format.h",
+          "line": 148,
+          "message": "Macro '__GLIBCXX__' checked here for value after being checked for definition",
+          "verdict": "FP"
+        },
+        {
+          "column": 5,
+          "file": "Net/src/HTTPClientSession.cpp",
+          "line": 376,
+          "message": "Macro 'POCO_HAVE_INT64' checked here for definition after being checked for value",
+          "verdict": "TP"
+        },
+        {
+          "column": 7,
+          "file": "dependencies/png/src/pngrtran.c",
+          "line": 21,
+          "message": "Macro 'PNG_ARM_NEON_IMPLEMENTATION' checked here for value after being checked for definition",
+          "verdict": "FP"
+        },
+        {
+          "column": 7,
+          "file": "dependencies/png/src/pngrtran.c",
+          "line": 32,
+          "message": "Macro 'PNG_RISCV_RVV_IMPLEMENTATION' checked here for value after being checked for definition",
+          "verdict": "FP"
+        }
+      ],
+      "duration_seconds": 43.589353,
+      "project": "poco",
+      "status": "COMPLETED"
+    },
+    {
+      "diagnostics": [],
+      "duration_seconds": 7.749014,
+      "project": "stdexec",
+      "status": "COMPLETED"
+    },
+    {
+      "diagnostics": [],
+      "duration_seconds": 2.899344,
+      "project": "yaml-cpp",
+      "status": "COMPLETED"
+    },
+    {
+      "diagnostics": [],
+      "duration_seconds": 2.715962,
+      "project": "zstd",
+      "status": "COMPLETED"
+    }
+  ],
+  "runner_arch": "ARM64",
+  "started_at": "2026-10-01T05:03:22+00:00",
+  "status": "COMPLETED"
+}
