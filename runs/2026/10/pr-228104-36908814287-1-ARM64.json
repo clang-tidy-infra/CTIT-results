@@ -1,0 +1,139 @@
+{
+  "artifact_url": "https://github.com/clang-tidy-infra/CTIT/actions/runs/36908814287/artifacts/11187501199",
+  "baseline": null,
+  "check_config": {},
+  "check_name": "modernize-use-std-interpolation",
+  "duration_seconds": 1471.563557,
+  "finished_at": "2026-10-01T19:07:31.563557Z",
+  "github_run_attempt": 1,
+  "github_run_id": 36908814287,
+  "llvm_revision": "2a1a6d12b51e7d2abe72d796c3efafc249792a0c+patch:12b978d2db61f290148f029a2967de7c64e48a50fa28068ebe5c41cb7402c59a",
+  "pr_number": 228104,
+  "project_runs": [
+    {
+      "diagnostics": [],
+      "duration_seconds": 8.429278,
+      "project": "abseil-cpp",
+      "status": "COMPLETED"
+    },
+    {
+      "diagnostics": [],
+      "duration_seconds": 29.953528,
+      "project": "assimp",
+      "status": "COMPLETED"
+    },
+    {
+      "diagnostics": [],
+      "duration_seconds": 4.944798,
+      "project": "catch2",
+      "status": "COMPLETED"
+    },
+    {
+      "diagnostics": [],
+      "duration_seconds": 13.98968,
+      "project": "cppcheck",
+      "status": "COMPLETED"
+    },
+    {
+      "diagnostics": [],
+      "duration_seconds": 2.621392,
+      "project": "curl",
+      "status": "COMPLETED"
+    },
+    {
+      "diagnostics": [
+        {
+          "column": 18,
+          "file": "deps/liblodepng/lodepng.cpp",
+          "line": 678,
+          "message": "use 'std::midpoint' instead of manual midpoint calculation",
+          "verdict": "TP"
+        },
+        {
+          "column": 17,
+          "file": "src/dotnode.cpp",
+          "line": 277,
+          "message": "use 'std::midpoint' instead of manual midpoint calculation",
+          "verdict": "FP"
+        },
+        {
+          "column": 17,
+          "file": "src/dotnode.cpp",
+          "line": 285,
+          "message": "use 'std::midpoint' instead of manual midpoint calculation",
+          "verdict": "FP"
+        },
+        {
+          "column": 17,
+          "file": "src/dotnode.cpp",
+          "line": 292,
+          "message": "use 'std::midpoint' instead of manual midpoint calculation",
+          "verdict": "FP"
+        }
+      ],
+      "duration_seconds": 33.860403,
+      "project": "doxygen",
+      "status": "COMPLETED"
+    },
+    {
+      "diagnostics": [],
+      "duration_seconds": 1.405206,
+      "project": "libgit2",
+      "status": "COMPLETED"
+    },
+    {
+      "diagnostics": [],
+      "duration_seconds": 0.882772,
+      "project": "libuv",
+      "status": "COMPLETED"
+    },
+    {
+      "diagnostics": [],
+      "duration_seconds": 306.757026,
+      "project": "llvm-project",
+      "status": "COMPLETED"
+    },
+    {
+      "diagnostics": [
+        {
+          "column": 10,
+          "file": "Foundation/src/Thread_POSIX.cpp",
+          "line": 498,
+          "message": "use 'std::midpoint' instead of manual midpoint calculation",
+          "verdict": "TP"
+        },
+        {
+          "column": 16,
+          "file": "Foundation/src/Thread_POSIX.cpp",
+          "line": 516,
+          "message": "use 'std::midpoint' instead of manual midpoint calculation",
+          "verdict": "TP"
+        }
+      ],
+      "duration_seconds": 44.097348,
+      "project": "poco",
+      "status": "COMPLETED"
+    },
+    {
+      "diagnostics": [],
+      "duration_seconds": 8.582485,
+      "project": "stdexec",
+      "status": "COMPLETED"
+    },
+    {
+      "diagnostics": [],
+      "duration_seconds": 2.295433,
+      "project": "yaml-cpp",
+      "status": "COMPLETED"
+    },
+    {
+      "diagnostics": [],
+      "duration_seconds": 2.346817,
+      "project": "zstd",
+      "status": "COMPLETED"
+    }
+  ],
+  "runner_arch": "ARM64",
+  "started_at": "2026-10-01T18:43:00+00:00",
+  "status": "COMPLETED"
+}
