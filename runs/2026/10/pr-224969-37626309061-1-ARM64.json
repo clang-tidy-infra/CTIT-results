@@ -1,0 +1,3853 @@
+{
+  "artifact_url": "https://github.com/clang-tidy-infra/CTIT/actions/runs/37626309061/artifacts/11489760778",
+  "baseline": {
+    "llvm_revision": "6e19e160b3600f0db1e805f4ae81d9ffc62a55a2",
+    "project_runs": [
+      {
+        "diagnostics": [
+          {
+            "column": 52,
+            "file": "absl/container/internal/common.h",
+            "line": 157,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          }
+        ],
+        "duration_seconds": 9.152526,
+        "project": "abseil-cpp",
+        "status": "COMPLETED"
+      },
+      {
+        "diagnostics": [],
+        "duration_seconds": 29.89456,
+        "project": "assimp",
+        "status": "COMPLETED"
+      },
+      {
+        "diagnostics": [],
+        "duration_seconds": 4.02227,
+        "project": "catch2",
+        "status": "COMPLETED"
+      },
+      {
+        "diagnostics": [],
+        "duration_seconds": 12.618889,
+        "project": "cppcheck",
+        "status": "COMPLETED"
+      },
+      {
+        "diagnostics": [],
+        "duration_seconds": 2.324833,
+        "project": "curl",
+        "status": "COMPLETED"
+      },
+      {
+        "diagnostics": [
+          {
+            "column": 28,
+            "file": "src/definition.cpp",
+            "line": 971,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 53,
+            "file": "src/definition.cpp",
+            "line": 982,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 53,
+            "file": "src/definition.cpp",
+            "line": 991,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 21,
+            "file": "src/definition.cpp",
+            "line": 1052,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 50,
+            "file": "src/definition.cpp",
+            "line": 1052,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 26,
+            "file": "src/definition.cpp",
+            "line": 1053,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 35,
+            "file": "src/definition.cpp",
+            "line": 1072,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 62,
+            "file": "src/symbolresolver.cpp",
+            "line": 853,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          }
+        ],
+        "duration_seconds": 28.641259,
+        "project": "doxygen",
+        "status": "COMPLETED"
+      },
+      {
+        "diagnostics": [],
+        "duration_seconds": 1.501728,
+        "project": "libgit2",
+        "status": "COMPLETED"
+      },
+      {
+        "diagnostics": [],
+        "duration_seconds": 0.860513,
+        "project": "libuv",
+        "status": "COMPLETED"
+      },
+      {
+        "diagnostics": [
+          {
+            "column": 27,
+            "file": "llvm/include/llvm/Support/VirtualFileSystem.h",
+            "line": 940,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 55,
+            "file": "clang/include/clang/Driver/Multilib.h",
+            "line": 99,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 25,
+            "file": "llvm/include/llvm/ADT/STLExtras.h",
+            "line": 228,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 9,
+            "file": "clang/lib/Driver/ToolChains/Darwin.cpp",
+            "line": 751,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 16,
+            "file": "build/tools/clang/include/clang/AST/Attrs.inc",
+            "line": 6653,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 16,
+            "file": "build/tools/clang/include/clang/AST/Attrs.inc",
+            "line": 6667,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 16,
+            "file": "build/tools/clang/include/clang/AST/Attrs.inc",
+            "line": 6678,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 13,
+            "file": "clang/include/clang/StaticAnalyzer/Core/PathSensitive/ConstraintManager.h",
+            "line": 52,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 14,
+            "file": "clang/include/clang/Sema/Sema.h",
+            "line": 15671,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 19,
+            "file": "clang/lib/AST/ItaniumMangle.cpp",
+            "line": 4237,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 29,
+            "file": "clang/lib/Basic/TargetID.cpp",
+            "line": 155,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 8,
+            "file": "clang/lib/Basic/TargetID.cpp",
+            "line": 171,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 8,
+            "file": "clang/lib/Basic/TargetID.cpp",
+            "line": 173,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 44,
+            "file": "clang/include/clang/StaticAnalyzer/Core/Checker.h",
+            "line": 524,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 13,
+            "file": "clang/include/clang/StaticAnalyzer/Core/PathSensitive/CallEvent.h",
+            "line": 1154,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 33,
+            "file": "clang/include/clang/StaticAnalyzer/Core/PathSensitive/CallEvent.h",
+            "line": 1178,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 30,
+            "file": "clang/lib/Driver/OffloadBundler.cpp",
+            "line": 268,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 17,
+            "file": "clang/lib/Driver/OffloadBundler.cpp",
+            "line": 596,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 28,
+            "file": "clang/lib/Driver/OffloadBundler.cpp",
+            "line": 1590,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 56,
+            "file": "clang/lib/Driver/OffloadBundler.cpp",
+            "line": 1930,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 13,
+            "file": "clang/include/clang/Frontend/FrontendOptions.h",
+            "line": 273,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 23,
+            "file": "llvm/include/llvm/IR/DebugInfoMetadata.h",
+            "line": 3830,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 23,
+            "file": "llvm/include/llvm/IR/DebugInfoMetadata.h",
+            "line": 3831,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 30,
+            "file": "clang/lib/Sema/SemaARM.cpp",
+            "line": 837,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 23,
+            "file": "clang/include/clang/APINotes/Types.h",
+            "line": 131,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 30,
+            "file": "clang/include/clang/APINotes/Types.h",
+            "line": 378,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 45,
+            "file": "clang/lib/StaticAnalyzer/Checkers/NullabilityChecker.cpp",
+            "line": 1152,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 50,
+            "file": "clang/lib/StaticAnalyzer/Checkers/NullabilityChecker.cpp",
+            "line": 1158,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 22,
+            "file": "clang/lib/Tooling/InterpolatingCompilationDatabase.cpp",
+            "line": 224,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 29,
+            "file": "clang/include/clang/ASTMatchers/ASTMatchers.h",
+            "line": 8607,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 33,
+            "file": "clang/include/clang/ASTMatchers/ASTMatchers.h",
+            "line": 8608,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 12,
+            "file": "clang/include/clang/ASTMatchers/ASTMatchersInternal.h",
+            "line": 1228,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 13,
+            "file": "clang/lib/StaticAnalyzer/Checkers/StreamChecker.cpp",
+            "line": 676,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 35,
+            "file": "clang/lib/StaticAnalyzer/Checkers/StreamChecker.cpp",
+            "line": 686,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 40,
+            "file": "clang/lib/StaticAnalyzer/Checkers/StreamChecker.cpp",
+            "line": 719,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 48,
+            "file": "clang/lib/StaticAnalyzer/Checkers/StreamChecker.cpp",
+            "line": 1030,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 33,
+            "file": "clang/lib/StaticAnalyzer/Checkers/StreamChecker.cpp",
+            "line": 1203,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 37,
+            "file": "clang/lib/StaticAnalyzer/Checkers/StreamChecker.cpp",
+            "line": 1238,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 48,
+            "file": "clang/lib/StaticAnalyzer/Checkers/StreamChecker.cpp",
+            "line": 1268,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 35,
+            "file": "clang/lib/StaticAnalyzer/Checkers/StreamChecker.cpp",
+            "line": 1303,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 62,
+            "file": "clang/lib/StaticAnalyzer/Checkers/StreamChecker.cpp",
+            "line": 1320,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 33,
+            "file": "clang/lib/StaticAnalyzer/Checkers/StreamChecker.cpp",
+            "line": 1337,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 35,
+            "file": "clang/lib/StaticAnalyzer/Checkers/StreamChecker.cpp",
+            "line": 1382,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 62,
+            "file": "clang/lib/StaticAnalyzer/Checkers/StreamChecker.cpp",
+            "line": 1408,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 62,
+            "file": "clang/lib/StaticAnalyzer/Checkers/StreamChecker.cpp",
+            "line": 1438,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 35,
+            "file": "clang/lib/StaticAnalyzer/Checkers/StreamChecker.cpp",
+            "line": 1463,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 33,
+            "file": "clang/lib/StaticAnalyzer/Checkers/StreamChecker.cpp",
+            "line": 1604,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 42,
+            "file": "clang/lib/StaticAnalyzer/Checkers/StreamChecker.cpp",
+            "line": 1672,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 43,
+            "file": "clang/lib/StaticAnalyzer/Checkers/StreamChecker.cpp",
+            "line": 1739,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 33,
+            "file": "clang/lib/StaticAnalyzer/Checkers/StreamChecker.cpp",
+            "line": 1773,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 32,
+            "file": "clang/lib/Sema/SemaStmtAttr.cpp",
+            "line": 272,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 30,
+            "file": "clang/lib/Sema/SemaStmtAttr.cpp",
+            "line": 273,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 12,
+            "file": "clang/lib/Sema/SemaExprCXX.cpp",
+            "line": 2585,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 72,
+            "file": "clang/lib/AST/StmtOpenACC.cpp",
+            "line": 500,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 64,
+            "file": "clang/lib/AST/StmtOpenACC.cpp",
+            "line": 515,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 73,
+            "file": "clang/lib/AST/StmtOpenACC.cpp",
+            "line": 515,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 25,
+            "file": "clang/lib/AST/StmtOpenACC.cpp",
+            "line": 530,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 3,
+            "file": "clang/lib/AST/StmtOpenACC.cpp",
+            "line": 534,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 13,
+            "file": "clang/lib/AST/StmtOpenACC.cpp",
+            "line": 534,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 7,
+            "file": "clang/lib/AST/StmtOpenACC.cpp",
+            "line": 537,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 64,
+            "file": "clang/lib/AST/StmtOpenACC.cpp",
+            "line": 538,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 71,
+            "file": "clang/lib/AST/StmtOpenACC.cpp",
+            "line": 538,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 62,
+            "file": "clang/lib/AST/StmtOpenACC.cpp",
+            "line": 540,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 71,
+            "file": "clang/lib/AST/StmtOpenACC.cpp",
+            "line": 540,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 10,
+            "file": "clang/lib/AST/StmtOpenACC.cpp",
+            "line": 554,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 10,
+            "file": "clang/lib/AST/StmtOpenACC.cpp",
+            "line": 560,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 10,
+            "file": "clang/lib/AST/StmtOpenACC.cpp",
+            "line": 567,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 13,
+            "file": "clang/include/clang/ASTMatchers/Dynamic/VariantValue.h",
+            "line": 219,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 13,
+            "file": "clang/lib/ASTMatchers/Dynamic/Marshallers.h",
+            "line": 180,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 13,
+            "file": "clang/lib/ASTMatchers/Dynamic/Marshallers.h",
+            "line": 210,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 13,
+            "file": "clang/lib/ASTMatchers/Dynamic/Marshallers.h",
+            "line": 233,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 13,
+            "file": "clang/lib/ASTMatchers/Dynamic/Marshallers.h",
+            "line": 261,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 13,
+            "file": "clang/lib/ASTMatchers/Dynamic/Marshallers.h",
+            "line": 292,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 35,
+            "file": "clang/lib/Sema/SemaDeclObjC.cpp",
+            "line": 2389,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 35,
+            "file": "clang/lib/Sema/SemaDeclObjC.cpp",
+            "line": 2390,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 33,
+            "file": "clang/lib/Sema/SemaDeclObjC.cpp",
+            "line": 2477,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 33,
+            "file": "clang/lib/Sema/SemaDeclObjC.cpp",
+            "line": 2480,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 11,
+            "file": "clang/lib/Analysis/PathDiagnostic.cpp",
+            "line": 394,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 29,
+            "file": "clang/lib/Format/ContinuationIndenter.cpp",
+            "line": 2307,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 10,
+            "file": "clang/lib/Analysis/FixitUtil.cpp",
+            "line": 92,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 10,
+            "file": "clang/lib/Analysis/FixitUtil.cpp",
+            "line": 173,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 26,
+            "file": "clang/lib/Analysis/LifetimeSafety/Dataflow.h",
+            "line": 101,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 25,
+            "file": "clang/lib/Serialization/ASTReaderStmt.cpp",
+            "line": 745,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 30,
+            "file": "clang/lib/Serialization/ASTReaderStmt.cpp",
+            "line": 749,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 21,
+            "file": "clang/lib/Serialization/ASTReaderStmt.cpp",
+            "line": 751,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 30,
+            "file": "clang/lib/Serialization/ASTReaderStmt.cpp",
+            "line": 933,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 26,
+            "file": "clang/lib/Serialization/ASTReaderStmt.cpp",
+            "line": 938,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 30,
+            "file": "clang/lib/Serialization/ASTReaderStmt.cpp",
+            "line": 1210,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 24,
+            "file": "clang/lib/Serialization/ASTReaderStmt.cpp",
+            "line": 1425,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 7,
+            "file": "clang/lib/Serialization/ASTReaderStmt.cpp",
+            "line": 1848,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 7,
+            "file": "clang/lib/Serialization/ASTReaderStmt.cpp",
+            "line": 2068,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 7,
+            "file": "clang/lib/Serialization/ASTReaderStmt.cpp",
+            "line": 2073,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 7,
+            "file": "clang/lib/Serialization/ASTReaderStmt.cpp",
+            "line": 2090,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 29,
+            "file": "clang/lib/Serialization/ASTReaderStmt.cpp",
+            "line": 2094,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 41,
+            "file": "clang/lib/Serialization/ASTReaderStmt.cpp",
+            "line": 2154,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 7,
+            "file": "clang/lib/Serialization/ASTReaderStmt.cpp",
+            "line": 2156,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 29,
+            "file": "clang/lib/Serialization/ASTReaderStmt.cpp",
+            "line": 2158,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 45,
+            "file": "clang/lib/Serialization/ASTReaderStmt.cpp",
+            "line": 2170,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 34,
+            "file": "clang/lib/Serialization/ASTReaderStmt.cpp",
+            "line": 2263,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 14,
+            "file": "clang/lib/Serialization/ASTReaderStmt.cpp",
+            "line": 2264,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 14,
+            "file": "clang/lib/Serialization/ASTReaderStmt.cpp",
+            "line": 2266,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 14,
+            "file": "clang/lib/Serialization/ASTReaderStmt.cpp",
+            "line": 2275,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 11,
+            "file": "clang/lib/Driver/ToolChain.cpp",
+            "line": 1383,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 35,
+            "file": "clang/lib/Analysis/UninitializedValues.cpp",
+            "line": 166,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 19,
+            "file": "clang/lib/Analysis/UninitializedValues.cpp",
+            "line": 225,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 7,
+            "file": "clang/lib/Format/MacroExpander.cpp",
+            "line": 231,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 7,
+            "file": "clang/lib/Format/MacroExpander.cpp",
+            "line": 232,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 5,
+            "file": "clang/lib/Format/MacroExpander.cpp",
+            "line": 235,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 5,
+            "file": "clang/lib/Format/MacroExpander.cpp",
+            "line": 236,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 12,
+            "file": "clang/lib/StaticAnalyzer/Checkers/WebKit/RawPtrRefLambdaCapturesChecker.cpp",
+            "line": 600,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 13,
+            "file": "clang/lib/StaticAnalyzer/Checkers/RetainCountChecker/RetainCountChecker.cpp",
+            "line": 355,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 38,
+            "file": "clang/lib/Sema/SemaDeclCXX.cpp",
+            "line": 892,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 24,
+            "file": "clang/lib/Sema/SemaDeclCXX.cpp",
+            "line": 18735,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 17,
+            "file": "clang/include/clang/Analysis/FlowSensitive/MatchSwitch.h",
+            "line": 152,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 13,
+            "file": "clang/lib/StaticAnalyzer/Core/Environment.cpp",
+            "line": 121,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 35,
+            "file": "clang/lib/StaticAnalyzer/Core/SValBuilder.cpp",
+            "line": 158,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 25,
+            "file": "clang/lib/Driver/Multilib.cpp",
+            "line": 203,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 20,
+            "file": "clang/lib/Sema/SemaFunctionEffects.cpp",
+            "line": 924,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 11,
+            "file": "clang/lib/Lex/Preprocessor.cpp",
+            "line": 705,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 11,
+            "file": "clang/lib/Lex/Preprocessor.cpp",
+            "line": 706,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 11,
+            "file": "clang/lib/Lex/Preprocessor.cpp",
+            "line": 707,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 11,
+            "file": "clang/lib/Lex/Preprocessor.cpp",
+            "line": 708,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 11,
+            "file": "clang/lib/Lex/Preprocessor.cpp",
+            "line": 709,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 18,
+            "file": "clang/lib/Frontend/CompilerInstance.cpp",
+            "line": 128,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 32,
+            "file": "clang/lib/Frontend/CompilerInstance.cpp",
+            "line": 130,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 12,
+            "file": "clang/include/clang/ASTMatchers/Dynamic/VariantValue.h",
+            "line": 213,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 12,
+            "file": "clang/lib/StaticAnalyzer/Checkers/WebKit/RawPtrRefCallArgsChecker.cpp",
+            "line": 459,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 12,
+            "file": "clang/lib/StaticAnalyzer/Checkers/WebKit/RawPtrRefCallArgsChecker.cpp",
+            "line": 463,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 47,
+            "file": "clang/lib/Lex/ModuleMapFile.cpp",
+            "line": 154,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 11,
+            "file": "clang/lib/Lex/ModuleMapFile.cpp",
+            "line": 155,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 11,
+            "file": "clang/lib/Lex/ModuleMapFile.cpp",
+            "line": 156,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 20,
+            "file": "clang/utils/TableGen/RISCVVEmitter.cpp",
+            "line": 461,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 64,
+            "file": "clang/lib/CodeGen/Targets/RISCV.cpp",
+            "line": 558,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 24,
+            "file": "clang/lib/StaticAnalyzer/Checkers/SmartPtrModeling.cpp",
+            "line": 504,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 15,
+            "file": "clang/lib/StaticAnalyzer/Checkers/DeadStoresChecker.cpp",
+            "line": 230,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 8,
+            "file": "clang/lib/Lex/PPDirectives.cpp",
+            "line": 4472,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 11,
+            "file": "clang/lib/Lex/PPDirectives.cpp",
+            "line": 4473,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 25,
+            "file": "clang/lib/Lex/PPDirectives.cpp",
+            "line": 4474,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 19,
+            "file": "clang/lib/StaticAnalyzer/Checkers/DivZeroChecker.cpp",
+            "line": 49,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 50,
+            "file": "clang/lib/StaticAnalyzer/Checkers/CStringChecker.cpp",
+            "line": 512,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 50,
+            "file": "clang/lib/StaticAnalyzer/Checkers/CStringChecker.cpp",
+            "line": 977,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 12,
+            "file": "clang/lib/StaticAnalyzer/Checkers/WebKit/RawPtrRefLocalVarsChecker.cpp",
+            "line": 446,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 19,
+            "file": "clang/lib/StaticAnalyzer/Core/ExprEngineCXX.cpp",
+            "line": 189,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 15,
+            "file": "clang/lib/StaticAnalyzer/Core/ExprEngineCXX.cpp",
+            "line": 990,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 15,
+            "file": "clang/lib/Analysis/ThreadSafety.cpp",
+            "line": 2200,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 36,
+            "file": "clang/lib/Analysis/ThreadSafety.cpp",
+            "line": 2200,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 13,
+            "file": "llvm/include/llvm/Analysis/MemoryLocation.h",
+            "line": 250,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 24,
+            "file": "clang/tools/clang-refactor/TestSupport.cpp",
+            "line": 248,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 10,
+            "file": "clang/lib/CodeGen/TargetBuiltins/ARM.cpp",
+            "line": 3433,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 22,
+            "file": "clang/lib/Frontend/CompilerInvocation.cpp",
+            "line": 1778,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 35,
+            "file": "clang/lib/AST/ByteCode/InterpBuiltin.cpp",
+            "line": 1404,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 70,
+            "file": "clang/lib/Sema/Sema.cpp",
+            "line": 130,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 8,
+            "file": "clang/lib/Frontend/Rewrite/InclusionRewriter.cpp",
+            "line": 257,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 12,
+            "file": "clang/lib/StaticAnalyzer/Checkers/WebKit/RawPtrRefMemberChecker.cpp",
+            "line": 371,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 30,
+            "file": "clang/lib/StaticAnalyzer/Checkers/MallocChecker.cpp",
+            "line": 131,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 20,
+            "file": "clang/lib/StaticAnalyzer/Checkers/MallocChecker.cpp",
+            "line": 149,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 33,
+            "file": "clang/lib/StaticAnalyzer/Checkers/MallocChecker.cpp",
+            "line": 1620,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 48,
+            "file": "clang/lib/StaticAnalyzer/Checkers/MallocChecker.cpp",
+            "line": 1624,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 70,
+            "file": "clang/lib/StaticAnalyzer/Checkers/MallocChecker.cpp",
+            "line": 1626,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 14,
+            "file": "clang/lib/StaticAnalyzer/Checkers/MallocChecker.cpp",
+            "line": 1736,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 45,
+            "file": "clang/lib/StaticAnalyzer/Checkers/MallocChecker.cpp",
+            "line": 2003,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 11,
+            "file": "clang/lib/StaticAnalyzer/Checkers/MallocChecker.cpp",
+            "line": 2219,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 51,
+            "file": "clang/lib/StaticAnalyzer/Checkers/MallocChecker.cpp",
+            "line": 2245,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 26,
+            "file": "clang/lib/CodeGen/CGBuiltin.cpp",
+            "line": 3841,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 12,
+            "file": "clang/lib/CodeGen/CGBuiltin.cpp",
+            "line": 3842,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 47,
+            "file": "clang/lib/Sema/SemaRISCV.cpp",
+            "line": 167,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 47,
+            "file": "clang/lib/Sema/SemaRISCV.cpp",
+            "line": 169,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 32,
+            "file": "clang/lib/Frontend/InitPreprocessor.cpp",
+            "line": 467,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 29,
+            "file": "clang/lib/StaticAnalyzer/Checkers/CheckPlacementNew.cpp",
+            "line": 81,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 40,
+            "file": "clang/lib/Lex/InitHeaderSearch.cpp",
+            "line": 379,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 62,
+            "file": "clang/lib/Sema/SemaChecking.cpp",
+            "line": 12169,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 42,
+            "file": "llvm/include/llvm/Analysis/LazyCallGraph.h",
+            "line": 346,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 24,
+            "file": "clang/lib/AST/ASTContext.cpp",
+            "line": 14810,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 24,
+            "file": "clang/lib/AST/ASTContext.cpp",
+            "line": 14811,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 13,
+            "file": "clang/include/clang/Tooling/Refactoring/RefactoringOptions.h",
+            "line": 50,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 11,
+            "file": "clang/lib/StaticAnalyzer/Checkers/NoOwnershipChangeVisitor.cpp",
+            "line": 65,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 12,
+            "file": "clang/lib/CodeGen/CodeGenFunction.cpp",
+            "line": 2874,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 12,
+            "file": "clang/utils/TableGen/ClangDiagnosticsEmitter.cpp",
+            "line": 1957,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 14,
+            "file": "clang/lib/APINotes/APINotesTypes.cpp",
+            "line": 22,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 8,
+            "file": "clang/lib/CodeGen/CGExprCXX.cpp",
+            "line": 734,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 29,
+            "file": "clang/lib/CodeGen/CGExprCXX.cpp",
+            "line": 734,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 39,
+            "file": "clang/lib/CodeGen/CGExprCXX.cpp",
+            "line": 736,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 9,
+            "file": "clang/lib/CodeGen/CGExprCXX.cpp",
+            "line": 746,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 15,
+            "file": "clang/lib/Tooling/Transformer/RewriteRule.cpp",
+            "line": 388,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 24,
+            "file": "clang/lib/Tooling/Transformer/RewriteRule.cpp",
+            "line": 436,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 16,
+            "file": "clang/lib/Sema/SemaDecl.cpp",
+            "line": 15085,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 25,
+            "file": "clang/lib/Analysis/CFG.cpp",
+            "line": 5047,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 20,
+            "file": "clang/lib/Analysis/CFG.cpp",
+            "line": 5048,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 21,
+            "file": "clang/lib/Driver/ToolChains/HLSL.cpp",
+            "line": 177,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 24,
+            "file": "clang/lib/StaticAnalyzer/Core/BugReporterVisitors.cpp",
+            "line": 1283,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 24,
+            "file": "clang/lib/CodeGen/TargetBuiltins/SystemZ.cpp",
+            "line": 216,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 24,
+            "file": "clang/lib/CodeGen/TargetBuiltins/SystemZ.cpp",
+            "line": 217,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 24,
+            "file": "clang/lib/CodeGen/TargetBuiltins/SystemZ.cpp",
+            "line": 274,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 24,
+            "file": "clang/lib/CodeGen/TargetBuiltins/SystemZ.cpp",
+            "line": 308,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 45,
+            "file": "clang/lib/CodeGen/CGStmt.cpp",
+            "line": 2711,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 63,
+            "file": "clang/lib/StaticAnalyzer/Checkers/NonNullParamChecker.cpp",
+            "line": 177,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 34,
+            "file": "clang/lib/Analysis/ProgramPoint.cpp",
+            "line": 185,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 32,
+            "file": "clang/lib/Analysis/ProgramPoint.cpp",
+            "line": 188,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 45,
+            "file": "clang/lib/Sema/AnalysisBasedWarnings.cpp",
+            "line": 228,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 11,
+            "file": "clang/lib/Sema/AnalysisBasedWarnings.cpp",
+            "line": 2973,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 5,
+            "file": "clang/tools/clang-scan-deps/ClangScanDeps.cpp",
+            "line": 1199,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 21,
+            "file": "clang/lib/CodeGen/CGHLSLRuntime.cpp",
+            "line": 70,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 38,
+            "file": "clang/lib/StaticAnalyzer/Checkers/GenericTaintChecker.cpp",
+            "line": 838,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 31,
+            "file": "clang/lib/StaticAnalyzer/Checkers/GenericTaintChecker.cpp",
+            "line": 840,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 9,
+            "file": "clang/lib/Sema/SemaPPC.cpp",
+            "line": 247,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 46,
+            "file": "clang/lib/Basic/Targets/AMDGPU.cpp",
+            "line": 319,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 25,
+            "file": "clang/lib/AST/ExprConstant.cpp",
+            "line": 7678,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 22,
+            "file": "clang/lib/AST/ExprConstant.cpp",
+            "line": 8121,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 43,
+            "file": "clang/lib/AST/ExprConstant.cpp",
+            "line": 8121,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 20,
+            "file": "clang/lib/AST/ExprConstant.cpp",
+            "line": 8122,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 43,
+            "file": "clang/lib/AST/ExprConstant.cpp",
+            "line": 8122,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 37,
+            "file": "clang/lib/AST/ExprConstant.cpp",
+            "line": 16270,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 9,
+            "file": "clang/lib/Sema/SemaTemplateDeductionGuide.cpp",
+            "line": 145,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 11,
+            "file": "clang/lib/Sema/SemaTemplateDeductionGuide.cpp",
+            "line": 180,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 21,
+            "file": "clang/lib/StaticAnalyzer/Checkers/UndefinedNewArraySizeChecker.cpp",
+            "line": 45,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 13,
+            "file": "clang/lib/Sema/SemaOpenMP.cpp",
+            "line": 1131,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 11,
+            "file": "clang/lib/Sema/SemaOpenMP.cpp",
+            "line": 2821,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 11,
+            "file": "clang/lib/Sema/SemaOpenMP.cpp",
+            "line": 2851,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 10,
+            "file": "clang/lib/Sema/SemaOpenMP.cpp",
+            "line": 8938,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 10,
+            "file": "clang/lib/Sema/SemaOpenMP.cpp",
+            "line": 9024,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 19,
+            "file": "clang/lib/Sema/SemaOpenMP.cpp",
+            "line": 9042,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 19,
+            "file": "clang/lib/Sema/SemaOpenMP.cpp",
+            "line": 9043,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 19,
+            "file": "clang/lib/Sema/SemaOpenMP.cpp",
+            "line": 9108,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 19,
+            "file": "clang/lib/Sema/SemaOpenMP.cpp",
+            "line": 9109,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 8,
+            "file": "clang/lib/Sema/SemaOpenMP.cpp",
+            "line": 9111,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 8,
+            "file": "clang/lib/Sema/SemaOpenMP.cpp",
+            "line": 9113,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 8,
+            "file": "clang/lib/Sema/SemaOpenMP.cpp",
+            "line": 9121,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 8,
+            "file": "clang/lib/Sema/SemaOpenMP.cpp",
+            "line": 9165,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 8,
+            "file": "clang/lib/Sema/SemaOpenMP.cpp",
+            "line": 9198,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 27,
+            "file": "clang/lib/Sema/SemaOpenMP.cpp",
+            "line": 9237,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 8,
+            "file": "clang/lib/Sema/SemaOpenMP.cpp",
+            "line": 9316,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 8,
+            "file": "clang/lib/Sema/SemaOpenMP.cpp",
+            "line": 9318,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 14,
+            "file": "clang/lib/Sema/SemaOpenMP.cpp",
+            "line": 15477,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 30,
+            "file": "clang/lib/Support/RISCVVIntrinsicUtils.cpp",
+            "line": 223,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 46,
+            "file": "clang/lib/Support/RISCVVIntrinsicUtils.cpp",
+            "line": 241,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 37,
+            "file": "clang/lib/Support/RISCVVIntrinsicUtils.cpp",
+            "line": 302,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 35,
+            "file": "clang/lib/Support/RISCVVIntrinsicUtils.cpp",
+            "line": 345,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 28,
+            "file": "clang/lib/Support/RISCVVIntrinsicUtils.cpp",
+            "line": 1069,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          }
+        ],
+        "duration_seconds": 506.480522,
+        "project": "llvm-project",
+        "status": "COMPLETED"
+      },
+      {
+        "diagnostics": [],
+        "duration_seconds": 42.110146,
+        "project": "poco",
+        "status": "COMPLETED"
+      },
+      {
+        "diagnostics": [
+          {
+            "column": 53,
+            "file": "src/system_context/../../include/stdexec/__detail/../../exec/static_thread_pool.hpp",
+            "line": 747,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 30,
+            "file": "src/system_context/../../include/stdexec/__detail/../../exec/static_thread_pool.hpp",
+            "line": 756,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 9,
+            "file": "src/system_context/../../include/stdexec/__detail/../../exec/static_thread_pool.hpp",
+            "line": 760,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 9,
+            "file": "src/system_context/../../include/stdexec/__detail/../../exec/static_thread_pool.hpp",
+            "line": 790,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 26,
+            "file": "src/system_context/../../include/stdexec/__detail/../../exec/static_thread_pool.hpp",
+            "line": 798,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 36,
+            "file": "src/system_context/../../include/stdexec/__detail/../../exec/static_thread_pool.hpp",
+            "line": 802,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 51,
+            "file": "src/system_context/../../include/stdexec/__detail/../../exec/static_thread_pool.hpp",
+            "line": 907,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 11,
+            "file": "src/system_context/../../include/stdexec/__detail/../../exec/static_thread_pool.hpp",
+            "line": 910,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 7,
+            "file": "src/system_context/../../include/stdexec/__detail/../../exec/static_thread_pool.hpp",
+            "line": 917,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 7,
+            "file": "src/system_context/../../include/stdexec/__detail/../../exec/static_thread_pool.hpp",
+            "line": 926,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 9,
+            "file": "src/system_context/../../include/stdexec/__detail/../../exec/static_thread_pool.hpp",
+            "line": 937,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 51,
+            "file": "src/system_context/../../include/stdexec/__detail/../../exec/static_thread_pool.hpp",
+            "line": 954,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 11,
+            "file": "src/system_context/../../include/stdexec/__detail/../../exec/static_thread_pool.hpp",
+            "line": 957,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 9,
+            "file": "src/system_context/../../include/stdexec/__detail/../../exec/static_thread_pool.hpp",
+            "line": 976,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          },
+          {
+            "column": 13,
+            "file": "src/system_context/../../include/stdexec/__detail/../../exec/static_thread_pool.hpp",
+            "line": 1105,
+            "message": "unchecked access to optional value",
+            "verdict": null
+          }
+        ],
+        "duration_seconds": 7.896974,
+        "project": "stdexec",
+        "status": "COMPLETED"
+      },
+      {
+        "diagnostics": [],
+        "duration_seconds": 2.783893,
+        "project": "yaml-cpp",
+        "status": "COMPLETED"
+      },
+      {
+        "diagnostics": [],
+        "duration_seconds": 2.375502,
+        "project": "zstd",
+        "status": "COMPLETED"
+      }
+    ]
+  },
+  "check_config": {},
+  "check_name": "bugprone-unchecked-optional-access",
+  "duration_seconds": 4136.987326,
+  "finished_at": "2026-10-07T14:18:58.987326Z",
+  "github_run_attempt": 1,
+  "github_run_id": 37626309061,
+  "llvm_revision": "6e19e160b3600f0db1e805f4ae81d9ffc62a55a2+patch:c125981a41ac51124f8acd92f71d3e93eee7db87f699f88e636c0c9ef91ea64b",
+  "pr_number": 224969,
+  "project_runs": [
+    {
+      "diagnostics": [
+        {
+          "column": 52,
+          "file": "absl/container/internal/common.h",
+          "line": 157,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        }
+      ],
+      "duration_seconds": 10.307032,
+      "project": "abseil-cpp",
+      "status": "COMPLETED"
+    },
+    {
+      "diagnostics": [],
+      "duration_seconds": 19.639536,
+      "project": "assimp",
+      "status": "COMPLETED"
+    },
+    {
+      "diagnostics": [],
+      "duration_seconds": 3.5778,
+      "project": "catch2",
+      "status": "COMPLETED"
+    },
+    {
+      "diagnostics": [],
+      "duration_seconds": 12.892047,
+      "project": "cppcheck",
+      "status": "COMPLETED"
+    },
+    {
+      "diagnostics": [],
+      "duration_seconds": 2.463065,
+      "project": "curl",
+      "status": "COMPLETED"
+    },
+    {
+      "diagnostics": [
+        {
+          "column": 62,
+          "file": "src/symbolresolver.cpp",
+          "line": 853,
+          "message": "unchecked access to optional value",
+          "verdict": "FP"
+        },
+        {
+          "column": 28,
+          "file": "src/definition.cpp",
+          "line": 971,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 53,
+          "file": "src/definition.cpp",
+          "line": 982,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 53,
+          "file": "src/definition.cpp",
+          "line": 991,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 21,
+          "file": "src/definition.cpp",
+          "line": 1052,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 50,
+          "file": "src/definition.cpp",
+          "line": 1052,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 26,
+          "file": "src/definition.cpp",
+          "line": 1053,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 35,
+          "file": "src/definition.cpp",
+          "line": 1072,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        }
+      ],
+      "duration_seconds": 30.105042,
+      "project": "doxygen",
+      "status": "COMPLETED"
+    },
+    {
+      "diagnostics": [],
+      "duration_seconds": 1.56628,
+      "project": "libgit2",
+      "status": "COMPLETED"
+    },
+    {
+      "diagnostics": [],
+      "duration_seconds": 0.897815,
+      "project": "libuv",
+      "status": "COMPLETED"
+    },
+    {
+      "diagnostics": [
+        {
+          "column": 27,
+          "file": "llvm/include/llvm/Support/VirtualFileSystem.h",
+          "line": 940,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 55,
+          "file": "clang/include/clang/Driver/Multilib.h",
+          "line": 99,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 16,
+          "file": "build/tools/clang/include/clang/AST/Attrs.inc",
+          "line": 6653,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 16,
+          "file": "build/tools/clang/include/clang/AST/Attrs.inc",
+          "line": 6667,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 16,
+          "file": "build/tools/clang/include/clang/AST/Attrs.inc",
+          "line": 6678,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 25,
+          "file": "llvm/include/llvm/ADT/STLExtras.h",
+          "line": 228,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 44,
+          "file": "clang/include/clang/StaticAnalyzer/Core/Checker.h",
+          "line": 524,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 13,
+          "file": "clang/include/clang/StaticAnalyzer/Core/PathSensitive/CallEvent.h",
+          "line": 1154,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 33,
+          "file": "clang/include/clang/StaticAnalyzer/Core/PathSensitive/CallEvent.h",
+          "line": 1178,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 13,
+          "file": "clang/include/clang/StaticAnalyzer/Core/PathSensitive/ConstraintManager.h",
+          "line": 52,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 13,
+          "file": "clang/include/clang/Frontend/FrontendOptions.h",
+          "line": 273,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 15,
+          "file": "clang/lib/Analysis/ThreadSafety.cpp",
+          "line": 2200,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 36,
+          "file": "clang/lib/Analysis/ThreadSafety.cpp",
+          "line": 2200,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 14,
+          "file": "clang/include/clang/Sema/Sema.h",
+          "line": 15671,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 13,
+          "file": "clang/include/clang/Tooling/Refactoring/RefactoringOptions.h",
+          "line": 50,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 20,
+          "file": "clang/lib/Sema/SemaFunctionEffects.cpp",
+          "line": 924,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 23,
+          "file": "clang/include/clang/APINotes/Types.h",
+          "line": 131,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 30,
+          "file": "clang/include/clang/APINotes/Types.h",
+          "line": 378,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 23,
+          "file": "llvm/include/llvm/IR/DebugInfoMetadata.h",
+          "line": 3830,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 23,
+          "file": "llvm/include/llvm/IR/DebugInfoMetadata.h",
+          "line": 3831,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 29,
+          "file": "clang/include/clang/ASTMatchers/ASTMatchers.h",
+          "line": 8607,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 33,
+          "file": "clang/include/clang/ASTMatchers/ASTMatchers.h",
+          "line": 8608,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 62,
+          "file": "clang/lib/Sema/SemaChecking.cpp",
+          "line": 12169,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 12,
+          "file": "clang/include/clang/ASTMatchers/ASTMatchersInternal.h",
+          "line": 1228,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 13,
+          "file": "llvm/include/llvm/Analysis/MemoryLocation.h",
+          "line": 250,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 7,
+          "file": "clang/lib/Format/MacroExpander.cpp",
+          "line": 231,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 7,
+          "file": "clang/lib/Format/MacroExpander.cpp",
+          "line": 232,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 5,
+          "file": "clang/lib/Format/MacroExpander.cpp",
+          "line": 235,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 5,
+          "file": "clang/lib/Format/MacroExpander.cpp",
+          "line": 236,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 15,
+          "file": "clang/lib/StaticAnalyzer/Checkers/DeadStoresChecker.cpp",
+          "line": 230,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 13,
+          "file": "clang/include/clang/ASTMatchers/Dynamic/VariantValue.h",
+          "line": 219,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 45,
+          "file": "clang/lib/Sema/AnalysisBasedWarnings.cpp",
+          "line": 228,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 11,
+          "file": "clang/lib/Sema/AnalysisBasedWarnings.cpp",
+          "line": 2973,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 19,
+          "file": "clang/lib/StaticAnalyzer/Core/ExprEngineCXX.cpp",
+          "line": 189,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 15,
+          "file": "clang/lib/StaticAnalyzer/Core/ExprEngineCXX.cpp",
+          "line": 990,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 24,
+          "file": "clang/lib/CodeGen/TargetBuiltins/SystemZ.cpp",
+          "line": 216,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 24,
+          "file": "clang/lib/CodeGen/TargetBuiltins/SystemZ.cpp",
+          "line": 217,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 24,
+          "file": "clang/lib/CodeGen/TargetBuiltins/SystemZ.cpp",
+          "line": 274,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 24,
+          "file": "clang/lib/CodeGen/TargetBuiltins/SystemZ.cpp",
+          "line": 308,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 16,
+          "file": "clang/lib/Sema/SemaDecl.cpp",
+          "line": 15085,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 30,
+          "file": "clang/lib/Sema/SemaARM.cpp",
+          "line": 837,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 24,
+          "file": "clang/lib/StaticAnalyzer/Core/BugReporterVisitors.cpp",
+          "line": 1283,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 29,
+          "file": "clang/lib/Format/ContinuationIndenter.cpp",
+          "line": 2307,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 8,
+          "file": "clang/lib/Lex/PPDirectives.cpp",
+          "line": 4472,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 11,
+          "file": "clang/lib/Lex/PPDirectives.cpp",
+          "line": 4473,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 25,
+          "file": "clang/lib/Lex/PPDirectives.cpp",
+          "line": 4474,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 45,
+          "file": "clang/lib/CodeGen/CGStmt.cpp",
+          "line": 2711,
+          "message": "unchecked access to optional value",
+          "verdict": "FP"
+        },
+        {
+          "column": 25,
+          "file": "clang/lib/Serialization/ASTReaderStmt.cpp",
+          "line": 745,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 30,
+          "file": "clang/lib/Serialization/ASTReaderStmt.cpp",
+          "line": 749,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 21,
+          "file": "clang/lib/Serialization/ASTReaderStmt.cpp",
+          "line": 751,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 30,
+          "file": "clang/lib/Serialization/ASTReaderStmt.cpp",
+          "line": 933,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 26,
+          "file": "clang/lib/Serialization/ASTReaderStmt.cpp",
+          "line": 938,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 30,
+          "file": "clang/lib/Serialization/ASTReaderStmt.cpp",
+          "line": 1210,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 24,
+          "file": "clang/lib/Serialization/ASTReaderStmt.cpp",
+          "line": 1425,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 7,
+          "file": "clang/lib/Serialization/ASTReaderStmt.cpp",
+          "line": 1848,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 7,
+          "file": "clang/lib/Serialization/ASTReaderStmt.cpp",
+          "line": 2068,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 7,
+          "file": "clang/lib/Serialization/ASTReaderStmt.cpp",
+          "line": 2073,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 7,
+          "file": "clang/lib/Serialization/ASTReaderStmt.cpp",
+          "line": 2090,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 29,
+          "file": "clang/lib/Serialization/ASTReaderStmt.cpp",
+          "line": 2094,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 41,
+          "file": "clang/lib/Serialization/ASTReaderStmt.cpp",
+          "line": 2154,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 7,
+          "file": "clang/lib/Serialization/ASTReaderStmt.cpp",
+          "line": 2156,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 29,
+          "file": "clang/lib/Serialization/ASTReaderStmt.cpp",
+          "line": 2158,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 45,
+          "file": "clang/lib/Serialization/ASTReaderStmt.cpp",
+          "line": 2170,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 34,
+          "file": "clang/lib/Serialization/ASTReaderStmt.cpp",
+          "line": 2263,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 14,
+          "file": "clang/lib/Serialization/ASTReaderStmt.cpp",
+          "line": 2264,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 14,
+          "file": "clang/lib/Serialization/ASTReaderStmt.cpp",
+          "line": 2266,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 14,
+          "file": "clang/lib/Serialization/ASTReaderStmt.cpp",
+          "line": 2275,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 26,
+          "file": "clang/lib/Analysis/LifetimeSafety/Dataflow.h",
+          "line": 101,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 38,
+          "file": "clang/lib/Sema/SemaDeclCXX.cpp",
+          "line": 892,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 24,
+          "file": "clang/lib/Sema/SemaDeclCXX.cpp",
+          "line": 18735,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 29,
+          "file": "clang/lib/StaticAnalyzer/Checkers/CheckPlacementNew.cpp",
+          "line": 81,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 17,
+          "file": "clang/include/clang/Analysis/FlowSensitive/MatchSwitch.h",
+          "line": 152,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 9,
+          "file": "clang/lib/Driver/ToolChains/Darwin.cpp",
+          "line": 751,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 12,
+          "file": "clang/lib/StaticAnalyzer/Checkers/WebKit/RawPtrRefLocalVarsChecker.cpp",
+          "line": 446,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 25,
+          "file": "clang/lib/AST/ExprConstant.cpp",
+          "line": 7678,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 22,
+          "file": "clang/lib/AST/ExprConstant.cpp",
+          "line": 8121,
+          "message": "unchecked access to optional value",
+          "verdict": "FP"
+        },
+        {
+          "column": 43,
+          "file": "clang/lib/AST/ExprConstant.cpp",
+          "line": 8121,
+          "message": "unchecked access to optional value",
+          "verdict": "FP"
+        },
+        {
+          "column": 20,
+          "file": "clang/lib/AST/ExprConstant.cpp",
+          "line": 8122,
+          "message": "unchecked access to optional value",
+          "verdict": "FP"
+        },
+        {
+          "column": 43,
+          "file": "clang/lib/AST/ExprConstant.cpp",
+          "line": 8122,
+          "message": "unchecked access to optional value",
+          "verdict": "FP"
+        },
+        {
+          "column": 37,
+          "file": "clang/lib/AST/ExprConstant.cpp",
+          "line": 16270,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 35,
+          "file": "clang/lib/Sema/SemaDeclObjC.cpp",
+          "line": 2389,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 35,
+          "file": "clang/lib/Sema/SemaDeclObjC.cpp",
+          "line": 2390,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 33,
+          "file": "clang/lib/Sema/SemaDeclObjC.cpp",
+          "line": 2477,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 33,
+          "file": "clang/lib/Sema/SemaDeclObjC.cpp",
+          "line": 2480,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 70,
+          "file": "clang/lib/Sema/Sema.cpp",
+          "line": 130,
+          "message": "unchecked access to optional value",
+          "verdict": "FP"
+        },
+        {
+          "column": 30,
+          "file": "clang/lib/StaticAnalyzer/Checkers/MallocChecker.cpp",
+          "line": 131,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 20,
+          "file": "clang/lib/StaticAnalyzer/Checkers/MallocChecker.cpp",
+          "line": 149,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 33,
+          "file": "clang/lib/StaticAnalyzer/Checkers/MallocChecker.cpp",
+          "line": 1620,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 48,
+          "file": "clang/lib/StaticAnalyzer/Checkers/MallocChecker.cpp",
+          "line": 1624,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 70,
+          "file": "clang/lib/StaticAnalyzer/Checkers/MallocChecker.cpp",
+          "line": 1626,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 14,
+          "file": "clang/lib/StaticAnalyzer/Checkers/MallocChecker.cpp",
+          "line": 1736,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 45,
+          "file": "clang/lib/StaticAnalyzer/Checkers/MallocChecker.cpp",
+          "line": 2003,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 11,
+          "file": "clang/lib/StaticAnalyzer/Checkers/MallocChecker.cpp",
+          "line": 2219,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 51,
+          "file": "clang/lib/StaticAnalyzer/Checkers/MallocChecker.cpp",
+          "line": 2245,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 12,
+          "file": "clang/lib/StaticAnalyzer/Checkers/WebKit/RawPtrRefLambdaCapturesChecker.cpp",
+          "line": 600,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 22,
+          "file": "clang/lib/Frontend/CompilerInvocation.cpp",
+          "line": 1778,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 35,
+          "file": "clang/lib/AST/ByteCode/InterpBuiltin.cpp",
+          "line": 1404,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 42,
+          "file": "llvm/include/llvm/Analysis/LazyCallGraph.h",
+          "line": 346,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 47,
+          "file": "clang/lib/Sema/SemaRISCV.cpp",
+          "line": 167,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 47,
+          "file": "clang/lib/Sema/SemaRISCV.cpp",
+          "line": 169,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 34,
+          "file": "clang/lib/Analysis/ProgramPoint.cpp",
+          "line": 185,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 32,
+          "file": "clang/lib/Analysis/ProgramPoint.cpp",
+          "line": 188,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 29,
+          "file": "clang/lib/Basic/TargetID.cpp",
+          "line": 155,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 8,
+          "file": "clang/lib/Basic/TargetID.cpp",
+          "line": 171,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 8,
+          "file": "clang/lib/Basic/TargetID.cpp",
+          "line": 173,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 13,
+          "file": "clang/lib/Sema/SemaOpenMP.cpp",
+          "line": 1131,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 11,
+          "file": "clang/lib/Sema/SemaOpenMP.cpp",
+          "line": 2821,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 11,
+          "file": "clang/lib/Sema/SemaOpenMP.cpp",
+          "line": 2851,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 10,
+          "file": "clang/lib/Sema/SemaOpenMP.cpp",
+          "line": 8938,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 10,
+          "file": "clang/lib/Sema/SemaOpenMP.cpp",
+          "line": 9024,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 19,
+          "file": "clang/lib/Sema/SemaOpenMP.cpp",
+          "line": 9042,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 19,
+          "file": "clang/lib/Sema/SemaOpenMP.cpp",
+          "line": 9043,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 19,
+          "file": "clang/lib/Sema/SemaOpenMP.cpp",
+          "line": 9108,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 19,
+          "file": "clang/lib/Sema/SemaOpenMP.cpp",
+          "line": 9109,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 8,
+          "file": "clang/lib/Sema/SemaOpenMP.cpp",
+          "line": 9111,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 8,
+          "file": "clang/lib/Sema/SemaOpenMP.cpp",
+          "line": 9113,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 8,
+          "file": "clang/lib/Sema/SemaOpenMP.cpp",
+          "line": 9121,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 8,
+          "file": "clang/lib/Sema/SemaOpenMP.cpp",
+          "line": 9165,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 8,
+          "file": "clang/lib/Sema/SemaOpenMP.cpp",
+          "line": 9198,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 27,
+          "file": "clang/lib/Sema/SemaOpenMP.cpp",
+          "line": 9237,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 8,
+          "file": "clang/lib/Sema/SemaOpenMP.cpp",
+          "line": 9316,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 8,
+          "file": "clang/lib/Sema/SemaOpenMP.cpp",
+          "line": 9318,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 14,
+          "file": "clang/lib/Sema/SemaOpenMP.cpp",
+          "line": 15477,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 40,
+          "file": "clang/lib/Lex/InitHeaderSearch.cpp",
+          "line": 379,
+          "message": "unchecked access to optional value",
+          "verdict": "FP"
+        },
+        {
+          "column": 12,
+          "file": "clang/lib/StaticAnalyzer/Checkers/WebKit/RawPtrRefMemberChecker.cpp",
+          "line": 371,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 10,
+          "file": "clang/lib/CodeGen/TargetBuiltins/ARM.cpp",
+          "line": 3433,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 21,
+          "file": "clang/lib/CodeGen/CGHLSLRuntime.cpp",
+          "line": 70,
+          "message": "unchecked access to optional value",
+          "verdict": "FP"
+        },
+        {
+          "column": 32,
+          "file": "clang/lib/Sema/SemaStmtAttr.cpp",
+          "line": 272,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 30,
+          "file": "clang/lib/Sema/SemaStmtAttr.cpp",
+          "line": 273,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 45,
+          "file": "clang/lib/StaticAnalyzer/Checkers/NullabilityChecker.cpp",
+          "line": 1152,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 50,
+          "file": "clang/lib/StaticAnalyzer/Checkers/NullabilityChecker.cpp",
+          "line": 1158,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 14,
+          "file": "clang/lib/APINotes/APINotesTypes.cpp",
+          "line": 22,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 64,
+          "file": "clang/lib/CodeGen/Targets/RISCV.cpp",
+          "line": 558,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 11,
+          "file": "clang/lib/Driver/ToolChain.cpp",
+          "line": 1383,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 12,
+          "file": "clang/lib/CodeGen/CodeGenFunction.cpp",
+          "line": 2874,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 35,
+          "file": "clang/lib/Analysis/UninitializedValues.cpp",
+          "line": 166,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 19,
+          "file": "clang/lib/Analysis/UninitializedValues.cpp",
+          "line": 225,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 21,
+          "file": "clang/lib/StaticAnalyzer/Checkers/UndefinedNewArraySizeChecker.cpp",
+          "line": 45,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 21,
+          "file": "clang/lib/Driver/ToolChains/HLSL.cpp",
+          "line": 177,
+          "message": "unchecked access to optional value",
+          "verdict": "FP"
+        },
+        {
+          "column": 47,
+          "file": "clang/lib/Lex/ModuleMapFile.cpp",
+          "line": 154,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 11,
+          "file": "clang/lib/Lex/ModuleMapFile.cpp",
+          "line": 155,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 11,
+          "file": "clang/lib/Lex/ModuleMapFile.cpp",
+          "line": 156,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 38,
+          "file": "clang/lib/StaticAnalyzer/Checkers/GenericTaintChecker.cpp",
+          "line": 838,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 31,
+          "file": "clang/lib/StaticAnalyzer/Checkers/GenericTaintChecker.cpp",
+          "line": 840,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 22,
+          "file": "clang/lib/Tooling/InterpolatingCompilationDatabase.cpp",
+          "line": 224,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 13,
+          "file": "clang/lib/StaticAnalyzer/Checkers/RetainCountChecker/RetainCountChecker.cpp",
+          "line": 355,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 20,
+          "file": "clang/utils/TableGen/RISCVVEmitter.cpp",
+          "line": 461,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 11,
+          "file": "clang/lib/StaticAnalyzer/Checkers/NoOwnershipChangeVisitor.cpp",
+          "line": 65,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 63,
+          "file": "clang/lib/StaticAnalyzer/Checkers/NonNullParamChecker.cpp",
+          "line": 177,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 46,
+          "file": "clang/lib/Basic/Targets/AMDGPU.cpp",
+          "line": 319,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 9,
+          "file": "clang/lib/Sema/SemaTemplateDeductionGuide.cpp",
+          "line": 145,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 11,
+          "file": "clang/lib/Sema/SemaTemplateDeductionGuide.cpp",
+          "line": 180,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 12,
+          "file": "clang/lib/Sema/SemaExprCXX.cpp",
+          "line": 2585,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 13,
+          "file": "clang/lib/StaticAnalyzer/Checkers/StreamChecker.cpp",
+          "line": 676,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 35,
+          "file": "clang/lib/StaticAnalyzer/Checkers/StreamChecker.cpp",
+          "line": 686,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 40,
+          "file": "clang/lib/StaticAnalyzer/Checkers/StreamChecker.cpp",
+          "line": 719,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 48,
+          "file": "clang/lib/StaticAnalyzer/Checkers/StreamChecker.cpp",
+          "line": 1030,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 33,
+          "file": "clang/lib/StaticAnalyzer/Checkers/StreamChecker.cpp",
+          "line": 1203,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 37,
+          "file": "clang/lib/StaticAnalyzer/Checkers/StreamChecker.cpp",
+          "line": 1238,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 48,
+          "file": "clang/lib/StaticAnalyzer/Checkers/StreamChecker.cpp",
+          "line": 1268,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 35,
+          "file": "clang/lib/StaticAnalyzer/Checkers/StreamChecker.cpp",
+          "line": 1303,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 62,
+          "file": "clang/lib/StaticAnalyzer/Checkers/StreamChecker.cpp",
+          "line": 1320,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 33,
+          "file": "clang/lib/StaticAnalyzer/Checkers/StreamChecker.cpp",
+          "line": 1337,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 35,
+          "file": "clang/lib/StaticAnalyzer/Checkers/StreamChecker.cpp",
+          "line": 1382,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 62,
+          "file": "clang/lib/StaticAnalyzer/Checkers/StreamChecker.cpp",
+          "line": 1408,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 62,
+          "file": "clang/lib/StaticAnalyzer/Checkers/StreamChecker.cpp",
+          "line": 1438,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 35,
+          "file": "clang/lib/StaticAnalyzer/Checkers/StreamChecker.cpp",
+          "line": 1463,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 33,
+          "file": "clang/lib/StaticAnalyzer/Checkers/StreamChecker.cpp",
+          "line": 1604,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 42,
+          "file": "clang/lib/StaticAnalyzer/Checkers/StreamChecker.cpp",
+          "line": 1672,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 43,
+          "file": "clang/lib/StaticAnalyzer/Checkers/StreamChecker.cpp",
+          "line": 1739,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 33,
+          "file": "clang/lib/StaticAnalyzer/Checkers/StreamChecker.cpp",
+          "line": 1773,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 13,
+          "file": "clang/lib/ASTMatchers/Dynamic/Marshallers.h",
+          "line": 180,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 13,
+          "file": "clang/lib/ASTMatchers/Dynamic/Marshallers.h",
+          "line": 210,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 13,
+          "file": "clang/lib/ASTMatchers/Dynamic/Marshallers.h",
+          "line": 233,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 13,
+          "file": "clang/lib/ASTMatchers/Dynamic/Marshallers.h",
+          "line": 261,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 13,
+          "file": "clang/lib/ASTMatchers/Dynamic/Marshallers.h",
+          "line": 292,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 30,
+          "file": "clang/lib/Driver/OffloadBundler.cpp",
+          "line": 268,
+          "message": "unchecked access to optional value",
+          "verdict": "FP"
+        },
+        {
+          "column": 17,
+          "file": "clang/lib/Driver/OffloadBundler.cpp",
+          "line": 596,
+          "message": "unchecked access to optional value",
+          "verdict": "FP"
+        },
+        {
+          "column": 28,
+          "file": "clang/lib/Driver/OffloadBundler.cpp",
+          "line": 1590,
+          "message": "unchecked access to optional value",
+          "verdict": "FP"
+        },
+        {
+          "column": 56,
+          "file": "clang/lib/Driver/OffloadBundler.cpp",
+          "line": 1930,
+          "message": "unchecked access to optional value",
+          "verdict": "FP"
+        },
+        {
+          "column": 8,
+          "file": "clang/lib/CodeGen/CGExprCXX.cpp",
+          "line": 734,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 29,
+          "file": "clang/lib/CodeGen/CGExprCXX.cpp",
+          "line": 734,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 39,
+          "file": "clang/lib/CodeGen/CGExprCXX.cpp",
+          "line": 736,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 9,
+          "file": "clang/lib/CodeGen/CGExprCXX.cpp",
+          "line": 746,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 5,
+          "file": "clang/tools/clang-scan-deps/ClangScanDeps.cpp",
+          "line": 1199,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 24,
+          "file": "clang/tools/clang-refactor/TestSupport.cpp",
+          "line": 248,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 24,
+          "file": "clang/lib/AST/ASTContext.cpp",
+          "line": 14810,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 24,
+          "file": "clang/lib/AST/ASTContext.cpp",
+          "line": 14811,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 24,
+          "file": "clang/lib/StaticAnalyzer/Checkers/SmartPtrModeling.cpp",
+          "line": 504,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 10,
+          "file": "clang/lib/Analysis/FixitUtil.cpp",
+          "line": 92,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 10,
+          "file": "clang/lib/Analysis/FixitUtil.cpp",
+          "line": 173,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 8,
+          "file": "clang/lib/Frontend/Rewrite/InclusionRewriter.cpp",
+          "line": 257,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 19,
+          "file": "clang/lib/StaticAnalyzer/Checkers/DivZeroChecker.cpp",
+          "line": 49,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 25,
+          "file": "clang/lib/Driver/Multilib.cpp",
+          "line": 203,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 25,
+          "file": "clang/lib/Analysis/CFG.cpp",
+          "line": 5047,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 20,
+          "file": "clang/lib/Analysis/CFG.cpp",
+          "line": 5048,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 11,
+          "file": "clang/lib/Analysis/PathDiagnostic.cpp",
+          "line": 394,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 50,
+          "file": "clang/lib/StaticAnalyzer/Checkers/CStringChecker.cpp",
+          "line": 512,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 50,
+          "file": "clang/lib/StaticAnalyzer/Checkers/CStringChecker.cpp",
+          "line": 977,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 12,
+          "file": "clang/utils/TableGen/ClangDiagnosticsEmitter.cpp",
+          "line": 1957,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 72,
+          "file": "clang/lib/AST/StmtOpenACC.cpp",
+          "line": 500,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 64,
+          "file": "clang/lib/AST/StmtOpenACC.cpp",
+          "line": 515,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 73,
+          "file": "clang/lib/AST/StmtOpenACC.cpp",
+          "line": 515,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 25,
+          "file": "clang/lib/AST/StmtOpenACC.cpp",
+          "line": 530,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 3,
+          "file": "clang/lib/AST/StmtOpenACC.cpp",
+          "line": 534,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 13,
+          "file": "clang/lib/AST/StmtOpenACC.cpp",
+          "line": 534,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 7,
+          "file": "clang/lib/AST/StmtOpenACC.cpp",
+          "line": 537,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 64,
+          "file": "clang/lib/AST/StmtOpenACC.cpp",
+          "line": 538,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 71,
+          "file": "clang/lib/AST/StmtOpenACC.cpp",
+          "line": 538,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 62,
+          "file": "clang/lib/AST/StmtOpenACC.cpp",
+          "line": 540,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 71,
+          "file": "clang/lib/AST/StmtOpenACC.cpp",
+          "line": 540,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 10,
+          "file": "clang/lib/AST/StmtOpenACC.cpp",
+          "line": 554,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 10,
+          "file": "clang/lib/AST/StmtOpenACC.cpp",
+          "line": 560,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 10,
+          "file": "clang/lib/AST/StmtOpenACC.cpp",
+          "line": 567,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 35,
+          "file": "clang/lib/StaticAnalyzer/Core/SValBuilder.cpp",
+          "line": 158,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 19,
+          "file": "clang/lib/AST/ItaniumMangle.cpp",
+          "line": 4237,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 12,
+          "file": "clang/include/clang/ASTMatchers/Dynamic/VariantValue.h",
+          "line": 213,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 15,
+          "file": "clang/lib/Tooling/Transformer/RewriteRule.cpp",
+          "line": 388,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 24,
+          "file": "clang/lib/Tooling/Transformer/RewriteRule.cpp",
+          "line": 436,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 12,
+          "file": "clang/lib/StaticAnalyzer/Checkers/WebKit/RawPtrRefCallArgsChecker.cpp",
+          "line": 459,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 12,
+          "file": "clang/lib/StaticAnalyzer/Checkers/WebKit/RawPtrRefCallArgsChecker.cpp",
+          "line": 463,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 18,
+          "file": "clang/lib/Frontend/CompilerInstance.cpp",
+          "line": 128,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 32,
+          "file": "clang/lib/Frontend/CompilerInstance.cpp",
+          "line": 130,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 11,
+          "file": "clang/lib/Lex/Preprocessor.cpp",
+          "line": 705,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 11,
+          "file": "clang/lib/Lex/Preprocessor.cpp",
+          "line": 706,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 11,
+          "file": "clang/lib/Lex/Preprocessor.cpp",
+          "line": 707,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 11,
+          "file": "clang/lib/Lex/Preprocessor.cpp",
+          "line": 708,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 11,
+          "file": "clang/lib/Lex/Preprocessor.cpp",
+          "line": 709,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 26,
+          "file": "clang/lib/CodeGen/CGBuiltin.cpp",
+          "line": 3841,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 12,
+          "file": "clang/lib/CodeGen/CGBuiltin.cpp",
+          "line": 3842,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 9,
+          "file": "clang/lib/Sema/SemaPPC.cpp",
+          "line": 247,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 32,
+          "file": "clang/lib/Frontend/InitPreprocessor.cpp",
+          "line": 467,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 30,
+          "file": "clang/lib/Support/RISCVVIntrinsicUtils.cpp",
+          "line": 223,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 46,
+          "file": "clang/lib/Support/RISCVVIntrinsicUtils.cpp",
+          "line": 241,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 37,
+          "file": "clang/lib/Support/RISCVVIntrinsicUtils.cpp",
+          "line": 302,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 35,
+          "file": "clang/lib/Support/RISCVVIntrinsicUtils.cpp",
+          "line": 345,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 28,
+          "file": "clang/lib/Support/RISCVVIntrinsicUtils.cpp",
+          "line": 1069,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 13,
+          "file": "clang/lib/StaticAnalyzer/Core/Environment.cpp",
+          "line": 121,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        }
+      ],
+      "duration_seconds": 571.863152,
+      "project": "llvm-project",
+      "status": "COMPLETED"
+    },
+    {
+      "diagnostics": [],
+      "duration_seconds": 51.453724,
+      "project": "poco",
+      "status": "COMPLETED"
+    },
+    {
+      "diagnostics": [
+        {
+          "column": 53,
+          "file": "src/system_context/../../include/stdexec/__detail/../../exec/static_thread_pool.hpp",
+          "line": 747,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 30,
+          "file": "src/system_context/../../include/stdexec/__detail/../../exec/static_thread_pool.hpp",
+          "line": 756,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 9,
+          "file": "src/system_context/../../include/stdexec/__detail/../../exec/static_thread_pool.hpp",
+          "line": 760,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 9,
+          "file": "src/system_context/../../include/stdexec/__detail/../../exec/static_thread_pool.hpp",
+          "line": 790,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 26,
+          "file": "src/system_context/../../include/stdexec/__detail/../../exec/static_thread_pool.hpp",
+          "line": 798,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 36,
+          "file": "src/system_context/../../include/stdexec/__detail/../../exec/static_thread_pool.hpp",
+          "line": 802,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 51,
+          "file": "src/system_context/../../include/stdexec/__detail/../../exec/static_thread_pool.hpp",
+          "line": 907,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 11,
+          "file": "src/system_context/../../include/stdexec/__detail/../../exec/static_thread_pool.hpp",
+          "line": 910,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 7,
+          "file": "src/system_context/../../include/stdexec/__detail/../../exec/static_thread_pool.hpp",
+          "line": 917,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 7,
+          "file": "src/system_context/../../include/stdexec/__detail/../../exec/static_thread_pool.hpp",
+          "line": 926,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 9,
+          "file": "src/system_context/../../include/stdexec/__detail/../../exec/static_thread_pool.hpp",
+          "line": 937,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 51,
+          "file": "src/system_context/../../include/stdexec/__detail/../../exec/static_thread_pool.hpp",
+          "line": 954,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 11,
+          "file": "src/system_context/../../include/stdexec/__detail/../../exec/static_thread_pool.hpp",
+          "line": 957,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 9,
+          "file": "src/system_context/../../include/stdexec/__detail/../../exec/static_thread_pool.hpp",
+          "line": 976,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        },
+        {
+          "column": 13,
+          "file": "src/system_context/../../include/stdexec/__detail/../../exec/static_thread_pool.hpp",
+          "line": 1105,
+          "message": "unchecked access to optional value",
+          "verdict": "TP"
+        }
+      ],
+      "duration_seconds": 5.535572,
+      "project": "stdexec",
+      "status": "COMPLETED"
+    },
+    {
+      "diagnostics": [],
+      "duration_seconds": 2.879396,
+      "project": "yaml-cpp",
+      "status": "COMPLETED"
+    },
+    {
+      "diagnostics": [],
+      "duration_seconds": 2.875072,
+      "project": "zstd",
+      "status": "COMPLETED"
+    }
+  ],
+  "runner_arch": "ARM64",
+  "started_at": "2026-10-07T13:10:02+00:00",
+  "status": "COMPLETED"
+}
