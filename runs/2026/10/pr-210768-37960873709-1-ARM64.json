@@ -1,0 +1,149 @@
+{
+  "artifact_url": "https://github.com/clang-tidy-infra/CTIT/actions/runs/37960873709/artifacts/11632158892",
+  "baseline": null,
+  "check_config": {},
+  "check_name": "bugprone-macro-condition",
+  "duration_seconds": 1832.000306,
+  "finished_at": "2026-10-09T17:12:04.000306Z",
+  "github_run_attempt": 1,
+  "github_run_id": 37960873709,
+  "llvm_revision": "9429767417fccdc782f450c194f5505a84ef6f39+patch:9b1d5495735d276e245c4e57a1e094cbc71ee8a63c48a270d0006e509245b034",
+  "pr_number": 210768,
+  "project_runs": [
+    {
+      "diagnostics": [
+        {
+          "column": 5,
+          "file": "absl/debugging/symbolize_elf.inc",
+          "line": 1537,
+          "message": "Macro 'ABSL_HAVE_VDSO_SUPPORT' checked here for value after being checked for definition",
+          "verdict": "TP"
+        }
+      ],
+      "duration_seconds": 9.902604,
+      "project": "abseil-cpp",
+      "status": "COMPLETED"
+    },
+    {
+      "diagnostics": [],
+      "duration_seconds": 27.430124,
+      "project": "assimp",
+      "status": "COMPLETED"
+    },
+    {
+      "diagnostics": [],
+      "duration_seconds": 4.90469,
+      "project": "catch2",
+      "status": "COMPLETED"
+    },
+    {
+      "diagnostics": [],
+      "duration_seconds": 12.309869,
+      "project": "cppcheck",
+      "status": "COMPLETED"
+    },
+    {
+      "diagnostics": [],
+      "duration_seconds": 2.662808,
+      "project": "curl",
+      "status": "COMPLETED"
+    },
+    {
+      "diagnostics": [
+        {
+          "column": 5,
+          "file": "deps/sqlite3/sqlite3.c",
+          "line": 178234,
+          "message": "Macro 'SQLITE_DEFAULT_RECURSIVE_TRIGGERS' checked here for value after being checked for definition",
+          "verdict": "TP"
+        }
+      ],
+      "duration_seconds": 33.465123,
+      "project": "doxygen",
+      "status": "COMPLETED"
+    },
+    {
+      "diagnostics": [],
+      "duration_seconds": 1.460189,
+      "project": "libgit2",
+      "status": "COMPLETED"
+    },
+    {
+      "diagnostics": [
+        {
+          "column": 5,
+          "file": "src/unix/fs.c",
+          "line": 1493,
+          "message": "Macro '_XOPEN_SOURCE' checked here for definition after being checked for value",
+          "verdict": "FP"
+        }
+      ],
+      "duration_seconds": 0.87016,
+      "project": "libuv",
+      "status": "COMPLETED"
+    },
+    {
+      "diagnostics": [
+        {
+          "column": 5,
+          "file": "clang/lib/Interpreter/IncrementalExecutor.cpp",
+          "line": 217,
+          "message": "Macro 'LLVM_ON_UNIX' checked here for value after being checked for definition",
+          "verdict": "TP"
+        }
+      ],
+      "duration_seconds": 332.300618,
+      "project": "llvm-project",
+      "status": "COMPLETED"
+    },
+    {
+      "diagnostics": [
+        {
+          "column": 61,
+          "file": "dependencies/zlib/src/crc32.c",
+          "line": 102,
+          "message": "Macro 'W' checked here for value after being checked for definition",
+          "verdict": "TP"
+        },
+        {
+          "column": 5,
+          "file": "dependencies/sqlite3/src/sqlite3.c",
+          "line": 188340,
+          "message": "Macro 'SQLITE_DEFAULT_RECURSIVE_TRIGGERS' checked here for value after being checked for definition",
+          "verdict": "TP"
+        },
+        {
+          "column": 5,
+          "file": "Net/src/HTTPClientSession.cpp",
+          "line": 376,
+          "message": "Macro 'POCO_HAVE_INT64' checked here for definition after being checked for value",
+          "verdict": "TP"
+        }
+      ],
+      "duration_seconds": 43.132992,
+      "project": "poco",
+      "status": "COMPLETED"
+    },
+    {
+      "diagnostics": [],
+      "duration_seconds": 7.097728,
+      "project": "stdexec",
+      "status": "COMPLETED"
+    },
+    {
+      "diagnostics": [],
+      "duration_seconds": 2.497291,
+      "project": "yaml-cpp",
+      "status": "COMPLETED"
+    },
+    {
+      "diagnostics": [],
+      "duration_seconds": 7.084452,
+      "project": "zstd",
+      "status": "COMPLETED"
+    }
+  ],
+  "runner_arch": "ARM64",
+  "started_at": "2026-10-09T16:41:32+00:00",
+  "status": "COMPLETED"
+}
