@@ -1,0 +1,24 @@
+* { font-family: monospace; }
+/* Only the left edge is pulled out, so that wide tables end at the page edge. */
+table { border-spacing: .5em .1em; margin: 0 0 0 -.5em; }
+/* A table that is still too wide scrolls on its own instead of the whole page. */
+.wide { overflow-x: auto; }
+th { text-align: right; white-space: nowrap; vertical-align: bottom; }
+/* Project names may break after a hyphen; they are much wider than the counts. */
+th.p { white-space: normal; }
+td { text-align: right; white-space: nowrap; }
+th.l, td.l { text-align: left; }
+/* Deltas have their own column, left-aligned next to the right-aligned counts. */
+th.d, td.d { text-align: left; }
+td.msg { text-align: left; white-space: normal; }
+p { max-width: 40em; }
+pre { margin-left: 2em; white-space: pre-wrap; }
+.warning {
+    font-weight: bold; background-color: rgba(255, 0, 0, 0.3); padding: .3em; margin: .5em 0;
+}
+.bad { font-weight: bold; background-color: rgba(255, 0, 0, 0.3); }
+.up { color: #b00000; }
+.down { color: #007000; }
+.fp { color: #b00000; font-weight: bold; }
+.tp { color: #007000; }
+.dim { color: #777777; }
