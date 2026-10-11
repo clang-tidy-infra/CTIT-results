@@ -43,3 +43,8 @@ th.sortable:hover { text-decoration: underline; }
 /* Charts waiting for the times of the filtered checks. */
 .loading { opacity: .4; }
 .hint { display: block; max-width: 60em; }
+.mode { white-space: nowrap; margin-left: 1em; }
+/* A short stroke of a line's color, keying it in legends and tooltips. */
+.key { display: inline-block; width: 1.2em; height: 2px; vertical-align: middle; margin-right: .4em; }
+.legend { max-width: 60em; line-height: 1.8; }
+.legend span.item { white-space: nowrap; margin-right: 1.5em; }

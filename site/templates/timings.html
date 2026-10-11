@@ -15,7 +15,10 @@ wall-clock time of <code>run-clang-tidy</code> on a project, including parsing.<
 </select></label>
 <p><label class="checks">Checks: <input type="search" id="check-filter" placeholder="all checks"
 autocomplete="off" spellcheck="false" /></label>
-<span id="check-count" class="dim"></span><br />
+<span id="check-count" class="dim"></span>
+<span class="mode">Show:
+<label><input type="radio" name="mode" value="sum" checked autocomplete="off" /> sum</label>
+<label><input type="radio" name="mode" value="compare" autocomplete="off" /> compare</label></span><br />
 <span class="dim hint">Like <code>clang-tidy -checks</code>, e.g.
 <code>modernize-*,-modernize-use-auto</code>. Text without <code>*</code>
 matches any check containing it.</span></p>
@@ -27,6 +30,8 @@ $projects</p>
 <hr />
 <h4 id="total-title"></h4>
 <p id="check-docs" hidden><a id="check-docs-link" href="">Documentation</a></p>
+<p id="compare-legend" class="legend" hidden></p>
+<p id="compare-note" class="dim" hidden></p>
 <div id="total" class="graph"></div>
 <p class="dim">Hover over a day to see its values. Click it to see the LLVM
 changes since the previous run. Drag to zoom, double-click to zoom out. A gray

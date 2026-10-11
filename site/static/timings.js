@@ -18,6 +18,15 @@
   const MARKER_COLOR = "#999999";
   const DAY_MS = 24 * 60 * 60 * 1000;
   const MONTHS = "Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec".split(" ");
+  // The colors of compared checks, assigned in this order. More lines than
+  // colors could not be told apart, so at most this many checks are compared.
+  // Near-black and dark brown follow the eight hues of the dataviz palette:
+  // of the colors tried, they are the farthest from all the others, also
+  // with color blindness.
+  const COMPARE_COLORS = [
+    "#2a78d6", "#eb6834", "#1baf7a", "#eda100", "#e87ba4",
+    "#008300", "#4a3aa7", "#e34948", "#222222", "#6b3d1f",
+  ];
 
   const metricSelect = document.getElementById("metric");
   const rangeSelect = document.getElementById("range");
@@ -25,6 +34,9 @@
   const checkCount = document.getElementById("check-count");
   const checkDocs = document.getElementById("check-docs");
   const checkDocsLink = document.getElementById("check-docs-link");
+  const modeRadios = [...document.querySelectorAll('input[name="mode"]')];
+  const compareLegend = document.getElementById("compare-legend");
+  const compareNote = document.getElementById("compare-note");
   const boxes = [...document.querySelectorAll('input[name="project"]')];
   const totalTitle = document.getElementById("total-title");
   const totalDiv = document.getElementById("total");
@@ -57,6 +69,10 @@
   let graphs = [];
   let checkSort = { key: "now", descending: true };
   let renderCount = 0;
+  // The color of each compared check. A check keeps its color while it stays
+  // on the chart, so changing the filter does not repaint the others.
+  const compareColors = new Map();
+  const checkIndex = new Map(ALL_CHECKS.map((name, k) => [name, k]));
 
   const esc = (text) =>
     String(text).replace(/[&<>"']/g, (c) => `&#${c.charCodeAt(0)};`);
@@ -72,6 +88,7 @@
   };
 
   const seconds = (value) => {
+    if (value === 0) return "0";
     const size = Math.abs(value);
     if (size >= 100) return Math.round(value).toLocaleString("en-US");
     return value.toFixed(size >= 10 ? 1 : 2);
@@ -251,7 +268,7 @@
   const placeLegend = (graph, points) => {
     const legend = graph.graphDiv.querySelector(".dygraph-legend");
     if (!legend || !points.length) return;
-    const point = points[0];
+    const point = points.find((p) => !Number.isNaN(p.canvasy)) ?? points[0];
     const room =
       document.documentElement.clientWidth -
       graph.graphDiv.getBoundingClientRect().left -
@@ -303,15 +320,38 @@
     ctx.restore();
   };
 
-  // values has one entry per slot of the timeline.
-  const draw = (div, label, values, labelled, missingAt = () => []) =>
+  // A short stroke of a line's color, for tooltips; colors are our constants.
+  const lineKey = (color) => `<span class="key" style="background: ${color}"></span>`;
+
+  // The tooltip of compared lines: every line's value that day, largest first.
+  const compareFormatter = (lines) => (d) => {
+    if (d.x == null) return "";
+    const k = slotByTime.get(d.x);
+    const i = slotDays[k];
+    if (i < 0) return "no run on this day";
+    const rows = lines
+      .map((line) => ({ line, value: line.values[k] }))
+      .sort((a, b) => (b.value ?? -1) - (a.value ?? -1))
+      .map(
+        ({ line, value }) =>
+          `${lineKey(line.color)}<b>${value === null ? "-" : `${seconds(value)} s`}</b> ${esc(line.label)}`,
+      );
+    return [
+      `${esc(days[i].date)}, LLVM ${esc(days[i].llvm.slice(0, 10))}`,
+      ...rows,
+      `runner ${esc(days[i].runner)}`,
+    ].join("<br />");
+  };
+
+  // lines: [{label, color, values}], with one value per slot of the timeline.
+  const draw = (div, lines, labelled, formatter) =>
     new Dygraph(
       div,
-      timeline.map((time, k) => [new Date(time), values[k]]),
+      timeline.map((time, k) => [new Date(time), ...lines.map((line) => line.values[k])]),
       {
-        labels: ["Date", label],
+        labels: ["Date", ...lines.map((line) => line.label)],
         labelsUTC: true,
-        colors: [LINE_COLOR],
+        colors: lines.map((line) => line.color),
         strokeWidth: 2,
         drawGapEdgePoints: true,
         pointSize: 3,
@@ -319,7 +359,7 @@
         gridLineColor: GRID_COLOR,
         axisLineColor: AXIS_COLOR,
         legend: "follow",
-        legendFormatter: legendFormatter(values, label, missingAt),
+        legendFormatter: formatter,
         underlayCallback: drawRunners(labelled),
         highlightCallback(event, x, points) {
           placeLegend(this, points);
@@ -374,12 +414,20 @@
     return a;
   };
 
+  const colorKey = (color) => {
+    const key = document.createElement("span");
+    key.className = "key";
+    key.style.background = color;
+    return key;
+  };
+
   const header = (tableElement, columns) => {
     const row = tableElement.createTHead().insertRow();
-    for (const [text, className] of columns) {
+    for (const [text, className, color] of columns) {
       const th = document.createElement("th");
       th.textContent = text;
       if (className) th.className = className;
+      if (color) th.prepend(colorKey(color));
       row.append(th);
     }
     return row;
@@ -431,7 +479,7 @@
   // One row per selected check: its time in the latest run, summed over the
   // projects, and the change since the previous run and the run a week
   // earlier. A change is left out when the runs differ in runner.
-  const renderChecks = (projects, checks) => {
+  const renderChecks = (projects, checks, colors = null) => {
     const { days: compared, values } = data.checks;
     const [latest] = compared;
     const sumAt = (k, j) => {
@@ -490,7 +538,7 @@
           key,
           descending: checkSort.key === key ? !checkSort.descending : key !== "name",
         };
-        renderChecks(selectedProjects(), filterChecks(checkFilter.value));
+        render();
       });
     });
 
@@ -498,6 +546,7 @@
     for (const row of rows) {
       const tr = body.insertRow();
       const a = linkCell(tr, row.name, checkHref(row.name), "Show only this check", "l");
+      if (colors?.has(row.name)) a.before(colorKey(colors.get(row.name)));
       a.addEventListener("click", (event) => {
         event.preventDefault();
         checkFilter.value = row.name;
@@ -516,7 +565,7 @@
     }
   };
 
-  const saveState = (metric, projects, filter) => {
+  const saveState = (metric, projects, filter, mode) => {
     const params = new URLSearchParams();
     if (metric !== metricSelect.options[0].value) params.set("metric", metric);
     if (rangeSelect.value !== "all") params.set("range", rangeSelect.value);
@@ -524,6 +573,7 @@
       params.set("projects", projects.join(","));
     }
     if (filter) params.set("checks", filter);
+    if (mode !== "sum") params.set("mode", mode);
     const query = params.toString();
     try {
       history.replaceState(null, "", query ? `?${query}` : location.pathname);
@@ -543,17 +593,19 @@
       for (const box of boxes) box.checked = wanted.has(box.value);
     }
     checkFilter.value = params.get("checks") ?? "";
+    for (const radio of modeRadios) radio.checked = radio.value === (params.get("mode") ?? "sum");
+    if (!modeRadios.some((radio) => radio.checked)) modeRadios[0].checked = true;
   };
 
-  const showChecks = (checks) => {
+  const showChecks = (checks, comparing) => {
     checkCount.textContent =
       checks === null ? "" : `${checks.length} of ${ALL_CHECKS.length} checks`;
     const url = checks?.length === 1 ? docsUrl(checks[0]) : null;
     checkDocs.hidden = !url;
     if (url) checkDocsLink.href = url;
     // Analysis time is not split by check.
-    metricSelect.disabled = checks !== null;
-    metricSelect.title = checks === null ? "" : "Analysis time is not split by check";
+    metricSelect.disabled = checks !== null || comparing;
+    metricSelect.title = metricSelect.disabled ? "Analysis time is not split by check" : "";
   };
 
   const clearCharts = () => {
@@ -567,7 +619,8 @@
     clearCharts();
     const totals = slotDays.map((i) => (i < 0 ? null : sumOf(series, projects, i)));
     const missingAt = (i) => missingIn(series, projects, i);
-    graphs.push(draw(totalDiv, label, totals, true, missingAt));
+    const total = { label, color: LINE_COLOR, values: totals };
+    graphs.push(draw(totalDiv, [total], true, legendFormatter(totals, label, missingAt)));
 
     // With one project the total chart already shows it. Projects on which
     // none of the chosen checks ran are left out.
@@ -585,8 +638,123 @@
       figure.append(title, graphDiv);
       projectsDiv.append(figure);
       const values = slotDays.map((i) => (i < 0 ? null : valueOf(series, project, i)));
-      graphs.push(draw(graphDiv, label, values, false));
+      const line = { label, color: LINE_COLOR, values };
+      graphs.push(draw(graphDiv, [line], false, legendFormatter(values, label, () => [])));
     }
+  };
+
+  // The time of a check in the latest run, summed over the projects.
+  const latestTime = (name, projects) => {
+    const k = checkIndex.get(name);
+    let sum = null;
+    for (const project of projects) {
+      const value = data.checks.values[project]?.[k]?.[0] ?? null;
+      if (value !== null) sum = (sum ?? 0) + value;
+    }
+    return sum;
+  };
+
+  // The checks to compare: the slowest of the selected ones in the latest
+  // run, as many as there are colors.
+  const compareSelection = (checks, projects) => {
+    const ranked = [...(checks ?? ALL_CHECKS)].sort(
+      (a, b) => (latestTime(b, projects) ?? -1) - (latestTime(a, projects) ?? -1),
+    );
+    const shown = ranked.slice(0, COMPARE_COLORS.length);
+    for (const name of [...compareColors.keys()]) {
+      if (!shown.includes(name)) compareColors.delete(name);
+    }
+    for (const name of shown) {
+      if (compareColors.has(name)) continue;
+      const used = new Set(compareColors.values());
+      compareColors.set(name, COMPARE_COLORS.find((color) => !used.has(color)));
+    }
+    return { shown, matching: ranked.length };
+  };
+
+  // {project: [seconds for each run]} of one loaded check.
+  const checkSeries = (name) => {
+    const series = {};
+    for (const [project, totals] of Object.entries(SERIES.check)) {
+      series[project] = days.map((day, i) =>
+        !day.detailed || totals[i] === null ? null : checkTime(name, project, i),
+      );
+    }
+    return series;
+  };
+
+  const showCompareLegend = (shown, matching) => {
+    compareLegend.replaceChildren();
+    for (const name of shown) {
+      const item = document.createElement("span");
+      item.className = "item";
+      item.append(colorKey(compareColors.get(name)), name);
+      compareLegend.append(item, " ");
+    }
+    compareLegend.hidden = false;
+    compareNote.textContent =
+      matching > shown.length
+        ? `Compare shows at most ${COMPARE_COLORS.length} checks: these are the ` +
+          `${shown.length} slowest of ${matching} matching checks in the latest run. ` +
+          "Narrow the filter to compare others."
+        : "";
+    compareNote.hidden = !compareNote.textContent;
+  };
+
+  // One row per run, newest first, with a column per compared check.
+  const renderCompareTable = (perCheck, projects) => {
+    table.replaceChildren();
+    header(table, [
+      ["Date", "l"],
+      ...perCheck.map(({ name, color }) => [name, "p", color]),
+      ["LLVM", "l"],
+      ["Runner", "l"],
+    ]);
+    const body = table.createTBody();
+    for (let i = days.length - 1; i >= 0; i--) {
+      const row = body.insertRow();
+      linkCell(row, days[i].date, days[i].run, "workflow run", "l");
+      for (const { series } of perCheck) {
+        const value = sumOf(series, projects, i);
+        cell(row, value === null ? "-" : seconds(value), value === null ? "dim" : "");
+      }
+      linkCell(row, days[i].llvm.slice(0, 10), llvmUrl(i), "LLVM changes since the previous run", "l");
+      cell(row, days[i].runner, "l");
+    }
+  };
+
+  const drawCompare = (shown, projects) => {
+    clearCharts();
+    const perCheck = shown.map((name) => ({
+      name,
+      color: compareColors.get(name),
+      series: checkSeries(name),
+    }));
+    const linesFor = (values) =>
+      perCheck.map(({ name, color, series }) => ({
+        label: name,
+        color,
+        values: slotDays.map((i) => (i < 0 ? null : values(series, i))),
+      }));
+    const lines = linesFor((series, i) => sumOf(series, projects, i));
+    graphs.push(draw(totalDiv, lines, true, compareFormatter(lines)));
+
+    // With one project the total chart already shows it. Projects on which
+    // none of the compared checks ran are left out.
+    projectsTitle.hidden = projects.length < 2;
+    for (const project of projects.length < 2 ? [] : projects) {
+      const projectLines = linesFor((series, i) => valueOf(series, project, i));
+      if (!projectLines.some((line) => line.values.some((value) => value))) continue;
+      const figure = document.createElement("div");
+      const title = document.createElement("div");
+      title.textContent = project;
+      const graphDiv = document.createElement("div");
+      graphDiv.className = "graph small";
+      figure.append(title, graphDiv);
+      projectsDiv.append(figure);
+      graphs.push(draw(graphDiv, projectLines, false, compareFormatter(projectLines)));
+    }
+    renderCompareTable(perCheck, projects);
   };
 
   const render = async () => {
@@ -594,20 +762,47 @@
     const projects = selectedProjects();
     const filter = checkFilter.value.trim();
     const checks = filterChecks(filter);
-    if (checks !== null) metricSelect.value = "check";
+    const mode = modeRadios.find((radio) => radio.checked).value;
+    const comparing = mode === "compare";
+    if (checks !== null || comparing) metricSelect.value = "check";
     const metric = metricSelect.value;
-    saveState(metric, projects, filter);
-    showChecks(checks);
-    renderChecks(projects, checks);
+    saveState(metric, projects, filter, mode);
+    showChecks(checks, comparing);
+    const empty = projects.length === 0 || checks?.length === 0;
+    const selection = comparing && !empty ? compareSelection(checks, projects) : null;
+    renderChecks(projects, checks, selection && compareColors);
 
-    if (projects.length === 0 || checks?.length === 0) {
+    if (empty) {
       totalTitle.textContent =
         projects.length === 0 ? "Select at least one project." : "No check matches the filter.";
       clearCharts();
       projectsTitle.hidden = true;
+      compareLegend.hidden = true;
+      compareNote.hidden = true;
       table.replaceChildren();
       return;
     }
+
+    if (selection) {
+      const { shown, matching } = selection;
+      showCompareLegend(shown, matching);
+      // Keep the previous charts, dimmed, while the check times load.
+      totalDiv.classList.add("loading");
+      projectsDiv.classList.add("loading");
+      await Promise.all(shown.map(loadCheck));
+      if (count !== renderCount) return; // A newer render took over.
+      totalDiv.classList.remove("loading");
+      projectsDiv.classList.remove("loading");
+      totalTitle.textContent =
+        shown.length === 1
+          ? `Check time of ${shown[0]} (s), summed over ${describeProjects(projects)}:`
+          : `Check time of ${shown.length} checks (s), each summed over ` +
+            `${describeProjects(projects)}:`;
+      drawCompare(shown, projects);
+      return;
+    }
+    compareLegend.hidden = true;
+    compareNote.hidden = true;
 
     let series = metric === "analysis" ? SERIES.analysis : SERIES.check;
     if (checks !== null) {
@@ -631,6 +826,7 @@
   metricSelect.addEventListener("change", render);
   rangeSelect.addEventListener("change", render);
   for (const box of boxes) box.addEventListener("change", render);
+  for (const radio of modeRadios) radio.addEventListener("change", render);
   let filterTimer;
   checkFilter.addEventListener("input", () => {
     clearTimeout(filterTimer);
