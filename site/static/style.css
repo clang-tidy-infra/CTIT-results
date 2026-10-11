@@ -22,3 +22,24 @@ pre { margin-left: 2em; white-space: pre-wrap; }
 .fp { color: #b00000; font-weight: bold; }
 .tp { color: #007000; }
 .dim { color: #777777; }
+.graph { width: 100%; max-width: 60em; height: 20em; }
+.graph.small { height: 10em; }
+/* One small chart per project; as many columns as fit. */
+.small-multiples {
+    display: grid; grid-template-columns: repeat(auto-fill, minmax(20em, 1fr));
+    gap: 1.5em 2em; max-width: 90em;
+}
+#controls label { white-space: nowrap; margin-right: 1em; }
+#controls p { max-width: none; line-height: 1.8; }
+/* Loaded before dygraph.css, so it needs the extra class to win. */
+.graph .dygraph-legend {
+    width: auto; white-space: nowrap; font-size: 12px; padding: .3em .5em;
+    border: 1px solid #cccccc; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+}
+th.sortable { cursor: pointer; }
+th.sortable:hover { text-decoration: underline; }
+#controls label.checks { white-space: normal; margin-right: 0; }
+#check-filter { width: min(36em, 100%); box-sizing: border-box; }
+/* Charts waiting for the times of the filtered checks. */
+.loading { opacity: .4; }
+.hint { display: block; max-width: 60em; }

@@ -12,6 +12,16 @@ runs/YYYY/MM/pr-<number>-<github-run-id>-<attempt>-<architecture>.json
 The files are generated automatically by CTIT and contain run metadata,
 per-project results, diagnostics, TP/FP verdicts, and optional baseline results.
 
+The daily check timings run writes one JSON file under:
+
+```text
+timings/YYYY/MM/<YYYY-MM-DD>-<github-run-id>-<attempt>-<architecture>.json
+```
+
+These files contain run metadata, the analysis time of each project, and the
+wall time of every clang-tidy check, both summed over all test projects
+(`checks`) and per project. The per-project times are stored by column: `project_checks[<project>][i]` is the time of `check_names[i]`, or `null` if that check did not run on the project.
+
 The results are published as a static website at
 <https://clang-tidy-infra.github.io/CTIT-results/>.
 
