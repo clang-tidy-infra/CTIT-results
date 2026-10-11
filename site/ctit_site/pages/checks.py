@@ -18,21 +18,25 @@ def build_checks(site: Site, runs: list[Run]) -> None:
     for check in sorted(by_check):
         check_runs = by_check[check]
         latest = check_runs[-1]
-        prs = sorted({r.pr for r in check_runs if r.pr})
-        pr_links = " ".join(link(f"{LLVM_URL}/pull/{pr}", f"#{pr}") for pr in prs)
+        latest_pr = next((r.pr for r in reversed(check_runs) if r.pr), None)
+        pr_link = (
+            link(f"{LLVM_URL}/pull/{latest_pr}", f"#{latest_pr}")
+            if latest_pr
+            else '<span class="dim">-</span>'
+        )
         rows.append(
             "<tr>"
             f'<td class="l">{link("index.html?q=" + quote(check), check)}</td>'
             f"<td>{len(check_runs)}</td>"
             f"<td>{link(run_href(latest), fmt_time(latest.started))}</td>"
             f"<td>{latest.total()}</td>"
-            f'<td class="l">{pr_links}</td>'
+            f'<td class="l">{pr_link}</td>'
             "</tr>\n"
         )
     body = (
         "<h3>Checks:</h3>\n<table>\n"
         '<tr><th class="l">Check</th><th>Runs</th><th>Latest run</th>'
-        '<th>Warnings</th><th class="l">Pull requests</th></tr>\n'
+        '<th>Warnings</th><th class="l">Latest PR</th></tr>\n'
         f"{''.join(rows)}</table>\n"
     )
     site.write("checks.html", "CTIT Results: Checks", body)
