@@ -1,0 +1,24 @@
+<h3>About:</h3>
+<p>This site shows the results of the
+<a href="$ctit_url">Clang-Tidy Integration Tester (CTIT)</a>. CTIT runs a
+clang-tidy check, usually from an LLVM pull request, against a corpus of
+open-source C and C++ projects and records every warning it produces.</p>
+<p>Each run is stored as a JSON file in <a href="$repository_url">$repository</a>.
+This site is regenerated every time a new run is committed there.</p>
+<p>The index groups runs by pull request and check. Each project column shows
+the number of warnings, and the number in parentheses is the change from the
+previous run of the same group: more warnings in red, fewer in green, and no
+change in gray. Runs from different runner architectures are listed together. A red
+background marks a run or project that did not complete; hover over it to see
+its status.</p>
+<p>TP and FP verdicts are produced automatically by an AI model and are only a
+hint. Warnings without a verdict are listed as unclassified.</p>
+<p>For runs started with <code>/baseline</code>, the run page and project pages
+show which warnings are new compared with the unpatched LLVM main branch, and
+which baseline warnings are gone.</p>
+<p>Source links point to the project commit listed in CTIT's
+<code>testers/projects.json</code> when the run started.</p>
+<p>A machine-readable summary of all runs is available at
+<a href="data/runs.json">data/runs.json</a>.</p>
+<p>To test your own clang-tidy change, follow the instructions in the
+<a href="$ctit_url">CTIT repository</a>.</p>
