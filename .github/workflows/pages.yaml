@@ -6,6 +6,7 @@ on:
       - main
     paths:
       - 'runs/**'
+      - 'timings/**'
       - 'site/**'
       - '.github/workflows/pages.yaml'
   workflow_dispatch:

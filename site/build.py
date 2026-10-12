@@ -17,7 +17,9 @@ from ctit_site.pages.index import build_index
 from ctit_site.pages.project import build_project
 from ctit_site.pages.run import build_run
 from ctit_site.pages.summary import build_summary
+from ctit_site.pages.timings import build_timings
 from ctit_site.sources import ProjectSources
+from ctit_site.timings import load_timings
 from ctit_site.writer import Site
 
 STATIC_DIR = Path(__file__).resolve().parent / "static"
@@ -44,6 +46,7 @@ def build(
     build_checks(site, runs)
     build_about(site)
     build_summary(site, runs)
+    build_timings(site, load_timings(results_dir))
     for group_runs in groups.values():
         for index, run in enumerate(group_runs):
             previous = group_runs[index - 1] if index > 0 else None
