@@ -1,0 +1,124 @@
+{
+  "artifact_url": "https://github.com/clang-tidy-infra/CTIT/actions/runs/38348020074/artifacts/11790034919",
+  "baseline": null,
+  "check_config": {},
+  "check_name": "performance-no-automatic-move",
+  "duration_seconds": 2186.309534,
+  "finished_at": "2026-10-13T05:22:44.309534Z",
+  "github_run_attempt": 1,
+  "github_run_id": 38348020074,
+  "llvm_revision": "313665c84b470759c5938c3df0c8bd0d9564f007+patch:7389792d4e2044e72e1dfaabb1038d58c7dfad8b9709c60dab282ebc7711a587",
+  "pr_number": 231359,
+  "project_runs": [
+    {
+      "diagnostics": [],
+      "duration_seconds": 10.319781,
+      "project": "abseil-cpp",
+      "status": "COMPLETED"
+    },
+    {
+      "diagnostics": [],
+      "duration_seconds": 23.633116,
+      "project": "assimp",
+      "status": "COMPLETED"
+    },
+    {
+      "diagnostics": [],
+      "duration_seconds": 4.758331,
+      "project": "catch2",
+      "status": "COMPLETED"
+    },
+    {
+      "diagnostics": [],
+      "duration_seconds": 13.162847,
+      "project": "cppcheck",
+      "status": "COMPLETED"
+    },
+    {
+      "diagnostics": [],
+      "duration_seconds": 2.348026,
+      "project": "curl",
+      "status": "COMPLETED"
+    },
+    {
+      "diagnostics": [],
+      "duration_seconds": 33.872744,
+      "project": "doxygen",
+      "status": "COMPLETED"
+    },
+    {
+      "diagnostics": [],
+      "duration_seconds": 1.463912,
+      "project": "libgit2",
+      "status": "COMPLETED"
+    },
+    {
+      "diagnostics": [],
+      "duration_seconds": 0.857566,
+      "project": "libuv",
+      "status": "COMPLETED"
+    },
+    {
+      "diagnostics": [
+        {
+          "column": 14,
+          "file": "clang/lib/Driver/ToolChains/Gnu.cpp",
+          "line": 2039,
+          "message": "constness of 'BadVersion' prevents automatic move",
+          "verdict": "TP"
+        },
+        {
+          "column": 12,
+          "file": "clang/lib/Driver/ToolChains/Gnu.cpp",
+          "line": 2044,
+          "message": "constness of 'BadVersion' prevents automatic move",
+          "verdict": "TP"
+        },
+        {
+          "column": 14,
+          "file": "clang/lib/Driver/ToolChains/Gnu.cpp",
+          "line": 2050,
+          "message": "constness of 'BadVersion' prevents automatic move",
+          "verdict": "TP"
+        },
+        {
+          "column": 12,
+          "file": "clang/lib/Driver/ToolChains/Gnu.cpp",
+          "line": 2055,
+          "message": "constness of 'BadVersion' prevents automatic move",
+          "verdict": "TP"
+        }
+      ],
+      "duration_seconds": 343.956357,
+      "project": "llvm-project",
+      "status": "COMPLETED"
+    },
+    {
+      "diagnostics": [],
+      "duration_seconds": 43.12859,
+      "project": "poco",
+      "status": "COMPLETED"
+    },
+    {
+      "diagnostics": [],
+      "duration_seconds": 7.438718,
+      "project": "stdexec",
+      "status": "COMPLETED"
+    },
+    {
+      "diagnostics": [],
+      "duration_seconds": 2.371766,
+      "project": "yaml-cpp",
+      "status": "COMPLETED"
+    },
+    {
+      "diagnostics": [],
+      "duration_seconds": 2.453103,
+      "project": "zstd",
+      "status": "COMPLETED"
+    }
+  ],
+  "runner_arch": "ARM64",
+  "started_at": "2026-10-13T04:46:18+00:00",
+  "status": "COMPLETED"
+}
