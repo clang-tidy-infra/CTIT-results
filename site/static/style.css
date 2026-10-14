@@ -48,3 +48,6 @@ th.sortable:hover { text-decoration: underline; }
 .key { display: inline-block; width: 1.2em; height: 2px; vertical-align: middle; margin-right: .4em; }
 .legend { max-width: 60em; line-height: 1.8; }
 .legend span.item { white-space: nowrap; margin-right: 1.5em; }
+/* The rankings of a run's check time, next to each other while they fit. */
+.side-by-side { display: flex; flex-wrap: wrap; gap: 0 3em; }
+tr.mark td { font-weight: bold; }

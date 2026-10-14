@@ -17,6 +17,7 @@ class TimingsDay:
     attempt: int
     llvm_revision: str
     runner: str
+    runner_arch: str
     # {project: seconds}; a project is missing if its log had no timings.
     check_seconds: dict[str, float]
     analysis_seconds: dict[str, float]
@@ -63,6 +64,7 @@ def load_timings(results_dir: Path) -> list[TimingsDay]:
             attempt=int(data["github_run_attempt"]),
             llvm_revision=data["llvm_revision"],
             runner=data["runner_name"],
+            runner_arch=data["runner_arch"],
             check_seconds=_seconds(data["projects"], "check_seconds"),
             analysis_seconds=_seconds(data["projects"], "duration_seconds"),
             project_checks=_project_checks(data),

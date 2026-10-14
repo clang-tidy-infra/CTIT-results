@@ -18,6 +18,7 @@ from ctit_site.pages.project import build_project
 from ctit_site.pages.run import build_run
 from ctit_site.pages.summary import build_summary
 from ctit_site.pages.timings import build_timings
+from ctit_site.ranking import latest_detailed
 from ctit_site.sources import ProjectSources
 from ctit_site.timings import load_timings
 from ctit_site.writer import Site
@@ -46,12 +47,14 @@ def build(
     build_checks(site, runs)
     build_about(site)
     build_summary(site, runs)
-    build_timings(site, load_timings(results_dir))
+    timings = load_timings(results_dir)
+    build_timings(site, timings)
+    nightly = latest_detailed(timings)
     for group_runs in groups.values():
         for index, run in enumerate(group_runs):
             previous = group_runs[index - 1] if index > 0 else None
             following = group_runs[index + 1] if index + 1 < len(group_runs) else None
-            build_run(site, run, previous, following)
+            build_run(site, run, previous, following, nightly)
             for project in run.projects.values():
                 build_project(site, run, project)
             if previous is not None:

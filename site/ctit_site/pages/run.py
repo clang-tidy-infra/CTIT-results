@@ -3,10 +3,12 @@
 from __future__ import annotations
 
 from collections import Counter
+from urllib.parse import quote
 
 from ..markup import (
     esc,
     fmt_duration,
+    fmt_seconds,
     fmt_signed,
     fmt_time,
     kv_table,
@@ -15,9 +17,13 @@ from ..markup import (
     status_html,
 )
 from ..model import Run, diff
+from ..ranking import Entry, Ranking, module, rank
+from ..timings import TimingsDay
 from ..writer import Site, compare_href, group_title, project_href, run_href
 
 ROOT = "../"
+# How many checks a ranking shows above and below each check of the run.
+RANKING_CONTEXT = 3
 
 
 def run_metadata(
@@ -126,8 +132,107 @@ def projects_table(run: Run) -> str:
     return f"<table>\n{header}{''.join(rows)}{total_row}</table>\n"
 
 
+def check_name_html(ranking: Ranking, check: str) -> str:
+    if check in ranking.nightly:
+        return link(f"{ROOT}timings.html?checks={quote(check)}", check)
+    return esc(check)
+
+
+def ranking_table(ranking: Ranking, entries: list[Entry]) -> str:
+    """The checks of the run with their neighbors in `entries`."""
+    shown: set[int] = set()
+    for i, entry in enumerate(entries):
+        if entry.new:
+            shown.update(range(i - RANKING_CONTEXT, i + RANKING_CONTEXT + 1))
+    gap = '<tr><td></td><td class="l dim">...</td><td></td></tr>\n'
+    rows = []
+    last = -1
+    for i, entry in enumerate(entries):
+        if i not in shown:
+            continue
+        if i > last + 1:
+            rows.append(gap)
+        last = i
+        mark = ' class="mark"' if entry.new else ""
+        rows.append(
+            f"<tr{mark}><td>{i + 1}</td>"
+            f'<td class="l">{check_name_html(ranking, entry.check)}</td>'
+            f"<td>{fmt_seconds(entry.seconds)}</td></tr>\n"
+        )
+    if last < len(entries) - 1:
+        rows.append(gap)
+    header = '<tr><th>#</th><th class="l">Check</th><th>Time (s)</th></tr>\n'
+    return f"<table>\n{header}{''.join(rows)}</table>\n"
+
+
+def position(entries: list[Entry], check: str) -> str:
+    index = next(i for i, entry in enumerate(entries) if entry.check == check)
+    return f"{index + 1} of {len(entries)}"
+
+
+def check_time_section(run: Run, nightly: TimingsDay | None) -> str:
+    """Where the checks of the run would rank by check time among the checks
+    of the latest nightly timings run."""
+    if nightly is None or not any(p.check_profile for p in run.projects.values()):
+        return ""
+    body = '<h4 id="check-time">Check time:</h4>\n'
+    nightly_link = link(
+        nightly.github_run_url, f"nightly timings run of {nightly.date}"
+    )
+    arch = run.data["runner_arch"]
+    if arch != nightly.runner_arch:
+        return body + (
+            f'<p class="dim">This run ran on {esc(arch)} and the {nightly_link} on '
+            f"{esc(nightly.runner_arch)}, so their check times cannot be compared.</p>\n"
+        )
+    ranking = rank(run, nightly)
+    if ranking is None:
+        return body + (
+            f'<p class="dim">The {nightly_link} has no check times for the '
+            "projects of this run.</p>\n"
+        )
+    everything = ranking.entries()
+    modules = sorted({module(check) for check in ranking.run})
+    by_module = {name: ranking.entries(name) for name in modules}
+    rows = []
+    for check in sorted(ranking.run):
+        before = ranking.nightly.get(check)
+        rows.append(
+            f'<tr><td class="l">{check_name_html(ranking, check)}</td>'
+            f"<td>{fmt_seconds(ranking.run[check])}</td>"
+            "<td>"
+            + ('<span class="dim">-</span>' if before is None else fmt_seconds(before))
+            + "</td>"
+            f"<td>{position(by_module[module(check)], check)}</td>"
+            f"<td>{position(everything, check)}</td></tr>\n"
+        )
+    body += (
+        "<p>The time spent in the checks of this run, from clang-tidy's check "
+        f"profile, and their place among the checks of the {nightly_link}, "
+        "slowest first. Times are summed over the "
+        f"{len(ranking.projects)} projects both runs have times for. Nightly "
+        "is the check's own time in that run. The nightly run enables every "
+        "check at once, so the comparison is approximate.</p>\n"
+        '<table>\n<tr><th class="l">Check</th><th>Time (s)</th><th>Nightly (s)</th>'
+        "<th>In module</th><th>Overall</th></tr>\n"
+        f"{''.join(rows)}</table>\n"
+    )
+    lists = [(f"{name} checks", entries) for name, entries in by_module.items()]
+    lists.append(("All checks", everything))
+    body += '<div class="side-by-side">\n'
+    for title, entries in lists:
+        body += (
+            f"<div>\n<p>{esc(title)}:</p>\n{ranking_table(ranking, entries)}</div>\n"
+        )
+    return body + "</div>\n"
+
+
 def build_run(
-    site: Site, run: Run, previous: Run | None, following: Run | None
+    site: Site,
+    run: Run,
+    previous: Run | None,
+    following: Run | None,
+    nightly: TimingsDay | None,
 ) -> None:
     has_baseline = run.baseline is not None
     body = (
@@ -149,4 +254,5 @@ def build_run(
         body += (
             '<p class="warning">No project results were recorded for this run.</p>\n'
         )
+    body += check_time_section(run, nightly)
     site.write(f"run/{run.id}.html", f"CTIT Run {run.label}: {run.check}", body)
