@@ -1,0 +1,16 @@
+{
+  "artifact_url": "https://github.com/clang-tidy-infra/CTIT/actions/runs/38778881900/artifacts/11994719997",
+  "baseline": null,
+  "check_config": {},
+  "check_name": "modernize-use-constexpr",
+  "duration_seconds": 584.065515,
+  "finished_at": "2026-10-15T17:47:43.065515Z",
+  "github_run_attempt": 1,
+  "github_run_id": 38778881900,
+  "llvm_revision": "46a1c4b6d57981a4a284ccde484afa7807153bf8",
+  "pr_number": 162741,
+  "project_runs": [],
+  "runner_arch": "ARM64",
+  "started_at": "2026-10-15T17:37:59+00:00",
+  "status": "FAILED"
+}
