@@ -51,6 +51,16 @@ def fmt_duration(seconds: float | None) -> str:
     return f"{secs}s"
 
 
+def fmt_seconds(seconds: float) -> str:
+    """A check time, formatted like seconds() in timings.js."""
+    if seconds == 0:
+        return "0"
+    size = abs(seconds)
+    if size >= 100:
+        return f"{round(seconds):,}"
+    return f"{seconds:.{1 if size >= 10 else 2}f}"
+
+
 def fmt_signed(value: int, css: str) -> str:
     if value == 0:
         return '<span class="dim">0</span>'
