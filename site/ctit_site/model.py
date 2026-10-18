@@ -44,6 +44,9 @@ class ProjectRun:
     name: str
     status: str
     duration: float | None
+    # {check: wall seconds} from clang-tidy's check profile; None for runs
+    # recorded without one.
+    check_profile: dict[str, float] | None
     diagnostics: list[Diagnostic]
 
     def count(self, verdict: str | None) -> int:
@@ -121,6 +124,7 @@ def read_project_runs(items: Iterable[dict]) -> dict[str, ProjectRun]:
             name=item["project"],
             status=item["status"],
             duration=item.get("duration_seconds"),
+            check_profile=item.get("check_profile"),
             diagnostics=diagnostics,
         )
     return runs
