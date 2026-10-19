@@ -1,0 +1,1415 @@
+{
+  "artifact_url": "https://github.com/clang-tidy-infra/CTIT/actions/runs/39228895707/artifacts/12191806776",
+  "baseline": {
+    "llvm_revision": "04def5110fa76caf87c8e746e6e78c0e6fa2a8f3",
+    "project_runs": [
+      {
+        "check_profile": null,
+        "diagnostics": [],
+        "duration_seconds": 11.655127,
+        "project": "abseil-cpp",
+        "status": "COMPLETED"
+      },
+      {
+        "check_profile": null,
+        "diagnostics": [],
+        "duration_seconds": 18.267235,
+        "project": "assimp",
+        "status": "COMPLETED"
+      },
+      {
+        "check_profile": null,
+        "diagnostics": [],
+        "duration_seconds": 3.906197,
+        "project": "catch2",
+        "status": "COMPLETED"
+      },
+      {
+        "check_profile": null,
+        "diagnostics": [],
+        "duration_seconds": 13.814998,
+        "project": "cppcheck",
+        "status": "COMPLETED"
+      },
+      {
+        "check_profile": null,
+        "diagnostics": [],
+        "duration_seconds": 2.338722,
+        "project": "curl",
+        "status": "COMPLETED"
+      },
+      {
+        "check_profile": null,
+        "diagnostics": [],
+        "duration_seconds": 28.425454,
+        "project": "doxygen",
+        "status": "COMPLETED"
+      },
+      {
+        "check_profile": null,
+        "diagnostics": [],
+        "duration_seconds": 1.708019,
+        "project": "libgit2",
+        "status": "COMPLETED"
+      },
+      {
+        "check_profile": null,
+        "diagnostics": [],
+        "duration_seconds": 0.810918,
+        "project": "libuv",
+        "status": "COMPLETED"
+      },
+      {
+        "check_profile": null,
+        "diagnostics": [],
+        "duration_seconds": 410.671651,
+        "project": "llvm-project",
+        "status": "COMPLETED"
+      },
+      {
+        "check_profile": null,
+        "diagnostics": [],
+        "duration_seconds": 48.076027,
+        "project": "poco",
+        "status": "COMPLETED"
+      },
+      {
+        "check_profile": null,
+        "diagnostics": [],
+        "duration_seconds": 7.838222,
+        "project": "stdexec",
+        "status": "COMPLETED"
+      },
+      {
+        "check_profile": null,
+        "diagnostics": [],
+        "duration_seconds": 2.891057,
+        "project": "yaml-cpp",
+        "status": "COMPLETED"
+      },
+      {
+        "check_profile": null,
+        "diagnostics": [],
+        "duration_seconds": 2.634188,
+        "project": "zstd",
+        "status": "COMPLETED"
+      }
+    ]
+  },
+  "check_config": {},
+  "check_name": "clang-diagnostic-lifetime-safety-experimental-*",
+  "duration_seconds": 3709.235219,
+  "finished_at": "2026-10-19T13:40:02.235219Z",
+  "github_run_attempt": 2,
+  "github_run_id": 39228895707,
+  "llvm_revision": "04def5110fa76caf87c8e746e6e78c0e6fa2a8f3+patch:7dd50bd15c10d281b6e60ec98d8b3ebfbae6cd04ee64aeb7c1070803dc28dac9",
+  "pr_number": 233377,
+  "project_runs": [
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 9.766206,
+      "project": "abseil-cpp",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 23.564967,
+      "project": "assimp",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 3.689922,
+      "project": "catch2",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [
+        {
+          "column": 22,
+          "file": "externals/tinyxml2/tinyxml2.cpp",
+          "line": 281,
+          "message": "return value depends on the object referenced by field '_start', not on '*this'",
+          "verdict": "TP"
+        },
+        {
+          "column": 38,
+          "file": "externals/tinyxml2/tinyxml2.cpp",
+          "line": 1188,
+          "message": "parameter 'node' is later invalidated",
+          "verdict": "FP"
+        },
+        {
+          "column": 33,
+          "file": "externals/tinyxml2/tinyxml2.cpp",
+          "line": 1616,
+          "message": "return value depends on the object referenced by field '_rootAttribute', not on '*this'",
+          "verdict": "TP"
+        },
+        {
+          "column": 27,
+          "file": "externals/tinyxml2/tinyxml2.cpp",
+          "line": 1912,
+          "message": "return value depends on the object referenced by field '_rootAttribute', not on '*this'",
+          "verdict": "TP"
+        },
+        {
+          "column": 35,
+          "file": "externals/tinyxml2/tinyxml2.cpp",
+          "line": 2018,
+          "message": "parameter 'attribute' is later invalidated",
+          "verdict": "FP"
+        },
+        {
+          "column": 8,
+          "file": "externals/tinyxml2/tinyxml2.h",
+          "line": 230,
+          "message": "return value depends on the object referenced by field '_mem', not on '*this'",
+          "verdict": "TP"
+        },
+        {
+          "column": 8,
+          "file": "externals/tinyxml2/tinyxml2.h",
+          "line": 253,
+          "message": "return value depends on the object referenced by field '_mem', not on '*this'",
+          "verdict": "TP"
+        },
+        {
+          "column": 14,
+          "file": "externals/tinyxml2/tinyxml2.h",
+          "line": 285,
+          "message": "return value depends on the object referenced by field '_mem', not on '*this'",
+          "verdict": "TP"
+        },
+        {
+          "column": 19,
+          "file": "externals/tinyxml2/tinyxml2.h",
+          "line": 371,
+          "message": "return value depends on the object referenced by field '_root', not on '*this'",
+          "verdict": "TP"
+        },
+        {
+          "column": 24,
+          "file": "externals/tinyxml2/tinyxml2.h",
+          "line": 677,
+          "message": "return value depends on the object referenced by field '_document', not on '*this'",
+          "verdict": "TP"
+        },
+        {
+          "column": 18,
+          "file": "externals/tinyxml2/tinyxml2.h",
+          "line": 682,
+          "message": "return value depends on the object referenced by field '_document', not on '*this'",
+          "verdict": "TP"
+        },
+        {
+          "column": 20,
+          "file": "externals/tinyxml2/tinyxml2.h",
+          "line": 757,
+          "message": "return value depends on the object referenced by field '_parent', not on '*this'",
+          "verdict": "TP"
+        },
+        {
+          "column": 14,
+          "file": "externals/tinyxml2/tinyxml2.h",
+          "line": 761,
+          "message": "return value depends on the object referenced by field '_parent', not on '*this'",
+          "verdict": "TP"
+        },
+        {
+          "column": 21,
+          "file": "externals/tinyxml2/tinyxml2.h",
+          "line": 771,
+          "message": "return value depends on the object referenced by field '_firstChild', not on '*this'",
+          "verdict": "TP"
+        },
+        {
+          "column": 15,
+          "file": "externals/tinyxml2/tinyxml2.h",
+          "line": 775,
+          "message": "return value depends on the object referenced by field '_firstChild', not on '*this'",
+          "verdict": "TP"
+        },
+        {
+          "column": 20,
+          "file": "externals/tinyxml2/tinyxml2.h",
+          "line": 789,
+          "message": "return value depends on the object referenced by field '_lastChild', not on '*this'",
+          "verdict": "TP"
+        },
+        {
+          "column": 15,
+          "file": "externals/tinyxml2/tinyxml2.h",
+          "line": 793,
+          "message": "return value depends on the object referenced by field '_lastChild', not on '*this'",
+          "verdict": "TP"
+        },
+        {
+          "column": 20,
+          "file": "externals/tinyxml2/tinyxml2.h",
+          "line": 807,
+          "message": "return value depends on the object referenced by field '_prev', not on '*this'",
+          "verdict": "TP"
+        },
+        {
+          "column": 14,
+          "file": "externals/tinyxml2/tinyxml2.h",
+          "line": 811,
+          "message": "return value depends on the object referenced by field '_prev', not on '*this'",
+          "verdict": "TP"
+        },
+        {
+          "column": 20,
+          "file": "externals/tinyxml2/tinyxml2.h",
+          "line": 823,
+          "message": "return value depends on the object referenced by field '_next', not on '*this'",
+          "verdict": "TP"
+        },
+        {
+          "column": 14,
+          "file": "externals/tinyxml2/tinyxml2.h",
+          "line": 827,
+          "message": "return value depends on the object referenced by field '_next', not on '*this'",
+          "verdict": "TP"
+        },
+        {
+          "column": 8,
+          "file": "externals/tinyxml2/tinyxml2.h",
+          "line": 948,
+          "message": "return value depends on the object referenced by field '_userData', not on '*this'",
+          "verdict": "TP"
+        },
+        {
+          "column": 25,
+          "file": "externals/tinyxml2/tinyxml2.h",
+          "line": 1156,
+          "message": "return value depends on the object referenced by field '_next', not on '*this'",
+          "verdict": "TP"
+        },
+        {
+          "column": 25,
+          "file": "externals/tinyxml2/tinyxml2.h",
+          "line": 1516,
+          "message": "return value depends on the object referenced by field '_rootAttribute', not on '*this'",
+          "verdict": "TP"
+        },
+        {
+          "column": 14,
+          "file": "externals/tinyxml2/tinyxml2.h",
+          "line": 2107,
+          "message": "return value depends on the object referenced by field '_node', not on '*this'",
+          "verdict": "TP"
+        },
+        {
+          "column": 20,
+          "file": "externals/tinyxml2/tinyxml2.h",
+          "line": 2177,
+          "message": "return value depends on the object referenced by field '_node', not on '*this'",
+          "verdict": "TP"
+        },
+        {
+          "column": 9,
+          "file": "lib/matchcompiler.h",
+          "line": 34,
+          "message": "return value depends on the object referenced by field '_s', not on '*this'",
+          "verdict": "TP"
+        },
+        {
+          "column": 14,
+          "file": "externals/tinyxml2/./tinyxml2.h",
+          "line": 285,
+          "message": "return value depends on the object referenced by field '_mem', not on '*this'",
+          "verdict": "TP"
+        },
+        {
+          "column": 24,
+          "file": "externals/tinyxml2/./tinyxml2.h",
+          "line": 677,
+          "message": "return value depends on the object referenced by field '_document', not on '*this'",
+          "verdict": "TP"
+        },
+        {
+          "column": 18,
+          "file": "externals/tinyxml2/./tinyxml2.h",
+          "line": 682,
+          "message": "return value depends on the object referenced by field '_document', not on '*this'",
+          "verdict": "TP"
+        },
+        {
+          "column": 20,
+          "file": "externals/tinyxml2/./tinyxml2.h",
+          "line": 757,
+          "message": "return value depends on the object referenced by field '_parent', not on '*this'",
+          "verdict": "TP"
+        },
+        {
+          "column": 14,
+          "file": "externals/tinyxml2/./tinyxml2.h",
+          "line": 761,
+          "message": "return value depends on the object referenced by field '_parent', not on '*this'",
+          "verdict": "TP"
+        },
+        {
+          "column": 21,
+          "file": "externals/tinyxml2/./tinyxml2.h",
+          "line": 771,
+          "message": "return value depends on the object referenced by field '_firstChild', not on '*this'",
+          "verdict": "TP"
+        },
+        {
+          "column": 15,
+          "file": "externals/tinyxml2/./tinyxml2.h",
+          "line": 775,
+          "message": "return value depends on the object referenced by field '_firstChild', not on '*this'",
+          "verdict": "TP"
+        },
+        {
+          "column": 20,
+          "file": "externals/tinyxml2/./tinyxml2.h",
+          "line": 789,
+          "message": "return value depends on the object referenced by field '_lastChild', not on '*this'",
+          "verdict": "TP"
+        },
+        {
+          "column": 15,
+          "file": "externals/tinyxml2/./tinyxml2.h",
+          "line": 793,
+          "message": "return value depends on the object referenced by field '_lastChild', not on '*this'",
+          "verdict": "TP"
+        },
+        {
+          "column": 20,
+          "file": "externals/tinyxml2/./tinyxml2.h",
+          "line": 807,
+          "message": "return value depends on the object referenced by field '_prev', not on '*this'",
+          "verdict": "TP"
+        },
+        {
+          "column": 14,
+          "file": "externals/tinyxml2/./tinyxml2.h",
+          "line": 811,
+          "message": "return value depends on the object referenced by field '_prev', not on '*this'",
+          "verdict": "TP"
+        },
+        {
+          "column": 20,
+          "file": "externals/tinyxml2/./tinyxml2.h",
+          "line": 823,
+          "message": "return value depends on the object referenced by field '_next', not on '*this'",
+          "verdict": "TP"
+        },
+        {
+          "column": 14,
+          "file": "externals/tinyxml2/./tinyxml2.h",
+          "line": 827,
+          "message": "return value depends on the object referenced by field '_next', not on '*this'",
+          "verdict": "TP"
+        },
+        {
+          "column": 8,
+          "file": "externals/tinyxml2/./tinyxml2.h",
+          "line": 948,
+          "message": "return value depends on the object referenced by field '_userData', not on '*this'",
+          "verdict": "TP"
+        },
+        {
+          "column": 25,
+          "file": "externals/tinyxml2/./tinyxml2.h",
+          "line": 1156,
+          "message": "return value depends on the object referenced by field '_next', not on '*this'",
+          "verdict": "TP"
+        },
+        {
+          "column": 25,
+          "file": "externals/tinyxml2/./tinyxml2.h",
+          "line": 1516,
+          "message": "return value depends on the object referenced by field '_rootAttribute', not on '*this'",
+          "verdict": "TP"
+        },
+        {
+          "column": 14,
+          "file": "externals/tinyxml2/./tinyxml2.h",
+          "line": 2107,
+          "message": "return value depends on the object referenced by field '_node', not on '*this'",
+          "verdict": "TP"
+        },
+        {
+          "column": 20,
+          "file": "externals/tinyxml2/./tinyxml2.h",
+          "line": 2177,
+          "message": "return value depends on the object referenced by field '_node', not on '*this'",
+          "verdict": "TP"
+        },
+        {
+          "column": 21,
+          "file": "externals/simplecpp/./simplecpp.h",
+          "line": 98,
+          "message": "return value depends on the object referenced by field 'mData', not on '*this'",
+          "verdict": "TP"
+        },
+        {
+          "column": 22,
+          "file": "externals/simplecpp/./simplecpp.h",
+          "line": 191,
+          "message": "return value depends on the object referenced by field 'previous', not on '*this'",
+          "verdict": "TP"
+        },
+        {
+          "column": 22,
+          "file": "externals/simplecpp/./simplecpp.h",
+          "line": 198,
+          "message": "return value depends on the object referenced by field 'next', not on '*this'",
+          "verdict": "TP"
+        },
+        {
+          "column": 16,
+          "file": "externals/simplecpp/./simplecpp.h",
+          "line": 318,
+          "message": "return value depends on the object referenced by field 'frontToken', not on '*this'",
+          "verdict": "TP"
+        },
+        {
+          "column": 22,
+          "file": "externals/simplecpp/./simplecpp.h",
+          "line": 322,
+          "message": "return value depends on the object referenced by field 'frontToken', not on '*this'",
+          "verdict": "TP"
+        },
+        {
+          "column": 16,
+          "file": "externals/simplecpp/./simplecpp.h",
+          "line": 326,
+          "message": "return value depends on the object referenced by field 'backToken', not on '*this'",
+          "verdict": "TP"
+        },
+        {
+          "column": 22,
+          "file": "externals/simplecpp/./simplecpp.h",
+          "line": 330,
+          "message": "return value depends on the object referenced by field 'backToken', not on '*this'",
+          "verdict": "TP"
+        },
+        {
+          "column": 41,
+          "file": "externals/simplecpp/./simplecpp.h",
+          "line": 366,
+          "message": "return value depends on the object referenced by field 'files', not on '*this'",
+          "verdict": "TP"
+        },
+        {
+          "column": 27,
+          "file": "lib/./tokenize.h",
+          "line": 573,
+          "message": "return value depends on the object referenced by field 'mSymbolDatabase', not on '*this'",
+          "verdict": "TP"
+        },
+        {
+          "column": 21,
+          "file": "lib/./tokenize.h",
+          "line": 631,
+          "message": "return value depends on the object referenced by field 'mSettings', not on '*this'",
+          "verdict": "TP"
+        },
+        {
+          "column": 18,
+          "file": "lib/./tokenize.h",
+          "line": 635,
+          "message": "return value depends on the object referenced by field 'mErrorLogger', not on '*this'",
+          "verdict": "TP"
+        },
+        {
+          "column": 21,
+          "file": "lib/./tokenlist.h",
+          "line": 214,
+          "message": "return value depends on the object referenced by field 'mSettings', not on '*this'",
+          "verdict": "TP"
+        },
+        {
+          "column": 8,
+          "file": "externals/picojson/./picojson.h",
+          "line": 678,
+          "message": "return value depends on the object referenced by field 'cur_', not on '*this'",
+          "verdict": "TP"
+        },
+        {
+          "column": 72,
+          "file": "externals/picojson/./picojson.h",
+          "line": 738,
+          "message": "parameter 'out' is later invalidated",
+          "verdict": "FP"
+        },
+        {
+          "column": 69,
+          "file": "externals/picojson/./picojson.h",
+          "line": 779,
+          "message": "parameter 'out' is later invalidated",
+          "verdict": "FP"
+        },
+        {
+          "column": 114,
+          "file": "externals/picojson/./picojson.h",
+          "line": 1104,
+          "message": "parameter 'err' is later invalidated",
+          "verdict": "FP"
+        },
+        {
+          "column": 17,
+          "file": "lib/sourcelocation.h",
+          "line": 89,
+          "message": "return value depends on the object referenced by field 'm_file_name', not on '*this'",
+          "verdict": "TP"
+        },
+        {
+          "column": 17,
+          "file": "lib/sourcelocation.h",
+          "line": 92,
+          "message": "return value depends on the object referenced by field 'm_function_name', not on '*this'",
+          "verdict": "TP"
+        },
+        {
+          "column": 18,
+          "file": "lib/symboldatabase.h",
+          "line": 252,
+          "message": "return value depends on the object referenced by field 'mNameToken', not on '*this'",
+          "verdict": "TP"
+        },
+        {
+          "column": 18,
+          "file": "lib/symboldatabase.h",
+          "line": 264,
+          "message": "return value depends on the object referenced by field 'mTypeStartToken', not on '*this'",
+          "verdict": "TP"
+        },
+        {
+          "column": 18,
+          "file": "lib/symboldatabase.h",
+          "line": 276,
+          "message": "return value depends on the object referenced by field 'mTypeEndToken', not on '*this'",
+          "verdict": "TP"
+        },
+        {
+          "column": 17,
+          "file": "lib/symboldatabase.h",
+          "line": 521,
+          "message": "return value depends on the object referenced by field 'mType', not on '*this'",
+          "verdict": "TP"
+        },
+        {
+          "column": 18,
+          "file": "lib/symboldatabase.h",
+          "line": 537,
+          "message": "return value depends on the object referenced by field 'mScope', not on '*this'",
+          "verdict": "TP"
+        },
+        {
+          "column": 22,
+          "file": "lib/symboldatabase.h",
+          "line": 650,
+          "message": "return value depends on the object referenced by field 'mValueType', not on '*this'",
+          "verdict": "TP"
+        },
+        {
+          "column": 18,
+          "file": "lib/symboldatabase.h",
+          "line": 951,
+          "message": "return value depends on the object referenced by field 'tokenDef', not on '*this'",
+          "verdict": "TP"
+        },
+        {
+          "column": 17,
+          "file": "lib/templatesimplifier.h",
+          "line": 169,
+          "message": "return value depends on the object referenced by field 'mToken', not on '*this'",
+          "verdict": "TP"
+        },
+        {
+          "column": 23,
+          "file": "lib/templatesimplifier.h",
+          "line": 184,
+          "message": "return value depends on the object referenced by field 'mNameToken', not on '*this'",
+          "verdict": "TP"
+        },
+        {
+          "column": 23,
+          "file": "lib/templatesimplifier.h",
+          "line": 187,
+          "message": "return value depends on the object referenced by field 'mParamEnd', not on '*this'",
+          "verdict": "TP"
+        },
+        {
+          "column": 24,
+          "file": "lib/token.h",
+          "line": 601,
+          "message": "return value depends on the object referenced by field 'mImpl', not on '*this'",
+          "verdict": "TP"
+        },
+        {
+          "column": 12,
+          "file": "lib/token.h",
+          "line": 959,
+          "message": "return value depends on the object referenced by field 'mNext', not on '*this'",
+          "verdict": "TP"
+        },
+        {
+          "column": 18,
+          "file": "lib/token.h",
+          "line": 963,
+          "message": "return value depends on the object referenced by field 'mNext', not on '*this'",
+          "verdict": "TP"
+        },
+        {
+          "column": 12,
+          "file": "lib/token.h",
+          "line": 1020,
+          "message": "return value depends on the object referenced by field 'mPrevious', not on '*this'",
+          "verdict": "TP"
+        },
+        {
+          "column": 18,
+          "file": "lib/token.h",
+          "line": 1024,
+          "message": "return value depends on the object referenced by field 'mPrevious', not on '*this'",
+          "verdict": "TP"
+        },
+        {
+          "column": 18,
+          "file": "lib/token.h",
+          "line": 1193,
+          "message": "return value depends on the object referenced by field 'mLink', not on '*this'",
+          "verdict": "TP"
+        },
+        {
+          "column": 12,
+          "file": "lib/token.h",
+          "line": 1197,
+          "message": "return value depends on the object referenced by field 'mLink', not on '*this'",
+          "verdict": "TP"
+        },
+        {
+          "column": 27,
+          "file": "lib/tokenize.h",
+          "line": 573,
+          "message": "return value depends on the object referenced by field 'mSymbolDatabase', not on '*this'",
+          "verdict": "TP"
+        },
+        {
+          "column": 21,
+          "file": "lib/tokenize.h",
+          "line": 631,
+          "message": "return value depends on the object referenced by field 'mSettings', not on '*this'",
+          "verdict": "TP"
+        },
+        {
+          "column": 18,
+          "file": "lib/tokenize.h",
+          "line": 635,
+          "message": "return value depends on the object referenced by field 'mErrorLogger', not on '*this'",
+          "verdict": "TP"
+        },
+        {
+          "column": 21,
+          "file": "lib/tokenlist.h",
+          "line": 214,
+          "message": "return value depends on the object referenced by field 'mSettings', not on '*this'",
+          "verdict": "TP"
+        },
+        {
+          "column": 33,
+          "file": "build/lib/build/mc_summaries.cpp",
+          "line": 185,
+          "message": "parameter 'functionCalls' is later invalidated",
+          "verdict": "FP"
+        },
+        {
+          "column": 33,
+          "file": "build/lib/build/mc_summaries.cpp",
+          "line": 186,
+          "message": "parameter 'add' is later invalidated",
+          "verdict": "FP"
+        },
+        {
+          "column": 17,
+          "file": "lib/./templatesimplifier.h",
+          "line": 169,
+          "message": "return value depends on the object referenced by field 'mToken', not on '*this'",
+          "verdict": "TP"
+        },
+        {
+          "column": 23,
+          "file": "lib/./templatesimplifier.h",
+          "line": 184,
+          "message": "return value depends on the object referenced by field 'mNameToken', not on '*this'",
+          "verdict": "TP"
+        },
+        {
+          "column": 23,
+          "file": "lib/./templatesimplifier.h",
+          "line": 187,
+          "message": "return value depends on the object referenced by field 'mParamEnd', not on '*this'",
+          "verdict": "TP"
+        },
+        {
+          "column": 24,
+          "file": "lib/./token.h",
+          "line": 601,
+          "message": "return value depends on the object referenced by field 'mImpl', not on '*this'",
+          "verdict": "TP"
+        },
+        {
+          "column": 12,
+          "file": "lib/./token.h",
+          "line": 959,
+          "message": "return value depends on the object referenced by field 'mNext', not on '*this'",
+          "verdict": "TP"
+        },
+        {
+          "column": 18,
+          "file": "lib/./token.h",
+          "line": 963,
+          "message": "return value depends on the object referenced by field 'mNext', not on '*this'",
+          "verdict": "TP"
+        },
+        {
+          "column": 12,
+          "file": "lib/./token.h",
+          "line": 1020,
+          "message": "return value depends on the object referenced by field 'mPrevious', not on '*this'",
+          "verdict": "TP"
+        },
+        {
+          "column": 18,
+          "file": "lib/./token.h",
+          "line": 1024,
+          "message": "return value depends on the object referenced by field 'mPrevious', not on '*this'",
+          "verdict": "TP"
+        },
+        {
+          "column": 18,
+          "file": "lib/./token.h",
+          "line": 1193,
+          "message": "return value depends on the object referenced by field 'mLink', not on '*this'",
+          "verdict": "TP"
+        },
+        {
+          "column": 12,
+          "file": "lib/./token.h",
+          "line": 1197,
+          "message": "return value depends on the object referenced by field 'mLink', not on '*this'",
+          "verdict": "TP"
+        },
+        {
+          "column": 17,
+          "file": "lib/./sourcelocation.h",
+          "line": 89,
+          "message": "return value depends on the object referenced by field 'm_file_name', not on '*this'",
+          "verdict": "TP"
+        },
+        {
+          "column": 17,
+          "file": "lib/./sourcelocation.h",
+          "line": 92,
+          "message": "return value depends on the object referenced by field 'm_function_name', not on '*this'",
+          "verdict": "TP"
+        },
+        {
+          "column": 18,
+          "file": "lib/./symboldatabase.h",
+          "line": 252,
+          "message": "return value depends on the object referenced by field 'mNameToken', not on '*this'",
+          "verdict": "TP"
+        },
+        {
+          "column": 18,
+          "file": "lib/./symboldatabase.h",
+          "line": 264,
+          "message": "return value depends on the object referenced by field 'mTypeStartToken', not on '*this'",
+          "verdict": "TP"
+        },
+        {
+          "column": 18,
+          "file": "lib/./symboldatabase.h",
+          "line": 276,
+          "message": "return value depends on the object referenced by field 'mTypeEndToken', not on '*this'",
+          "verdict": "TP"
+        },
+        {
+          "column": 17,
+          "file": "lib/./symboldatabase.h",
+          "line": 521,
+          "message": "return value depends on the object referenced by field 'mType', not on '*this'",
+          "verdict": "TP"
+        },
+        {
+          "column": 18,
+          "file": "lib/./symboldatabase.h",
+          "line": 537,
+          "message": "return value depends on the object referenced by field 'mScope', not on '*this'",
+          "verdict": "TP"
+        },
+        {
+          "column": 22,
+          "file": "lib/./symboldatabase.h",
+          "line": 650,
+          "message": "return value depends on the object referenced by field 'mValueType', not on '*this'",
+          "verdict": "TP"
+        },
+        {
+          "column": 18,
+          "file": "lib/./symboldatabase.h",
+          "line": 951,
+          "message": "return value depends on the object referenced by field 'tokenDef', not on '*this'",
+          "verdict": "TP"
+        },
+        {
+          "column": 88,
+          "file": "build/lib/build/mc_checkbufferoverrun.cpp",
+          "line": 400,
+          "message": "parameter 'dimensions' is later invalidated",
+          "verdict": "FP"
+        },
+        {
+          "column": 108,
+          "file": "cli/cppcheckexecutor.cpp",
+          "line": 636,
+          "message": "parameter 'output_' is later invalidated",
+          "verdict": "FP"
+        },
+        {
+          "column": 64,
+          "file": "build/lib/build/mc_importproject.cpp",
+          "line": 50,
+          "message": "parameter 'args' is later invalidated",
+          "verdict": "FP"
+        },
+        {
+          "column": 15,
+          "file": "build/lib/build/mc_importproject.cpp",
+          "line": 141,
+          "message": "local variable 'optArg' is later invalidated",
+          "verdict": "FP"
+        },
+        {
+          "column": 15,
+          "file": "build/lib/build/mc_importproject.cpp",
+          "line": 150,
+          "message": "local variable 'optArg' is later invalidated",
+          "verdict": "FP"
+        },
+        {
+          "column": 15,
+          "file": "build/lib/build/mc_importproject.cpp",
+          "line": 155,
+          "message": "local variable 'optArg' is later invalidated",
+          "verdict": "FP"
+        },
+        {
+          "column": 15,
+          "file": "build/lib/build/mc_importproject.cpp",
+          "line": 160,
+          "message": "local variable 'optArg' is later invalidated",
+          "verdict": "FP"
+        },
+        {
+          "column": 15,
+          "file": "build/lib/build/mc_importproject.cpp",
+          "line": 165,
+          "message": "local variable 'optArg' is later invalidated",
+          "verdict": "FP"
+        },
+        {
+          "column": 15,
+          "file": "build/lib/build/mc_importproject.cpp",
+          "line": 170,
+          "message": "local variable 'optArg' is later invalidated",
+          "verdict": "FP"
+        },
+        {
+          "column": 15,
+          "file": "build/lib/build/mc_importproject.cpp",
+          "line": 182,
+          "message": "local variable 'optArg' is later invalidated",
+          "verdict": "FP"
+        },
+        {
+          "column": 39,
+          "file": "build/lib/build/mc_importproject.cpp",
+          "line": 247,
+          "message": "parameter 's' is later invalidated",
+          "verdict": "FP"
+        },
+        {
+          "column": 32,
+          "file": "build/lib/build/mc_importproject.cpp",
+          "line": 547,
+          "message": "parameter 'c' is later invalidated",
+          "verdict": "FP"
+        },
+        {
+          "column": 133,
+          "file": "build/lib/build/mc_importproject.cpp",
+          "line": 682,
+          "message": "parameter 'includePath' is later invalidated",
+          "verdict": "FP"
+        },
+        {
+          "column": 49,
+          "file": "build/lib/build/mc_library.cpp",
+          "line": 1560,
+          "message": "parameter 'unknownFunc' is later invalidated",
+          "verdict": "FP"
+        },
+        {
+          "column": 57,
+          "file": "cli/cmdlineparser.cpp",
+          "line": 66,
+          "message": "parameter 'pathNames' is later invalidated",
+          "verdict": "FP"
+        },
+        {
+          "column": 29,
+          "file": "build/lib/build/mc_errorlogger.cpp",
+          "line": 250,
+          "message": "parameter 'oss' is later invalidated",
+          "verdict": "FP"
+        },
+        {
+          "column": 33,
+          "file": "build/lib/build/mc_errorlogger.cpp",
+          "line": 567,
+          "message": "parameter 'source' is later invalidated",
+          "verdict": "FP"
+        },
+        {
+          "column": 21,
+          "file": "build/lib/build/mc_errorlogger.cpp",
+          "line": 592,
+          "message": "parameter 'source' is later invalidated",
+          "verdict": "FP"
+        },
+        {
+          "column": 22,
+          "file": "build/lib/build/mc_checkstl.cpp",
+          "line": 4943,
+          "message": "return value depends on the object referenced by field 'bodyTok', not on '*this'",
+          "verdict": "TP"
+        },
+        {
+          "column": 60,
+          "file": "build/lib/build/mc_checkcondition.cpp",
+          "line": 1813,
+          "message": "parameter 'op' is later invalidated",
+          "verdict": "FP"
+        },
+        {
+          "column": 77,
+          "file": "build/lib/build/mc_checkcondition.cpp",
+          "line": 1813,
+          "message": "parameter 'value' is later invalidated",
+          "verdict": "FP"
+        },
+        {
+          "column": 43,
+          "file": "tools/dmake/dmake.cpp",
+          "line": 73,
+          "message": "parameter 'depfiles' is later invalidated",
+          "verdict": "FP"
+        },
+        {
+          "column": 32,
+          "file": "tools/dmake/dmake.cpp",
+          "line": 169,
+          "message": "parameter 'files' is later invalidated",
+          "verdict": "FP"
+        },
+        {
+          "column": 20,
+          "file": "tools/dmake/dmake.cpp",
+          "line": 353,
+          "message": "parameter 'libfiles_prio' is later invalidated",
+          "verdict": "FP"
+        },
+        {
+          "column": 20,
+          "file": "tools/dmake/dmake.cpp",
+          "line": 358,
+          "message": "parameter 'extfiles' is later invalidated",
+          "verdict": "FP"
+        },
+        {
+          "column": 42,
+          "file": "tools/dmake/dmake.cpp",
+          "line": 537,
+          "message": "parameter 'outstr' is later invalidated",
+          "verdict": "FP"
+        },
+        {
+          "column": 12,
+          "file": "tools/dmake/dmake.cpp",
+          "line": 546,
+          "message": "parameter 'outstr' is later invalidated",
+          "verdict": "FP"
+        },
+        {
+          "column": 47,
+          "file": "tools/dmake/dmake.cpp",
+          "line": 556,
+          "message": "parameter 'outstr' is later invalidated",
+          "verdict": "FP"
+        },
+        {
+          "column": 12,
+          "file": "tools/dmake/dmake.cpp",
+          "line": 564,
+          "message": "parameter 'outstr' is later invalidated",
+          "verdict": "FP"
+        },
+        {
+          "column": 50,
+          "file": "tools/dmake/dmake.cpp",
+          "line": 573,
+          "message": "parameter 'outstr' is later invalidated",
+          "verdict": "FP"
+        },
+        {
+          "column": 12,
+          "file": "tools/dmake/dmake.cpp",
+          "line": 590,
+          "message": "parameter 'outstr' is later invalidated",
+          "verdict": "FP"
+        },
+        {
+          "column": 18,
+          "file": "lib/./programmemory.h",
+          "line": 82,
+          "message": "return value depends on the object referenced by field 'tok', not on '*this'",
+          "verdict": "TP"
+        },
+        {
+          "column": 18,
+          "file": "lib/./programmemory.h",
+          "line": 86,
+          "message": "return value depends on the object referenced by field 'tok', not on '*this'",
+          "verdict": "TP"
+        },
+        {
+          "column": 21,
+          "file": "build/lib/build/mc_utils.cpp",
+          "line": 141,
+          "message": "parameter 'source' is later invalidated",
+          "verdict": "FP"
+        },
+        {
+          "column": 74,
+          "file": "build/lib/build/mc_preprocessor.cpp",
+          "line": 1156,
+          "message": "parameter 'remarkComments' is later invalidated",
+          "verdict": "FP"
+        },
+        {
+          "column": 42,
+          "file": "externals/simplecpp/simplecpp.cpp",
+          "line": 1478,
+          "message": "return value depends on the object referenced by field 'files', not on '*this'",
+          "verdict": "TP"
+        },
+        {
+          "column": 25,
+          "file": "externals/simplecpp/simplecpp.cpp",
+          "line": 1663,
+          "message": "return value depends on the object referenced by field 'nameTokDef', not on '*this'",
+          "verdict": "TP"
+        },
+        {
+          "column": 21,
+          "file": "externals/simplecpp/simplecpp.h",
+          "line": 98,
+          "message": "return value depends on the object referenced by field 'mData', not on '*this'",
+          "verdict": "TP"
+        },
+        {
+          "column": 22,
+          "file": "externals/simplecpp/simplecpp.h",
+          "line": 191,
+          "message": "return value depends on the object referenced by field 'previous', not on '*this'",
+          "verdict": "TP"
+        },
+        {
+          "column": 22,
+          "file": "externals/simplecpp/simplecpp.h",
+          "line": 198,
+          "message": "return value depends on the object referenced by field 'next', not on '*this'",
+          "verdict": "TP"
+        },
+        {
+          "column": 16,
+          "file": "externals/simplecpp/simplecpp.h",
+          "line": 318,
+          "message": "return value depends on the object referenced by field 'frontToken', not on '*this'",
+          "verdict": "TP"
+        },
+        {
+          "column": 22,
+          "file": "externals/simplecpp/simplecpp.h",
+          "line": 322,
+          "message": "return value depends on the object referenced by field 'frontToken', not on '*this'",
+          "verdict": "TP"
+        },
+        {
+          "column": 16,
+          "file": "externals/simplecpp/simplecpp.h",
+          "line": 326,
+          "message": "return value depends on the object referenced by field 'backToken', not on '*this'",
+          "verdict": "TP"
+        },
+        {
+          "column": 22,
+          "file": "externals/simplecpp/simplecpp.h",
+          "line": 330,
+          "message": "return value depends on the object referenced by field 'backToken', not on '*this'",
+          "verdict": "TP"
+        },
+        {
+          "column": 41,
+          "file": "externals/simplecpp/simplecpp.h",
+          "line": 366,
+          "message": "return value depends on the object referenced by field 'files', not on '*this'",
+          "verdict": "TP"
+        },
+        {
+          "column": 12,
+          "file": "lib/./tokenrange.h",
+          "line": 60,
+          "message": "return value depends on the object referenced by field 'mt', not on '*this'",
+          "verdict": "TP"
+        },
+        {
+          "column": 28,
+          "file": "build/lib/build/mc_cppcheck.cpp",
+          "line": 358,
+          "message": "parameter 'dumpFile' is later invalidated",
+          "verdict": "FP"
+        },
+        {
+          "column": 108,
+          "file": "build/lib/build/mc_cppcheck.cpp",
+          "line": 571,
+          "message": "parameter 'warnings' is later invalidated",
+          "verdict": "FP"
+        },
+        {
+          "column": 21,
+          "file": "build/lib/build/mc_vf_analyzers.cpp",
+          "line": 346,
+          "message": "return value depends on the object referenced by field 'settings', not on '*this'",
+          "verdict": "TP"
+        },
+        {
+          "column": 23,
+          "file": "build/lib/build/mc_vf_analyzers.cpp",
+          "line": 1143,
+          "message": "return value depends on the object referenced by field 'mIt', not on '*this'",
+          "verdict": "TP"
+        },
+        {
+          "column": 21,
+          "file": "build/lib/build/mc_vf_analyzers.cpp",
+          "line": 1147,
+          "message": "return value depends on the object referenced by field 'mIt', not on '*this'",
+          "verdict": "TP"
+        },
+        {
+          "column": 12,
+          "file": "build/lib/build/mc_vf_analyzers.cpp",
+          "line": 1381,
+          "message": "return value depends on the object referenced by field 'x', not on '*this'",
+          "verdict": "TP"
+        },
+        {
+          "column": 12,
+          "file": "build/lib/build/mc_vf_analyzers.cpp",
+          "line": 1384,
+          "message": "return value depends on the object referenced by field 'x', not on '*this'",
+          "verdict": "TP"
+        },
+        {
+          "column": 18,
+          "file": "lib/programmemory.h",
+          "line": 82,
+          "message": "return value depends on the object referenced by field 'tok', not on '*this'",
+          "verdict": "TP"
+        },
+        {
+          "column": 18,
+          "file": "lib/programmemory.h",
+          "line": 86,
+          "message": "return value depends on the object referenced by field 'tok', not on '*this'",
+          "verdict": "TP"
+        },
+        {
+          "column": 36,
+          "file": "build/lib/build/mc_programmemory.cpp",
+          "line": 1585,
+          "message": "parameter 'conditions' is later invalidated",
+          "verdict": "FP"
+        },
+        {
+          "column": 58,
+          "file": "build/lib/build/mc_templatesimplifier.cpp",
+          "line": 2706,
+          "message": "parameter 'args' is later invalidated",
+          "verdict": "FP"
+        },
+        {
+          "column": 5,
+          "file": "build/lib/build/mc_templatesimplifier.cpp",
+          "line": 4938,
+          "message": "parameter 'typeParametersInDeclaration' is later invalidated",
+          "verdict": "FP"
+        },
+        {
+          "column": 51,
+          "file": "build/lib/build/mc_checkother.cpp",
+          "line": 4348,
+          "message": "parameter 'typeStr' is later invalidated",
+          "verdict": "FP"
+        },
+        {
+          "column": 67,
+          "file": "build/lib/build/mc_symboldatabase.cpp",
+          "line": 8458,
+          "message": "parameter 'matches' is later invalidated",
+          "verdict": "FP"
+        },
+        {
+          "column": 183,
+          "file": "build/lib/build/mc_checkuninitvar.cpp",
+          "line": 1371,
+          "message": "parameter 'variableValue' is later invalidated",
+          "verdict": "FP"
+        },
+        {
+          "column": 20,
+          "file": "build/lib/build/mc_token.cpp",
+          "line": 2105,
+          "message": "parameter 'str' is later invalidated",
+          "verdict": "FP"
+        },
+        {
+          "column": 39,
+          "file": "build/lib/build/mc_token.cpp",
+          "line": 2113,
+          "message": "parameter 'ret' is later invalidated",
+          "verdict": "FP"
+        },
+        {
+          "column": 43,
+          "file": "build/lib/build/mc_token.cpp",
+          "line": 3151,
+          "message": "return value depends on the object referenced by field 'mImpl', not on '*this'",
+          "verdict": "TP"
+        },
+        {
+          "column": 22,
+          "file": "build/lib/build/mc_tokenize.cpp",
+          "line": 8494,
+          "message": "return value depends on the object referenced by field 'mTypedefToken', not on '*this'",
+          "verdict": "TP"
+        },
+        {
+          "column": 16,
+          "file": "build/lib/build/mc_tokenize.cpp",
+          "line": 8839,
+          "message": "return value depends on the object referenced by field 'mEndToken', not on '*this'",
+          "verdict": "TP"
+        },
+        {
+          "column": 16,
+          "file": "build/lib/build/mc_tokenize.cpp",
+          "line": 8843,
+          "message": "return value depends on the object referenced by field 'mNameToken', not on '*this'",
+          "verdict": "TP"
+        },
+        {
+          "column": 17,
+          "file": "build/lib/build/mc_valueflow.cpp",
+          "line": 8759,
+          "message": "return value depends on the object referenced by field 'mName', not on '*this'",
+          "verdict": "TP"
+        }
+      ],
+      "duration_seconds": 15.045668,
+      "project": "cppcheck",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 2.428163,
+      "project": "curl",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 38.284671,
+      "project": "doxygen",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 1.494601,
+      "project": "libgit2",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 0.908829,
+      "project": "libuv",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 417.929526,
+      "project": "llvm-project",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 42.64639,
+      "project": "poco",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 6.435645,
+      "project": "stdexec",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 2.764509,
+      "project": "yaml-cpp",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 2.83377,
+      "project": "zstd",
+      "status": "COMPLETED"
+    }
+  ],
+  "runner_arch": "ARM64",
+  "started_at": "2026-10-19T12:38:13+00:00",
+  "status": "COMPLETED"
+}
