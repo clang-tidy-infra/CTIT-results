@@ -1,0 +1,662 @@
+{
+  "artifact_url": "https://github.com/clang-tidy-infra/CTIT/actions/runs/39560661941/artifacts/12329711137",
+  "baseline": null,
+  "check_config": {},
+  "check_name": "performance-noexcept-move-constructor",
+  "duration_seconds": 2391.302352,
+  "finished_at": "2026-10-21T07:55:23.302352Z",
+  "github_run_attempt": 1,
+  "github_run_id": 39560661941,
+  "llvm_revision": "deae56302506911663b659dd1d8e211bd8d709b3+patch:78460dd98628f15059148fb8b243771312e6b5baa99d579b2f69b29570082534",
+  "pr_number": 226488,
+  "project_runs": [
+    {
+      "check_profile": {
+        "performance-noexcept-move-constructor": 0.1255
+      },
+      "diagnostics": [
+        {
+          "column": 18,
+          "file": "absl/container/inlined_vector.h",
+          "line": 548,
+          "message": "move assignment operators should be marked noexcept",
+          "verdict": "TP"
+        },
+        {
+          "column": 3,
+          "file": "absl/strings/internal/str_format/parser.h",
+          "line": 128,
+          "message": "move constructors should be marked noexcept",
+          "verdict": "TP"
+        },
+        {
+          "column": 21,
+          "file": "absl/strings/internal/str_format/parser.h",
+          "line": 142,
+          "message": "move assignment operators should be marked noexcept",
+          "verdict": "TP"
+        },
+        {
+          "column": 3,
+          "file": "absl/strings/internal/ostringstream.h",
+          "line": 74,
+          "message": "move constructors should be marked noexcept",
+          "verdict": "TP"
+        },
+        {
+          "column": 18,
+          "file": "absl/strings/internal/ostringstream.h",
+          "line": 79,
+          "message": "move assignment operators should be marked noexcept",
+          "verdict": "TP"
+        },
+        {
+          "column": 3,
+          "file": "absl/cleanup/internal/cleanup.h",
+          "line": 57,
+          "message": "move constructors should be marked noexcept",
+          "verdict": "TP"
+        },
+        {
+          "column": 15,
+          "file": "absl/crc/internal/crc_cord_state.cc",
+          "line": 45,
+          "message": "move constructors should be marked noexcept",
+          "verdict": "TP"
+        },
+        {
+          "column": 29,
+          "file": "absl/crc/internal/crc_cord_state.cc",
+          "line": 60,
+          "message": "move assignment operators should be marked noexcept",
+          "verdict": "TP"
+        },
+        {
+          "column": 3,
+          "file": "absl/crc/internal/crc_cord_state.h",
+          "line": 46,
+          "message": "move constructors should be marked noexcept",
+          "verdict": "TP"
+        },
+        {
+          "column": 17,
+          "file": "absl/crc/internal/crc_cord_state.h",
+          "line": 53,
+          "message": "move assignment operators should be marked noexcept",
+          "verdict": "TP"
+        },
+        {
+          "column": 17,
+          "file": "absl/status/internal/statusor_internal.h",
+          "line": 349,
+          "message": "move assignment operators should be marked noexcept",
+          "verdict": "TP"
+        },
+        {
+          "column": 39,
+          "file": "absl/status/statusor.cc",
+          "line": 46,
+          "message": "move assignment operators should be marked noexcept",
+          "verdict": "TP"
+        },
+        {
+          "column": 20,
+          "file": "absl/status/statusor.cc",
+          "line": 55,
+          "message": "move constructors should be marked noexcept",
+          "verdict": "TP"
+        },
+        {
+          "column": 3,
+          "file": "absl/status/statusor.h",
+          "line": 86,
+          "message": "move constructors should be marked noexcept",
+          "verdict": "TP"
+        },
+        {
+          "column": 22,
+          "file": "absl/status/statusor.h",
+          "line": 87,
+          "message": "move assignment operators should be marked noexcept",
+          "verdict": "TP"
+        },
+        {
+          "column": 5,
+          "file": "absl/strings/cord.h",
+          "line": 913,
+          "message": "move constructors should be marked noexcept",
+          "verdict": "TP"
+        },
+        {
+          "column": 25,
+          "file": "absl/strings/cord.h",
+          "line": 1187,
+          "message": "move constructors should be marked noexcept",
+          "verdict": "TP"
+        },
+        {
+          "column": 3,
+          "file": "absl/container/internal/raw_hash_set.h",
+          "line": 549,
+          "message": "move constructors should be marked noexcept",
+          "verdict": "TP"
+        }
+      ],
+      "duration_seconds": 9.954582,
+      "project": "abseil-cpp",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": {
+        "performance-noexcept-move-constructor": 0.1194
+      },
+      "diagnostics": [
+        {
+          "column": 5,
+          "file": "code/../contrib/rapidjson/include/rapidjson/internal/stack.h",
+          "line": 45,
+          "message": "move constructors should be marked noexcept",
+          "verdict": "TP"
+        },
+        {
+          "column": 12,
+          "file": "code/../contrib/rapidjson/include/rapidjson/internal/stack.h",
+          "line": 67,
+          "message": "move assignment operators should be marked noexcept",
+          "verdict": "TP"
+        },
+        {
+          "column": 5,
+          "file": "code/../contrib/rapidjson/include/rapidjson/stringbuffer.h",
+          "line": 48,
+          "message": "move constructors should be marked noexcept",
+          "verdict": "TP"
+        },
+        {
+          "column": 26,
+          "file": "code/../contrib/rapidjson/include/rapidjson/stringbuffer.h",
+          "line": 49,
+          "message": "move assignment operators should be marked noexcept",
+          "verdict": "TP"
+        },
+        {
+          "column": 5,
+          "file": "code/../contrib/rapidjson/include/rapidjson/prettywriter.h",
+          "line": 66,
+          "message": "move constructors should be marked noexcept",
+          "verdict": "TP"
+        },
+        {
+          "column": 5,
+          "file": "code/../contrib/rapidjson/include/rapidjson/writer.h",
+          "line": 111,
+          "message": "move constructors should be marked noexcept",
+          "verdict": "TP"
+        }
+      ],
+      "duration_seconds": 23.069501,
+      "project": "assimp",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": {
+        "performance-noexcept-move-constructor": 0.038
+      },
+      "diagnostics": [
+        {
+          "column": 9,
+          "file": "src/catch2/../catch2/internal/catch_optional.hpp",
+          "line": 42,
+          "message": "move constructors should be marked noexcept",
+          "verdict": "TP"
+        },
+        {
+          "column": 19,
+          "file": "src/catch2/../catch2/internal/catch_optional.hpp",
+          "line": 53,
+          "message": "move assignment operators should be marked noexcept",
+          "verdict": "TP"
+        },
+        {
+          "column": 17,
+          "file": "src/catch2/../catch2/internal/catch_clara.hpp",
+          "line": 184,
+          "message": "move constructors should be marked noexcept",
+          "verdict": "TP"
+        },
+        {
+          "column": 34,
+          "file": "src/catch2/../catch2/internal/catch_clara.hpp",
+          "line": 208,
+          "message": "move assignment operators should be marked noexcept",
+          "verdict": "TP"
+        },
+        {
+          "column": 42,
+          "file": "src/catch2/../catch2/matchers/catch_matchers_templated.hpp",
+          "line": 128,
+          "message": "move assignment operators should be marked noexcept",
+          "verdict": "FP"
+        },
+        {
+          "column": 42,
+          "file": "src/catch2/../catch2/matchers/catch_matchers_templated.hpp",
+          "line": 189,
+          "message": "move assignment operators should be marked noexcept",
+          "verdict": "FP"
+        },
+        {
+          "column": 42,
+          "file": "src/catch2/../catch2/matchers/catch_matchers_templated.hpp",
+          "line": 252,
+          "message": "move assignment operators should be marked noexcept",
+          "verdict": "FP"
+        }
+      ],
+      "duration_seconds": 4.150289,
+      "project": "catch2",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": {
+        "performance-noexcept-move-constructor": 0.1762
+      },
+      "diagnostics": [
+        {
+          "column": 9,
+          "file": "externals/simplecpp/./simplecpp.h",
+          "line": 299,
+          "message": "move constructors should be marked noexcept",
+          "verdict": "TP"
+        },
+        {
+          "column": 20,
+          "file": "externals/simplecpp/./simplecpp.h",
+          "line": 302,
+          "message": "move assignment operators should be marked noexcept",
+          "verdict": "TP"
+        },
+        {
+          "column": 23,
+          "file": "externals/simplecpp/simplecpp.cpp",
+          "line": 502,
+          "message": "move constructors should be marked noexcept",
+          "verdict": "TP"
+        },
+        {
+          "column": 45,
+          "file": "externals/simplecpp/simplecpp.cpp",
+          "line": 524,
+          "message": "move assignment operators should be marked noexcept",
+          "verdict": "TP"
+        },
+        {
+          "column": 9,
+          "file": "externals/simplecpp/simplecpp.h",
+          "line": 299,
+          "message": "move constructors should be marked noexcept",
+          "verdict": "TP"
+        },
+        {
+          "column": 20,
+          "file": "externals/simplecpp/simplecpp.h",
+          "line": 302,
+          "message": "move assignment operators should be marked noexcept",
+          "verdict": "TP"
+        }
+      ],
+      "duration_seconds": 14.204189,
+      "project": "cppcheck",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 2.465686,
+      "project": "curl",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": {
+        "performance-noexcept-move-constructor": 0.519
+      },
+      "diagnostics": [
+        {
+          "column": 3,
+          "file": "deps/fmt/include/fmt/base.h",
+          "line": 2352,
+          "message": "move constructors should be marked noexcept",
+          "verdict": "TP"
+        },
+        {
+          "column": 11,
+          "file": "src/dir.cpp",
+          "line": 52,
+          "message": "move constructors should be marked noexcept",
+          "verdict": "TP"
+        },
+        {
+          "column": 21,
+          "file": "src/dir.cpp",
+          "line": 57,
+          "message": "move assignment operators should be marked noexcept",
+          "verdict": "TP"
+        },
+        {
+          "column": 14,
+          "file": "src/dir.cpp",
+          "line": 122,
+          "message": "move constructors should be marked noexcept",
+          "verdict": "TP"
+        },
+        {
+          "column": 27,
+          "file": "src/dir.cpp",
+          "line": 129,
+          "message": "move assignment operators should be marked noexcept",
+          "verdict": "TP"
+        },
+        {
+          "column": 6,
+          "file": "src/dir.cpp",
+          "line": 209,
+          "message": "move constructors should be marked noexcept",
+          "verdict": "TP"
+        },
+        {
+          "column": 11,
+          "file": "src/dir.cpp",
+          "line": 214,
+          "message": "move assignment operators should be marked noexcept",
+          "verdict": "TP"
+        },
+        {
+          "column": 5,
+          "file": "src/dir.h",
+          "line": 30,
+          "message": "move constructors should be marked noexcept",
+          "verdict": "TP"
+        },
+        {
+          "column": 15,
+          "file": "src/dir.h",
+          "line": 31,
+          "message": "move assignment operators should be marked noexcept",
+          "verdict": "TP"
+        },
+        {
+          "column": 5,
+          "file": "src/dir.h",
+          "line": 53,
+          "message": "move constructors should be marked noexcept",
+          "verdict": "TP"
+        },
+        {
+          "column": 18,
+          "file": "src/dir.h",
+          "line": 54,
+          "message": "move assignment operators should be marked noexcept",
+          "verdict": "TP"
+        },
+        {
+          "column": 5,
+          "file": "src/dir.h",
+          "line": 81,
+          "message": "move constructors should be marked noexcept",
+          "verdict": "TP"
+        },
+        {
+          "column": 10,
+          "file": "src/dir.h",
+          "line": 82,
+          "message": "move assignment operators should be marked noexcept",
+          "verdict": "TP"
+        },
+        {
+          "column": 3,
+          "file": "deps/spdlog/include/spdlog/fmt/bundled/base.h",
+          "line": 2352,
+          "message": "move constructors should be marked noexcept",
+          "verdict": "TP"
+        }
+      ],
+      "duration_seconds": 29.338494,
+      "project": "doxygen",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 1.379452,
+      "project": "libgit2",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 0.858158,
+      "project": "libuv",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 314.234427,
+      "project": "llvm-project",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": {
+        "performance-noexcept-move-constructor": 0.9777
+      },
+      "diagnostics": [
+        {
+          "column": 2,
+          "file": "Net/include/Poco/Net/IPAddress.h",
+          "line": 82,
+          "message": "move constructors should be marked noexcept",
+          "verdict": "TP"
+        },
+        {
+          "column": 13,
+          "file": "Net/include/Poco/Net/IPAddress.h",
+          "line": 136,
+          "message": "move assignment operators should be marked noexcept",
+          "verdict": "TP"
+        },
+        {
+          "column": 2,
+          "file": "Net/include/Poco/Net/SocketAddress.h",
+          "line": 158,
+          "message": "move constructors should be marked noexcept",
+          "verdict": "TP"
+        },
+        {
+          "column": 17,
+          "file": "Net/include/Poco/Net/SocketAddress.h",
+          "line": 170,
+          "message": "move assignment operators should be marked noexcept",
+          "verdict": "TP"
+        },
+        {
+          "column": 2,
+          "file": "Foundation/include/Poco/Any.h",
+          "line": 283,
+          "message": "move constructors should be marked noexcept",
+          "verdict": "TP"
+        },
+        {
+          "column": 7,
+          "file": "Foundation/include/Poco/Any.h",
+          "line": 350,
+          "message": "move assignment operators should be marked noexcept",
+          "verdict": "TP"
+        },
+        {
+          "column": 2,
+          "file": "Foundation/include/Poco/DefaultStrategy.h",
+          "line": 144,
+          "message": "move constructors should be marked noexcept",
+          "verdict": "TP"
+        },
+        {
+          "column": 19,
+          "file": "Foundation/include/Poco/DefaultStrategy.h",
+          "line": 201,
+          "message": "move assignment operators should be marked noexcept",
+          "verdict": "TP"
+        },
+        {
+          "column": 2,
+          "file": "Foundation/include/Poco/AbstractObserver.h",
+          "line": 36,
+          "message": "move constructors should be marked noexcept",
+          "verdict": "TP"
+        },
+        {
+          "column": 20,
+          "file": "Foundation/include/Poco/AbstractObserver.h",
+          "line": 40,
+          "message": "move assignment operators should be marked noexcept",
+          "verdict": "TP"
+        },
+        {
+          "column": 2,
+          "file": "Foundation/include/Poco/NObserver.h",
+          "line": 109,
+          "message": "move constructors should be marked noexcept",
+          "verdict": "TP"
+        },
+        {
+          "column": 13,
+          "file": "Foundation/include/Poco/NObserver.h",
+          "line": 134,
+          "message": "move assignment operators should be marked noexcept",
+          "verdict": "TP"
+        },
+        {
+          "column": 17,
+          "file": "Foundation/include/Poco/ordered_hash.h",
+          "line": 567,
+          "message": "move assignment operators should be marked noexcept",
+          "verdict": "TP"
+        },
+        {
+          "column": 3,
+          "file": "Data/SQLParser/src/parser/../SQLParserResult.h",
+          "line": 20,
+          "message": "move constructors should be marked noexcept",
+          "verdict": "TP"
+        },
+        {
+          "column": 20,
+          "file": "Data/SQLParser/src/parser/../SQLParserResult.h",
+          "line": 21,
+          "message": "move assignment operators should be marked noexcept",
+          "verdict": "TP"
+        },
+        {
+          "column": 3,
+          "file": "Data/SQLParser/src/SQLParserResult.h",
+          "line": 20,
+          "message": "move constructors should be marked noexcept",
+          "verdict": "TP"
+        },
+        {
+          "column": 20,
+          "file": "Data/SQLParser/src/SQLParserResult.h",
+          "line": 21,
+          "message": "move assignment operators should be marked noexcept",
+          "verdict": "TP"
+        },
+        {
+          "column": 18,
+          "file": "Data/SQLParser/src/SQLParserResult.cpp",
+          "line": 30,
+          "message": "move constructors should be marked noexcept",
+          "verdict": "TP"
+        },
+        {
+          "column": 35,
+          "file": "Data/SQLParser/src/SQLParserResult.cpp",
+          "line": 32,
+          "message": "move assignment operators should be marked noexcept",
+          "verdict": "TP"
+        },
+        {
+          "column": 13,
+          "file": "Foundation/src/DirectoryWatcher.cpp",
+          "line": 84,
+          "message": "move assignment operators should be marked noexcept",
+          "verdict": "TP"
+        },
+        {
+          "column": 16,
+          "file": "Net/src/SocketAddress.cpp",
+          "line": 155,
+          "message": "move constructors should be marked noexcept",
+          "verdict": "TP"
+        },
+        {
+          "column": 31,
+          "file": "Net/src/SocketAddress.cpp",
+          "line": 214,
+          "message": "move assignment operators should be marked noexcept",
+          "verdict": "TP"
+        },
+        {
+          "column": 12,
+          "file": "Net/src/IPAddress.cpp",
+          "line": 73,
+          "message": "move constructors should be marked noexcept",
+          "verdict": "TP"
+        },
+        {
+          "column": 23,
+          "file": "Net/src/IPAddress.cpp",
+          "line": 246,
+          "message": "move assignment operators should be marked noexcept",
+          "verdict": "TP"
+        },
+        {
+          "column": 3,
+          "file": "dependencies/quill/include/quill/bundled/fmt/base.h",
+          "line": 2400,
+          "message": "move constructors should be marked noexcept",
+          "verdict": "TP"
+        }
+      ],
+      "duration_seconds": 41.270691,
+      "project": "poco",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": {
+        "performance-noexcept-move-constructor": 0.0048
+      },
+      "diagnostics": [],
+      "duration_seconds": 5.530919,
+      "project": "stdexec",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": {
+        "performance-noexcept-move-constructor": 0.0086
+      },
+      "diagnostics": [],
+      "duration_seconds": 2.759297,
+      "project": "yaml-cpp",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 2.058125,
+      "project": "zstd",
+      "status": "COMPLETED"
+    }
+  ],
+  "runner_arch": "ARM64",
+  "started_at": "2026-10-21T07:15:32+00:00",
+  "status": "COMPLETED"
+}
