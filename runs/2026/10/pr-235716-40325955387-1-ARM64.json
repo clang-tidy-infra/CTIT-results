@@ -1,0 +1,661 @@
+{
+  "artifact_url": "https://github.com/clang-tidy-infra/CTIT/actions/runs/40325955387/artifacts/12655315911",
+  "baseline": {
+    "llvm_revision": "c6600a4a5b4037af9fe38e2d93144c2c1f1f2818",
+    "project_runs": [
+      {
+        "check_profile": null,
+        "diagnostics": [],
+        "duration_seconds": 10.776585,
+        "project": "abseil-cpp",
+        "status": "COMPLETED"
+      },
+      {
+        "check_profile": null,
+        "diagnostics": [
+          {
+            "column": 5,
+            "file": "code/AssetLib/COB/COBLoader.cpp",
+            "line": 861,
+            "message": "an exception may be thrown in function '~chunk_guard' which should not throw exceptions",
+            "verdict": null
+          }
+        ],
+        "duration_seconds": 26.828457,
+        "project": "assimp",
+        "status": "COMPLETED"
+      },
+      {
+        "check_profile": null,
+        "diagnostics": [],
+        "duration_seconds": 5.081878,
+        "project": "catch2",
+        "status": "COMPLETED"
+      },
+      {
+        "check_profile": null,
+        "diagnostics": [],
+        "duration_seconds": 10.690271,
+        "project": "cppcheck",
+        "status": "COMPLETED"
+      },
+      {
+        "check_profile": null,
+        "diagnostics": [],
+        "duration_seconds": 2.368233,
+        "project": "curl",
+        "status": "COMPLETED"
+      },
+      {
+        "check_profile": null,
+        "diagnostics": [
+          {
+            "column": 15,
+            "file": "deps/spdlog/include/spdlog/fmt/bundled/format-inl.h",
+            "line": 43,
+            "message": "an exception may be thrown in function 'format_error_code' which should not throw exceptions",
+            "verdict": null
+          }
+        ],
+        "duration_seconds": 31.565671,
+        "project": "doxygen",
+        "status": "COMPLETED"
+      },
+      {
+        "check_profile": null,
+        "diagnostics": [],
+        "duration_seconds": 1.560772,
+        "project": "libgit2",
+        "status": "COMPLETED"
+      },
+      {
+        "check_profile": null,
+        "diagnostics": [],
+        "duration_seconds": 0.752901,
+        "project": "libuv",
+        "status": "COMPLETED"
+      },
+      {
+        "check_profile": null,
+        "diagnostics": [],
+        "duration_seconds": 327.036779,
+        "project": "llvm-project",
+        "status": "COMPLETED"
+      },
+      {
+        "check_profile": null,
+        "diagnostics": [
+          {
+            "column": 3,
+            "file": "Util/include/Poco/Util/AbstractConfiguration.h",
+            "line": 463,
+            "message": "an exception may be thrown in function '~ScopedLock' which should not throw exceptions",
+            "verdict": null
+          },
+          {
+            "column": 1,
+            "file": "PageCompiler/File2Page/src/File2Page.cpp",
+            "line": 294,
+            "message": "an exception may be thrown in function 'main' which should not throw exceptions",
+            "verdict": null
+          },
+          {
+            "column": 16,
+            "file": "Net/src/SocketReactor.cpp",
+            "line": 71,
+            "message": "an exception may be thrown in function '~SocketReactor' which should not throw exceptions",
+            "verdict": null
+          },
+          {
+            "column": 22,
+            "file": "Net/src/SocketReactor.cpp",
+            "line": 356,
+            "message": "an exception may be thrown in function '~ScopedSocketReactor' which should not throw exceptions",
+            "verdict": null
+          },
+          {
+            "column": 7,
+            "file": "MongoDB/include/Poco/MongoDB/Document.h",
+            "line": 45,
+            "message": "an exception may be thrown in function 'operator()' which should not throw exceptions",
+            "verdict": null
+          },
+          {
+            "column": 7,
+            "file": "MongoDB/include/Poco/MongoDB/Document.h",
+            "line": 50,
+            "message": "an exception may be thrown in function 'operator()' which should not throw exceptions",
+            "verdict": null
+          },
+          {
+            "column": 7,
+            "file": "MongoDB/include/Poco/MongoDB/Document.h",
+            "line": 55,
+            "message": "an exception may be thrown in function 'operator()' which should not throw exceptions",
+            "verdict": null
+          },
+          {
+            "column": 7,
+            "file": "MongoDB/include/Poco/MongoDB/Document.h",
+            "line": 69,
+            "message": "an exception may be thrown in function 'operator()' which should not throw exceptions",
+            "verdict": null
+          },
+          {
+            "column": 19,
+            "file": "Foundation/src/FileStreamRWLock.cpp",
+            "line": 34,
+            "message": "an exception may be thrown in function '~FileStreamRWLock' which should not throw exceptions",
+            "verdict": null
+          },
+          {
+            "column": 13,
+            "file": "Foundation/src/Thread_POSIX.cpp",
+            "line": 101,
+            "message": "an exception may be thrown in function '~ThreadImpl' which should not throw exceptions",
+            "verdict": null
+          },
+          {
+            "column": 26,
+            "file": "Foundation/src/ActiveThreadPool.cpp",
+            "line": 309,
+            "message": "an exception may be thrown in function '~ActiveThreadPoolPrivate' which should not throw exceptions",
+            "verdict": null
+          },
+          {
+            "column": 14,
+            "file": "Foundation/src/TaskManager.cpp",
+            "line": 49,
+            "message": "an exception may be thrown in function '~TaskManager' which should not throw exceptions",
+            "verdict": null
+          },
+          {
+            "column": 28,
+            "file": "MongoDB/src/ReplicaSetConnection.cpp",
+            "line": 125,
+            "message": "an exception may be thrown in function 'matchesReadPreference' which should not throw exceptions",
+            "verdict": null
+          },
+          {
+            "column": 1,
+            "file": "PageCompiler/src/PageCompiler.cpp",
+            "line": 390,
+            "message": "an exception may be thrown in function 'main' which should not throw exceptions",
+            "verdict": null
+          },
+          {
+            "column": 12,
+            "file": "Data/src/RecordSet.cpp",
+            "line": 74,
+            "message": "an exception may be thrown in function 'RecordSet' which should not throw exceptions",
+            "verdict": null
+          },
+          {
+            "column": 23,
+            "file": "Data/src/RecordSet.cpp",
+            "line": 108,
+            "message": "an exception may be thrown in function 'operator=' which should not throw exceptions",
+            "verdict": null
+          },
+          {
+            "column": 1,
+            "file": "ActiveRecord/Compiler/src/Compiler.cpp",
+            "line": 234,
+            "message": "an exception may be thrown in function 'main' which should not throw exceptions",
+            "verdict": null
+          },
+          {
+            "column": 35,
+            "file": "dependencies/quill/include/quill/Backend.h",
+            "line": 164,
+            "message": "an exception may be thrown in function 'convert_rdtsc_to_epoch_time' which should not throw exceptions",
+            "verdict": null
+          },
+          {
+            "column": 36,
+            "file": "dependencies/quill/include/quill/Frontend.h",
+            "line": 329,
+            "message": "an exception may be thrown in function 'get_valid_logger' which should not throw exceptions",
+            "verdict": null
+          },
+          {
+            "column": 28,
+            "file": "dependencies/quill/include/quill/backend/BackendWorker.h",
+            "line": 1042,
+            "message": "an exception may be thrown in function '_check_failure_counter' which should not throw exceptions",
+            "verdict": null
+          },
+          {
+            "column": 103,
+            "file": "dependencies/quill/include/quill/backend/BackendWorker.h",
+            "line": 1080,
+            "message": "an exception may be thrown in function '_process_named_args_format_message' which should not throw exceptions",
+            "verdict": null
+          },
+          {
+            "column": 3,
+            "file": "dependencies/quill/include/quill/backend/ManualBackendWorker.h",
+            "line": 27,
+            "message": "an exception may be thrown in function '~ManualBackendWorker' which should not throw exceptions",
+            "verdict": null
+          },
+          {
+            "column": 33,
+            "file": "dependencies/quill/include/quill/backend/StringFromTime.h",
+            "line": 429,
+            "message": "an exception may be thrown in function '_next_noon_or_midnight_timestamp' which should not throw exceptions",
+            "verdict": null
+          },
+          {
+            "column": 20,
+            "file": "dependencies/quill/include/quill/bundled/fmt/format-inl.h",
+            "line": 73,
+            "message": "an exception may be thrown in function 'format_error_code' which should not throw exceptions",
+            "verdict": null
+          },
+          {
+            "column": 38,
+            "file": "dependencies/quill/include/quill/core/LoggerManager.h",
+            "line": 40,
+            "message": "an exception may be thrown in function 'instance' which should not throw exceptions",
+            "verdict": null
+          },
+          {
+            "column": 52,
+            "file": "dependencies/quill/include/quill/core/ThreadContextManager.h",
+            "line": 403,
+            "message": "an exception may be thrown in function 'get_local_thread_context<Poco::PocoFrontendOptions>' which should not throw exceptions",
+            "verdict": null
+          },
+          {
+            "column": 35,
+            "file": "dependencies/quill/include/quill/sinks/FileSink.h",
+            "line": 341,
+            "message": "an exception may be thrown in function 'append_datetime_to_filename' which should not throw exceptions",
+            "verdict": null
+          }
+        ],
+        "duration_seconds": 48.772114,
+        "project": "poco",
+        "status": "COMPLETED"
+      },
+      {
+        "check_profile": null,
+        "diagnostics": [
+          {
+            "column": 28,
+            "file": "src/system_context/../../include/stdexec/__detail/../../exec/static_thread_pool.hpp",
+            "line": 1336,
+            "message": "an exception may be thrown in function 'operator()' which should not throw exceptions",
+            "verdict": null
+          },
+          {
+            "column": 12,
+            "file": "src/system_context/../../include/stdexec/__detail/../../exec/static_thread_pool.hpp",
+            "line": 1490,
+            "message": "an exception may be thrown in function 'set_value<>' which should not throw exceptions",
+            "verdict": null
+          }
+        ],
+        "duration_seconds": 8.142131,
+        "project": "stdexec",
+        "status": "COMPLETED"
+      },
+      {
+        "check_profile": null,
+        "diagnostics": [],
+        "duration_seconds": 2.118054,
+        "project": "yaml-cpp",
+        "status": "COMPLETED"
+      },
+      {
+        "check_profile": null,
+        "diagnostics": [],
+        "duration_seconds": 2.287582,
+        "project": "zstd",
+        "status": "COMPLETED"
+      }
+    ]
+  },
+  "check_config": {},
+  "check_name": "bugprone-exception-escape",
+  "duration_seconds": 2252.971141,
+  "finished_at": "2026-10-26T13:31:04.971141Z",
+  "github_run_attempt": 1,
+  "github_run_id": 40325955387,
+  "llvm_revision": "c6600a4a5b4037af9fe38e2d93144c2c1f1f2818+patch:f2cdb330728d0b015c88e2c5966dcff41bc70895c5511ba8c1e7295f0afa7afd",
+  "pr_number": 235716,
+  "project_runs": [
+    {
+      "check_profile": {
+        "bugprone-exception-escape": 0.2858
+      },
+      "diagnostics": [],
+      "duration_seconds": 10.885736,
+      "project": "abseil-cpp",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": {
+        "bugprone-exception-escape": 0.245
+      },
+      "diagnostics": [
+        {
+          "column": 5,
+          "file": "code/AssetLib/COB/COBLoader.cpp",
+          "line": 861,
+          "message": "an exception may be thrown in function '~chunk_guard' which should not throw exceptions",
+          "verdict": "TP"
+        }
+      ],
+      "duration_seconds": 21.019897,
+      "project": "assimp",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": {
+        "bugprone-exception-escape": 0.0502
+      },
+      "diagnostics": [],
+      "duration_seconds": 3.733292,
+      "project": "catch2",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": {
+        "bugprone-exception-escape": 0.299
+      },
+      "diagnostics": [],
+      "duration_seconds": 13.186197,
+      "project": "cppcheck",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 2.855721,
+      "project": "curl",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": {
+        "bugprone-exception-escape": 0.944
+      },
+      "diagnostics": [
+        {
+          "column": 15,
+          "file": "deps/spdlog/include/spdlog/fmt/bundled/format-inl.h",
+          "line": 43,
+          "message": "an exception may be thrown in function 'format_error_code' which should not throw exceptions",
+          "verdict": "FP"
+        }
+      ],
+      "duration_seconds": 30.314388,
+      "project": "doxygen",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 1.469595,
+      "project": "libgit2",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 0.742232,
+      "project": "libuv",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 336.950328,
+      "project": "llvm-project",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": {
+        "bugprone-exception-escape": 1.3408
+      },
+      "diagnostics": [
+        {
+          "column": 7,
+          "file": "MongoDB/include/Poco/MongoDB/Document.h",
+          "line": 45,
+          "message": "an exception may be thrown in function 'operator()' which should not throw exceptions",
+          "verdict": "TP"
+        },
+        {
+          "column": 7,
+          "file": "MongoDB/include/Poco/MongoDB/Document.h",
+          "line": 50,
+          "message": "an exception may be thrown in function 'operator()' which should not throw exceptions",
+          "verdict": "TP"
+        },
+        {
+          "column": 7,
+          "file": "MongoDB/include/Poco/MongoDB/Document.h",
+          "line": 55,
+          "message": "an exception may be thrown in function 'operator()' which should not throw exceptions",
+          "verdict": "TP"
+        },
+        {
+          "column": 7,
+          "file": "MongoDB/include/Poco/MongoDB/Document.h",
+          "line": 69,
+          "message": "an exception may be thrown in function 'operator()' which should not throw exceptions",
+          "verdict": "FP"
+        },
+        {
+          "column": 3,
+          "file": "Util/include/Poco/Util/AbstractConfiguration.h",
+          "line": 463,
+          "message": "an exception may be thrown in function '~ScopedLock' which should not throw exceptions",
+          "verdict": "TP"
+        },
+        {
+          "column": 26,
+          "file": "Foundation/src/ActiveThreadPool.cpp",
+          "line": 309,
+          "message": "an exception may be thrown in function '~ActiveThreadPoolPrivate' which should not throw exceptions",
+          "verdict": "TP"
+        },
+        {
+          "column": 28,
+          "file": "MongoDB/src/ReplicaSetConnection.cpp",
+          "line": 125,
+          "message": "an exception may be thrown in function 'matchesReadPreference' which should not throw exceptions",
+          "verdict": "FP"
+        },
+        {
+          "column": 14,
+          "file": "Foundation/src/TaskManager.cpp",
+          "line": 49,
+          "message": "an exception may be thrown in function '~TaskManager' which should not throw exceptions",
+          "verdict": "TP"
+        },
+        {
+          "column": 13,
+          "file": "Foundation/src/Thread_POSIX.cpp",
+          "line": 101,
+          "message": "an exception may be thrown in function '~ThreadImpl' which should not throw exceptions",
+          "verdict": "TP"
+        },
+        {
+          "column": 19,
+          "file": "Foundation/src/FileStreamRWLock.cpp",
+          "line": 34,
+          "message": "an exception may be thrown in function '~FileStreamRWLock' which should not throw exceptions",
+          "verdict": "TP"
+        },
+        {
+          "column": 1,
+          "file": "ActiveRecord/Compiler/src/Compiler.cpp",
+          "line": 234,
+          "message": "an exception may be thrown in function 'main' which should not throw exceptions",
+          "verdict": "FP"
+        },
+        {
+          "column": 35,
+          "file": "dependencies/quill/include/quill/Backend.h",
+          "line": 164,
+          "message": "an exception may be thrown in function 'convert_rdtsc_to_epoch_time' which should not throw exceptions",
+          "verdict": "TP"
+        },
+        {
+          "column": 36,
+          "file": "dependencies/quill/include/quill/Frontend.h",
+          "line": 329,
+          "message": "an exception may be thrown in function 'get_valid_logger' which should not throw exceptions",
+          "verdict": "TP"
+        },
+        {
+          "column": 28,
+          "file": "dependencies/quill/include/quill/backend/BackendWorker.h",
+          "line": 1042,
+          "message": "an exception may be thrown in function '_check_failure_counter' which should not throw exceptions",
+          "verdict": "TP"
+        },
+        {
+          "column": 103,
+          "file": "dependencies/quill/include/quill/backend/BackendWorker.h",
+          "line": 1080,
+          "message": "an exception may be thrown in function '_process_named_args_format_message' which should not throw exceptions",
+          "verdict": "FP"
+        },
+        {
+          "column": 3,
+          "file": "dependencies/quill/include/quill/backend/ManualBackendWorker.h",
+          "line": 27,
+          "message": "an exception may be thrown in function '~ManualBackendWorker' which should not throw exceptions",
+          "verdict": "TP"
+        },
+        {
+          "column": 33,
+          "file": "dependencies/quill/include/quill/backend/StringFromTime.h",
+          "line": 429,
+          "message": "an exception may be thrown in function '_next_noon_or_midnight_timestamp' which should not throw exceptions",
+          "verdict": "TP"
+        },
+        {
+          "column": 20,
+          "file": "dependencies/quill/include/quill/bundled/fmt/format-inl.h",
+          "line": 73,
+          "message": "an exception may be thrown in function 'format_error_code' which should not throw exceptions",
+          "verdict": "FP"
+        },
+        {
+          "column": 38,
+          "file": "dependencies/quill/include/quill/core/LoggerManager.h",
+          "line": 40,
+          "message": "an exception may be thrown in function 'instance' which should not throw exceptions",
+          "verdict": "TP"
+        },
+        {
+          "column": 52,
+          "file": "dependencies/quill/include/quill/core/ThreadContextManager.h",
+          "line": 403,
+          "message": "an exception may be thrown in function 'get_local_thread_context<Poco::PocoFrontendOptions>' which should not throw exceptions",
+          "verdict": "TP"
+        },
+        {
+          "column": 35,
+          "file": "dependencies/quill/include/quill/sinks/FileSink.h",
+          "line": 341,
+          "message": "an exception may be thrown in function 'append_datetime_to_filename' which should not throw exceptions",
+          "verdict": "TP"
+        },
+        {
+          "column": 12,
+          "file": "Data/src/RecordSet.cpp",
+          "line": 74,
+          "message": "an exception may be thrown in function 'RecordSet' which should not throw exceptions",
+          "verdict": "TP"
+        },
+        {
+          "column": 23,
+          "file": "Data/src/RecordSet.cpp",
+          "line": 108,
+          "message": "an exception may be thrown in function 'operator=' which should not throw exceptions",
+          "verdict": "TP"
+        },
+        {
+          "column": 16,
+          "file": "Net/src/SocketReactor.cpp",
+          "line": 71,
+          "message": "an exception may be thrown in function '~SocketReactor' which should not throw exceptions",
+          "verdict": "TP"
+        },
+        {
+          "column": 22,
+          "file": "Net/src/SocketReactor.cpp",
+          "line": 356,
+          "message": "an exception may be thrown in function '~ScopedSocketReactor' which should not throw exceptions",
+          "verdict": "TP"
+        },
+        {
+          "column": 1,
+          "file": "PageCompiler/File2Page/src/File2Page.cpp",
+          "line": 294,
+          "message": "an exception may be thrown in function 'main' which should not throw exceptions",
+          "verdict": "FP"
+        },
+        {
+          "column": 1,
+          "file": "PageCompiler/src/PageCompiler.cpp",
+          "line": 390,
+          "message": "an exception may be thrown in function 'main' which should not throw exceptions",
+          "verdict": "FP"
+        }
+      ],
+      "duration_seconds": 47.746083,
+      "project": "poco",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": {
+        "bugprone-exception-escape": 0.0234
+      },
+      "diagnostics": [
+        {
+          "column": 28,
+          "file": "src/system_context/../../include/stdexec/__detail/../../exec/static_thread_pool.hpp",
+          "line": 1336,
+          "message": "an exception may be thrown in function 'operator()' which should not throw exceptions",
+          "verdict": "FP"
+        },
+        {
+          "column": 12,
+          "file": "src/system_context/../../include/stdexec/__detail/../../exec/static_thread_pool.hpp",
+          "line": 1490,
+          "message": "an exception may be thrown in function 'set_value<>' which should not throw exceptions",
+          "verdict": "FP"
+        }
+      ],
+      "duration_seconds": 8.275202,
+      "project": "stdexec",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": {
+        "bugprone-exception-escape": 0.017
+      },
+      "diagnostics": [],
+      "duration_seconds": 2.308417,
+      "project": "yaml-cpp",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 2.424318,
+      "project": "zstd",
+      "status": "COMPLETED"
+    }
+  ],
+  "runner_arch": "ARM64",
+  "started_at": "2026-10-26T12:53:32+00:00",
+  "status": "COMPLETED"
+}
