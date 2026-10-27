@@ -1,0 +1,114 @@
+{
+  "artifact_url": "https://github.com/clang-tidy-infra/CTIT/actions/runs/40458460797/artifacts/12714951318",
+  "baseline": null,
+  "check_config": {},
+  "check_name": "modernize-use-bit-cast",
+  "duration_seconds": 1702.14327,
+  "finished_at": "2026-10-27T06:28:32.143270Z",
+  "github_run_attempt": 1,
+  "github_run_id": 40458460797,
+  "llvm_revision": "1da436a23e613c425fc9b868fc8deb979ede47a4+patch:054ce5459951dc9291704b65a9d0f2bfaf5dd3173e0f0fb316b2db0e9a509dbd",
+  "pr_number": 189962,
+  "project_runs": [
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 10.214469,
+      "project": "abseil-cpp",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 25.364106,
+      "project": "assimp",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 3.810985,
+      "project": "catch2",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 13.956492,
+      "project": "cppcheck",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 2.368404,
+      "project": "curl",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": {
+        "modernize-use-bit-cast": 0.9591
+      },
+      "diagnostics": [],
+      "duration_seconds": 27.647613,
+      "project": "doxygen",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 1.558761,
+      "project": "libgit2",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 0.835385,
+      "project": "libuv",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 328.801754,
+      "project": "llvm-project",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": {
+        "modernize-use-bit-cast": 0.8531
+      },
+      "diagnostics": [],
+      "duration_seconds": 44.613945,
+      "project": "poco",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": {
+        "modernize-use-bit-cast": 0.008
+      },
+      "diagnostics": [],
+      "duration_seconds": 8.316629,
+      "project": "stdexec",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 3.026817,
+      "project": "yaml-cpp",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 2.380552,
+      "project": "zstd",
+      "status": "COMPLETED"
+    }
+  ],
+  "runner_arch": "ARM64",
+  "started_at": "2026-10-27T06:00:10+00:00",
+  "status": "COMPLETED"
+}
