@@ -1,8 +1,9 @@
 <h3>Check timings:</h3>
-<p>Every day CTIT runs all clang-tidy checks on every test project with
-<code>-enable-check-profile</code>. <b>Check time</b> is the time spent in the
-checks, summed over all files and parallel jobs. <b>Analysis time</b> is the
-wall-clock time of <code>run-clang-tidy</code> on a project, including parsing.</p>
+<p>Once a day, CTIT runs every clang-tidy check on every test project with
+<code>-enable-check-profile</code> and records two times. <b>Check time</b> is
+the time spent inside the checks, summed over all files and parallel jobs.
+<b>Analysis time</b> is the wall-clock time of <code>run-clang-tidy</code> on a
+project, including parsing.</p>
 <form id="controls" onsubmit="return false">
 <label>Metric: <select id="metric">
 <option value="check">Check time</option>
@@ -19,9 +20,10 @@ autocomplete="off" spellcheck="false" /></label>
 <span class="mode">Show:
 <label><input type="radio" name="mode" value="sum" checked autocomplete="off" /> sum</label>
 <label><input type="radio" name="mode" value="compare" autocomplete="off" /> compare</label></span><br />
-<span class="dim hint">Like <code>clang-tidy -checks</code>, e.g.
+<span class="dim hint">Written like <code>clang-tidy -checks</code>, e.g.
 <code>modernize-*,-modernize-use-auto</code>. Text without <code>*</code>
-matches any check containing it.</span></p>
+matches the check with exactly that name, or else every check that contains it.
+Sum draws the matching checks as one line; compare draws one line per check.</span></p>
 <p>Sum over projects:
 <button type="button" id="select-all">All</button>
 <button type="button" id="select-none">None</button><br />
@@ -33,17 +35,17 @@ $projects</p>
 <p id="compare-legend" class="legend" hidden></p>
 <p id="compare-note" class="dim" hidden></p>
 <div id="total" class="graph"></div>
-<p class="dim">Hover over a day to see its values. Click it to see the LLVM
-changes since the previous run. Drag to zoom, double-click to zoom out. A gray
-vertical line marks a change of the runner: the timings on its two sides come
+<p class="dim">Hover over a day to see its values, and click it to see the
+LLVM changes since the previous run. Drag to zoom in and double-click to zoom
+out. A gray vertical line marks a runner change: the times on either side come
 from different hardware and cannot be compared.</p>
 <h4 id="projects-title">Per project:</h4>
 <div id="projects" class="small-multiples"></div>
 <h4>Checks:</h4>
-<p class="dim">The time of each matching check in the latest run, summed over
-the checked projects, and how it changed since the previous run and since the
-run a week earlier. Changes of at least 10% and 1 s are colored. Click a check
-to show only it, or a column header to sort.</p>
+<p class="dim">Each matching check's time in the latest run, summed over the
+selected projects, and its change since the previous run and since the run a
+week earlier. Changes of at least 10% and 1 s are colored. Click a check to
+show only that check, or click a column header to sort.</p>
 <div class="wide"><table id="checks"></table></div>
 <h4>Data:</h4>
 <div class="wide"><table id="table"></table></div>

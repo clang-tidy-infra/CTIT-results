@@ -34,7 +34,10 @@ def build_checks(site: Site, runs: list[Run]) -> None:
             "</tr>\n"
         )
     body = (
-        "<h3>Checks:</h3>\n<table>\n"
+        "<h3>Checks:</h3>\n"
+        "<p>Every check CTIT has tested. Warnings is the total of the latest "
+        "run. Click a check to see all of its runs on the index.</p>\n"
+        "<table>\n"
         '<tr><th class="l">Check</th><th>Runs</th><th>Latest run</th>'
         '<th>Warnings</th><th class="l">Latest PR</th></tr>\n'
         f"{''.join(rows)}</table>\n"

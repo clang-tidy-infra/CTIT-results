@@ -1,29 +1,44 @@
 <h3>About:</h3>
 <p>This site shows the results of the
-<a href="$ctit_url">Clang-Tidy Integration Tester (CTIT)</a>. CTIT runs a
-clang-tidy check, usually from an LLVM pull request, against a corpus of
-open-source C and C++ projects and records every warning it produces.</p>
-<p>Each run is stored as a JSON file in <a href="$repository_url">$repository</a>.
-This site is regenerated every time a new run is committed there.</p>
-<p>The index groups runs by pull request and check. Each project column shows
-the number of warnings, and the number in parentheses is the change from the
-previous run of the same group: more warnings in red, fewer in green, and no
-change in gray. Runs from different runner architectures are listed together. A red
-background marks a run or project that did not complete; hover over it to see
-its status.</p>
-<p>TP and FP verdicts are produced automatically by an AI model and are only a
-hint. Warnings without a verdict are listed as unclassified.</p>
-<p>For runs started with <code>/baseline</code>, the run page and project pages
-show which warnings are new compared with the unpatched LLVM main branch, and
-which baseline warnings are gone.</p>
-<p>Source links point to the project commit listed in CTIT's
-<code>testers/projects.json</code> when the run started.</p>
-<p>The timings page follows the daily run of every clang-tidy check over all
-test projects, summed over the projects you choose, and each check has a page
-of its own. Each day is stored as a JSON file under <code>timings/</code>.
-Runs recorded with a check profile show on their page where their check
-would rank by check time among the checks of the latest daily run.</p>
-<p>A machine-readable summary of all runs is available at
+<a href="$ctit_url">Clang-Tidy Integration Tester (CTIT)</a>. CTIT takes a
+clang-tidy check, usually one from an LLVM pull request, runs it on a set of
+open-source C and C++ projects, and records every warning it reports. The
+results help find false positives, crashes, and slowdowns in a check before it
+lands in LLVM.</p>
+<p>Each run is stored as a JSON file in <a href="$repository_url">$repository</a>,
+and this site is rebuilt whenever new results are committed there.</p>
+<h4>Index:</h4>
+<p>The index has one table per pull request and check, with the most recently
+tested first. Runs of a check on LLVM main, without a pull request, are listed
+under "main". Each row is one run, newest first, and runs on different runner
+architectures share a table.</p>
+<p>The project columns show how many warnings the check reported in each
+project. The number in parentheses is the change since the previous run in the
+same table: red for more warnings, green for fewer, and gray for no change. A
+red background marks a run or project that did not complete; hover over it to
+see its status.</p>
+<h4>Verdicts:</h4>
+<p>In each run, an AI model labels every warning as a true positive (TP) or a
+false positive (FP). The labels are only a hint and can be wrong. Warnings the
+model did not label count as unclassified.</p>
+<h4>Baseline:</h4>
+<p>A run started with <code>/baseline</code> also runs the check on the same
+LLVM revision without the pull request's patch. Its run and project pages then
+show which warnings the patch adds (new) and which ones it removes (gone).</p>
+<h4>Source links:</h4>
+<p>Links to warnings point to the project commit that CTIT's
+<code>testers/projects.json</code> pinned when the run started, which is the
+code the check ran on.</p>
+<h4>Timings:</h4>
+<p>Once a day, CTIT runs every clang-tidy check on every test project with
+clang-tidy's check profile enabled. The timings page charts how long the checks
+took over time. You can pick the projects to sum over and filter the checks,
+and a filter for a single check gives that check a link of its own. Each day is
+stored as a JSON file under <code>timings/</code>.</p>
+<p>If a run recorded a check profile, its run page shows where its check would
+rank by check time among all checks of the latest daily run.</p>
+<h4>Data:</h4>
+<p>A machine-readable summary of all runs is at
 <a href="data/runs.json">data/runs.json</a>.</p>
 <p>To test your own clang-tidy change, follow the instructions in the
 <a href="$ctit_url">CTIT repository</a>.</p>
