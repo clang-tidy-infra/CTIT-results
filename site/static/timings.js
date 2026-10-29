@@ -18,11 +18,10 @@
   const MARKER_COLOR = "#999999";
   const DAY_MS = 24 * 60 * 60 * 1000;
   const MONTHS = "Jan Feb Mar Apr May Jun Jul Aug Sep Oct Nov Dec".split(" ");
-  // The colors of compared checks, assigned in this order. More lines than
-  // colors could not be told apart, so at most this many checks are compared.
-  // Near-black and dark brown follow the eight hues of the dataviz palette:
-  // of the colors tried, they are the farthest from all the others, also
-  // with color blindness.
+  // The colors of compared checks, in the order they are assigned. Compare
+  // shows at most this many checks, since more lines could not be told apart.
+  // Near-black and dark brown extend the eight hues of the dataviz palette:
+  // of the colors tried, they stay the most distinct, also with color blindness.
   const COMPARE_COLORS = [
     "#2a78d6", "#eb6834", "#1baf7a", "#eda100", "#e87ba4",
     "#008300", "#4a3aa7", "#e34948", "#222222", "#6b3d1f",
@@ -46,7 +45,7 @@
   const table = document.getElementById("table");
 
   // One slot per calendar day, so a day without a run is a gap in the line
-  // instead of a straight segment between its neighbours. slotDays holds the
+  // instead of a straight segment between its neighbors. slotDays holds the
   // index of the run on each day, or -1.
   const dayTime = (i) => Date.parse(`${days[i].date}T00:00:00Z`);
   const timeline = [];
@@ -256,8 +255,8 @@
       lines.push(`${change(value, values[j])} vs ${esc(days[slotDays[j]].date)}`);
     }
     const missing = value === null ? [] : missingAt(i);
-    if (missing.length) lines.push(`without ${esc(missing.join(", "))}`);
-    lines.push(`runner ${esc(days[i].runner)}`);
+    if (missing.length) lines.push(`no timings for ${esc(missing.join(", "))}`);
+    lines.push(`runner: ${esc(days[i].runner)}`);
     return lines.join("<br />");
   };
 
@@ -320,7 +319,8 @@
     ctx.restore();
   };
 
-  // A short stroke of a line's color, for tooltips; colors are our constants.
+  // A short stroke of a line's color for tooltips. The colors are our own
+  // constants, so they need no escaping.
   const lineKey = (color) => `<span class="key" style="background: ${color}"></span>`;
 
   // The tooltip of compared lines: every line's value that day, largest first.
@@ -339,7 +339,7 @@
     return [
       `${esc(days[i].date)}, LLVM ${esc(days[i].llvm.slice(0, 10))}`,
       ...rows,
-      `runner ${esc(days[i].runner)}`,
+      `runner: ${esc(days[i].runner)}`,
     ].join("<br />");
   };
 
@@ -448,14 +448,14 @@
     const body = table.createTBody();
     for (let i = days.length - 1; i >= 0; i--) {
       const row = body.insertRow();
-      linkCell(row, days[i].date, days[i].run, "workflow run", "l");
+      linkCell(row, days[i].date, days[i].run, "GitHub workflow run", "l");
       const total = cell(row, totals[i] === null ? "-" : seconds(totals[i]));
       const missing = missingIn(series, projects, i);
-      if (missing.length && totals[i] !== null) total.title = `without ${missing.join(", ")}`;
+      if (missing.length && totals[i] !== null) total.title = `no timings for ${missing.join(", ")}`;
       const j = previousIndex(totals, i);
       if (totals[i] !== null && j >= 0) {
         const td = cell(row, change(totals[i], totals[j]), `d ${changeClass(totals[i] - totals[j])}`);
-        td.title = `vs ${days[j].date}`;
+        td.title = `change since ${days[j].date}`;
       } else {
         cell(row, "", "d");
       }
@@ -559,7 +559,7 @@
           cell(tr, change(row.now, row.then[j]), `d ${notableClass(row.delta[j], row.then[j])}`);
         } else {
           const td = cell(tr, "-", "d dim");
-          if (row.now !== null && row.then[j] !== null) td.title = "different runner";
+          if (row.now !== null && row.then[j] !== null) td.title = "not compared: different runners";
         }
       }
     }
@@ -603,7 +603,6 @@
     const url = checks?.length === 1 ? docsUrl(checks[0]) : null;
     checkDocs.hidden = !url;
     if (url) checkDocsLink.href = url;
-    // Analysis time is not split by check.
     metricSelect.disabled = checks !== null || comparing;
     metricSelect.title = metricSelect.disabled ? "Analysis time is not split by check" : "";
   };
@@ -694,9 +693,9 @@
     compareLegend.hidden = false;
     compareNote.textContent =
       matching > shown.length
-        ? `Compare shows at most ${COMPARE_COLORS.length} checks: these are the ` +
-          `${shown.length} slowest of ${matching} matching checks in the latest run. ` +
-          "Narrow the filter to compare others."
+        ? `Compare shows at most ${COMPARE_COLORS.length} checks: the ` +
+          `${shown.length} slowest of the ${matching} matching checks in the latest run. ` +
+          "Narrow the filter to see the others."
         : "";
     compareNote.hidden = !compareNote.textContent;
   };
@@ -713,7 +712,7 @@
     const body = table.createTBody();
     for (let i = days.length - 1; i >= 0; i--) {
       const row = body.insertRow();
-      linkCell(row, days[i].date, days[i].run, "workflow run", "l");
+      linkCell(row, days[i].date, days[i].run, "GitHub workflow run", "l");
       for (const { series } of perCheck) {
         const value = sumOf(series, projects, i);
         cell(row, value === null ? "-" : seconds(value), value === null ? "dim" : "");
