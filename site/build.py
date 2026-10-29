@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build the static CTIT results website from the run records in runs/."""
+"""Build the static CTIT results website from the records in runs/ and timings/."""
 
 from __future__ import annotations
 
@@ -78,8 +78,13 @@ def main() -> None:
     parser.add_argument(
         "--repository",
         default=os.environ.get("GITHUB_REPOSITORY", "clang-tidy-infra/CTIT-results"),
+        help="GitHub repository of the results, used in links on the pages",
     )
-    parser.add_argument("--revision", default=os.environ.get("GITHUB_SHA"))
+    parser.add_argument(
+        "--revision",
+        default=os.environ.get("GITHUB_SHA"),
+        help="results commit named in the page footer; no footer if unset",
+    )
     args = parser.parse_args()
     count = build(args.results, args.out, args.ctit, args.repository, args.revision)
     print(f"Built site for {count} runs in {args.out}")
