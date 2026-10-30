@@ -3,7 +3,7 @@
 This repository stores the results of the
 [Clang-Tidy Integration Tester](https://github.com/clang-tidy-infra/CTIT)
 (CTIT) and builds the website that shows them:
-<https://clang-tidy-infra.github.io/CTIT-results/>.
+<https://clang-tidy.com/CTIT-results/>.
 
 CTIT commits the files under `runs/` and `timings/` automatically. To test
 your own clang-tidy change, follow the instructions in the
