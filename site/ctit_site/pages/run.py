@@ -172,13 +172,11 @@ def position(entries: list[Entry], check: str) -> str:
 
 def check_time_section(run: Run, nightly: TimingsDay | None) -> str:
     """Where the checks of the run would rank by check time among the checks
-    of the latest nightly timings run."""
+    of the latest daily timings run."""
     if nightly is None or not any(p.check_profile for p in run.projects.values()):
         return ""
     body = '<h4 id="check-time">Check time:</h4>\n'
-    nightly_link = link(
-        nightly.github_run_url, f"nightly timings run of {nightly.date}"
-    )
+    nightly_link = link(nightly.github_run_url, f"daily timings run of {nightly.date}")
     arch = run.data["runner_arch"]
     if arch != nightly.runner_arch:
         return body + (
@@ -207,13 +205,15 @@ def check_time_section(run: Run, nightly: TimingsDay | None) -> str:
             f"<td>{position(everything, check)}</td></tr>\n"
         )
     body += (
-        "<p>The time spent in the checks of this run, from clang-tidy's check "
-        f"profile, and their place among the checks of the {nightly_link}, "
+        "<p>How long the checks of this run took, from clang-tidy's check "
+        f"profile, and where they would rank among all checks of the {nightly_link}, "
         "slowest first. Times are summed over the "
-        f"{len(ranking.projects)} projects both runs have times for. Nightly "
-        "is the check's own time in that run. The nightly run enables every "
-        "check at once, so the comparison is approximate.</p>\n"
-        '<table>\n<tr><th class="l">Check</th><th>Time (s)</th><th>Nightly (s)</th>'
+        f"{len(ranking.projects)} projects that both runs have times for. "
+        "Daily run is the check's own time in that run, or a dash if that run "
+        "did not have the check. The daily run enables every check at once, so "
+        "the comparison is approximate. The tables below show each check of "
+        "this run in bold, next to its neighbors in the ranking.</p>\n"
+        '<table>\n<tr><th class="l">Check</th><th>Time (s)</th><th>Daily run (s)</th>'
         "<th>In module</th><th>Overall</th></tr>\n"
         f"{''.join(rows)}</table>\n"
     )
@@ -247,8 +247,9 @@ def build_run(
     body += f"<h4{anchor}>Projects:</h4>\n{projects_table(run)}"
     if has_baseline:
         body += (
-            "<p>New: warnings that the baseline did not produce. "
-            "Gone: baseline warnings that this run no longer produces.</p>\n"
+            "<p>Baseline is the number of warnings without the patch. New "
+            "warnings appear only with the patch, and gone warnings only "
+            "without it.</p>\n"
         )
     if not run.projects:
         body += (
