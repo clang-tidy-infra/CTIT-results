@@ -1,0 +1,134 @@
+{
+  "artifact_url": "https://github.com/clang-tidy-infra/CTIT/actions/runs/41708160956/artifacts/13265929479",
+  "baseline": null,
+  "check_config": {},
+  "check_name": "bugprone-unsafe-format-string",
+  "duration_seconds": 1409.815307,
+  "finished_at": "2026-11-03T20:22:04.815307Z",
+  "github_run_attempt": 1,
+  "github_run_id": 41708160956,
+  "llvm_revision": "864850e66498d0550bdb3758a2e6c5204b4ea4f0+patch:19f13ad4d5d9207a78aeb7fc9781cfb60dc0926cd5ddfde30088a63a7dd2df32",
+  "pr_number": 168691,
+  "project_runs": [
+    {
+      "check_profile": {
+        "bugprone-unsafe-format-string": 0.4266
+      },
+      "diagnostics": [],
+      "duration_seconds": 10.747429,
+      "project": "abseil-cpp",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": {
+        "bugprone-unsafe-format-string": 0.4068
+      },
+      "diagnostics": [],
+      "duration_seconds": 17.773379,
+      "project": "assimp",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": {
+        "bugprone-unsafe-format-string": 0.0414
+      },
+      "diagnostics": [],
+      "duration_seconds": 3.59757,
+      "project": "catch2",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": {
+        "bugprone-unsafe-format-string": 0.9414
+      },
+      "diagnostics": [],
+      "duration_seconds": 14.113779,
+      "project": "cppcheck",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": {
+        "bugprone-unsafe-format-string": 0.1703
+      },
+      "diagnostics": [],
+      "duration_seconds": 2.816755,
+      "project": "curl",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": {
+        "bugprone-unsafe-format-string": 1.7619
+      },
+      "diagnostics": [],
+      "duration_seconds": 34.449167,
+      "project": "doxygen",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": {
+        "bugprone-unsafe-format-string": 0.0785
+      },
+      "diagnostics": [],
+      "duration_seconds": 1.370346,
+      "project": "libgit2",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": {
+        "bugprone-unsafe-format-string": 0.0147
+      },
+      "diagnostics": [],
+      "duration_seconds": 0.894616,
+      "project": "libuv",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": {
+        "bugprone-unsafe-format-string": 140.0371
+      },
+      "diagnostics": [],
+      "duration_seconds": 386.189845,
+      "project": "llvm-project",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": {
+        "bugprone-unsafe-format-string": 1.6167
+      },
+      "diagnostics": [],
+      "duration_seconds": 46.543915,
+      "project": "poco",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": {
+        "bugprone-unsafe-format-string": 0.0221
+      },
+      "diagnostics": [],
+      "duration_seconds": 7.68058,
+      "project": "stdexec",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": {
+        "bugprone-unsafe-format-string": 0.0279
+      },
+      "diagnostics": [],
+      "duration_seconds": 2.631374,
+      "project": "yaml-cpp",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": {
+        "bugprone-unsafe-format-string": 0.0517
+      },
+      "diagnostics": [],
+      "duration_seconds": 2.139687,
+      "project": "zstd",
+      "status": "COMPLETED"
+    }
+  ],
+  "runner_arch": "ARM64",
+  "started_at": "2026-11-03T19:58:35+00:00",
+  "status": "COMPLETED"
+}
