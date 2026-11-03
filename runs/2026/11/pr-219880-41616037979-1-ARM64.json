@@ -1,0 +1,481 @@
+{
+  "artifact_url": "https://github.com/clang-tidy-infra/CTIT/actions/runs/41616037979/artifacts/13223107640",
+  "baseline": null,
+  "check_config": {},
+  "check_name": "performance-inefficient-substr",
+  "duration_seconds": 1678.215169,
+  "finished_at": "2026-11-03T10:32:05.215169Z",
+  "github_run_attempt": 1,
+  "github_run_id": 41616037979,
+  "llvm_revision": "864850e66498d0550bdb3758a2e6c5204b4ea4f0+patch:408cb111b5cdf90fdff2d20634cadc9b553ef76e62505baf7b36ffacf43ee489",
+  "pr_number": 219880,
+  "project_runs": [
+    {
+      "check_profile": {
+        "performance-inefficient-substr": 0.045
+      },
+      "diagnostics": [],
+      "duration_seconds": 9.08365,
+      "project": "abseil-cpp",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": {
+        "performance-inefficient-substr": 0.0539
+      },
+      "diagnostics": [
+        {
+          "column": 17,
+          "file": "code/AssetLib/Q3BSP/Q3BSPFileImporter.cpp",
+          "line": 213,
+          "message": "inefficient assignment via 'substr' temporary; use 'assign' to avoid the temporary string",
+          "verdict": "TP"
+        },
+        {
+          "column": 13,
+          "file": "code/AssetLib/Q3BSP/Q3BSPFileImporter.cpp",
+          "line": 214,
+          "message": "inefficient assignment via 'substr' temporary; use 'assign' to avoid the temporary string",
+          "verdict": "TP"
+        },
+        {
+          "column": 19,
+          "file": "code/AssetLib/Obj/ObjFileImporter.cpp",
+          "line": 137,
+          "message": "inefficient assignment via 'substr' temporary; use 'assign' to avoid the temporary string",
+          "verdict": "TP"
+        },
+        {
+          "column": 20,
+          "file": "code/AssetLib/Obj/ObjFileImporter.cpp",
+          "line": 138,
+          "message": "inefficient assignment via 'substr' temporary; use 'assign' to avoid the temporary string",
+          "verdict": "TP"
+        },
+        {
+          "column": 21,
+          "file": "code/Common/FileSystemFilter.h",
+          "line": 271,
+          "message": "inefficient concatenation via 'substr' temporary; use 'append' to avoid the temporary string",
+          "verdict": "TP"
+        },
+        {
+          "column": 18,
+          "file": "code/AssetLib/Obj/ObjFileMtlImporter.cpp",
+          "line": 473,
+          "message": "inefficient assignment via 'substr' temporary; use 'assign' to avoid the temporary string",
+          "verdict": "TP"
+        },
+        {
+          "column": 39,
+          "file": "code/AssetLib/X3D/X3DXmlHelper.cpp",
+          "line": 151,
+          "message": "inefficient assignment via 'substr' temporary; use 'assign' to avoid the temporary string",
+          "verdict": "TP"
+        },
+        {
+          "column": 19,
+          "file": "code/AssetLib/Unreal/UnrealLoader.cpp",
+          "line": 214,
+          "message": "inefficient assignment via 'substr' temporary; use 'assign' to avoid the temporary string",
+          "verdict": "TP"
+        },
+        {
+          "column": 19,
+          "file": "code/AssetLib/Unreal/UnrealLoader.cpp",
+          "line": 216,
+          "message": "inefficient assignment via 'substr' temporary; use 'assign' to avoid the temporary string",
+          "verdict": "TP"
+        }
+      ],
+      "duration_seconds": 21.552834,
+      "project": "assimp",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": {
+        "performance-inefficient-substr": 0.0098
+      },
+      "diagnostics": [],
+      "duration_seconds": 4.613699,
+      "project": "catch2",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": {
+        "performance-inefficient-substr": 0.0696
+      },
+      "diagnostics": [
+        {
+          "column": 22,
+          "file": "test/fixture.cpp",
+          "line": 394,
+          "message": "inefficient assignment via 'substr' temporary; use 'assign' to avoid the temporary string",
+          "verdict": "TP"
+        },
+        {
+          "column": 15,
+          "file": "tools/dmake/dmake.cpp",
+          "line": 135,
+          "message": "inefficient concatenation via 'substr' temporary; use 'append' to avoid the temporary string",
+          "verdict": "TP"
+        },
+        {
+          "column": 23,
+          "file": "build/lib/build/mc_errorlogger.cpp",
+          "line": 1069,
+          "message": "inefficient assignment via 'substr' temporary; use 'assign' to avoid the temporary string",
+          "verdict": "TP"
+        },
+        {
+          "column": 23,
+          "file": "build/lib/build/mc_errorlogger.cpp",
+          "line": 1078,
+          "message": "inefficient assignment via 'substr' temporary; use 'assign' to avoid the temporary string",
+          "verdict": "TP"
+        },
+        {
+          "column": 23,
+          "file": "build/lib/build/mc_errorlogger.cpp",
+          "line": 1087,
+          "message": "inefficient assignment via 'substr' temporary; use 'assign' to avoid the temporary string",
+          "verdict": "TP"
+        },
+        {
+          "column": 23,
+          "file": "build/lib/build/mc_errorlogger.cpp",
+          "line": 1091,
+          "message": "inefficient assignment via 'substr' temporary; use 'assign' to avoid the temporary string",
+          "verdict": "TP"
+        },
+        {
+          "column": 23,
+          "file": "build/lib/build/mc_errorlogger.cpp",
+          "line": 1095,
+          "message": "inefficient assignment via 'substr' temporary; use 'assign' to avoid the temporary string",
+          "verdict": "TP"
+        },
+        {
+          "column": 26,
+          "file": "build/lib/build/mc_suppressions.cpp",
+          "line": 777,
+          "message": "inefficient assignment via 'substr' temporary; use 'assign' to avoid the temporary string",
+          "verdict": "TP"
+        },
+        {
+          "column": 18,
+          "file": "build/lib/build/mc_clangimport.cpp",
+          "line": 672,
+          "message": "inefficient assignment via 'substr' temporary; use 'assign' to avoid the temporary string",
+          "verdict": "TP"
+        },
+        {
+          "column": 18,
+          "file": "build/lib/build/mc_analyzerinfo.cpp",
+          "line": 141,
+          "message": "inefficient assignment via 'substr' temporary; use 'assign' to avoid the temporary string",
+          "verdict": "TP"
+        },
+        {
+          "column": 26,
+          "file": "build/lib/build/mc_tokenize.cpp",
+          "line": 10594,
+          "message": "inefficient assignment via 'substr' temporary; use 'assign' to avoid the temporary string",
+          "verdict": "TP"
+        }
+      ],
+      "duration_seconds": 16.729117,
+      "project": "cppcheck",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 2.68937,
+      "project": "curl",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": {
+        "performance-inefficient-substr": 0.2125
+      },
+      "diagnostics": [
+        {
+          "column": 11,
+          "file": "deps/spdlog/include/spdlog/cfg/helpers-inl.h",
+          "line": 52,
+          "message": "inefficient assignment via 'substr' temporary; use 'assign' to avoid the temporary string",
+          "verdict": "TP"
+        },
+        {
+          "column": 11,
+          "file": "deps/spdlog/include/spdlog/cfg/helpers-inl.h",
+          "line": 53,
+          "message": "inefficient assignment via 'substr' temporary; use 'assign' to avoid the temporary string",
+          "verdict": "TP"
+        },
+        {
+          "column": 11,
+          "file": "src/vhdldocgen.cpp",
+          "line": 612,
+          "message": "inefficient concatenation via 'substr' temporary; use 'append' to avoid the temporary string",
+          "verdict": "TP"
+        },
+        {
+          "column": 11,
+          "file": "src/vhdldocgen.cpp",
+          "line": 618,
+          "message": "inefficient concatenation via 'substr' temporary; use 'append' to avoid the temporary string",
+          "verdict": "TP"
+        },
+        {
+          "column": 12,
+          "file": "src/aliases.cpp",
+          "line": 321,
+          "message": "inefficient concatenation via 'substr' temporary; use 'append' to avoid the temporary string",
+          "verdict": "TP"
+        },
+        {
+          "column": 12,
+          "file": "src/aliases.cpp",
+          "line": 326,
+          "message": "inefficient concatenation via 'substr' temporary; use 'append' to avoid the temporary string",
+          "verdict": "TP"
+        },
+        {
+          "column": 10,
+          "file": "src/aliases.cpp",
+          "line": 329,
+          "message": "inefficient concatenation via 'substr' temporary; use 'append' to avoid the temporary string",
+          "verdict": "TP"
+        },
+        {
+          "column": 16,
+          "file": "src/formula.cpp",
+          "line": 100,
+          "message": "inefficient assignment via 'substr' temporary; use 'assign' to avoid the temporary string",
+          "verdict": "TP"
+        },
+        {
+          "column": 13,
+          "file": "src/util.cpp",
+          "line": 204,
+          "message": "inefficient concatenation via 'substr' temporary; use 'append' to avoid the temporary string",
+          "verdict": "TP"
+        },
+        {
+          "column": 11,
+          "file": "src/util.cpp",
+          "line": 213,
+          "message": "inefficient concatenation via 'substr' temporary; use 'append' to avoid the temporary string",
+          "verdict": "TP"
+        },
+        {
+          "column": 13,
+          "file": "src/util.cpp",
+          "line": 4987,
+          "message": "inefficient concatenation via 'substr' temporary; use 'append' to avoid the temporary string",
+          "verdict": "TP"
+        },
+        {
+          "column": 13,
+          "file": "src/util.cpp",
+          "line": 4996,
+          "message": "inefficient concatenation via 'substr' temporary; use 'append' to avoid the temporary string",
+          "verdict": "TP"
+        },
+        {
+          "column": 9,
+          "file": "src/util.cpp",
+          "line": 5000,
+          "message": "inefficient concatenation via 'substr' temporary; use 'append' to avoid the temporary string",
+          "verdict": "TP"
+        },
+        {
+          "column": 16,
+          "file": "src/util.cpp",
+          "line": 5626,
+          "message": "inefficient concatenation via 'substr' temporary; use 'append' to avoid the temporary string",
+          "verdict": "TP"
+        },
+        {
+          "column": 5,
+          "file": "src/util.cpp",
+          "line": 5630,
+          "message": "inefficient concatenation via 'substr' temporary; use 'append' to avoid the temporary string",
+          "verdict": "TP"
+        },
+        {
+          "column": 20,
+          "file": "src/util.cpp",
+          "line": 5827,
+          "message": "inefficient concatenation via 'substr' temporary; use 'append' to avoid the temporary string",
+          "verdict": "TP"
+        },
+        {
+          "column": 19,
+          "file": "src/util.cpp",
+          "line": 5853,
+          "message": "inefficient concatenation via 'substr' temporary; use 'append' to avoid the temporary string",
+          "verdict": "TP"
+        },
+        {
+          "column": 8,
+          "file": "src/doxygen.cpp",
+          "line": 6060,
+          "message": "inefficient concatenation via 'substr' temporary; use 'append' to avoid the temporary string",
+          "verdict": "TP"
+        },
+        {
+          "column": 6,
+          "file": "src/doxygen.cpp",
+          "line": 6120,
+          "message": "inefficient concatenation via 'substr' temporary; use 'append' to avoid the temporary string",
+          "verdict": "TP"
+        }
+      ],
+      "duration_seconds": 33.995964,
+      "project": "doxygen",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 1.485743,
+      "project": "libgit2",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 0.751212,
+      "project": "libuv",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": {
+        "performance-inefficient-substr": 5.0851
+      },
+      "diagnostics": [
+        {
+          "column": 15,
+          "file": "clang/lib/Format/Format.cpp",
+          "line": 3464,
+          "message": "inefficient concatenation via 'substr' temporary; use 'append' to avoid the temporary string",
+          "verdict": "TP"
+        }
+      ],
+      "duration_seconds": 385.244287,
+      "project": "llvm-project",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": {
+        "performance-inefficient-substr": 0.1204
+      },
+      "diagnostics": [
+        {
+          "column": 13,
+          "file": "MongoDB/src/ReplicaSetURI.cpp",
+          "line": 311,
+          "message": "inefficient assignment via 'substr' temporary; use 'assign' to avoid the temporary string",
+          "verdict": "TP"
+        },
+        {
+          "column": 16,
+          "file": "MongoDB/src/ReplicaSetURI.cpp",
+          "line": 312,
+          "message": "inefficient assignment via 'substr' temporary; use 'assign' to avoid the temporary string",
+          "verdict": "TP"
+        },
+        {
+          "column": 13,
+          "file": "MongoDB/src/ReplicaSetURI.cpp",
+          "line": 316,
+          "message": "inefficient assignment via 'substr' temporary; use 'assign' to avoid the temporary string",
+          "verdict": "TP"
+        },
+        {
+          "column": 12,
+          "file": "MongoDB/src/ReplicaSetURI.cpp",
+          "line": 327,
+          "message": "inefficient assignment via 'substr' temporary; use 'assign' to avoid the temporary string",
+          "verdict": "TP"
+        },
+        {
+          "column": 13,
+          "file": "Foundation/src/FastLogger.cpp",
+          "line": 509,
+          "message": "inefficient assignment via 'substr' temporary; use 'assign' to avoid the temporary string",
+          "verdict": "TP"
+        },
+        {
+          "column": 21,
+          "file": "dependencies/quill/include/quill/backend/PatternFormatter.h",
+          "line": 418,
+          "message": "inefficient assignment via 'substr' temporary; use 'assign' to avoid the temporary string",
+          "verdict": "TP"
+        },
+        {
+          "column": 21,
+          "file": "dependencies/quill/include/quill/backend/PatternFormatter.h",
+          "line": 429,
+          "message": "inefficient assignment via 'substr' temporary; use 'assign' to avoid the temporary string",
+          "verdict": "TP"
+        },
+        {
+          "column": 13,
+          "file": "dependencies/quill/include/quill/sinks/RotatingSink.h",
+          "line": 208,
+          "message": "inefficient assignment via 'substr' temporary; use 'assign' to avoid the temporary string",
+          "verdict": "TP"
+        },
+        {
+          "column": 11,
+          "file": "dependencies/quill/include/quill/sinks/RotatingSink.h",
+          "line": 214,
+          "message": "inefficient assignment via 'substr' temporary; use 'assign' to avoid the temporary string",
+          "verdict": "TP"
+        },
+        {
+          "column": 9,
+          "file": "Net/src/MessageHeader.cpp",
+          "line": 440,
+          "message": "inefficient concatenation via 'substr' temporary; use 'append' to avoid the temporary string",
+          "verdict": "TP"
+        }
+      ],
+      "duration_seconds": 45.165587,
+      "project": "poco",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": {
+        "performance-inefficient-substr": 0.0011
+      },
+      "diagnostics": [],
+      "duration_seconds": 6.601805,
+      "project": "stdexec",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": {
+        "performance-inefficient-substr": 0.0045
+      },
+      "diagnostics": [],
+      "duration_seconds": 2.10067,
+      "project": "yaml-cpp",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 2.101222,
+      "project": "zstd",
+      "status": "COMPLETED"
+    }
+  ],
+  "runner_arch": "ARM64",
+  "started_at": "2026-11-03T10:04:07+00:00",
+  "status": "COMPLETED"
+}
