@@ -55,4 +55,7 @@ def group_title(run: Run, root: str = "") -> str:
         pr = link(f"{LLVM_URL}/pull/{run.pr}", f"PR #{run.pr}")
     else:
         pr = "main"
-    return f"{pr}: {link(f'{root}index.html?q={quote(run.check)}', run.check)}"
+    title = f"{pr}: {link(f'{root}index.html?q={quote(run.check)}', run.check)}"
+    if run.profile:
+        title += f" with {esc(run.profile)}"
+    return title

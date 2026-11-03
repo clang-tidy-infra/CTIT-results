@@ -84,9 +84,20 @@ class Run:
         return str(self.data["status"])
 
     @property
+    def toolchain(self) -> dict | None:
+        """The toolchain profile the run used; None for the runner's default."""
+        return self.data.get("toolchain") or None
+
+    @property
+    def profile(self) -> str | None:
+        return str(self.toolchain["name"]) if self.toolchain else None
+
+    @property
     def group(self) -> str:
+        """Runs of one PR, check and profile; only these are compared."""
         prefix = f"pr-{self.pr}" if self.pr else "main"
-        return slug(f"{prefix}-{self.check}")
+        suffix = f"-{self.profile}" if self.profile else ""
+        return slug(f"{prefix}-{self.check}{suffix}")
 
     @property
     def github_run_url(self) -> str:
