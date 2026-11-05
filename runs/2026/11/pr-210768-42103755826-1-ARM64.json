@@ -1,0 +1,162 @@
+{
+  "artifact_url": "https://github.com/clang-tidy-infra/CTIT/actions/runs/42103755826/artifacts/13453222057",
+  "baseline": null,
+  "check_config": {},
+  "check_name": "bugprone-macro-condition",
+  "duration_seconds": 1699.615427,
+  "finished_at": "2026-11-05T20:57:41.615427Z",
+  "github_run_attempt": 1,
+  "github_run_id": 42103755826,
+  "llvm_revision": "e584407a4ec66d65fb0dfd83b8187ebc0301887f+patch:03f0eb6a692ce1f916965b2357fb445b6b61a8fcd76bcae315986b62c47af59b",
+  "pr_number": 210768,
+  "project_runs": [
+    {
+      "check_profile": null,
+      "diagnostics": [
+        {
+          "column": 5,
+          "file": "absl/debugging/symbolize_elf.inc",
+          "line": 1537,
+          "message": "Macro 'ABSL_HAVE_VDSO_SUPPORT' checked here for value after being checked for definition",
+          "verdict": "TP"
+        }
+      ],
+      "duration_seconds": 12.326253,
+      "project": "abseil-cpp",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 25.670301,
+      "project": "assimp",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 4.133459,
+      "project": "catch2",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 17.047271,
+      "project": "cppcheck",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 3.146625,
+      "project": "curl",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [
+        {
+          "column": 5,
+          "file": "deps/sqlite3/sqlite3.c",
+          "line": 178234,
+          "message": "Macro 'SQLITE_DEFAULT_RECURSIVE_TRIGGERS' checked here for value after being checked for definition",
+          "verdict": "TP"
+        }
+      ],
+      "duration_seconds": 38.165596,
+      "project": "doxygen",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 1.519224,
+      "project": "libgit2",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [
+        {
+          "column": 5,
+          "file": "src/unix/fs.c",
+          "line": 1493,
+          "message": "Macro '_XOPEN_SOURCE' checked here for definition after being checked for value",
+          "verdict": "TP"
+        }
+      ],
+      "duration_seconds": 0.887168,
+      "project": "libuv",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [
+        {
+          "column": 5,
+          "file": "clang/lib/Interpreter/IncrementalExecutor.cpp",
+          "line": 217,
+          "message": "Macro 'LLVM_ON_UNIX' checked here for value after being checked for definition",
+          "verdict": "TP"
+        }
+      ],
+      "duration_seconds": 394.223154,
+      "project": "llvm-project",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [
+        {
+          "column": 5,
+          "file": "dependencies/sqlite3/src/sqlite3.c",
+          "line": 188340,
+          "message": "Macro 'SQLITE_DEFAULT_RECURSIVE_TRIGGERS' checked here for value after being checked for definition",
+          "verdict": "TP"
+        },
+        {
+          "column": 5,
+          "file": "Net/src/HTTPClientSession.cpp",
+          "line": 376,
+          "message": "Macro 'POCO_HAVE_INT64' checked here for definition after being checked for value",
+          "verdict": "TP"
+        },
+        {
+          "column": 61,
+          "file": "dependencies/zlib/src/crc32.c",
+          "line": 102,
+          "message": "Macro 'W' checked here for value after being checked for definition",
+          "verdict": "TP"
+        }
+      ],
+      "duration_seconds": 52.806772,
+      "project": "poco",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 6.564965,
+      "project": "stdexec",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 2.630249,
+      "project": "yaml-cpp",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 7.072993,
+      "project": "zstd",
+      "status": "COMPLETED"
+    }
+  ],
+  "runner_arch": "ARM64",
+  "started_at": "2026-11-05T20:29:22+00:00",
+  "status": "COMPLETED"
+}
