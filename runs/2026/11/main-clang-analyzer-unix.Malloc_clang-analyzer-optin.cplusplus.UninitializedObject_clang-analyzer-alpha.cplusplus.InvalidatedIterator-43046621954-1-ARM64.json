@@ -1,0 +1,277 @@
+{
+  "artifact_url": "https://github.com/clang-tidy-infra/CTIT/actions/runs/43046621954/artifacts/13869409321",
+  "baseline": null,
+  "check_config": {
+    "CheckOptions": {
+      "clang-analyzer-optin.cplusplus.UninitializedObject:Pedantic": "true"
+    }
+  },
+  "check_name": "clang-analyzer-unix.Malloc,clang-analyzer-optin.cplusplus.UninitializedObject,clang-analyzer-alpha.cplusplus.InvalidatedIterator",
+  "duration_seconds": 2488.879348,
+  "finished_at": "2026-11-11T15:57:58.879348Z",
+  "github_run_attempt": 1,
+  "github_run_id": 43046621954,
+  "llvm_revision": "69ba8a304aaf0078fcf78c53424397d6b94024ea",
+  "pr_number": null,
+  "project_runs": [
+    {
+      "check_profile": null,
+      "diagnostics": [
+        {
+          "column": 29,
+          "file": "absl/debugging/internal/elf_mem_image.cc",
+          "line": 332,
+          "message": "4 uninitialized fields at the end of the constructor call",
+          "verdict": "TP"
+        },
+        {
+          "column": 17,
+          "file": "absl/container/internal/hashtablez_sampler.cc",
+          "line": 73,
+          "message": "6 uninitialized fields at the end of the constructor call",
+          "verdict": "TP"
+        },
+        {
+          "column": 28,
+          "file": "absl/strings/internal/cord_internal.h",
+          "line": 381,
+          "message": "3 uninitialized fields at the end of the constructor call",
+          "verdict": "TP"
+        }
+      ],
+      "duration_seconds": 28.907971,
+      "project": "abseil-cpp",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [
+        {
+          "column": 5,
+          "file": "code/AssetLib/X3D/X3DImporter_Node.hpp",
+          "line": 326,
+          "message": "2 uninitialized fields at the end of the constructor call",
+          "verdict": "TP"
+        },
+        {
+          "column": 5,
+          "file": "code/AssetLib/X3D/X3DImporter_Node.hpp",
+          "line": 340,
+          "message": "1 uninitialized field at the end of the constructor call",
+          "verdict": "TP"
+        },
+        {
+          "column": 22,
+          "file": "code/AssetLib/Blender/BlenderDNA.h",
+          "line": 587,
+          "message": "2 uninitialized fields at the end of the constructor call",
+          "verdict": "TP"
+        },
+        {
+          "column": 5,
+          "file": "code/AssetLib/IFC/IFCUtil.h",
+          "line": 172,
+          "message": "1 uninitialized field at the end of the constructor call",
+          "verdict": "TP"
+        },
+        {
+          "column": 55,
+          "file": "code/AssetLib/X3D/X3DImporter_Node.hpp",
+          "line": 184,
+          "message": "1 uninitialized field at the end of the constructor call",
+          "verdict": "TP"
+        },
+        {
+          "column": 5,
+          "file": "code/AssetLib/X3D/X3DImporter_Node.hpp",
+          "line": 215,
+          "message": "3 uninitialized fields at the end of the constructor call",
+          "verdict": "TP"
+        },
+        {
+          "column": 5,
+          "file": "code/AssetLib/X3D/X3DImporter_Node.hpp",
+          "line": 245,
+          "message": "5 uninitialized fields at the end of the constructor call",
+          "verdict": "TP"
+        },
+        {
+          "column": 16,
+          "file": "code/AssetLib/glTF2/glTF2Asset.inl",
+          "line": 557,
+          "message": "2 uninitialized fields at the end of the constructor call",
+          "verdict": "TP"
+        },
+        {
+          "column": 31,
+          "file": "code/AssetLib/glTF2/glTF2Asset.h",
+          "line": 754,
+          "message": "4 uninitialized fields at the end of the constructor call",
+          "verdict": "TP"
+        },
+        {
+          "column": 26,
+          "file": "code/AssetLib/glTF2/glTF2Asset.h",
+          "line": 764,
+          "message": "4 uninitialized fields at the end of the constructor call",
+          "verdict": "TP"
+        },
+        {
+          "column": 23,
+          "file": "code/AssetLib/glTF2/glTF2Asset.h",
+          "line": 774,
+          "message": "4 uninitialized fields at the end of the constructor call",
+          "verdict": "TP"
+        },
+        {
+          "column": 24,
+          "file": "code/AssetLib/glTF2/glTF2Asset.h",
+          "line": 797,
+          "message": "2 uninitialized fields at the end of the constructor call",
+          "verdict": "TP"
+        },
+        {
+          "column": 28,
+          "file": "code/AssetLib/glTF2/glTF2Asset.h",
+          "line": 820,
+          "message": "2 uninitialized fields at the end of the constructor call",
+          "verdict": "TP"
+        },
+        {
+          "column": 5,
+          "file": "code/AssetLib/X3D/X3DImporter_Node.hpp",
+          "line": 453,
+          "message": "6 uninitialized fields at the end of the constructor call",
+          "verdict": "TP"
+        },
+        {
+          "column": 94,
+          "file": "code/AssetLib/X3D/X3DImporter_Node.hpp",
+          "line": 360,
+          "message": "1 uninitialized field at the end of the constructor call",
+          "verdict": "TP"
+        },
+        {
+          "column": 5,
+          "file": "code/AssetLib/X3D/X3DImporter_Node.hpp",
+          "line": 268,
+          "message": "3 uninitialized fields at the end of the constructor call",
+          "verdict": "TP"
+        },
+        {
+          "column": 5,
+          "file": "code/AssetLib/Blender/BlenderScene.h",
+          "line": 727,
+          "message": "1 uninitialized field at the end of the constructor call",
+          "verdict": "TP"
+        },
+        {
+          "column": 5,
+          "file": "code/AssetLib/Blender/BlenderScene.h",
+          "line": 875,
+          "message": "1 uninitialized field at the end of the constructor call",
+          "verdict": "TP"
+        }
+      ],
+      "duration_seconds": 104.699666,
+      "project": "assimp",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 11.027443,
+      "project": "catch2",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 137.854655,
+      "project": "cppcheck",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 44.499937,
+      "project": "curl",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [
+        {
+          "column": 58,
+          "file": "vhdlparser/VhdlParserErrorHandler.hpp",
+          "line": 49,
+          "message": "1 uninitialized field at the end of the constructor call",
+          "verdict": "TP"
+        }
+      ],
+      "duration_seconds": 445.21777,
+      "project": "doxygen",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 19.143637,
+      "project": "libgit2",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 20.537878,
+      "project": "libuv",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [
+        {
+          "column": 10,
+          "file": "dependencies/hpdf/src/hpdf_image_ccitt.c",
+          "line": 675,
+          "message": "Potential leak of memory pointed to by 'data.tif_rawcp'",
+          "verdict": "TP"
+        },
+        {
+          "column": 2,
+          "file": "Redis/include/Poco/Redis/Type.h",
+          "line": 235,
+          "message": "1 uninitialized field at the end of the constructor call",
+          "verdict": "TP"
+        }
+      ],
+      "duration_seconds": 492.552332,
+      "project": "poco",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 7.319568,
+      "project": "stdexec",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 9.67629,
+      "project": "yaml-cpp",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 72.229429,
+      "project": "zstd",
+      "status": "COMPLETED"
+    }
+  ],
+  "runner_arch": "ARM64",
+  "started_at": "2026-11-11T15:16:30+00:00",
+  "status": "COMPLETED"
+}
