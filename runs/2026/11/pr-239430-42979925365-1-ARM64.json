@@ -1,0 +1,610 @@
+{
+  "artifact_url": "https://github.com/clang-tidy-infra/CTIT/actions/runs/42979925365/artifacts/13837893595",
+  "baseline": null,
+  "check_config": {},
+  "check_name": "misc-function-pointer-equality",
+  "duration_seconds": 1589.651237,
+  "finished_at": "2026-11-11T07:57:03.651237Z",
+  "github_run_attempt": 1,
+  "github_run_id": 42979925365,
+  "llvm_revision": "69ba8a304aaf0078fcf78c53424397d6b94024ea+patch:b4d0309bd6b9118a4cef181c9f596fdff3e8629d08109d7562570dbb73647bbc",
+  "pr_number": 239430,
+  "project_runs": [
+    {
+      "check_profile": {
+        "misc-function-pointer-equality": 0.4517
+      },
+      "diagnostics": [
+        {
+          "column": 54,
+          "file": "absl/base/internal/atomic_hook.h",
+          "line": 157,
+          "message": "function pointer equality comparison is unsound with '--icf=all' enabled",
+          "verdict": "TP"
+        },
+        {
+          "column": 17,
+          "file": "absl/base/internal/atomic_hook.h",
+          "line": 131,
+          "message": "function pointer equality comparison is unsound with '--icf=all' enabled",
+          "verdict": "TP"
+        },
+        {
+          "column": 24,
+          "file": "absl/container/internal/raw_hash_set.cc",
+          "line": 772,
+          "message": "function pointer equality comparison is unsound with '--icf=all' enabled",
+          "verdict": "TP"
+        },
+        {
+          "column": 21,
+          "file": "absl/debugging/internal/vdso_support.cc",
+          "line": 187,
+          "message": "function pointer equality comparison is unsound with '--icf=all' enabled",
+          "verdict": "TP"
+        },
+        {
+          "column": 19,
+          "file": "absl/synchronization/mutex.cc",
+          "line": 2815,
+          "message": "function pointer equality comparison is unsound with '--icf=all' enabled",
+          "verdict": "TP"
+        }
+      ],
+      "duration_seconds": 10.659941,
+      "project": "abseil-cpp",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": {
+        "misc-function-pointer-equality": 0.4152
+      },
+      "diagnostics": [],
+      "duration_seconds": 25.849711,
+      "project": "assimp",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": {
+        "misc-function-pointer-equality": 0.0626
+      },
+      "diagnostics": [],
+      "duration_seconds": 4.488512,
+      "project": "catch2",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": {
+        "misc-function-pointer-equality": 0.6727
+      },
+      "diagnostics": [],
+      "duration_seconds": 11.541082,
+      "project": "cppcheck",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": {
+        "misc-function-pointer-equality": 1.3607
+      },
+      "diagnostics": [
+        {
+          "column": 23,
+          "file": "lib/cfilters.c",
+          "line": 874,
+          "message": "function pointer equality comparison is unsound with '--icf=all' enabled",
+          "verdict": "TP"
+        },
+        {
+          "column": 31,
+          "file": "lib/sendf.c",
+          "line": 861,
+          "message": "function pointer equality comparison is unsound with '--icf=all' enabled",
+          "verdict": "TP"
+        }
+      ],
+      "duration_seconds": 2.661708,
+      "project": "curl",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": {
+        "misc-function-pointer-equality": 1.7233
+      },
+      "diagnostics": [
+        {
+          "column": 15,
+          "file": "deps/sqlite3/sqlite3.c",
+          "line": 82014,
+          "message": "function pointer equality comparison is unsound with '--icf=all' enabled",
+          "verdict": "TP"
+        },
+        {
+          "column": 13,
+          "file": "deps/sqlite3/sqlite3.c",
+          "line": 82043,
+          "message": "function pointer equality comparison is unsound with '--icf=all' enabled",
+          "verdict": "TP"
+        },
+        {
+          "column": 47,
+          "file": "deps/sqlite3/sqlite3.c",
+          "line": 89155,
+          "message": "function pointer equality comparison is unsound with '--icf=all' enabled",
+          "verdict": "TP"
+        },
+        {
+          "column": 34,
+          "file": "deps/sqlite3/sqlite3.c",
+          "line": 103956,
+          "message": "function pointer equality comparison is unsound with '--icf=all' enabled",
+          "verdict": "TP"
+        },
+        {
+          "column": 34,
+          "file": "deps/sqlite3/sqlite3.c",
+          "line": 103959,
+          "message": "function pointer equality comparison is unsound with '--icf=all' enabled",
+          "verdict": "TP"
+        },
+        {
+          "column": 29,
+          "file": "deps/sqlite3/sqlite3.c",
+          "line": 134227,
+          "message": "function pointer equality comparison is unsound with '--icf=all' enabled",
+          "verdict": "TP"
+        },
+        {
+          "column": 27,
+          "file": "deps/sqlite3/sqlite3.c",
+          "line": 134267,
+          "message": "function pointer equality comparison is unsound with '--icf=all' enabled",
+          "verdict": "TP"
+        },
+        {
+          "column": 24,
+          "file": "deps/sqlite3/sqlite3.c",
+          "line": 137323,
+          "message": "function pointer equality comparison is unsound with '--icf=all' enabled",
+          "verdict": "TP"
+        },
+        {
+          "column": 46,
+          "file": "deps/sqlite3/sqlite3.c",
+          "line": 152360,
+          "message": "function pointer equality comparison is unsound with '--icf=all' enabled",
+          "verdict": "TP"
+        },
+        {
+          "column": 28,
+          "file": "deps/sqlite3/sqlite3.c",
+          "line": 166322,
+          "message": "function pointer equality comparison is unsound with '--icf=all' enabled",
+          "verdict": "TP"
+        },
+        {
+          "column": 25,
+          "file": "deps/sqlite3/sqlite3.c",
+          "line": 175939,
+          "message": "function pointer equality comparison is unsound with '--icf=all' enabled",
+          "verdict": "TP"
+        }
+      ],
+      "duration_seconds": 32.257108,
+      "project": "doxygen",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": {
+        "misc-function-pointer-equality": 0.7252
+      },
+      "diagnostics": [
+        {
+          "column": 29,
+          "file": "src/util/alloc.c",
+          "line": 105,
+          "message": "function pointer equality comparison is unsound with '--icf=all' enabled",
+          "verdict": "TP"
+        },
+        {
+          "column": 10,
+          "file": "src/util/vector.h",
+          "line": 114,
+          "message": "function pointer equality comparison is unsound with '--icf=all' enabled",
+          "verdict": "TP"
+        },
+        {
+          "column": 10,
+          "file": "src/util/vector.c",
+          "line": 64,
+          "message": "function pointer equality comparison is unsound with '--icf=all' enabled",
+          "verdict": "TP"
+        },
+        {
+          "column": 32,
+          "file": "src/libgit2/hashsig.c",
+          "line": 327,
+          "message": "function pointer equality comparison is unsound with '--icf=all' enabled",
+          "verdict": "TP"
+        }
+      ],
+      "duration_seconds": 1.465845,
+      "project": "libgit2",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": {
+        "misc-function-pointer-equality": 0.251
+      },
+      "diagnostics": [
+        {
+          "column": 20,
+          "file": "src/threadpool.c",
+          "line": 339,
+          "message": "function pointer equality comparison is unsound with '--icf=all' enabled",
+          "verdict": "TP"
+        }
+      ],
+      "duration_seconds": 0.799165,
+      "project": "libuv",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": {
+        "misc-function-pointer-equality": 129.1587
+      },
+      "diagnostics": [
+        {
+          "column": 49,
+          "file": "llvm/include/llvm/Support/AllocatorBase.h",
+          "line": 48,
+          "message": "function pointer equality comparison is unsound with '--icf=all' enabled",
+          "verdict": "FP"
+        },
+        {
+          "column": 29,
+          "file": "clang/include/clang/Lex/Preprocessor.h",
+          "line": 2039,
+          "message": "function pointer equality comparison is unsound with '--icf=all' enabled",
+          "verdict": "TP"
+        },
+        {
+          "column": 29,
+          "file": "clang/include/clang/Lex/Preprocessor.h",
+          "line": 2605,
+          "message": "function pointer equality comparison is unsound with '--icf=all' enabled",
+          "verdict": "TP"
+        },
+        {
+          "column": 27,
+          "file": "clang/include/clang/AST/RecursiveASTVisitor.h",
+          "line": 85,
+          "message": "function pointer equality comparison is unsound with '--icf=all' enabled",
+          "verdict": "TP"
+        },
+        {
+          "column": 14,
+          "file": "clang/lib/Sema/SemaCodeComplete.cpp",
+          "line": 827,
+          "message": "function pointer equality comparison is unsound with '--icf=all' enabled",
+          "verdict": "TP"
+        },
+        {
+          "column": 41,
+          "file": "clang/lib/Sema/SemaCodeComplete.cpp",
+          "line": 828,
+          "message": "function pointer equality comparison is unsound with '--icf=all' enabled",
+          "verdict": "TP"
+        },
+        {
+          "column": 15,
+          "file": "clang/lib/Sema/SemaCodeComplete.cpp",
+          "line": 829,
+          "message": "function pointer equality comparison is unsound with '--icf=all' enabled",
+          "verdict": "TP"
+        },
+        {
+          "column": 17,
+          "file": "clang/lib/Sema/SemaCodeComplete.cpp",
+          "line": 837,
+          "message": "function pointer equality comparison is unsound with '--icf=all' enabled",
+          "verdict": "TP"
+        },
+        {
+          "column": 21,
+          "file": "clang/lib/Sema/SemaCodeComplete.cpp",
+          "line": 1409,
+          "message": "function pointer equality comparison is unsound with '--icf=all' enabled",
+          "verdict": "TP"
+        },
+        {
+          "column": 24,
+          "file": "clang/lib/Lex/Preprocessor.cpp",
+          "line": 904,
+          "message": "function pointer equality comparison is unsound with '--icf=all' enabled",
+          "verdict": "TP"
+        },
+        {
+          "column": 32,
+          "file": "llvm/include/llvm/TableGen/TableGenBackend.h",
+          "line": 44,
+          "message": "function pointer equality comparison is unsound with '--icf=all' enabled",
+          "verdict": "TP"
+        },
+        {
+          "column": 31,
+          "file": "llvm/include/llvm/TableGen/TableGenBackend.h",
+          "line": 45,
+          "message": "function pointer equality comparison is unsound with '--icf=all' enabled",
+          "verdict": "TP"
+        },
+        {
+          "column": 24,
+          "file": "clang/lib/Lex/PPLexerChange.cpp",
+          "line": 118,
+          "message": "function pointer equality comparison is unsound with '--icf=all' enabled",
+          "verdict": "TP"
+        },
+        {
+          "column": 24,
+          "file": "clang/lib/Lex/PPLexerChange.cpp",
+          "line": 157,
+          "message": "function pointer equality comparison is unsound with '--icf=all' enabled",
+          "verdict": "TP"
+        },
+        {
+          "column": 24,
+          "file": "clang/lib/Lex/PPLexerChange.cpp",
+          "line": 176,
+          "message": "function pointer equality comparison is unsound with '--icf=all' enabled",
+          "verdict": "TP"
+        },
+        {
+          "column": 24,
+          "file": "clang/lib/Lex/PPLexerChange.cpp",
+          "line": 212,
+          "message": "function pointer equality comparison is unsound with '--icf=all' enabled",
+          "verdict": "TP"
+        },
+        {
+          "column": 41,
+          "file": "llvm/include/llvm/Support/AllocatorBase.h",
+          "line": 63,
+          "message": "function pointer equality comparison is unsound with '--icf=all' enabled",
+          "verdict": "FP"
+        },
+        {
+          "column": 29,
+          "file": "clang/lib/Lex/PPCaching.cpp",
+          "line": 121,
+          "message": "function pointer equality comparison is unsound with '--icf=all' enabled",
+          "verdict": "TP"
+        },
+        {
+          "column": 27,
+          "file": "clang/lib/Lex/PPCaching.cpp",
+          "line": 129,
+          "message": "function pointer equality comparison is unsound with '--icf=all' enabled",
+          "verdict": "TP"
+        }
+      ],
+      "duration_seconds": 330.643652,
+      "project": "llvm-project",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": {
+        "misc-function-pointer-equality": 2.6019
+      },
+      "diagnostics": [
+        {
+          "column": 98,
+          "file": "Foundation/include/Poco/Delegate.h",
+          "line": 90,
+          "message": "function pointer equality comparison is unsound with '--icf=all' enabled",
+          "verdict": "TP"
+        },
+        {
+          "column": 38,
+          "file": "Foundation/include/Poco/FunctionDelegate.h",
+          "line": 214,
+          "message": "function pointer equality comparison is unsound with '--icf=all' enabled",
+          "verdict": "TP"
+        },
+        {
+          "column": 62,
+          "file": "Foundation/include/Poco/Observer.h",
+          "line": 106,
+          "message": "function pointer equality comparison is unsound with '--icf=all' enabled",
+          "verdict": "TP"
+        },
+        {
+          "column": 21,
+          "file": "Data/SQLite/include/Poco/Data/SQLite/Utility.h",
+          "line": 171,
+          "message": "function pointer equality comparison is unsound with '--icf=all' enabled",
+          "verdict": "TP"
+        },
+        {
+          "column": 63,
+          "file": "Net/include/Poco/Net/HTTPObserver.h",
+          "line": 117,
+          "message": "function pointer equality comparison is unsound with '--icf=all' enabled",
+          "verdict": "TP"
+        },
+        {
+          "column": 93,
+          "file": "Net/include/Poco/Net/HTTPObserver.h",
+          "line": 117,
+          "message": "function pointer equality comparison is unsound with '--icf=all' enabled",
+          "verdict": "TP"
+        },
+        {
+          "column": 33,
+          "file": "dependencies/hpdf/src/hpdf_font_cid.c",
+          "line": 400,
+          "message": "function pointer equality comparison is unsound with '--icf=all' enabled",
+          "verdict": "TP"
+        },
+        {
+          "column": 36,
+          "file": "dependencies/hpdf/src/hpdf_encoder.c",
+          "line": 2761,
+          "message": "function pointer equality comparison is unsound with '--icf=all' enabled",
+          "verdict": "TP"
+        },
+        {
+          "column": 63,
+          "file": "Foundation/include/Poco/NObserver.h",
+          "line": 160,
+          "message": "function pointer equality comparison is unsound with '--icf=all' enabled",
+          "verdict": "TP"
+        },
+        {
+          "column": 19,
+          "file": "dependencies/sqlite3/src/sqlite3.c",
+          "line": 85085,
+          "message": "function pointer equality comparison is unsound with '--icf=all' enabled",
+          "verdict": "TP"
+        },
+        {
+          "column": 19,
+          "file": "dependencies/sqlite3/src/sqlite3.c",
+          "line": 85092,
+          "message": "function pointer equality comparison is unsound with '--icf=all' enabled",
+          "verdict": "TP"
+        },
+        {
+          "column": 15,
+          "file": "dependencies/sqlite3/src/sqlite3.c",
+          "line": 85957,
+          "message": "function pointer equality comparison is unsound with '--icf=all' enabled",
+          "verdict": "TP"
+        },
+        {
+          "column": 13,
+          "file": "dependencies/sqlite3/src/sqlite3.c",
+          "line": 85987,
+          "message": "function pointer equality comparison is unsound with '--icf=all' enabled",
+          "verdict": "TP"
+        },
+        {
+          "column": 17,
+          "file": "dependencies/sqlite3/src/sqlite3.c",
+          "line": 86148,
+          "message": "function pointer equality comparison is unsound with '--icf=all' enabled",
+          "verdict": "TP"
+        },
+        {
+          "column": 47,
+          "file": "dependencies/sqlite3/src/sqlite3.c",
+          "line": 93424,
+          "message": "function pointer equality comparison is unsound with '--icf=all' enabled",
+          "verdict": "TP"
+        },
+        {
+          "column": 34,
+          "file": "dependencies/sqlite3/src/sqlite3.c",
+          "line": 108985,
+          "message": "function pointer equality comparison is unsound with '--icf=all' enabled",
+          "verdict": "TP"
+        },
+        {
+          "column": 34,
+          "file": "dependencies/sqlite3/src/sqlite3.c",
+          "line": 108988,
+          "message": "function pointer equality comparison is unsound with '--icf=all' enabled",
+          "verdict": "TP"
+        },
+        {
+          "column": 29,
+          "file": "dependencies/sqlite3/src/sqlite3.c",
+          "line": 141781,
+          "message": "function pointer equality comparison is unsound with '--icf=all' enabled",
+          "verdict": "TP"
+        },
+        {
+          "column": 27,
+          "file": "dependencies/sqlite3/src/sqlite3.c",
+          "line": 141824,
+          "message": "function pointer equality comparison is unsound with '--icf=all' enabled",
+          "verdict": "TP"
+        },
+        {
+          "column": 24,
+          "file": "dependencies/sqlite3/src/sqlite3.c",
+          "line": 144978,
+          "message": "function pointer equality comparison is unsound with '--icf=all' enabled",
+          "verdict": "TP"
+        },
+        {
+          "column": 46,
+          "file": "dependencies/sqlite3/src/sqlite3.c",
+          "line": 160994,
+          "message": "function pointer equality comparison is unsound with '--icf=all' enabled",
+          "verdict": "TP"
+        },
+        {
+          "column": 28,
+          "file": "dependencies/sqlite3/src/sqlite3.c",
+          "line": 176124,
+          "message": "function pointer equality comparison is unsound with '--icf=all' enabled",
+          "verdict": "TP"
+        },
+        {
+          "column": 25,
+          "file": "dependencies/sqlite3/src/sqlite3.c",
+          "line": 185964,
+          "message": "function pointer equality comparison is unsound with '--icf=all' enabled",
+          "verdict": "TP"
+        },
+        {
+          "column": 79,
+          "file": "dependencies/quill/include/quill/core/PatternFormatterOptions.h",
+          "line": 160,
+          "message": "function pointer equality comparison is unsound with '--icf=all' enabled",
+          "verdict": "TP"
+        },
+        {
+          "column": 42,
+          "file": "dependencies/zlib/src/deflate.c",
+          "line": 777,
+          "message": "function pointer equality comparison is unsound with '--icf=all' enabled",
+          "verdict": "TP"
+        }
+      ],
+      "duration_seconds": 45.141388,
+      "project": "poco",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": {
+        "misc-function-pointer-equality": 0.0187
+      },
+      "diagnostics": [],
+      "duration_seconds": 6.425069,
+      "project": "stdexec",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": {
+        "misc-function-pointer-equality": 0.0235
+      },
+      "diagnostics": [],
+      "duration_seconds": 2.774163,
+      "project": "yaml-cpp",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": {
+        "misc-function-pointer-equality": 0.5706
+      },
+      "diagnostics": [],
+      "duration_seconds": 2.695575,
+      "project": "zstd",
+      "status": "COMPLETED"
+    }
+  ],
+  "runner_arch": "ARM64",
+  "started_at": "2026-11-11T07:30:34+00:00",
+  "status": "COMPLETED"
+}
