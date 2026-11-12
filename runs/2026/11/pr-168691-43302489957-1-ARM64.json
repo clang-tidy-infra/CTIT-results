@@ -1,0 +1,250 @@
+{
+  "artifact_url": "https://github.com/clang-tidy-infra/CTIT/actions/runs/43302489957/artifacts/13983133376",
+  "baseline": null,
+  "check_config": {},
+  "check_name": "bugprone-unsafe-format-string",
+  "duration_seconds": 1489.5506,
+  "finished_at": "2026-11-12T21:04:55.550600Z",
+  "github_run_attempt": 1,
+  "github_run_id": 43302489957,
+  "llvm_revision": "3e1a62aa3de293366836458969d2de2623c17039+patch:43d2853012e61633b213b8515155c0dba909be12a4dbbc064b2545dcd9cbf7cf",
+  "pr_number": 168691,
+  "project_runs": [
+    {
+      "check_profile": {
+        "bugprone-unsafe-format-string": 0.4255
+      },
+      "diagnostics": [],
+      "duration_seconds": 11.529405,
+      "project": "abseil-cpp",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": {
+        "bugprone-unsafe-format-string": 0.4069
+      },
+      "diagnostics": [],
+      "duration_seconds": 27.801392,
+      "project": "assimp",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": {
+        "bugprone-unsafe-format-string": 0.0262
+      },
+      "diagnostics": [],
+      "duration_seconds": 0.696734,
+      "project": "box2d",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": {
+        "bugprone-unsafe-format-string": 1.4715
+      },
+      "diagnostics": [],
+      "duration_seconds": 14.384578,
+      "project": "capnproto",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": {
+        "bugprone-unsafe-format-string": 0.0412
+      },
+      "diagnostics": [],
+      "duration_seconds": 4.855673,
+      "project": "catch2",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": {
+        "bugprone-unsafe-format-string": 0.9404
+      },
+      "diagnostics": [],
+      "duration_seconds": 14.494004,
+      "project": "cppcheck",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": {
+        "bugprone-unsafe-format-string": 0.1689
+      },
+      "diagnostics": [],
+      "duration_seconds": 2.559342,
+      "project": "curl",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": {
+        "bugprone-unsafe-format-string": 0.02
+      },
+      "diagnostics": [],
+      "duration_seconds": 5.992713,
+      "project": "cxxopts",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": {
+        "bugprone-unsafe-format-string": 1.7296
+      },
+      "diagnostics": [],
+      "duration_seconds": 30.269413,
+      "project": "doxygen",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": {
+        "bugprone-unsafe-format-string": 1.1101
+      },
+      "diagnostics": [],
+      "duration_seconds": 48.339693,
+      "project": "duckdb",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": {
+        "bugprone-unsafe-format-string": 0.4661
+      },
+      "diagnostics": [],
+      "duration_seconds": 9.981465,
+      "project": "fmt",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": {
+        "bugprone-unsafe-format-string": 1.0124
+      },
+      "diagnostics": [],
+      "duration_seconds": 13.712701,
+      "project": "harfbuzz",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": {
+        "bugprone-unsafe-format-string": 0.078
+      },
+      "diagnostics": [],
+      "duration_seconds": 1.463405,
+      "project": "libgit2",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": {
+        "bugprone-unsafe-format-string": 0.0057
+      },
+      "diagnostics": [],
+      "duration_seconds": 0.655046,
+      "project": "libsoundio",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": {
+        "bugprone-unsafe-format-string": 0.0149
+      },
+      "diagnostics": [],
+      "duration_seconds": 0.852883,
+      "project": "libuv",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": {
+        "bugprone-unsafe-format-string": 133.4462
+      },
+      "diagnostics": [],
+      "duration_seconds": 320.421733,
+      "project": "llvm-project",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": {
+        "bugprone-unsafe-format-string": 0.337
+      },
+      "diagnostics": [],
+      "duration_seconds": 9.602961,
+      "project": "oatpp",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": {
+        "bugprone-unsafe-format-string": 1.6152
+      },
+      "diagnostics": [],
+      "duration_seconds": 43.812094,
+      "project": "poco",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": {
+        "bugprone-unsafe-format-string": 0.0548
+      },
+      "diagnostics": [],
+      "duration_seconds": 17.522098,
+      "project": "re2",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": {
+        "bugprone-unsafe-format-string": 12.633
+      },
+      "diagnostics": [
+        {
+          "column": 3,
+          "file": "SimTKmath/Optimizers/src/c-cmaes/cmaes.c",
+          "line": 249,
+          "message": "format specifier '%s' without precision may cause buffer overflow; consider using '%.Ns' where N limits output length",
+          "verdict": "TP"
+        }
+      ],
+      "duration_seconds": 39.246225,
+      "project": "simbody",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": {
+        "bugprone-unsafe-format-string": 0.0208
+      },
+      "diagnostics": [],
+      "duration_seconds": 5.549581,
+      "project": "stdexec",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": {
+        "bugprone-unsafe-format-string": 0.6091
+      },
+      "diagnostics": [],
+      "duration_seconds": 8.09352,
+      "project": "symengine",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": {
+        "bugprone-unsafe-format-string": 0.0088
+      },
+      "diagnostics": [],
+      "duration_seconds": 1.863651,
+      "project": "tinyspline",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": {
+        "bugprone-unsafe-format-string": 0.0277
+      },
+      "diagnostics": [],
+      "duration_seconds": 2.977672,
+      "project": "yaml-cpp",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": {
+        "bugprone-unsafe-format-string": 0.0511
+      },
+      "diagnostics": [],
+      "duration_seconds": 2.81714,
+      "project": "zstd",
+      "status": "COMPLETED"
+    }
+  ],
+  "runner_arch": "ARM64",
+  "started_at": "2026-11-12T20:40:06+00:00",
+  "status": "COMPLETED"
+}
