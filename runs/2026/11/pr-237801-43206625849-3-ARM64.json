@@ -1,0 +1,411 @@
+{
+  "artifact_url": "https://github.com/clang-tidy-infra/CTIT/actions/runs/43206625849/artifacts/13969874970",
+  "baseline": null,
+  "check_config": {},
+  "check_name": "clang-analyzer-cplusplus.DestroyedAsWrongType",
+  "duration_seconds": 3085.336132,
+  "finished_at": "2026-11-12T18:15:40.336132Z",
+  "github_run_attempt": 3,
+  "github_run_id": 43206625849,
+  "llvm_revision": "3e1a62aa3de293366836458969d2de2623c17039+patch:23da1f99e63ea7df8238edb50bfbbfa0267f8ac2f8768876eef550de7e805d66",
+  "pr_number": 237801,
+  "project_runs": [
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 28.953061,
+      "project": "abseil-cpp",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [
+        {
+          "column": 22,
+          "file": "code/AssetLib/glTF/glTFAssetWriter.h",
+          "line": 73,
+          "message": "Destructor of 'rapidjson::GenericDocument' is called on storage that holds an object of type 'GenericValue<rapidjson::UTF8<>>'",
+          "verdict": "TP"
+        },
+        {
+          "column": 7,
+          "file": "code/AssetLib/glTF2/glTF2AssetWriter.h",
+          "line": 67,
+          "message": "Destructor of 'rapidjson::GenericDocument' is called on storage that holds an object of type 'GenericValue<rapidjson::UTF8<>>'",
+          "verdict": "TP"
+        }
+      ],
+      "duration_seconds": 98.77375,
+      "project": "assimp",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 8.220341,
+      "project": "box2d",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 85.97089,
+      "project": "capnproto",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 11.453018,
+      "project": "catch2",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 128.981815,
+      "project": "cppcheck",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 45.634999,
+      "project": "curl",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 43.743668,
+      "project": "cxxopts",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 353.808894,
+      "project": "doxygen",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 75.218,
+      "project": "duckdb",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 153.6549,
+      "project": "fmt",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 18.682514,
+      "project": "harfbuzz",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 17.473174,
+      "project": "libgit2",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 7.945785,
+      "project": "libsoundio",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 19.160171,
+      "project": "libuv",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 11.341265,
+      "project": "oatpp",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 389.560242,
+      "project": "poco",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 17.659913,
+      "project": "re2",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [
+        {
+          "column": 25,
+          "file": "SimTKmath/tests/LBFGSDiffTest.cpp",
+          "line": 114,
+          "message": "Destructor of 'ProblemSystem' is called on storage that holds an object of type 'OptimizerSystem'",
+          "verdict": "FP"
+        },
+        {
+          "column": 12,
+          "file": "examples/UserGuideLimits.cpp",
+          "line": 154,
+          "message": "Destructor of 'ProblemSystem' is called on storage that holds an object of type 'OptimizerSystem'",
+          "verdict": "FP"
+        },
+        {
+          "column": 25,
+          "file": "SimTKmath/tests/IpoptDiffTest.cpp",
+          "line": 182,
+          "message": "Destructor of 'ProblemSystem' is called on storage that holds an object of type 'OptimizerSystem'",
+          "verdict": "FP"
+        },
+        {
+          "column": 1,
+          "file": "Simbody/tests/adhoc/TestRiboseMobilizer.cpp",
+          "line": 516,
+          "message": "Destructor of 'PseudorotationMobilizer' is called on storage that holds an object of type 'FunctionBased'",
+          "verdict": "FP"
+        },
+        {
+          "column": 12,
+          "file": "examples/ConstrainedNumericalDiffOptimization.cpp",
+          "line": 122,
+          "message": "Destructor of 'ProblemSystem' is called on storage that holds an object of type 'OptimizerSystem'",
+          "verdict": "FP"
+        },
+        {
+          "column": 1,
+          "file": "Simbody/src/LocalEnergyMinimizer.cpp",
+          "line": 102,
+          "message": "Destructor of 'SimTK::LocalEnergyMinimizer::OptimizerFunction' is called on storage that holds an object of type 'OptimizerSystem'",
+          "verdict": "FP"
+        },
+        {
+          "column": 12,
+          "file": "examples/UserGuide.cpp",
+          "line": 146,
+          "message": "Destructor of 'ProblemSystem' is called on storage that holds an object of type 'OptimizerSystem'",
+          "verdict": "FP"
+        },
+        {
+          "column": 12,
+          "file": "examples/UnconstrainedOptimization.cpp",
+          "line": 85,
+          "message": "Destructor of 'ProblemSystem' is called on storage that holds an object of type 'OptimizerSystem'",
+          "verdict": "FP"
+        },
+        {
+          "column": 1,
+          "file": "Simbody/src/MobilizedBody.cpp",
+          "line": 2946,
+          "message": "Destructor of 'OptimizerFunction' is called on storage that holds an object of type 'OptimizerSystem'",
+          "verdict": "FP"
+        },
+        {
+          "column": 1,
+          "file": "Simbody/src/MobilizedBody.cpp",
+          "line": 2986,
+          "message": "Destructor of 'OptimizerFunction' is called on storage that holds an object of type 'OptimizerSystem'",
+          "verdict": "FP"
+        },
+        {
+          "column": 53,
+          "file": "SimTKmath/tests/CMAESTest.cpp",
+          "line": 95,
+          "message": "Destructor of 'Cigtab' is called on storage that holds an object of type 'OptimizerSystem'",
+          "verdict": "FP"
+        },
+        {
+          "column": 1,
+          "file": "SimTKmath/tests/CMAESTest.cpp",
+          "line": 123,
+          "message": "Destructor of 'Cigtab' is called on storage that holds an object of type 'OptimizerSystem'",
+          "verdict": "FP"
+        },
+        {
+          "column": 1,
+          "file": "SimTKmath/tests/CMAESTest.cpp",
+          "line": 148,
+          "message": "Destructor of 'Cigtab' is called on storage that holds an object of type 'OptimizerSystem'",
+          "verdict": "FP"
+        },
+        {
+          "column": 1,
+          "file": "SimTKmath/tests/CMAESTest.cpp",
+          "line": 210,
+          "message": "Destructor of 'Ackley' is called on storage that holds an object of type 'OptimizerSystem'",
+          "verdict": "FP"
+        },
+        {
+          "column": 1,
+          "file": "SimTKmath/tests/CMAESTest.cpp",
+          "line": 237,
+          "message": "Destructor of 'DropWave' is called on storage that holds an object of type 'OptimizerSystem'",
+          "verdict": "FP"
+        },
+        {
+          "column": 1,
+          "file": "SimTKmath/tests/CMAESTest.cpp",
+          "line": 271,
+          "message": "Destructor of 'Cigtab' is called on storage that holds an object of type 'OptimizerSystem'",
+          "verdict": "FP"
+        },
+        {
+          "column": 1,
+          "file": "SimTKmath/tests/CMAESTest.cpp",
+          "line": 404,
+          "message": "Destructor of 'Cigtab' is called on storage that holds an object of type 'OptimizerSystem'",
+          "verdict": "FP"
+        },
+        {
+          "column": 1,
+          "file": "SimTKmath/tests/CMAESTest.cpp",
+          "line": 427,
+          "message": "Destructor of 'Rosenbrock' is called on storage that holds an object of type 'OptimizerSystem'",
+          "verdict": "FP"
+        },
+        {
+          "column": 1,
+          "file": "SimTKmath/tests/CMAESTest.cpp",
+          "line": 449,
+          "message": "Destructor of 'Schwefel' is called on storage that holds an object of type 'OptimizerSystem'",
+          "verdict": "FP"
+        },
+        {
+          "column": 1,
+          "file": "SimTKmath/tests/CMAESTest.cpp",
+          "line": 470,
+          "message": "Destructor of 'Easom' is called on storage that holds an object of type 'OptimizerSystem'",
+          "verdict": "FP"
+        },
+        {
+          "column": 1,
+          "file": "SimTKmath/tests/CMAESTest.cpp",
+          "line": 500,
+          "message": "Destructor of 'Ackley' is called on storage that holds an object of type 'OptimizerSystem'",
+          "verdict": "FP"
+        },
+        {
+          "column": 1,
+          "file": "SimTKmath/tests/CMAESTest.cpp",
+          "line": 530,
+          "message": "Destructor of 'Cigtab' is called on storage that holds an object of type 'OptimizerSystem'",
+          "verdict": "FP"
+        },
+        {
+          "column": 12,
+          "file": "examples/UnconstrainedNumericalDiffOptimization.cpp",
+          "line": 77,
+          "message": "Destructor of 'ProblemSystem' is called on storage that holds an object of type 'OptimizerSystem'",
+          "verdict": "FP"
+        },
+        {
+          "column": 25,
+          "file": "SimTKmath/tests/LBFGSTest.cpp",
+          "line": 120,
+          "message": "Destructor of 'ProblemSystem' is called on storage that holds an object of type 'OptimizerSystem'",
+          "verdict": "FP"
+        },
+        {
+          "column": 23,
+          "file": "Simbody/tests/adhoc/ParallelIpoptTest.cpp",
+          "line": 230,
+          "message": "Destructor of 'ProblemSystem' is called on storage that holds an object of type 'OptimizerSystem'",
+          "verdict": "FP"
+        },
+        {
+          "column": 25,
+          "file": "SimTKmath/tests/IpoptTest.cpp",
+          "line": 190,
+          "message": "Destructor of 'ProblemSystem' is called on storage that holds an object of type 'OptimizerSystem'",
+          "verdict": "FP"
+        },
+        {
+          "column": 12,
+          "file": "examples/ConstrainedOptimization.cpp",
+          "line": 165,
+          "message": "Destructor of 'ProblemSystem' is called on storage that holds an object of type 'OptimizerSystem'",
+          "verdict": "FP"
+        },
+        {
+          "column": 9,
+          "file": "Simbody/src/ObservedPointFitter.cpp",
+          "line": 345,
+          "message": "Destructor of 'SimTK::ObservedPointFitter::OptimizerFunction' is called on storage that holds an object of type 'OptimizerSystem'",
+          "verdict": "FP"
+        },
+        {
+          "column": 46,
+          "file": "Simbody/src/ObservedPointFitter.cpp",
+          "line": 369,
+          "message": "Destructor of 'SimTK::ObservedPointFitter::OptimizerFunction' is called on storage that holds an object of type 'OptimizerSystem'",
+          "verdict": "FP"
+        },
+        {
+          "column": 21,
+          "file": "SimTKmath/tests/adhoc/nlpqlp.cpp",
+          "line": 462,
+          "message": "Destructor of 'ProblemSystem' is called on storage that holds an object of type 'OptimizerSystem'",
+          "verdict": "FP"
+        }
+      ],
+      "duration_seconds": 180.393668,
+      "project": "simbody",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 5.9137,
+      "project": "stdexec",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 100.451966,
+      "project": "symengine",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 14.042137,
+      "project": "tinyspline",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 9.154482,
+      "project": "yaml-cpp",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 73.174279,
+      "project": "zstd",
+      "status": "COMPLETED"
+    }
+  ],
+  "runner_arch": "ARM64",
+  "started_at": "2026-11-12T17:24:15+00:00",
+  "status": "COMPLETED"
+}
