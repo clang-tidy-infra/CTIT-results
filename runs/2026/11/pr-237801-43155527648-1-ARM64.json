@@ -1,0 +1,16 @@
+{
+  "artifact_url": "https://github.com/clang-tidy-infra/CTIT/actions/runs/43155527648/artifacts/13916052332",
+  "baseline": null,
+  "check_config": {},
+  "check_name": "clang-analyzer-cplusplus.DestroyedAsWrongType",
+  "duration_seconds": 570.507994,
+  "finished_at": "2026-11-12T04:43:04.507994Z",
+  "github_run_attempt": 1,
+  "github_run_id": 43155527648,
+  "llvm_revision": "cd0623790910ed893ff5d4fa1c977419d9e92994",
+  "pr_number": 237801,
+  "project_runs": [],
+  "runner_arch": "ARM64",
+  "started_at": "2026-11-12T04:33:34+00:00",
+  "status": "FAILED"
+}
