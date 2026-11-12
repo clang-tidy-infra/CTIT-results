@@ -1,0 +1,116 @@
+{
+  "artifact_url": "https://github.com/clang-tidy-infra/CTIT/actions/runs/43144059135/artifacts/13913050896",
+  "baseline": null,
+  "check_config": {},
+  "check_name": "clang-analyzer-cplusplus.DestroyedAsWrongType",
+  "duration_seconds": 2385.261609,
+  "finished_at": "2026-11-12T03:29:57.261609Z",
+  "github_run_attempt": 1,
+  "github_run_id": 43144059135,
+  "llvm_revision": "3e1a62aa3de293366836458969d2de2623c17039+patch:163fbad0c968b04ad762b02d4e15272b3be5fd7b8643963f907bb2f61ba9cbcd",
+  "pr_number": 237801,
+  "project_runs": [
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 30.247301,
+      "project": "abseil-cpp",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [
+        {
+          "column": 22,
+          "file": "code/AssetLib/glTF/glTFAssetWriter.h",
+          "line": 73,
+          "message": "Destructor of 'rapidjson::GenericDocument' is called on storage that holds an object of type 'GenericValue<rapidjson::UTF8<>>'",
+          "verdict": "TP"
+        },
+        {
+          "column": 7,
+          "file": "code/AssetLib/glTF2/glTF2AssetWriter.h",
+          "line": 67,
+          "message": "Destructor of 'rapidjson::GenericDocument' is called on storage that holds an object of type 'GenericValue<rapidjson::UTF8<>>'",
+          "verdict": "TP"
+        }
+      ],
+      "duration_seconds": 74.185307,
+      "project": "assimp",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 12.862763,
+      "project": "catch2",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 148.621551,
+      "project": "cppcheck",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 51.976804,
+      "project": "curl",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 422.85197,
+      "project": "doxygen",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 15.386159,
+      "project": "libgit2",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 22.242614,
+      "project": "libuv",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 366.982847,
+      "project": "poco",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 7.712992,
+      "project": "stdexec",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 9.197997,
+      "project": "yaml-cpp",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 83.625382,
+      "project": "zstd",
+      "status": "COMPLETED"
+    }
+  ],
+  "runner_arch": "ARM64",
+  "started_at": "2026-11-12T02:50:12+00:00",
+  "status": "COMPLETED"
+}
