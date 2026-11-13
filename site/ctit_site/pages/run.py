@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import math
 from collections import Counter
 from urllib.parse import quote
 
@@ -17,12 +18,12 @@ from ..markup import (
     status_html,
 )
 from ..model import Run, diff
-from ..ranking import Entry, Ranking, module, rank
+from ..ranking import RANKING_PROJECTS, Entry, Ranking, module, rank
 from ..timings import TimingsDay
 from ..writer import Site, compare_href, group_title, project_href, run_href
 
 ROOT = "../"
-# How many checks a ranking shows above and below each check of the run.
+# How many checks the nearest-checks tables show above and below the check.
 RANKING_CONTEXT = 3
 
 
@@ -32,10 +33,12 @@ def run_metadata(
     data = run.data
     links = [
         link(run.github_run_url, "GitHub run"),
-        link(site.results_url(run), "JSON"),
+        link(site.results_url(run), "run record (JSON)"),
     ]
     if data.get("artifact_url"):
-        links.insert(1, link(data["artifact_url"], "logs"))
+        # The ctit-logs workflow artifact: the clang-tidy logs of the patched
+        # and baseline runs, plus report.md and issue.md, as one zip.
+        links.insert(1, link(data["artifact_url"], "clang-tidy logs (zip)"))
     config = data.get("check_config") or {}
     options = (
         "<br />".join(f"{esc(k)}: {esc(v)}" for k, v in sorted(config.items()))
@@ -138,22 +141,16 @@ def check_name_html(ranking: Ranking, check: str) -> str:
     return esc(check)
 
 
-def ranking_table(ranking: Ranking, entries: list[Entry]) -> str:
-    """The checks of the run with their neighbors in `entries`."""
-    shown: set[int] = set()
-    for i, entry in enumerate(entries):
-        if entry.new:
-            shown.update(range(i - RANKING_CONTEXT, i + RANKING_CONTEXT + 1))
+def neighbors_table(ranking: Ranking, entries: list[Entry], check: str) -> str:
+    """`check` with its neighbors in `entries`, slowest first."""
+    index = next(i for i, entry in enumerate(entries) if entry.check == check)
+    first = max(index - RANKING_CONTEXT, 0)
+    last = min(index + RANKING_CONTEXT, len(entries) - 1)
     gap = '<tr><td></td><td class="l dim">...</td><td></td></tr>\n'
-    rows = []
-    last = -1
-    for i, entry in enumerate(entries):
-        if i not in shown:
-            continue
-        if i > last + 1:
-            rows.append(gap)
-        last = i
-        mark = ' class="mark"' if entry.new else ""
+    rows = [gap] if first > 0 else []
+    for i in range(first, last + 1):
+        entry = entries[i]
+        mark = ' class="mark"' if entry.check == check else ""
         rows.append(
             f"<tr{mark}><td>{i + 1}</td>"
             f'<td class="l">{check_name_html(ranking, entry.check)}</td>'
@@ -161,19 +158,118 @@ def ranking_table(ranking: Ranking, entries: list[Entry]) -> str:
         )
     if last < len(entries) - 1:
         rows.append(gap)
-    header = '<tr><th>#</th><th class="l">Check</th><th>Time (s)</th></tr>\n'
+    header = '<tr><th>Rank</th><th class="l">Check</th><th>Time (s)</th></tr>\n'
     return f"<table>\n{header}{''.join(rows)}</table>\n"
 
 
-def position(entries: list[Entry], check: str) -> str:
-    index = next(i for i, entry in enumerate(entries) if entry.check == check)
-    return f"{index + 1} of {len(entries)}"
+class LogScale:
+    """Check times on a log scale, from the power of ten at or below the
+    fastest nonzero time to the one at or above the slowest time."""
+
+    def __init__(self, seconds: list[float]) -> None:
+        positive = [s for s in seconds if s > 0] or [1.0]
+        self.low = math.floor(math.log10(min(positive)))
+        self.high = max(math.ceil(math.log10(max(positive))), self.low + 1)
+
+    def x(self, seconds: float) -> str:
+        """The position of a time in percent of the width; zero at the left edge."""
+        if seconds <= 0:
+            return "0%"
+        fraction = (math.log10(seconds) - self.low) / (self.high - self.low)
+        return f"{min(max(fraction, 0.0), 1.0) * 100:.2f}%"
+
+    def axis(self) -> str:
+        """An axis with a label at every power of ten."""
+        parts = []
+        for power in range(self.low, self.high + 1):
+            value = 10.0**power
+            label = f"{value * 1000:g}ms" if value < 1 else f"{value:g}s"
+            x = self.x(value)
+            anchor = (
+                "start"
+                if power == self.low
+                else "end"
+                if power == self.high
+                else "middle"
+            )
+            parts.append(
+                f'<line x1="{x}" x2="{x}" y1="0" y2="5" />'
+                f'<text x="{x}" y="17" text-anchor="{anchor}">{label}</text>'
+            )
+        return f'<svg class="strip axis" aria-hidden="true">{"".join(parts)}</svg>'
+
+
+def strip(scale: LogScale, entries: list[Entry], check: str, label: str) -> str:
+    """Every check of `entries` as a tick at its time, `check` highlighted."""
+    ticks = []
+    mark = ""
+    for entry in entries:
+        x = scale.x(entry.seconds)
+        if entry.check == check:
+            mark = (
+                f'<line class="this" x1="{x}" x2="{x}" y1="0" y2="100%">'
+                f"<title>{esc(check)}: {fmt_seconds(entry.seconds)} s</title></line>"
+            )
+        else:
+            ticks.append(f'<line x1="{x}" x2="{x}" y1="25%" y2="75%" />')
+    return (
+        f'<svg class="strip" role="img" aria-label="{esc(label)}">'
+        f"{''.join(ticks)}{mark}</svg>"
+    )
+
+
+def and_list(items: list[str]) -> str:
+    """A, B and C."""
+    if len(items) < 2:
+        return "".join(items)
+    return f"{', '.join(items[:-1])} and {items[-1]}"
+
+
+def check_time_block(ranking: Ranking, nightly_link: str) -> str:
+    """How long the check took, and where it falls among all checks and among
+    the checks of its module."""
+    check = ranking.check
+    groups = [
+        ("All checks", ranking.entries()),
+        (f"{module(check)} checks", ranking.entries(module(check))),
+    ]
+    scale = LogScale([entry.seconds for entry in groups[0][1]])
+    body = (
+        f"<p><b>{esc(check)}</b> took <b>{fmt_seconds(ranking.seconds)} s</b> on "
+        f"{and_list(ranking.projects)}. Compared with the checks of the "
+        f"{nightly_link}:</p>\n"
+    )
+    rows = []
+    for title, entries in groups:
+        index = next(i for i, e in enumerate(entries) if e.check == check)
+        label = f"{title} ({len(entries)})"
+        summary = (
+            f"{label}: {index} slower and {len(entries) - index - 1} faster "
+            f"than {check}"
+        )
+        rows.append(
+            f'<tr><td class="l">{esc(label)}</td>'
+            f"<td>{strip(scale, entries, check, summary)}</td></tr>\n"
+        )
+    body += (
+        '<table class="strips">\n'
+        f"{''.join(rows)}"
+        f"<tr><td></td><td>{scale.axis()}</td></tr>\n"
+        "</table>\n"
+    )
+    body += '<div class="side-by-side">\n'
+    for _, entries in groups:
+        body += f"<div>\n{neighbors_table(ranking, entries, check)}</div>\n"
+    return body + "</div>\n"
 
 
 def check_time_section(run: Run, nightly: TimingsDay | None) -> str:
-    """Where the checks of the run would rank by check time among the checks
-    of the latest daily timings run."""
-    if nightly is None or not any(p.check_profile for p in run.projects.values()):
+    """How long the checks of the run took, and where they fall among the
+    checks of the latest daily timings run."""
+    checks = sorted(
+        {check for p in run.projects.values() for check in p.check_profile or {}}
+    )
+    if nightly is None or not checks:
         return ""
     body = '<h4 id="check-time">Check time:</h4>\n'
     nightly_link = link(nightly.github_run_url, f"daily timings run of {nightly.date}")
@@ -183,48 +279,17 @@ def check_time_section(run: Run, nightly: TimingsDay | None) -> str:
             f'<p class="dim">This run ran on {esc(arch)} and the {nightly_link} on '
             f"{esc(nightly.runner_arch)}, so their check times cannot be compared.</p>\n"
         )
-    ranking = rank(run, nightly)
-    if ranking is None:
-        return body + (
-            f'<p class="dim">The {nightly_link} has no check times for the '
-            "projects of this run.</p>\n"
-        )
-    everything = ranking.entries()
-    modules = sorted({module(check) for check in ranking.run})
-    by_module = {name: ranking.entries(name) for name in modules}
-    rows = []
-    for check in sorted(ranking.run):
-        before = ranking.nightly.get(check)
-        rows.append(
-            f'<tr><td class="l">{check_name_html(ranking, check)}</td>'
-            f"<td>{fmt_seconds(ranking.run[check])}</td>"
-            "<td>"
-            + ('<span class="dim">-</span>' if before is None else fmt_seconds(before))
-            + "</td>"
-            f"<td>{position(by_module[module(check)], check)}</td>"
-            f"<td>{position(everything, check)}</td></tr>\n"
-        )
-    body += (
-        "<p>How long the checks of this run took, from clang-tidy's check "
-        f"profile, and where they would rank among all checks of the {nightly_link}, "
-        "slowest first. Times are summed over the "
-        f"{len(ranking.projects)} projects that both runs have times for. "
-        "Daily run is the check's own time in that run, or a dash if that run "
-        "did not have the check. The daily run enables every check at once, so "
-        "the comparison is approximate. The tables below show each check of "
-        "this run in bold, next to its neighbors in the ranking.</p>\n"
-        '<table>\n<tr><th class="l">Check</th><th>Time (s)</th><th>Daily run (s)</th>'
-        "<th>In module</th><th>Overall</th></tr>\n"
-        f"{''.join(rows)}</table>\n"
-    )
-    lists = [(f"{name} checks", entries) for name, entries in by_module.items()]
-    lists.append(("All checks", everything))
-    body += '<div class="side-by-side">\n'
-    for title, entries in lists:
-        body += (
-            f"<div>\n<p>{esc(title)}:</p>\n{ranking_table(ranking, entries)}</div>\n"
-        )
-    return body + "</div>\n"
+    projects = and_list(list(RANKING_PROJECTS))
+    for check in checks:
+        ranking = rank(run, nightly, check)
+        if ranking is None:
+            body += (
+                f'<p class="dim"><b>{esc(check)}</b> has no times on any of '
+                f"{projects} to compare with the {nightly_link}.</p>\n"
+            )
+        else:
+            body += check_time_block(ranking, nightly_link)
+    return body
 
 
 def build_run(
