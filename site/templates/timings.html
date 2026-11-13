@@ -33,20 +33,14 @@ $projects</p>
 <p id="compare-legend" class="legend" hidden></p>
 <p id="compare-note" class="dim" hidden></p>
 <div id="total" class="graph"></div>
-<p class="dim">Hover over a day to see its values. Click it to see the LLVM
-changes since the previous run. Drag to zoom, double-click to zoom out. A gray
-vertical line marks a change of the runner: the timings on its two sides come
-from different hardware and cannot be compared.</p>
 <h4 id="projects-title">Per project:</h4>
 <div id="projects" class="small-multiples"></div>
 <h4>Checks:</h4>
-<p class="dim">The time of each matching check in the latest run, summed over
-the checked projects, and how it changed since the previous run and since the
-run a week earlier. Changes of at least 10% and 1 s are colored. Click a check
-to show only it, or a column header to sort.</p>
 <div class="wide"><table id="checks"></table></div>
-<h4>Data:</h4>
+<details>
+<summary>Data</summary>
 <div class="wide"><table id="table"></table></div>
+</details>
 <script type="application/json" id="timings-data">$data</script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/dygraph/2.2.2/dygraph.min.css" integrity="sha512-ctjfqH0cf1ZvsxW1ub4RMXYPxaAbaGN6XPMXFkIRN2V9cRs21C2tL/9e8W9Osm/gv9hCdJNc+E3tLIqINSLSEg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <script src="https://cdnjs.cloudflare.com/ajax/libs/dygraph/2.2.2/dygraph.min.js" integrity="sha512-V4v8aZBQJbc3CtWYGk62PTkHn1sDMFunWEGXezucd/ZxYZ/0YcEoq95tWOAv6uc4oFlA6idh0UwE4vKPzwEqDA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>

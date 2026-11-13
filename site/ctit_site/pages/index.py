@@ -68,7 +68,9 @@ def build_index(site: Site, groups: dict[str, list[Run]]) -> None:
                 column.append(project_cell(run, project, previous))
             old_total = previous.total() if previous else None
             cells[-1].append(count_cell(run.total(), old_total))
-    headers = [f'<th class="p">{esc(p)}</th>' for p in projects] + ["<th>Total</th>"]
+    # Project names stay on one line: broken after a hyphen, they no longer
+    # line up with the one-line names next to them.
+    headers = [f"<th>{esc(p)}</th>" for p in projects] + ["<th>Total</th>"]
     columns = [CountColumn(h, c) for h, c in zip(headers, cells)]
 
     header = (
