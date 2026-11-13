@@ -51,9 +51,10 @@ def with_previous(runs: list[Run]) -> list[tuple[Run, Run | None]]:
 
 def group_key(run: Run) -> str:
     """Text the filter box matches against."""
-    if run.pr:
-        return f"{run.check} pr-{run.pr} #{run.pr}".lower()
-    return f"{run.check} main".lower()
+    key = f"{run.check} pr-{run.pr} #{run.pr}" if run.pr else f"{run.check} main"
+    if run.profile:
+        key += f" {run.profile}"
+    return key.lower()
 
 
 def build_index(site: Site, groups: dict[str, list[Run]]) -> None:

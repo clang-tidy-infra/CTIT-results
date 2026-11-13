@@ -26,6 +26,16 @@ ROOT = "../"
 RANKING_CONTEXT = 3
 
 
+def toolchain_html(run: Run) -> str:
+    toolchain = run.toolchain
+    if toolchain is None:
+        return '<span class="dim">runner default</span>'
+    return (
+        f'<span title="{esc(toolchain["key"])}">{esc(toolchain["name"])}</span> '
+        f'({esc(toolchain["stdlib"])})'
+    )
+
+
 def run_metadata(
     site: Site, run: Run, previous: Run | None, following: Run | None
 ) -> list[tuple[str, str]]:
@@ -51,6 +61,7 @@ def run_metadata(
         meta.append(("Baseline revision", revision_html(baseline["llvm_revision"])))
     meta += [
         ("Options", options),
+        ("Toolchain", toolchain_html(run)),
         ("Runner", esc(data["runner_arch"])),
         ("Started", f"{fmt_time(run.started)} UTC"),
         ("Finished", f"{fmt_time(run.finished)} UTC"),
@@ -70,7 +81,7 @@ def run_metadata(
             f"({link(compare_href(run, following, ROOT), 'compare')})"
         )
     if nav:
-        meta.append(("Same PR and check", ", ".join(nav)))
+        meta.append(("Same PR, check and toolchain", ", ".join(nav)))
     return meta
 
 
@@ -177,6 +188,12 @@ def check_time_section(run: Run, nightly: TimingsDay | None) -> str:
         return ""
     body = '<h4 id="check-time">Check time:</h4>\n'
     nightly_link = link(nightly.github_run_url, f"daily timings run of {nightly.date}")
+    if run.profile:
+        return body + (
+            f'<p class="dim">This run used the {esc(run.profile)} toolchain profile '
+            f"and the {nightly_link} the runner default, so their check times "
+            "cannot be compared.</p>\n"
+        )
     arch = run.data["runner_arch"]
     if arch != nightly.runner_arch:
         return body + (

@@ -22,6 +22,7 @@ def build_summary(site: Site, runs: list[Run]) -> None:
                 "check_name": run.check,
                 "llvm_revision": run.data["llvm_revision"],
                 "runner_arch": run.data["runner_arch"],
+                "toolchain": run.profile,
                 "started_at": run.data["started_at"],
                 "duration_seconds": run.data["duration_seconds"],
                 "status": run.status,
