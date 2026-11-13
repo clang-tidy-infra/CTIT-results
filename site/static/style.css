@@ -52,3 +52,10 @@ th.sortable:hover { text-decoration: underline; }
 /* The rankings of a run's check time, next to each other while they fit. */
 .side-by-side { display: flex; flex-wrap: wrap; gap: 0 3em; }
 tr.mark td { font-weight: bold; }
+/* Where a check's time falls among all checks: one tick per check, on a log scale. */
+svg.strip { display: block; width: 36em; max-width: 55vw; height: 1.4em; overflow: visible; }
+svg.strip line { stroke: #aaaaaa; stroke-width: 1; }
+svg.strip line.this { stroke: #000000; stroke-width: 3; }
+svg.strip.axis { height: 1.6em; }
+svg.strip.axis line { stroke: #777777; }
+svg.strip.axis text { font-size: 12px; fill: #777777; }
