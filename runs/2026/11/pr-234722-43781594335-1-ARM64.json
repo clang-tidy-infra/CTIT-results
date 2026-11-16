@@ -1,0 +1,332 @@
+{
+  "artifact_url": "https://github.com/clang-tidy-infra/CTIT/actions/runs/43781594335/artifacts/14193336600",
+  "baseline": null,
+  "check_config": {},
+  "check_name": "bugprone-string-literal-with-embedded-nul",
+  "duration_seconds": 1740.465217,
+  "finished_at": "2026-11-16T02:38:02.465217Z",
+  "github_run_attempt": 1,
+  "github_run_id": 43781594335,
+  "llvm_revision": "ef72a0e441f65f73b7cf732bf05b8bcc1a8cf609+patch:f1244dd32c9ff92daae8df73ee5441693bfd8594ee0f26ae8fd80b1c98fa4961",
+  "pr_number": 234722,
+  "project_runs": [
+    {
+      "check_profile": {
+        "bugprone-string-literal-with-embedded-nul": 0.1309
+      },
+      "diagnostics": [],
+      "duration_seconds": 10.398502,
+      "project": "abseil-cpp",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": {
+        "bugprone-string-literal-with-embedded-nul": 0.153
+      },
+      "diagnostics": [
+        {
+          "column": 286,
+          "file": "code/AssetLib/LWO/LWOFileData.h",
+          "line": 458,
+          "message": "truncated string literal with embedded NUL character",
+          "verdict": "TP"
+        },
+        {
+          "column": 21,
+          "file": "code/AssetLib/LWO/LWOFileData.h",
+          "line": 534,
+          "message": "truncated string literal with embedded NUL character",
+          "verdict": "TP"
+        },
+        {
+          "column": 23,
+          "file": "code/AssetLib/LWO/LWOMaterial.cpp",
+          "line": 555,
+          "message": "truncated string literal with embedded NUL character",
+          "verdict": "TP"
+        },
+        {
+          "column": 26,
+          "file": "code/AssetLib/LWO/LWOMaterial.cpp",
+          "line": 656,
+          "message": "truncated string literal with embedded NUL character",
+          "verdict": "TP"
+        },
+        {
+          "column": 24,
+          "file": "code/AssetLib/MMD/MMDVmdParser.h",
+          "line": 319,
+          "message": "truncated string literal with embedded NUL character",
+          "verdict": "TP"
+        }
+      ],
+      "duration_seconds": 21.577306,
+      "project": "assimp",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": {
+        "bugprone-string-literal-with-embedded-nul": 0.0133
+      },
+      "diagnostics": [],
+      "duration_seconds": 0.674858,
+      "project": "box2d",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": {
+        "bugprone-string-literal-with-embedded-nul": 0.2538
+      },
+      "diagnostics": [],
+      "duration_seconds": 15.097639,
+      "project": "capnproto",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": {
+        "bugprone-string-literal-with-embedded-nul": 0.0169
+      },
+      "diagnostics": [],
+      "duration_seconds": 4.084166,
+      "project": "catch2",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": {
+        "bugprone-string-literal-with-embedded-nul": 0.418
+      },
+      "diagnostics": [],
+      "duration_seconds": 12.397517,
+      "project": "cppcheck",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": {
+        "bugprone-string-literal-with-embedded-nul": 0.1194
+      },
+      "diagnostics": [],
+      "duration_seconds": 2.568362,
+      "project": "curl",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": {
+        "bugprone-string-literal-with-embedded-nul": 0.0088
+      },
+      "diagnostics": [],
+      "duration_seconds": 4.852912,
+      "project": "cxxopts",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": {
+        "bugprone-string-literal-with-embedded-nul": 0.6135
+      },
+      "diagnostics": [],
+      "duration_seconds": 27.973899,
+      "project": "doxygen",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": {
+        "bugprone-string-literal-with-embedded-nul": 0.7979
+      },
+      "diagnostics": [],
+      "duration_seconds": 45.862524,
+      "project": "duckdb",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": {
+        "bugprone-string-literal-with-embedded-nul": 0.177
+      },
+      "diagnostics": [],
+      "duration_seconds": 31.145052,
+      "project": "flatbuffers",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": {
+        "bugprone-string-literal-with-embedded-nul": 0.1744
+      },
+      "diagnostics": [],
+      "duration_seconds": 10.020335,
+      "project": "fmt",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": {
+        "bugprone-string-literal-with-embedded-nul": 0.2864
+      },
+      "diagnostics": [],
+      "duration_seconds": 14.91953,
+      "project": "harfbuzz",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": {
+        "bugprone-string-literal-with-embedded-nul": 0.0001
+      },
+      "diagnostics": [],
+      "duration_seconds": 0.286027,
+      "project": "hidapi",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": {
+        "bugprone-string-literal-with-embedded-nul": 0.0153
+      },
+      "diagnostics": [],
+      "duration_seconds": 1.440478,
+      "project": "libgit2",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": {
+        "bugprone-string-literal-with-embedded-nul": 0.0022
+      },
+      "diagnostics": [],
+      "duration_seconds": 0.564347,
+      "project": "libsoundio",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": {
+        "bugprone-string-literal-with-embedded-nul": 0.0026
+      },
+      "diagnostics": [],
+      "duration_seconds": 0.898161,
+      "project": "libuv",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": {
+        "bugprone-string-literal-with-embedded-nul": 0.0255
+      },
+      "diagnostics": [],
+      "duration_seconds": 4.531203,
+      "project": "libzmq",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": {
+        "bugprone-string-literal-with-embedded-nul": 32.2285
+      },
+      "diagnostics": [],
+      "duration_seconds": 372.292636,
+      "project": "llvm-project",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": {
+        "bugprone-string-literal-with-embedded-nul": 0.1576
+      },
+      "diagnostics": [],
+      "duration_seconds": 9.230282,
+      "project": "oatpp",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": {
+        "bugprone-string-literal-with-embedded-nul": 0.0082
+      },
+      "diagnostics": [],
+      "duration_seconds": 2.344347,
+      "project": "open62541",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": {
+        "bugprone-string-literal-with-embedded-nul": 0.4137
+      },
+      "diagnostics": [],
+      "duration_seconds": 44.54481,
+      "project": "poco",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": {
+        "bugprone-string-literal-with-embedded-nul": 0.0281
+      },
+      "diagnostics": [],
+      "duration_seconds": 13.963004,
+      "project": "re2",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": {
+        "bugprone-string-literal-with-embedded-nul": 3.3651
+      },
+      "diagnostics": [],
+      "duration_seconds": 42.203578,
+      "project": "simbody",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": {
+        "bugprone-string-literal-with-embedded-nul": 0.0063
+      },
+      "diagnostics": [],
+      "duration_seconds": 6.972455,
+      "project": "stdexec",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": {
+        "bugprone-string-literal-with-embedded-nul": 0.2113
+      },
+      "diagnostics": [],
+      "duration_seconds": 8.1434,
+      "project": "symengine",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": {
+        "bugprone-string-literal-with-embedded-nul": 0.0017
+      },
+      "diagnostics": [],
+      "duration_seconds": 2.48506,
+      "project": "tinyspline",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": {
+        "bugprone-string-literal-with-embedded-nul": 0.0337
+      },
+      "diagnostics": [],
+      "duration_seconds": 4.667021,
+      "project": "unicorn",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": {
+        "bugprone-string-literal-with-embedded-nul": 0.0179
+      },
+      "diagnostics": [],
+      "duration_seconds": 2.470315,
+      "project": "yaml-cpp",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": {
+        "bugprone-string-literal-with-embedded-nul": 6.4371
+      },
+      "diagnostics": [],
+      "duration_seconds": 212.86531,
+      "project": "z3",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": {
+        "bugprone-string-literal-with-embedded-nul": 0.0055
+      },
+      "diagnostics": [],
+      "duration_seconds": 2.174489,
+      "project": "zstd",
+      "status": "COMPLETED"
+    }
+  ],
+  "runner_arch": "ARM64",
+  "started_at": "2026-11-16T02:09:02+00:00",
+  "status": "COMPLETED"
+}
