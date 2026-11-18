@@ -1,0 +1,5879 @@
+{
+  "artifact_url": "https://github.com/clang-tidy-infra/CTIT/actions/runs/44205492834/artifacts/14384498678",
+  "baseline": null,
+  "check_config": {},
+  "check_name": "clang-diagnostic-unused-*",
+  "duration_seconds": 1773.515022,
+  "finished_at": "2026-11-18T00:39:39.515022Z",
+  "github_run_attempt": 1,
+  "github_run_id": 44205492834,
+  "llvm_revision": "718a40489dda2e3c024e44efdd0683649833b13a",
+  "pr_number": null,
+  "project_runs": [
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 12.865276,
+      "project": "abseil-cpp",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 25.249967,
+      "project": "assimp",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [
+        {
+          "column": 7,
+          "file": "src/dynamics/b2_body.cpp",
+          "line": 230,
+          "message": "variable 'found' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 8,
+          "file": "src/collision/b2_dynamic_tree.cpp",
+          "line": 662,
+          "message": "variable 'height' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 8,
+          "file": "src/dynamics/b2_rope_joint.cpp",
+          "line": 78,
+          "message": "unused variable 'C'",
+          "verdict": null
+        },
+        {
+          "column": 10,
+          "file": "src/collision/b2_chain_shape.cpp",
+          "line": 54,
+          "message": "unused variable 'v1'",
+          "verdict": null
+        },
+        {
+          "column": 10,
+          "file": "src/collision/b2_chain_shape.cpp",
+          "line": 55,
+          "message": "unused variable 'v2'",
+          "verdict": null
+        }
+      ],
+      "duration_seconds": 0.631868,
+      "project": "box2d",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [
+        {
+          "column": 14,
+          "file": "c++/src/kj/arena-test.c++",
+          "line": 54,
+          "message": "variable 'copiedCount' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 10,
+          "file": "c++/src/kj/async-io.c++",
+          "line": 1968,
+          "message": "variable 'nBranches' set but not used",
+          "verdict": null
+        }
+      ],
+      "duration_seconds": 20.348775,
+      "project": "capnproto",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 4.250102,
+      "project": "catch2",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 13.959811,
+      "project": "cppcheck",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [
+        {
+          "column": 22,
+          "file": "lib/easy.c",
+          "line": 82,
+          "message": "variable 'easy_init_flags' set but not used",
+          "verdict": null
+        }
+      ],
+      "duration_seconds": 2.765248,
+      "project": "curl",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 5.151131,
+      "project": "cxxopts",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [
+        {
+          "column": 12,
+          "file": "src/ftvhelp.cpp",
+          "line": 43,
+          "message": "variable 'folderId' set but not used",
+          "verdict": null
+        }
+      ],
+      "duration_seconds": 41.583876,
+      "project": "doxygen",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [
+        {
+          "column": 6,
+          "file": "src/execution/operator/persistent/buffered_csv_reader.cpp",
+          "line": 444,
+          "message": "ignoring return value of function declared with 'nodiscard' attribute",
+          "verdict": null
+        },
+        {
+          "column": 8,
+          "file": "src/common/operator/cast_operators.cpp",
+          "line": 871,
+          "message": "unused variable 'out_size'",
+          "verdict": null
+        },
+        {
+          "column": 7,
+          "file": "src/parser/transform/statement/transform_vacuum.cpp",
+          "line": 8,
+          "message": "unused variable 'stmt'",
+          "verdict": null
+        },
+        {
+          "column": 7,
+          "file": "src/execution/physical_plan/plan_comparison_join.cpp",
+          "line": 26,
+          "message": "variable 'has_null_equal_conditions' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 15,
+          "file": "src/function/scalar/string/caseconvert.cpp",
+          "line": 43,
+          "message": "unused variable 'success'",
+          "verdict": null
+        },
+        {
+          "column": 6,
+          "file": "test/sqlite/test_sqllogictest.cpp",
+          "line": 314,
+          "message": "variable 'nCmd' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 6,
+          "file": "test/sqlite/test_sqllogictest.cpp",
+          "line": 315,
+          "message": "variable 'nSkipped' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 8,
+          "file": "src/optimizer/filter_pushdown.cpp",
+          "line": 68,
+          "message": "unused variable 'result'",
+          "verdict": null
+        },
+        {
+          "column": 7,
+          "file": "src/optimizer/pushdown/pushdown_mark_join.cpp",
+          "line": 20,
+          "message": "variable 'found_mark_reference' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 7,
+          "file": "src/optimizer/rule/empty_needle_removal.cpp",
+          "line": 28,
+          "message": "unused variable 'root'",
+          "verdict": null
+        }
+      ],
+      "duration_seconds": 54.103776,
+      "project": "duckdb",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 36.078078,
+      "project": "flatbuffers",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [
+        {
+          "column": 7,
+          "file": "test/gtest-extra-test.cc",
+          "line": 215,
+          "message": "variable 'n' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 7,
+          "file": "test/gtest-extra-test.cc",
+          "line": 227,
+          "message": "variable 'n' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 8,
+          "file": "test/posix-mock-test.cc",
+          "line": 52,
+          "message": "variable 'read_nbyte' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 8,
+          "file": "test/posix-mock-test.cc",
+          "line": 53,
+          "message": "variable 'write_nbyte' set but not used",
+          "verdict": null
+        }
+      ],
+      "duration_seconds": 13.595488,
+      "project": "fmt",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [
+        {
+          "column": 33,
+          "file": "src/hb-subset-cff1.cc",
+          "line": 405,
+          "message": "variable 'supp_size' set but not used",
+          "verdict": null
+        }
+      ],
+      "duration_seconds": 19.299004,
+      "project": "harfbuzz",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 0.30186,
+      "project": "hidapi",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 1.477883,
+      "project": "libgit2",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [
+        {
+          "column": 9,
+          "file": "src/util.c",
+          "line": 36,
+          "message": "unused variable 'len2'",
+          "verdict": null
+        },
+        {
+          "column": 9,
+          "file": "src/os.c",
+          "line": 743,
+          "message": "unused variable 'err'",
+          "verdict": null
+        }
+      ],
+      "duration_seconds": 0.512257,
+      "project": "libsoundio",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 0.774181,
+      "project": "libuv",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [
+        {
+          "column": 15,
+          "file": "tests/test_connect_stream_fuzzer.cpp",
+          "line": 81,
+          "message": "unused parameter 'argc'",
+          "verdict": null
+        },
+        {
+          "column": 28,
+          "file": "tests/test_connect_stream_fuzzer.cpp",
+          "line": 81,
+          "message": "unused parameter 'argv'",
+          "verdict": null
+        },
+        {
+          "column": 15,
+          "file": "tests/test_bind_ws_fuzzer.cpp",
+          "line": 89,
+          "message": "unused parameter 'argc'",
+          "verdict": null
+        },
+        {
+          "column": 28,
+          "file": "tests/test_bind_ws_fuzzer.cpp",
+          "line": 89,
+          "message": "unused parameter 'argv'",
+          "verdict": null
+        },
+        {
+          "column": 15,
+          "file": "tests/test_socket_options_fuzzer.cpp",
+          "line": 62,
+          "message": "unused parameter 'argc'",
+          "verdict": null
+        },
+        {
+          "column": 28,
+          "file": "tests/test_socket_options_fuzzer.cpp",
+          "line": 62,
+          "message": "unused parameter 'argv'",
+          "verdict": null
+        },
+        {
+          "column": 15,
+          "file": "tests/test_bind_stream_fuzzer.cpp",
+          "line": 96,
+          "message": "unused parameter 'argc'",
+          "verdict": null
+        },
+        {
+          "column": 28,
+          "file": "tests/test_bind_stream_fuzzer.cpp",
+          "line": 96,
+          "message": "unused parameter 'argv'",
+          "verdict": null
+        },
+        {
+          "column": 15,
+          "file": "tests/test_connect_ws_fuzzer.cpp",
+          "line": 89,
+          "message": "unused parameter 'argc'",
+          "verdict": null
+        },
+        {
+          "column": 28,
+          "file": "tests/test_connect_ws_fuzzer.cpp",
+          "line": 89,
+          "message": "unused parameter 'argv'",
+          "verdict": null
+        }
+      ],
+      "duration_seconds": 5.27386,
+      "project": "libzmq",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [
+        {
+          "column": 8,
+          "file": "clang/include/clang/Analysis/Analyses/ThreadSafetyTraverse.h",
+          "line": 402,
+          "message": "private field 'Verbose' is not used",
+          "verdict": null
+        },
+        {
+          "column": 8,
+          "file": "clang/include/clang/Analysis/Analyses/ThreadSafetyTraverse.h",
+          "line": 405,
+          "message": "private field 'Cleanup' is not used",
+          "verdict": null
+        },
+        {
+          "column": 13,
+          "file": "clang/tools/clang-scan-deps/ClangScanDeps.cpp",
+          "line": 94,
+          "message": "variable 'DeprecatedDriverCommand' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 13,
+          "file": "clang/tools/clang-sycl-linker/ClangSYCLLinker.cpp",
+          "line": 56,
+          "message": "variable 'SaveTemps' set but not used",
+          "verdict": null
+        }
+      ],
+      "duration_seconds": 447.089294,
+      "project": "llvm-project",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [
+        {
+          "column": 5,
+          "file": "test/oatpp/parser/json/mapping/DTOMapperPerfTest.cpp",
+          "line": 51,
+          "message": "unused variable 'initialized'",
+          "verdict": null
+        },
+        {
+          "column": 5,
+          "file": "test/oatpp/parser/json/mapping/DTOMapperPerfTest.cpp",
+          "line": 52,
+          "message": "unused variable 'initialized'",
+          "verdict": null
+        },
+        {
+          "column": 5,
+          "file": "test/oatpp/parser/json/mapping/DTOMapperPerfTest.cpp",
+          "line": 53,
+          "message": "unused variable 'initialized'",
+          "verdict": null
+        },
+        {
+          "column": 1,
+          "file": "test/oatpp/core/data/mapping/type/EnumTest.cpp",
+          "line": 36,
+          "message": "unused variable 'index'",
+          "verdict": null
+        },
+        {
+          "column": 3,
+          "file": "test/oatpp/parser/json/mapping/DeserializerTest.cpp",
+          "line": 50,
+          "message": "unused variable 'initialized'",
+          "verdict": null
+        },
+        {
+          "column": 3,
+          "file": "test/oatpp/parser/json/mapping/DeserializerTest.cpp",
+          "line": 58,
+          "message": "unused variable 'initialized'",
+          "verdict": null
+        },
+        {
+          "column": 3,
+          "file": "test/oatpp/parser/json/mapping/DeserializerTest.cpp",
+          "line": 66,
+          "message": "unused variable 'initialized'",
+          "verdict": null
+        },
+        {
+          "column": 3,
+          "file": "test/oatpp/parser/json/mapping/DeserializerTest.cpp",
+          "line": 74,
+          "message": "unused variable 'initialized'",
+          "verdict": null
+        },
+        {
+          "column": 3,
+          "file": "test/oatpp/parser/json/mapping/DeserializerTest.cpp",
+          "line": 75,
+          "message": "unused variable 'initialized'",
+          "verdict": null
+        },
+        {
+          "column": 3,
+          "file": "test/oatpp/parser/json/mapping/DeserializerTest.cpp",
+          "line": 76,
+          "message": "unused variable 'initialized'",
+          "verdict": null
+        },
+        {
+          "column": 3,
+          "file": "test/oatpp/parser/json/mapping/DTOMapperTest.cpp",
+          "line": 47,
+          "message": "unused variable 'initialized'",
+          "verdict": null
+        },
+        {
+          "column": 3,
+          "file": "test/oatpp/parser/json/mapping/DTOMapperTest.cpp",
+          "line": 48,
+          "message": "unused variable 'initialized'",
+          "verdict": null
+        },
+        {
+          "column": 3,
+          "file": "test/oatpp/parser/json/mapping/DTOMapperTest.cpp",
+          "line": 63,
+          "message": "unused variable 'initialized'",
+          "verdict": null
+        },
+        {
+          "column": 3,
+          "file": "test/oatpp/parser/json/mapping/DTOMapperTest.cpp",
+          "line": 64,
+          "message": "unused variable 'initialized'",
+          "verdict": null
+        },
+        {
+          "column": 3,
+          "file": "test/oatpp/parser/json/mapping/DTOMapperTest.cpp",
+          "line": 65,
+          "message": "unused variable 'initialized'",
+          "verdict": null
+        },
+        {
+          "column": 3,
+          "file": "test/oatpp/parser/json/mapping/DTOMapperTest.cpp",
+          "line": 66,
+          "message": "unused variable 'initialized'",
+          "verdict": null
+        },
+        {
+          "column": 3,
+          "file": "test/oatpp/parser/json/mapping/DTOMapperTest.cpp",
+          "line": 67,
+          "message": "unused variable 'initialized'",
+          "verdict": null
+        },
+        {
+          "column": 3,
+          "file": "test/oatpp/parser/json/mapping/DTOMapperTest.cpp",
+          "line": 68,
+          "message": "unused variable 'initialized'",
+          "verdict": null
+        },
+        {
+          "column": 3,
+          "file": "test/oatpp/parser/json/mapping/DTOMapperTest.cpp",
+          "line": 70,
+          "message": "unused variable 'initialized'",
+          "verdict": null
+        },
+        {
+          "column": 3,
+          "file": "test/oatpp/parser/json/mapping/DTOMapperTest.cpp",
+          "line": 71,
+          "message": "unused variable 'initialized'",
+          "verdict": null
+        },
+        {
+          "column": 3,
+          "file": "test/oatpp/parser/json/mapping/DTOMapperTest.cpp",
+          "line": 72,
+          "message": "unused variable 'initialized'",
+          "verdict": null
+        },
+        {
+          "column": 3,
+          "file": "test/oatpp/parser/json/mapping/DTOMapperTest.cpp",
+          "line": 73,
+          "message": "unused variable 'initialized'",
+          "verdict": null
+        },
+        {
+          "column": 3,
+          "file": "test/oatpp/parser/json/mapping/DTOMapperTest.cpp",
+          "line": 74,
+          "message": "unused variable 'initialized'",
+          "verdict": null
+        },
+        {
+          "column": 3,
+          "file": "test/oatpp/parser/json/mapping/DTOMapperTest.cpp",
+          "line": 75,
+          "message": "unused variable 'initialized'",
+          "verdict": null
+        },
+        {
+          "column": 3,
+          "file": "test/oatpp/parser/json/mapping/DTOMapperTest.cpp",
+          "line": 77,
+          "message": "unused variable 'initialized'",
+          "verdict": null
+        },
+        {
+          "column": 3,
+          "file": "test/oatpp/parser/json/mapping/DTOMapperTest.cpp",
+          "line": 78,
+          "message": "unused variable 'initialized'",
+          "verdict": null
+        },
+        {
+          "column": 3,
+          "file": "test/oatpp/parser/json/mapping/DTOMapperTest.cpp",
+          "line": 80,
+          "message": "unused variable 'initialized'",
+          "verdict": null
+        },
+        {
+          "column": 3,
+          "file": "test/oatpp/parser/json/mapping/DTOMapperTest.cpp",
+          "line": 81,
+          "message": "unused variable 'initialized'",
+          "verdict": null
+        },
+        {
+          "column": 3,
+          "file": "test/oatpp/parser/json/mapping/DTOMapperTest.cpp",
+          "line": 82,
+          "message": "unused variable 'initialized'",
+          "verdict": null
+        },
+        {
+          "column": 3,
+          "file": "test/oatpp/parser/json/mapping/DTOMapperTest.cpp",
+          "line": 84,
+          "message": "unused variable 'initialized'",
+          "verdict": null
+        },
+        {
+          "column": 3,
+          "file": "test/oatpp/parser/json/mapping/DTOMapperTest.cpp",
+          "line": 85,
+          "message": "unused variable 'initialized'",
+          "verdict": null
+        },
+        {
+          "column": 3,
+          "file": "test/oatpp/parser/json/mapping/DTOMapperTest.cpp",
+          "line": 93,
+          "message": "unused variable 'initialized'",
+          "verdict": null
+        },
+        {
+          "column": 3,
+          "file": "test/oatpp/parser/json/mapping/DTOMapperTest.cpp",
+          "line": 101,
+          "message": "unused variable 'initialized'",
+          "verdict": null
+        },
+        {
+          "column": 3,
+          "file": "test/oatpp/parser/json/mapping/DTOMapperTest.cpp",
+          "line": 102,
+          "message": "unused variable 'initialized'",
+          "verdict": null
+        },
+        {
+          "column": 5,
+          "file": "test/oatpp/core/data/mapping/type/TypeTest.cpp",
+          "line": 41,
+          "message": "unused variable 'initialized'",
+          "verdict": null
+        },
+        {
+          "column": 5,
+          "file": "test/oatpp/core/data/mapping/type/TypeTest.cpp",
+          "line": 42,
+          "message": "unused variable 'initialized'",
+          "verdict": null
+        },
+        {
+          "column": 5,
+          "file": "test/oatpp/core/data/mapping/type/TypeTest.cpp",
+          "line": 43,
+          "message": "unused variable 'initialized'",
+          "verdict": null
+        },
+        {
+          "column": 5,
+          "file": "test/oatpp/core/data/mapping/type/TypeTest.cpp",
+          "line": 44,
+          "message": "unused variable 'initialized'",
+          "verdict": null
+        },
+        {
+          "column": 5,
+          "file": "test/oatpp/core/data/mapping/type/TypeTest.cpp",
+          "line": 45,
+          "message": "unused variable 'initialized'",
+          "verdict": null
+        },
+        {
+          "column": 5,
+          "file": "test/oatpp/core/data/mapping/type/TypeTest.cpp",
+          "line": 46,
+          "message": "unused variable 'initialized'",
+          "verdict": null
+        },
+        {
+          "column": 5,
+          "file": "test/oatpp/core/data/mapping/type/TypeTest.cpp",
+          "line": 47,
+          "message": "unused variable 'initialized'",
+          "verdict": null
+        },
+        {
+          "column": 5,
+          "file": "test/oatpp/core/data/mapping/type/TypeTest.cpp",
+          "line": 48,
+          "message": "unused variable 'initialized'",
+          "verdict": null
+        },
+        {
+          "column": 5,
+          "file": "test/oatpp/core/data/mapping/type/TypeTest.cpp",
+          "line": 50,
+          "message": "unused variable 'initialized'",
+          "verdict": null
+        },
+        {
+          "column": 5,
+          "file": "test/oatpp/core/data/mapping/type/TypeTest.cpp",
+          "line": 51,
+          "message": "unused variable 'initialized'",
+          "verdict": null
+        },
+        {
+          "column": 5,
+          "file": "test/oatpp/core/data/mapping/type/TypeTest.cpp",
+          "line": 52,
+          "message": "unused variable 'initialized'",
+          "verdict": null
+        },
+        {
+          "column": 5,
+          "file": "test/oatpp/core/data/mapping/type/TypeTest.cpp",
+          "line": 53,
+          "message": "unused variable 'initialized'",
+          "verdict": null
+        },
+        {
+          "column": 5,
+          "file": "test/oatpp/core/data/mapping/type/TypeTest.cpp",
+          "line": 54,
+          "message": "unused variable 'initialized'",
+          "verdict": null
+        },
+        {
+          "column": 5,
+          "file": "test/oatpp/core/data/mapping/type/TypeTest.cpp",
+          "line": 55,
+          "message": "unused variable 'initialized'",
+          "verdict": null
+        },
+        {
+          "column": 5,
+          "file": "test/oatpp/core/data/mapping/type/TypeTest.cpp",
+          "line": 57,
+          "message": "unused variable 'initialized'",
+          "verdict": null
+        },
+        {
+          "column": 5,
+          "file": "test/oatpp/core/data/mapping/type/TypeTest.cpp",
+          "line": 59,
+          "message": "unused variable 'initialized'",
+          "verdict": null
+        },
+        {
+          "column": 3,
+          "file": "test/oatpp/core/data/mapping/type/ObjectTest.cpp",
+          "line": 51,
+          "message": "unused variable 'initialized'",
+          "verdict": null
+        },
+        {
+          "column": 3,
+          "file": "test/oatpp/core/data/mapping/type/ObjectTest.cpp",
+          "line": 70,
+          "message": "unused variable 'initialized'",
+          "verdict": null
+        },
+        {
+          "column": 3,
+          "file": "test/oatpp/core/data/mapping/type/ObjectTest.cpp",
+          "line": 78,
+          "message": "unused variable 'initialized'",
+          "verdict": null
+        },
+        {
+          "column": 3,
+          "file": "test/oatpp/core/data/mapping/type/ObjectTest.cpp",
+          "line": 79,
+          "message": "unused variable 'initialized'",
+          "verdict": null
+        },
+        {
+          "column": 3,
+          "file": "test/oatpp/core/data/mapping/type/ObjectTest.cpp",
+          "line": 80,
+          "message": "unused variable 'initialized'",
+          "verdict": null
+        },
+        {
+          "column": 1,
+          "file": "test/oatpp/parser/json/mapping/EnumTest.cpp",
+          "line": 37,
+          "message": "unused variable 'index'",
+          "verdict": null
+        },
+        {
+          "column": 3,
+          "file": "test/oatpp/parser/json/mapping/EnumTest.cpp",
+          "line": 49,
+          "message": "unused variable 'initialized'",
+          "verdict": null
+        },
+        {
+          "column": 3,
+          "file": "test/oatpp/core/data/mapping/type/AnyTest.cpp",
+          "line": 50,
+          "message": "unused variable 'initialized'",
+          "verdict": null
+        },
+        {
+          "column": 22,
+          "file": "test/oatpp/web/FullAsyncClientTest.cpp",
+          "line": 270,
+          "message": "lambda capture 'runner' is not used",
+          "verdict": null
+        },
+        {
+          "column": 3,
+          "file": "test/oatpp/web/app/./DTOs.hpp",
+          "line": 39,
+          "message": "unused variable 'initialized'",
+          "verdict": null
+        },
+        {
+          "column": 3,
+          "file": "test/oatpp/web/app/./DTOs.hpp",
+          "line": 40,
+          "message": "unused variable 'initialized'",
+          "verdict": null
+        },
+        {
+          "column": 3,
+          "file": "test/oatpp/web/app/./DTOs.hpp",
+          "line": 41,
+          "message": "unused variable 'initialized'",
+          "verdict": null
+        },
+        {
+          "column": 10,
+          "file": "src/oatpp/core/data/buffer/FIFOBuffer.cpp",
+          "line": 365,
+          "message": "variable 'result' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 22,
+          "file": "test/oatpp/web/PipelineTest.cpp",
+          "line": 132,
+          "message": "lambda capture 'runner' is not used",
+          "verdict": null
+        },
+        {
+          "column": 12,
+          "file": "test/oatpp/web/PipelineTest.cpp",
+          "line": 154,
+          "message": "unused variable 'res'",
+          "verdict": null
+        },
+        {
+          "column": 12,
+          "file": "test/oatpp/web/PipelineTest.cpp",
+          "line": 167,
+          "message": "unused variable 'res'",
+          "verdict": null
+        },
+        {
+          "column": 22,
+          "file": "test/oatpp/web/PipelineAsyncTest.cpp",
+          "line": 137,
+          "message": "lambda capture 'runner' is not used",
+          "verdict": null
+        },
+        {
+          "column": 12,
+          "file": "test/oatpp/web/PipelineAsyncTest.cpp",
+          "line": 166,
+          "message": "unused variable 'res'",
+          "verdict": null
+        },
+        {
+          "column": 16,
+          "file": "test/oatpp/web/ClientRetryTest.cpp",
+          "line": 134,
+          "message": "lambda capture 'runner' is not used",
+          "verdict": null
+        },
+        {
+          "column": 22,
+          "file": "test/oatpp/web/FullAsyncTest.cpp",
+          "line": 149,
+          "message": "lambda capture 'runner' is not used",
+          "verdict": null
+        },
+        {
+          "column": 22,
+          "file": "test/oatpp/web/FullTest.cpp",
+          "line": 149,
+          "message": "lambda capture 'runner' is not used",
+          "verdict": null
+        }
+      ],
+      "duration_seconds": 12.291361,
+      "project": "oatpp",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 2.745343,
+      "project": "open62541",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [
+        {
+          "column": 17,
+          "file": "dependencies/hpdf/src/hpdf_pages.c",
+          "line": 590,
+          "message": "variable 'ret' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 17,
+          "file": "dependencies/hpdf/src/hpdf_pages.c",
+          "line": 719,
+          "message": "variable 'ret' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 6,
+          "file": "Data/SQLParser/src/parser/bison_parser.cpp",
+          "line": 2990,
+          "message": "variable 'hsql_nerrs' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 20,
+          "file": "dependencies/hpdf/src/hpdf_shading.c",
+          "line": 32,
+          "message": "unused variable 'COL_CMYK'",
+          "verdict": null
+        },
+        {
+          "column": 20,
+          "file": "dependencies/hpdf/src/hpdf_shading.c",
+          "line": 34,
+          "message": "unused variable 'COL_GRAY'",
+          "verdict": null
+        },
+        {
+          "column": 17,
+          "file": "dependencies/hpdf/src/hpdf_namedict.c",
+          "line": 339,
+          "message": "unused variable 'str_relationship'",
+          "verdict": null
+        },
+        {
+          "column": 19,
+          "file": "dependencies/hpdf/src/hpdf_font_cid.c",
+          "line": 680,
+          "message": "variable 'last_btype' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 17,
+          "file": "dependencies/hpdf/src/hpdf_pdfa.c",
+          "line": 176,
+          "message": "unused variable 'info'",
+          "verdict": null
+        }
+      ],
+      "duration_seconds": 53.394855,
+      "project": "poco",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [
+        {
+          "column": 16,
+          "file": "util/benchmark.cc",
+          "line": 39,
+          "message": "variable 'items' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 7,
+          "file": "re2/prog.cc",
+          "line": 612,
+          "message": "variable 'total' set but not used",
+          "verdict": null
+        }
+      ],
+      "duration_seconds": 13.141914,
+      "project": "re2",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [
+        {
+          "column": 13,
+          "file": "SimTKmath/Integrators/src/CPodes/sundials/tests/cpsdenx_lap.c",
+          "line": 60,
+          "message": "variable 'flagr' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 12,
+          "file": "SimTKmath/Integrators/src/CPodes/sundials/tests/cpsdenx_lap.c",
+          "line": 197,
+          "message": "variable 'y1' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 12,
+          "file": "SimTKmath/Integrators/src/CPodes/sundials/tests/cpsdenx_lap.c",
+          "line": 225,
+          "message": "variable 'y1' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 7,
+          "file": "SimTKmath/Integrators/src/CPodes/sundials/tests/cpsdenx_lap.c",
+          "line": 268,
+          "message": "variable 'flag' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 11,
+          "file": "SimTKmath/Optimizers/src/IpOpt/IpCompoundVector.cpp",
+          "line": 58,
+          "message": "variable 'dim_check' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 13,
+          "file": "SimTKmath/Integrators/src/CPodes/sundials/tests/cpsdenx.c",
+          "line": 59,
+          "message": "variable 'flagr' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 12,
+          "file": "SimTKmath/Integrators/src/CPodes/sundials/tests/cpsdenx.c",
+          "line": 196,
+          "message": "variable 'y1' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 12,
+          "file": "SimTKmath/Integrators/src/CPodes/sundials/tests/cpsdenx.c",
+          "line": 224,
+          "message": "variable 'y1' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 7,
+          "file": "SimTKmath/Integrators/src/CPodes/sundials/tests/cpsdenx.c",
+          "line": 265,
+          "message": "variable 'flag' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 14,
+          "file": "SimTKmath/Optimizers/src/IpOpt/IpLapackSolverInterface.cpp",
+          "line": 89,
+          "message": "unused variable 'ispec'",
+          "verdict": null
+        },
+        {
+          "column": 22,
+          "file": "SimTKmath/Optimizers/src/IpOpt/IpLapackSolverInterface.cpp",
+          "line": 92,
+          "message": "unused variable 'name'",
+          "verdict": null
+        },
+        {
+          "column": 21,
+          "file": "SimTKmath/Optimizers/src/IpOpt/IpLapackSolverInterface.cpp",
+          "line": 93,
+          "message": "unused variable 'opts'",
+          "verdict": null
+        },
+        {
+          "column": 57,
+          "file": "SimTKmath/Geometry/src/gcvspl.cpp",
+          "line": 892,
+          "message": "variable 'lm' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 13,
+          "file": "SimTKmath/tests/PendulumSystem.h",
+          "line": 335,
+          "message": "unused function 'wrms'",
+          "verdict": null
+        },
+        {
+          "column": 14,
+          "file": "SimTKmath/tests/PendulumSystem.h",
+          "line": 456,
+          "message": "unused variable 'dq'",
+          "verdict": null
+        },
+        {
+          "column": 16,
+          "file": "SimTKmath/tests/PendulumSystem.h",
+          "line": 497,
+          "message": "unused variable 'consAccuracy'",
+          "verdict": null
+        },
+        {
+          "column": 17,
+          "file": "SimTKmath/tests/PendulumSystem.h",
+          "line": 505,
+          "message": "unused variable 'u'",
+          "verdict": null
+        },
+        {
+          "column": 10,
+          "file": "SimTKmath/tests/PendulumSystem.h",
+          "line": 521,
+          "message": "unused variable 'du'",
+          "verdict": null
+        },
+        {
+          "column": 19,
+          "file": "SimTKmath/Integrators/src/SemiExplicitEulerIntegrator.cpp",
+          "line": 92,
+          "message": "unused variable 'system'",
+          "verdict": null
+        },
+        {
+          "column": 19,
+          "file": "SimTKmath/Integrators/src/SemiExplicitEulerIntegrator.cpp",
+          "line": 137,
+          "message": "unused variable 'q0'",
+          "verdict": null
+        },
+        {
+          "column": 19,
+          "file": "SimTKmath/Integrators/src/SemiExplicitEulerIntegrator.cpp",
+          "line": 138,
+          "message": "unused variable 'u0'",
+          "verdict": null
+        },
+        {
+          "column": 19,
+          "file": "SimTKmath/Integrators/src/SemiExplicitEulerIntegrator.cpp",
+          "line": 139,
+          "message": "unused variable 'z0'",
+          "verdict": null
+        },
+        {
+          "column": 19,
+          "file": "SimTKmath/Integrators/src/SemiExplicitEulerIntegrator.cpp",
+          "line": 140,
+          "message": "unused variable 'qdot0'",
+          "verdict": null
+        },
+        {
+          "column": 19,
+          "file": "SimTKmath/Integrators/src/SemiExplicitEulerIntegrator.cpp",
+          "line": 141,
+          "message": "unused variable 'udot0'",
+          "verdict": null
+        },
+        {
+          "column": 19,
+          "file": "SimTKmath/Integrators/src/SemiExplicitEulerIntegrator.cpp",
+          "line": 142,
+          "message": "unused variable 'zdot0'",
+          "verdict": null
+        },
+        {
+          "column": 19,
+          "file": "SimTKmath/Integrators/src/SemiExplicitEulerIntegrator.cpp",
+          "line": 143,
+          "message": "unused variable 'qdotdot0'",
+          "verdict": null
+        },
+        {
+          "column": 41,
+          "file": "SimTKmath/Integrators/src/CPodes/sundials/tests/initroot1.c",
+          "line": 27,
+          "message": "variable 'delt' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 13,
+          "file": "SimTKmath/Integrators/src/CPodes/sundials/tests/initroot1.c",
+          "line": 117,
+          "message": "unused function 'PrintFinalStats'",
+          "verdict": null
+        },
+        {
+          "column": 7,
+          "file": "SimTKmath/Integrators/src/CPodes/sundials/tests/initroot1.c",
+          "line": 122,
+          "message": "variable 'flag' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 15,
+          "file": "SimTKmath/src/MultibodyGraphMaker.cpp",
+          "line": 739,
+          "message": "unused variable 'child'",
+          "verdict": null
+        },
+        {
+          "column": 16,
+          "file": "SimTKmath/tests/TimeStepperTest.cpp",
+          "line": 153,
+          "message": "unused variable 'hReport'",
+          "verdict": null
+        },
+        {
+          "column": 32,
+          "file": "Simbody/src/MultibodySystemRep.h",
+          "line": 177,
+          "message": "unused variable 'mbs'",
+          "verdict": null
+        },
+        {
+          "column": 19,
+          "file": "Simbody/src/SimbodyTreeState.h",
+          "line": 709,
+          "message": "unused variable 'maxNQs'",
+          "verdict": null
+        },
+        {
+          "column": 19,
+          "file": "Simbody/src/SimbodyTreeState.h",
+          "line": 886,
+          "message": "unused variable 'maxNQs'",
+          "verdict": null
+        },
+        {
+          "column": 19,
+          "file": "Simbody/src/SimbodyTreeState.h",
+          "line": 978,
+          "message": "unused variable 'maxNQs'",
+          "verdict": null
+        },
+        {
+          "column": 13,
+          "file": "SimTKmath/Integrators/src/CPodes/sundials/tests/cpsAdvDiff_bnd.c",
+          "line": 59,
+          "message": "variable 'flag' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 7,
+          "file": "SimTKmath/Integrators/src/CPodes/sundials/tests/cpsAdvDiff_bnd.c",
+          "line": 244,
+          "message": "variable 'flag' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 17,
+          "file": "SimTKmath/Geometry/include/simmath/internal/Geo_BicubicBezierPatch.h",
+          "line": 208,
+          "message": "unused variable 'tol'",
+          "verdict": null
+        },
+        {
+          "column": 17,
+          "file": "SimTKmath/Geometry/include/simmath/internal/Geo_BicubicBezierPatch.h",
+          "line": 243,
+          "message": "unused variable 'tol'",
+          "verdict": null
+        },
+        {
+          "column": 17,
+          "file": "SimTKmath/Geometry/include/simmath/internal/Geo_BicubicBezierPatch.h",
+          "line": 282,
+          "message": "unused variable 'tol'",
+          "verdict": null
+        },
+        {
+          "column": 46,
+          "file": "SimTKmath/Geometry/include/simmath/internal/Geo_BicubicHermitePatch.h",
+          "line": 266,
+          "message": "unused variable 'a20'",
+          "verdict": null
+        },
+        {
+          "column": 22,
+          "file": "SimTKmath/Geometry/include/simmath/internal/Geo_BicubicHermitePatch.h",
+          "line": 268,
+          "message": "unused variable 'a02'",
+          "verdict": null
+        },
+        {
+          "column": 17,
+          "file": "SimTKmath/Geometry/include/simmath/internal/Geo_CubicBezierCurve.h",
+          "line": 261,
+          "message": "unused variable 'tol'",
+          "verdict": null
+        },
+        {
+          "column": 19,
+          "file": "Simbody/tests/adhoc/SphericalCoordsMobilizerTest.cpp",
+          "line": 42,
+          "message": "unused variable 'Rad2Deg'",
+          "verdict": null
+        },
+        {
+          "column": 13,
+          "file": "Simbody/tests/adhoc/SphericalCoordsMobilizerTest.cpp",
+          "line": 46,
+          "message": "unused variable 'g'",
+          "verdict": null
+        },
+        {
+          "column": 7,
+          "file": "SimTKmath/Integrators/src/CPodes/sundials/tests/cpsVanDPol_non.c",
+          "line": 123,
+          "message": "variable 'flag' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 13,
+          "file": "SimTKmath/Integrators/src/CPodes/sundials/tests/cpsRoberts_dns.c",
+          "line": 59,
+          "message": "variable 'flagr' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 12,
+          "file": "SimTKmath/Integrators/src/CPodes/sundials/tests/cpsRoberts_dns.c",
+          "line": 196,
+          "message": "variable 'y1' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 12,
+          "file": "SimTKmath/Integrators/src/CPodes/sundials/tests/cpsRoberts_dns.c",
+          "line": 224,
+          "message": "variable 'y1' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 7,
+          "file": "SimTKmath/Integrators/src/CPodes/sundials/tests/cpsRoberts_dns.c",
+          "line": 265,
+          "message": "variable 'flag' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 13,
+          "file": "Simbody/tests/adhoc/TimsBoxPGS.cpp",
+          "line": 61,
+          "message": "unused function 'softmax0'",
+          "verdict": null
+        },
+        {
+          "column": 13,
+          "file": "Simbody/tests/adhoc/TimsBoxPGS.cpp",
+          "line": 66,
+          "message": "unused function 'dsoftmax0'",
+          "verdict": null
+        },
+        {
+          "column": 13,
+          "file": "Simbody/tests/adhoc/TimsBoxPGS.cpp",
+          "line": 83,
+          "message": "unused function 'softabs'",
+          "verdict": null
+        },
+        {
+          "column": 13,
+          "file": "Simbody/tests/adhoc/TimsBoxPGS.cpp",
+          "line": 88,
+          "message": "unused function 'dsoftabs'",
+          "verdict": null
+        },
+        {
+          "column": 38,
+          "file": "Simbody/tests/adhoc/TimsBoxPGS.cpp",
+          "line": 1235,
+          "message": "unused variable 'matter'",
+          "verdict": null
+        },
+        {
+          "column": 38,
+          "file": "Simbody/tests/adhoc/TimsBoxPGS.cpp",
+          "line": 1236,
+          "message": "unused variable 'unis'",
+          "verdict": null
+        },
+        {
+          "column": 19,
+          "file": "Simbody/tests/adhoc/TimsBoxPGS.cpp",
+          "line": 1276,
+          "message": "unused variable 'nStepsWithEvent'",
+          "verdict": null
+        },
+        {
+          "column": 41,
+          "file": "Simbody/tests/adhoc/TimsBoxPGS.cpp",
+          "line": 1361,
+          "message": "unused variable 'unis'",
+          "verdict": null
+        },
+        {
+          "column": 16,
+          "file": "Simbody/tests/adhoc/TimsBoxPGS.cpp",
+          "line": 1393,
+          "message": "unused variable 'anyNewton'",
+          "verdict": null
+        },
+        {
+          "column": 41,
+          "file": "Simbody/tests/adhoc/TimsBoxPGS.cpp",
+          "line": 1525,
+          "message": "unused variable 'unis'",
+          "verdict": null
+        },
+        {
+          "column": 16,
+          "file": "Simbody/tests/adhoc/TimsBoxPGS.cpp",
+          "line": 1560,
+          "message": "unused variable 'anyNewton'",
+          "verdict": null
+        },
+        {
+          "column": 15,
+          "file": "Simbody/tests/adhoc/TimsBoxPGS.cpp",
+          "line": 1817,
+          "message": "unused variable 'mA'",
+          "verdict": null
+        },
+        {
+          "column": 28,
+          "file": "Simbody/tests/adhoc/TimsBoxPGS.cpp",
+          "line": 1817,
+          "message": "unused variable 'nA'",
+          "verdict": null
+        },
+        {
+          "column": 28,
+          "file": "Simbody/tests/adhoc/TimsBoxPGS.cpp",
+          "line": 2254,
+          "message": "unused variable 'nA'",
+          "verdict": null
+        },
+        {
+          "column": 15,
+          "file": "Simbody/tests/adhoc/TimsBoxPGS.cpp",
+          "line": 2263,
+          "message": "unused variable 'mLength'",
+          "verdict": null
+        },
+        {
+          "column": 10,
+          "file": "Simbody/tests/adhoc/TimsBoxPGS.cpp",
+          "line": 2298,
+          "message": "unused variable 'normRMSall'",
+          "verdict": null
+        },
+        {
+          "column": 33,
+          "file": "Simbody/tests/adhoc/TimsBoxPGS.cpp",
+          "line": 2298,
+          "message": "unused variable 'normRMSenf'",
+          "verdict": null
+        },
+        {
+          "column": 10,
+          "file": "Simbody/tests/adhoc/TimsBoxPGS.cpp",
+          "line": 2299,
+          "message": "unused variable 'prevNormRMSenf'",
+          "verdict": null
+        },
+        {
+          "column": 43,
+          "file": "Simbody/tests/adhoc/TimsBoxPGS.cpp",
+          "line": 2378,
+          "message": "unused variable 'ax'",
+          "verdict": null
+        },
+        {
+          "column": 68,
+          "file": "Simbody/tests/adhoc/TimsBoxPGS.cpp",
+          "line": 2378,
+          "message": "unused variable 'ay'",
+          "verdict": null
+        },
+        {
+          "column": 35,
+          "file": "Simbody/tests/adhoc/TimsBoxPGS.cpp",
+          "line": 2552,
+          "message": "unused variable 'ax'",
+          "verdict": null
+        },
+        {
+          "column": 60,
+          "file": "Simbody/tests/adhoc/TimsBoxPGS.cpp",
+          "line": 2552,
+          "message": "unused variable 'ay'",
+          "verdict": null
+        },
+        {
+          "column": 35,
+          "file": "Simbody/tests/adhoc/TimsBoxPGS.cpp",
+          "line": 2553,
+          "message": "unused variable 'az'",
+          "verdict": null
+        },
+        {
+          "column": 44,
+          "file": "Simbody/tests/adhoc/TimsBoxPGS.cpp",
+          "line": 2574,
+          "message": "unused variable 'Nk'",
+          "verdict": null
+        },
+        {
+          "column": 20,
+          "file": "Simbody/tests/adhoc/TimsBoxPGS.cpp",
+          "line": 2750,
+          "message": "unused variable 'mu_d'",
+          "verdict": null
+        },
+        {
+          "column": 20,
+          "file": "Simbody/tests/adhoc/TimsBoxPGS.cpp",
+          "line": 2751,
+          "message": "unused variable 'mu_s'",
+          "verdict": null
+        },
+        {
+          "column": 20,
+          "file": "Simbody/tests/adhoc/TimsBoxPGS.cpp",
+          "line": 2752,
+          "message": "unused variable 'mu_v'",
+          "verdict": null
+        },
+        {
+          "column": 48,
+          "file": "Simbody/tests/adhoc/TimsBoxPGS.cpp",
+          "line": 3387,
+          "message": "unused variable 'Axz'",
+          "verdict": null
+        },
+        {
+          "column": 60,
+          "file": "Simbody/tests/adhoc/TimsBoxPGS.cpp",
+          "line": 3387,
+          "message": "unused variable 'Ayz'",
+          "verdict": null
+        },
+        {
+          "column": 32,
+          "file": "Simbody/tests/adhoc/TimsBoxPGS.cpp",
+          "line": 3398,
+          "message": "unused variable 'pii'",
+          "verdict": null
+        },
+        {
+          "column": 32,
+          "file": "Simbody/tests/adhoc/TimsBoxPGS.cpp",
+          "line": 3418,
+          "message": "unused variable 'pii'",
+          "verdict": null
+        },
+        {
+          "column": 20,
+          "file": "Simbody/tests/adhoc/TimsBoxPGS.cpp",
+          "line": 3499,
+          "message": "unused variable 'RunTime'",
+          "verdict": null
+        },
+        {
+          "column": 20,
+          "file": "Simbody/tests/adhoc/TimsBoxPGS.cpp",
+          "line": 3500,
+          "message": "unused variable 'Stiffness'",
+          "verdict": null
+        },
+        {
+          "column": 20,
+          "file": "Simbody/tests/adhoc/TimsBoxPGS.cpp",
+          "line": 3502,
+          "message": "unused variable 'TargetVelocity'",
+          "verdict": null
+        },
+        {
+          "column": 20,
+          "file": "Simbody/tests/adhoc/TimsBoxPGS.cpp",
+          "line": 3504,
+          "message": "unused variable 'Dissipation'",
+          "verdict": null
+        },
+        {
+          "column": 16,
+          "file": "Simbody/tests/adhoc/TimsBoxPGS.cpp",
+          "line": 3675,
+          "message": "unused variable 'rubber_density'",
+          "verdict": null
+        },
+        {
+          "column": 16,
+          "file": "Simbody/tests/adhoc/TimsBoxPGS.cpp",
+          "line": 3683,
+          "message": "unused variable 'nylon_density'",
+          "verdict": null
+        },
+        {
+          "column": 16,
+          "file": "Simbody/tests/adhoc/TimsBoxPGS.cpp",
+          "line": 3822,
+          "message": "unused variable 'rubber_density'",
+          "verdict": null
+        },
+        {
+          "column": 16,
+          "file": "Simbody/tests/adhoc/TimsBoxPGS.cpp",
+          "line": 3830,
+          "message": "unused variable 'nylon_density'",
+          "verdict": null
+        },
+        {
+          "column": 19,
+          "file": "SimTKmath/tests/SemiExplicitEulerIntegratorTest.cpp",
+          "line": 45,
+          "message": "unused variable 'NumIters'",
+          "verdict": null
+        },
+        {
+          "column": 19,
+          "file": "SimTKmath/Integrators/src/AbstractIntegratorRep.cpp",
+          "line": 101,
+          "message": "unused variable 'system'",
+          "verdict": null
+        },
+        {
+          "column": 12,
+          "file": "SimTKmath/Integrators/src/AbstractIntegratorRep.cpp",
+          "line": 246,
+          "message": "unused variable 'wasLastStep'",
+          "verdict": null
+        },
+        {
+          "column": 19,
+          "file": "SimTKmath/Integrators/src/AbstractIntegratorRep.cpp",
+          "line": 521,
+          "message": "unused variable 'y0'",
+          "verdict": null
+        },
+        {
+          "column": 19,
+          "file": "SimTKmath/Integrators/src/AbstractIntegratorRep.cpp",
+          "line": 522,
+          "message": "unused variable 'ydot0'",
+          "verdict": null
+        },
+        {
+          "column": 19,
+          "file": "SimTKmath/Integrators/src/AbstractIntegratorRep.cpp",
+          "line": 523,
+          "message": "unused variable 'uScale'",
+          "verdict": null
+        },
+        {
+          "column": 19,
+          "file": "SimTKmath/Integrators/src/AbstractIntegratorRep.cpp",
+          "line": 524,
+          "message": "unused variable 'zScale'",
+          "verdict": null
+        },
+        {
+          "column": 13,
+          "file": "SimTKmath/Integrators/src/CPodes/sundials/tests/cpsbanx.c",
+          "line": 59,
+          "message": "variable 'flag' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 7,
+          "file": "SimTKmath/Integrators/src/CPodes/sundials/tests/cpsbanx.c",
+          "line": 244,
+          "message": "variable 'flag' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 24,
+          "file": "Simbody/tests/adhoc/GeometryPlayground.cpp",
+          "line": 153,
+          "message": "unused variable 'k'",
+          "verdict": null
+        },
+        {
+          "column": 11,
+          "file": "Simbody/tests/adhoc/GeometryPlayground.cpp",
+          "line": 364,
+          "message": "unused variable 'pd'",
+          "verdict": null
+        },
+        {
+          "column": 16,
+          "file": "Simbody/tests/adhoc/GeometryPlayground.cpp",
+          "line": 577,
+          "message": "unused variable 'Len'",
+          "verdict": null
+        },
+        {
+          "column": 16,
+          "file": "Simbody/tests/adhoc/GeometryPlayground.cpp",
+          "line": 580,
+          "message": "unused variable 'incr'",
+          "verdict": null
+        },
+        {
+          "column": 22,
+          "file": "Simbody/tests/adhoc/GeometryPlayground.cpp",
+          "line": 672,
+          "message": "unused variable 'p2x'",
+          "verdict": null
+        },
+        {
+          "column": 22,
+          "file": "Simbody/tests/adhoc/GeometryPlayground.cpp",
+          "line": 673,
+          "message": "unused variable 'p2bx'",
+          "verdict": null
+        },
+        {
+          "column": 21,
+          "file": "Simbody/tests/adhoc/GeometryPlayground.cpp",
+          "line": 674,
+          "message": "unused variable 'R_G2'",
+          "verdict": null
+        },
+        {
+          "column": 21,
+          "file": "Simbody/tests/adhoc/GeometryPlayground.cpp",
+          "line": 703,
+          "message": "unused variable 'R_G1'",
+          "verdict": null
+        },
+        {
+          "column": 21,
+          "file": "Simbody/tests/adhoc/GeometryPlayground.cpp",
+          "line": 704,
+          "message": "unused variable 'R_G1b'",
+          "verdict": null
+        },
+        {
+          "column": 22,
+          "file": "Simbody/tests/adhoc/GeometryPlayground.cpp",
+          "line": 735,
+          "message": "unused variable 'X_GP'",
+          "verdict": null
+        },
+        {
+          "column": 12,
+          "file": "Simbody/tests/adhoc/TestPLUS_SingleBrick.cpp",
+          "line": 109,
+          "message": "unused variable 'MinMeaningfulAlpha'",
+          "verdict": null
+        },
+        {
+          "column": 14,
+          "file": "Simbody/tests/adhoc/TestPLUS_SingleBrick.cpp",
+          "line": 570,
+          "message": "unused variable 'trash'",
+          "verdict": null
+        },
+        {
+          "column": 14,
+          "file": "Simbody/tests/adhoc/TestPLUS_SingleBrick.cpp",
+          "line": 872,
+          "message": "unused variable 'trash'",
+          "verdict": null
+        },
+        {
+          "column": 22,
+          "file": "Simbody/tests/adhoc/TestPLUS_SingleBrick.cpp",
+          "line": 1479,
+          "message": "unused variable 'trash'",
+          "verdict": null
+        },
+        {
+          "column": 18,
+          "file": "Simbody/tests/adhoc/TestPLUS_SingleBrick.cpp",
+          "line": 1704,
+          "message": "unused variable 'trash'",
+          "verdict": null
+        },
+        {
+          "column": 22,
+          "file": "Simbody/tests/adhoc/TestPLUS_SingleBrick.cpp",
+          "line": 1805,
+          "message": "unused variable 'trash'",
+          "verdict": null
+        },
+        {
+          "column": 18,
+          "file": "Simbody/tests/adhoc/TestPLUS_SingleBrick.cpp",
+          "line": 2061,
+          "message": "unused variable 'trash'",
+          "verdict": null
+        },
+        {
+          "column": 15,
+          "file": "Simbody/tests/adhoc/TestPLUS_SingleBrick.cpp",
+          "line": 2724,
+          "message": "unused variable 'N'",
+          "verdict": null
+        },
+        {
+          "column": 15,
+          "file": "Simbody/tests/adhoc/TestPLUS_SingleBrick.cpp",
+          "line": 2868,
+          "message": "unused variable 'N'",
+          "verdict": null
+        },
+        {
+          "column": 23,
+          "file": "Simbody/tests/adhoc/TestPLUS_SingleBrick.cpp",
+          "line": 3484,
+          "message": "unused variable 'row_y'",
+          "verdict": null
+        },
+        {
+          "column": 23,
+          "file": "Simbody/tests/adhoc/TestPLUS_SingleBrick.cpp",
+          "line": 3530,
+          "message": "unused variable 'row_y'",
+          "verdict": null
+        },
+        {
+          "column": 16,
+          "file": "Simbody/tests/adhoc/TestPLUS_SingleBrick.cpp",
+          "line": 3614,
+          "message": "unused variable 'M'",
+          "verdict": null
+        },
+        {
+          "column": 23,
+          "file": "Simbody/tests/adhoc/TestPLUS_SingleBrick.cpp",
+          "line": 3685,
+          "message": "unused variable 'row_y'",
+          "verdict": null
+        },
+        {
+          "column": 23,
+          "file": "Simbody/tests/adhoc/TestPLUS_SingleBrick.cpp",
+          "line": 3731,
+          "message": "unused variable 'row_y'",
+          "verdict": null
+        },
+        {
+          "column": 46,
+          "file": "Simbody/src/MobilizedBodyImpl.h",
+          "line": 191,
+          "message": "unused variable 'matterRep'",
+          "verdict": null
+        },
+        {
+          "column": 31,
+          "file": "Simbody/src/MobilizedBodyImpl.h",
+          "line": 259,
+          "message": "unused variable 'iv'",
+          "verdict": null
+        },
+        {
+          "column": 31,
+          "file": "Simbody/src/MobilizedBodyImpl.h",
+          "line": 270,
+          "message": "unused variable 'iv'",
+          "verdict": null
+        },
+        {
+          "column": 31,
+          "file": "Simbody/src/MobilizedBodyImpl.h",
+          "line": 275,
+          "message": "unused variable 'iv'",
+          "verdict": null
+        },
+        {
+          "column": 16,
+          "file": "Simbody/src/MobilizedBodyImpl.h",
+          "line": 1216,
+          "message": "unused variable 'tol'",
+          "verdict": null
+        },
+        {
+          "column": 30,
+          "file": "Simbody/src/RigidBodyNode_Weld.cpp",
+          "line": 153,
+          "message": "unused variable 'vc'",
+          "verdict": null
+        },
+        {
+          "column": 34,
+          "file": "Simbody/src/RigidBodyNode_Weld.cpp",
+          "line": 383,
+          "message": "unused variable 'ac'",
+          "verdict": null
+        },
+        {
+          "column": 22,
+          "file": "Simbody/src/ConstraintImpl.h",
+          "line": 1542,
+          "message": "unused variable 'p_PC'",
+          "verdict": null
+        },
+        {
+          "column": 22,
+          "file": "Simbody/src/ConstraintImpl.h",
+          "line": 1573,
+          "message": "unused variable 'p_PC'",
+          "verdict": null
+        },
+        {
+          "column": 16,
+          "file": "examples/ExampleCablePath.cpp",
+          "line": 250,
+          "message": "unused variable 'CylRad'",
+          "verdict": null
+        },
+        {
+          "column": 15,
+          "file": "Simbody/src/SimbodyMatterSubsystem.cpp",
+          "line": 1086,
+          "message": "unused variable 'nb'",
+          "verdict": null
+        },
+        {
+          "column": 40,
+          "file": "Simbody/src/SimbodyMatterSubsystem.cpp",
+          "line": 1117,
+          "message": "unused variable 'nu'",
+          "verdict": null
+        },
+        {
+          "column": 40,
+          "file": "Simbody/src/SimbodyMatterSubsystem.cpp",
+          "line": 1236,
+          "message": "unused variable 'nu'",
+          "verdict": null
+        },
+        {
+          "column": 15,
+          "file": "Simbody/src/SimbodyMatterSubsystem.cpp",
+          "line": 1484,
+          "message": "unused variable 'nb'",
+          "verdict": null
+        },
+        {
+          "column": 15,
+          "file": "Simbody/src/SimbodyMatterSubsystem.cpp",
+          "line": 1520,
+          "message": "unused variable 'nb'",
+          "verdict": null
+        },
+        {
+          "column": 15,
+          "file": "Simbody/src/SimbodyMatterSubsystem.cpp",
+          "line": 1803,
+          "message": "unused variable 'nb'",
+          "verdict": null
+        },
+        {
+          "column": 15,
+          "file": "Simbody/src/SimbodyMatterSubsystem.cpp",
+          "line": 1843,
+          "message": "unused variable 'nb'",
+          "verdict": null
+        },
+        {
+          "column": 30,
+          "file": "Simbody/src/MobilizedBody.cpp",
+          "line": 79,
+          "message": "unused variable 'impl'",
+          "verdict": null
+        },
+        {
+          "column": 15,
+          "file": "Simbody/src/MobilizedBody.cpp",
+          "line": 489,
+          "message": "unused variable 'nu'",
+          "verdict": null
+        },
+        {
+          "column": 42,
+          "file": "Simbody/src/MobilizedBody.cpp",
+          "line": 1681,
+          "message": "unused variable 'matterRep'",
+          "verdict": null
+        },
+        {
+          "column": 42,
+          "file": "Simbody/src/MobilizedBody.cpp",
+          "line": 1937,
+          "message": "unused variable 'matterRep'",
+          "verdict": null
+        },
+        {
+          "column": 42,
+          "file": "Simbody/src/MobilizedBody.cpp",
+          "line": 2112,
+          "message": "unused variable 'matterRep'",
+          "verdict": null
+        },
+        {
+          "column": 39,
+          "file": "Simbody/src/MobilizedBody.cpp",
+          "line": 2738,
+          "message": "unused variable 'impImpl'",
+          "verdict": null
+        },
+        {
+          "column": 33,
+          "file": "Simbody/src/MobilizedBody.cpp",
+          "line": 2880,
+          "message": "unused variable 'nq'",
+          "verdict": null
+        },
+        {
+          "column": 9,
+          "file": "Simbody/src/MobilizedBody.cpp",
+          "line": 2881,
+          "message": "unused variable 'nAngles'",
+          "verdict": null
+        },
+        {
+          "column": 33,
+          "file": "Simbody/src/MobilizedBody.cpp",
+          "line": 2891,
+          "message": "unused variable 'nq'",
+          "verdict": null
+        },
+        {
+          "column": 9,
+          "file": "Simbody/src/MobilizedBody.cpp",
+          "line": 2892,
+          "message": "unused variable 'nAngles'",
+          "verdict": null
+        },
+        {
+          "column": 33,
+          "file": "Simbody/src/MobilizedBody.cpp",
+          "line": 2902,
+          "message": "unused variable 'nq'",
+          "verdict": null
+        },
+        {
+          "column": 9,
+          "file": "Simbody/src/MobilizedBody.cpp",
+          "line": 2903,
+          "message": "unused variable 'nAngles'",
+          "verdict": null
+        },
+        {
+          "column": 22,
+          "file": "examples/ExamplePendulum.cpp",
+          "line": 120,
+          "message": "unused variable 'p2x'",
+          "verdict": null
+        },
+        {
+          "column": 22,
+          "file": "examples/ExamplePendulum.cpp",
+          "line": 121,
+          "message": "unused variable 'p2bx'",
+          "verdict": null
+        },
+        {
+          "column": 21,
+          "file": "examples/ExamplePendulum.cpp",
+          "line": 122,
+          "message": "unused variable 'R_G2'",
+          "verdict": null
+        },
+        {
+          "column": 21,
+          "file": "examples/ExamplePendulum.cpp",
+          "line": 163,
+          "message": "unused variable 'R_G1'",
+          "verdict": null
+        },
+        {
+          "column": 21,
+          "file": "examples/ExamplePendulum.cpp",
+          "line": 164,
+          "message": "unused variable 'R_G1b'",
+          "verdict": null
+        },
+        {
+          "column": 22,
+          "file": "examples/ExamplePendulum.cpp",
+          "line": 202,
+          "message": "unused variable 'X_GP'",
+          "verdict": null
+        },
+        {
+          "column": 45,
+          "file": "Simbody/src/Constraint_LineOnLineContactImpl.h",
+          "line": 377,
+          "message": "unused variable 'a_AF'",
+          "verdict": null
+        },
+        {
+          "column": 45,
+          "file": "Simbody/src/Constraint_LineOnLineContactImpl.h",
+          "line": 380,
+          "message": "unused variable 'a_AB'",
+          "verdict": null
+        },
+        {
+          "column": 14,
+          "file": "SimTKmath/Geometry/src/Geo_Point.cpp",
+          "line": 1051,
+          "message": "variable 'swapped' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 10,
+          "file": "SimTKmath/Integrators/src/CPodes/sundials/tests/cpsPend_dns.c",
+          "line": 36,
+          "message": "variable 'flag' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 21,
+          "file": "SimTKmath/Integrators/src/CPodes/sundials/tests/cpsPend_dns.c",
+          "line": 77,
+          "message": "variable 'xd' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 25,
+          "file": "SimTKmath/Integrators/src/CPodes/sundials/tests/cpsPend_dns.c",
+          "line": 77,
+          "message": "variable 'yd' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 7,
+          "file": "SimTKmath/Integrators/src/CPodes/sundials/tests/cpsPend_dns.c",
+          "line": 78,
+          "message": "variable 'flag' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 7,
+          "file": "SimTKmath/Integrators/src/CPodes/sundials/tests/cpsPend_dns.c",
+          "line": 138,
+          "message": "variable 'flag' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 28,
+          "file": "SimTKcommon/Polynomial/src/rpoly.h",
+          "line": 51,
+          "message": "private field 'a2' is not used",
+          "verdict": null
+        },
+        {
+          "column": 10,
+          "file": "SimTKcommon/Polynomial/src/rpoly.h",
+          "line": 52,
+          "message": "private field 'a6' is not used",
+          "verdict": null
+        },
+        {
+          "column": 11,
+          "file": "SimTKcommon/Polynomial/src/rpoly.h",
+          "line": 54,
+          "message": "private field 'nn' is not used",
+          "verdict": null
+        },
+        {
+          "column": 14,
+          "file": "SimTKcommon/Polynomial/src/rpoly.h",
+          "line": 54,
+          "message": "private field 'nmi' is not used",
+          "verdict": null
+        },
+        {
+          "column": 18,
+          "file": "SimTKcommon/Polynomial/src/rpoly.h",
+          "line": 54,
+          "message": "private field 'zerok' is not used",
+          "verdict": null
+        },
+        {
+          "column": 9,
+          "file": "SimTKmath/Optimizers/src/lbfgsb.cpp",
+          "line": 117,
+          "message": "variable 'nbdd' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 16,
+          "file": "SimTKmath/Optimizers/src/lbfgsb.cpp",
+          "line": 2067,
+          "message": "unused variable 'jr'",
+          "verdict": null
+        },
+        {
+          "column": 42,
+          "file": "Simbody/src/Constraint_SphereOnPlaneContact.cpp",
+          "line": 323,
+          "message": "unused variable 'matterRep'",
+          "verdict": null
+        },
+        {
+          "column": 9,
+          "file": "Simbody/src/ObservedPointFitter.cpp",
+          "line": 232,
+          "message": "unused variable 'numBodies'",
+          "verdict": null
+        },
+        {
+          "column": 13,
+          "file": "Simbody/src/PLUSImpulseSolver.cpp",
+          "line": 91,
+          "message": "unused function 'softmax0'",
+          "verdict": null
+        },
+        {
+          "column": 13,
+          "file": "Simbody/src/PLUSImpulseSolver.cpp",
+          "line": 96,
+          "message": "unused function 'dsoftmax0'",
+          "verdict": null
+        },
+        {
+          "column": 13,
+          "file": "Simbody/src/PLUSImpulseSolver.cpp",
+          "line": 113,
+          "message": "unused function 'softabs'",
+          "verdict": null
+        },
+        {
+          "column": 13,
+          "file": "Simbody/src/PLUSImpulseSolver.cpp",
+          "line": 118,
+          "message": "unused function 'dsoftabs'",
+          "verdict": null
+        },
+        {
+          "column": 15,
+          "file": "Simbody/src/PLUSImpulseSolver.cpp",
+          "line": 181,
+          "message": "unused variable 'mUniSpeed'",
+          "verdict": null
+        },
+        {
+          "column": 15,
+          "file": "Simbody/src/PLUSImpulseSolver.cpp",
+          "line": 184,
+          "message": "unused variable 'mStateLtd'",
+          "verdict": null
+        },
+        {
+          "column": 15,
+          "file": "Simbody/src/PLUSImpulseSolver.cpp",
+          "line": 188,
+          "message": "unused variable 'mConsLtd'",
+          "verdict": null
+        },
+        {
+          "column": 10,
+          "file": "Simbody/src/PLUSImpulseSolver.cpp",
+          "line": 226,
+          "message": "unused variable 'normRMSall'",
+          "verdict": null
+        },
+        {
+          "column": 33,
+          "file": "Simbody/src/PLUSImpulseSolver.cpp",
+          "line": 226,
+          "message": "unused variable 'normRMSenf'",
+          "verdict": null
+        },
+        {
+          "column": 10,
+          "file": "Simbody/src/PLUSImpulseSolver.cpp",
+          "line": 227,
+          "message": "unused variable 'prevNormRMSenf'",
+          "verdict": null
+        },
+        {
+          "column": 9,
+          "file": "Simbody/src/PLUSImpulseSolver.cpp",
+          "line": 232,
+          "message": "variable 'interval' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 13,
+          "file": "Simbody/src/PLUSImpulseSolver.cpp",
+          "line": 276,
+          "message": "variable 'its' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 28,
+          "file": "Simbody/src/PLUSImpulseSolver.cpp",
+          "line": 316,
+          "message": "unused variable 'deltaNorm'",
+          "verdict": null
+        },
+        {
+          "column": 21,
+          "file": "Simbody/src/PLUSImpulseSolver.cpp",
+          "line": 332,
+          "message": "variable 'nsearch' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 17,
+          "file": "Simbody/src/PLUSImpulseSolver.cpp",
+          "line": 408,
+          "message": "variable 'worstBounded' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 35,
+          "file": "Simbody/src/PLUSImpulseSolver.cpp",
+          "line": 548,
+          "message": "unused variable 'ax'",
+          "verdict": null
+        },
+        {
+          "column": 60,
+          "file": "Simbody/src/PLUSImpulseSolver.cpp",
+          "line": 548,
+          "message": "unused variable 'ay'",
+          "verdict": null
+        },
+        {
+          "column": 35,
+          "file": "Simbody/src/PLUSImpulseSolver.cpp",
+          "line": 549,
+          "message": "unused variable 'az'",
+          "verdict": null
+        },
+        {
+          "column": 44,
+          "file": "Simbody/src/PLUSImpulseSolver.cpp",
+          "line": 574,
+          "message": "unused variable 'Nk'",
+          "verdict": null
+        },
+        {
+          "column": 31,
+          "file": "Simbody/src/PLUSImpulseSolver.cpp",
+          "line": 698,
+          "message": "unused variable 'mx'",
+          "verdict": null
+        },
+        {
+          "column": 27,
+          "file": "Simbody/src/PLUSImpulseSolver.cpp",
+          "line": 1129,
+          "message": "unused variable 'az'",
+          "verdict": null
+        },
+        {
+          "column": 9,
+          "file": "Simbody/src/PLUSImpulseSolver.cpp",
+          "line": 1182,
+          "message": "variable 'nPairsChanged' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 28,
+          "file": "Simbody/src/PLUSImpulseSolver.cpp",
+          "line": 1217,
+          "message": "unused variable 'Axz'",
+          "verdict": null
+        },
+        {
+          "column": 40,
+          "file": "Simbody/src/PLUSImpulseSolver.cpp",
+          "line": 1217,
+          "message": "unused variable 'Ayz'",
+          "verdict": null
+        },
+        {
+          "column": 32,
+          "file": "Simbody/src/PLUSImpulseSolver.cpp",
+          "line": 1230,
+          "message": "unused variable 'pii'",
+          "verdict": null
+        },
+        {
+          "column": 32,
+          "file": "Simbody/src/PLUSImpulseSolver.cpp",
+          "line": 1252,
+          "message": "unused variable 'pii'",
+          "verdict": null
+        },
+        {
+          "column": 13,
+          "file": "SimTKmath/tests/IntegratorTest.cpp",
+          "line": 648,
+          "message": "unused function 'wrms'",
+          "verdict": null
+        },
+        {
+          "column": 14,
+          "file": "SimTKmath/tests/IntegratorTest.cpp",
+          "line": 697,
+          "message": "unused variable 'dq'",
+          "verdict": null
+        },
+        {
+          "column": 17,
+          "file": "SimTKmath/tests/IntegratorTest.cpp",
+          "line": 750,
+          "message": "unused variable 'u'",
+          "verdict": null
+        },
+        {
+          "column": 10,
+          "file": "SimTKmath/tests/IntegratorTest.cpp",
+          "line": 781,
+          "message": "unused variable 'du'",
+          "verdict": null
+        },
+        {
+          "column": 18,
+          "file": "SimTKcommon/tests/adhoc/BigMatrixTest.cpp",
+          "line": 610,
+          "message": "unused variable 'ddd'",
+          "verdict": null
+        },
+        {
+          "column": 7,
+          "file": "SimTKmath/Integrators/src/CPodes/tests/CpsAdamsXCpp.cpp",
+          "line": 263,
+          "message": "variable 'flag' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 7,
+          "file": "SimTKmath/Integrators/src/CPodes/tests/PendLrCpp.cpp",
+          "line": 220,
+          "message": "variable 'flag' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 29,
+          "file": "Simbody/src/CablePath.cpp",
+          "line": 217,
+          "message": "unused variable 'instInfo'",
+          "verdict": null
+        },
+        {
+          "column": 19,
+          "file": "Simbody/src/CablePath.cpp",
+          "line": 220,
+          "message": "unused variable 'ppe'",
+          "verdict": null
+        },
+        {
+          "column": 19,
+          "file": "Simbody/src/CablePath.cpp",
+          "line": 221,
+          "message": "unused variable 'pve'",
+          "verdict": null
+        },
+        {
+          "column": 38,
+          "file": "Simbody/src/CablePath.cpp",
+          "line": 504,
+          "message": "unused variable 'asx'",
+          "verdict": null
+        },
+        {
+          "column": 23,
+          "file": "Simbody/src/CablePath.cpp",
+          "line": 505,
+          "message": "unused variable 'xSlot'",
+          "verdict": null
+        },
+        {
+          "column": 20,
+          "file": "Simbody/src/CablePath.cpp",
+          "line": 592,
+          "message": "unused variable 'R_SSp'",
+          "verdict": null
+        },
+        {
+          "column": 20,
+          "file": "Simbody/src/CablePath.cpp",
+          "line": 593,
+          "message": "unused variable 'R_SSn'",
+          "verdict": null
+        },
+        {
+          "column": 14,
+          "file": "Simbody/src/CablePath.cpp",
+          "line": 652,
+          "message": "unused variable 'succeeded'",
+          "verdict": null
+        },
+        {
+          "column": 16,
+          "file": "Simbody/src/CablePath.cpp",
+          "line": 812,
+          "message": "unused variable 'xtol'",
+          "verdict": null
+        },
+        {
+          "column": 34,
+          "file": "Simbody/src/CablePath.cpp",
+          "line": 1245,
+          "message": "unused variable 'prevASX'",
+          "verdict": null
+        },
+        {
+          "column": 16,
+          "file": "Simbody/src/CablePath.cpp",
+          "line": 1508,
+          "message": "unused variable 'kappaP'",
+          "verdict": null
+        },
+        {
+          "column": 16,
+          "file": "Simbody/src/CablePath.cpp",
+          "line": 1509,
+          "message": "unused variable 'kappaQ'",
+          "verdict": null
+        },
+        {
+          "column": 34,
+          "file": "Simbody/src/CablePath_Impl.h",
+          "line": 648,
+          "message": "unused variable 'asx'",
+          "verdict": null
+        },
+        {
+          "column": 16,
+          "file": "SimTKmath/tests/TestSpline.cpp",
+          "line": 334,
+          "message": "variable 'xVal' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 14,
+          "file": "SimTKmath/tests/TestSpline.cpp",
+          "line": 475,
+          "message": "unused variable 'printData'",
+          "verdict": null
+        },
+        {
+          "column": 16,
+          "file": "SimTKmath/tests/TestSpline.cpp",
+          "line": 496,
+          "message": "unused variable 'etime'",
+          "verdict": null
+        },
+        {
+          "column": 13,
+          "file": "SimTKmath/Optimizers/src/IpOpt/IpIpoptApplication.cpp",
+          "line": 748,
+          "message": "unused function 'vatest'",
+          "verdict": null
+        },
+        {
+          "column": 15,
+          "file": "SimTKmath/Integrators/src/CPodes/sundials/tests/cpsNewtCrd_dns.c",
+          "line": 396,
+          "message": "variable 'L' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 18,
+          "file": "SimTKmath/Integrators/src/CPodes/sundials/tests/cpsNewtCrd_dns.c",
+          "line": 396,
+          "message": "variable 'm' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 21,
+          "file": "SimTKmath/Integrators/src/CPodes/sundials/tests/cpsNewtCrd_dns.c",
+          "line": 396,
+          "message": "variable 'g' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 7,
+          "file": "SimTKmath/Integrators/src/CPodes/sundials/tests/cpsNewtCrd_dns.c",
+          "line": 467,
+          "message": "variable 'flag' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 12,
+          "file": "examples/ExampleMotorWithSpeedControl.cpp",
+          "line": 59,
+          "message": "unused variable 'TorqueDecay'",
+          "verdict": null
+        },
+        {
+          "column": 14,
+          "file": "examples/ExampleMotorWithSpeedControl.cpp",
+          "line": 160,
+          "message": "unused variable 'rateLimit'",
+          "verdict": null
+        },
+        {
+          "column": 7,
+          "file": "SimTKmath/Integrators/src/CPodes/sundials/tests/cpsPend_dnsL.c",
+          "line": 139,
+          "message": "variable 'flag' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 12,
+          "file": "Simbody/tests/adhoc/ContactTest.cpp",
+          "line": 60,
+          "message": "unused variable 'concrete_density'",
+          "verdict": null
+        },
+        {
+          "column": 12,
+          "file": "Simbody/tests/adhoc/ContactTest.cpp",
+          "line": 71,
+          "message": "unused variable 'nylon_density'",
+          "verdict": null
+        },
+        {
+          "column": 10,
+          "file": "SimTKmath/tests/TestBicubicSurface.cpp",
+          "line": 740,
+          "message": "unused variable 'tol3'",
+          "verdict": null
+        },
+        {
+          "column": 22,
+          "file": "SimTKmath/tests/TestBicubicSurface.cpp",
+          "line": 784,
+          "message": "unused variable 'dist'",
+          "verdict": null
+        },
+        {
+          "column": 10,
+          "file": "SimTKmath/tests/TestBicubicSurface.cpp",
+          "line": 864,
+          "message": "unused variable 'dh'",
+          "verdict": null
+        },
+        {
+          "column": 10,
+          "file": "SimTKmath/tests/TestBicubicSurface.cpp",
+          "line": 1013,
+          "message": "variable 'val' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 21,
+          "file": "SimTKmath/tests/TestGeo.cpp",
+          "line": 161,
+          "message": "unused variable 'frac'",
+          "verdict": null
+        },
+        {
+          "column": 14,
+          "file": "SimTKmath/tests/TestGeo.cpp",
+          "line": 272,
+          "message": "unused variable 'scale'",
+          "verdict": null
+        },
+        {
+          "column": 19,
+          "file": "SimTKmath/tests/SemiExplicitEuler2IntegratorTest.cpp",
+          "line": 45,
+          "message": "unused variable 'NumIters'",
+          "verdict": null
+        },
+        {
+          "column": 21,
+          "file": "Simbody/Visualizer/src/Visualizer.cpp",
+          "line": 654,
+          "message": "unused variable 'latestDrawTimeAdjRT'",
+          "verdict": null
+        },
+        {
+          "column": 11,
+          "file": "SimTKmath/Optimizers/src/IpOpt/IpTripletHelper.cpp",
+          "line": 406,
+          "message": "variable 'total_n_entries' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 11,
+          "file": "SimTKmath/Optimizers/src/IpOpt/IpTripletHelper.cpp",
+          "line": 425,
+          "message": "variable 'total_n_entries' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 11,
+          "file": "SimTKmath/Optimizers/src/IpOpt/IpTripletHelper.cpp",
+          "line": 446,
+          "message": "variable 'total_n_entries' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 11,
+          "file": "SimTKmath/Optimizers/src/IpOpt/IpTripletHelper.cpp",
+          "line": 465,
+          "message": "variable 'total_n_entries' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 11,
+          "file": "SimTKmath/Optimizers/src/IpOpt/IpTripletHelper.cpp",
+          "line": 494,
+          "message": "variable 'total_n_entries' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 11,
+          "file": "SimTKmath/Optimizers/src/IpOpt/IpTripletHelper.cpp",
+          "line": 523,
+          "message": "variable 'total_n_entries' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 11,
+          "file": "SimTKmath/Optimizers/src/IpOpt/IpTripletHelper.cpp",
+          "line": 544,
+          "message": "variable 'total_n_entries' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 11,
+          "file": "SimTKmath/Optimizers/src/IpOpt/IpTripletHelper.cpp",
+          "line": 573,
+          "message": "variable 'total_n_entries' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 13,
+          "file": "SimTKmath/Optimizers/src/IpOpt/IpTripletHelper.cpp",
+          "line": 611,
+          "message": "variable 'total_dim' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 13,
+          "file": "SimTKmath/Optimizers/src/IpOpt/IpTripletHelper.cpp",
+          "line": 718,
+          "message": "variable 'total_dim' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 18,
+          "file": "Simbody/tests/adhoc/TimsBoxHybrid.cpp",
+          "line": 52,
+          "message": "unused variable 'NTries'",
+          "verdict": null
+        },
+        {
+          "column": 20,
+          "file": "Simbody/tests/adhoc/TimsBoxHybrid.cpp",
+          "line": 153,
+          "message": "unused variable 'h'",
+          "verdict": null
+        },
+        {
+          "column": 20,
+          "file": "Simbody/tests/adhoc/TimsBoxHybrid.cpp",
+          "line": 407,
+          "message": "unused variable 'mu_s'",
+          "verdict": null
+        },
+        {
+          "column": 26,
+          "file": "Simbody/tests/adhoc/TimsBoxHybrid.cpp",
+          "line": 811,
+          "message": "unused variable 'PG'",
+          "verdict": null
+        },
+        {
+          "column": 45,
+          "file": "Simbody/tests/adhoc/TimsBoxHybrid.cpp",
+          "line": 826,
+          "message": "private field 'm_unis' is not used",
+          "verdict": null
+        },
+        {
+          "column": 45,
+          "file": "Simbody/tests/adhoc/TimsBoxHybrid.cpp",
+          "line": 827,
+          "message": "private field 'm_integ' is not used",
+          "verdict": null
+        },
+        {
+          "column": 20,
+          "file": "Simbody/tests/adhoc/TimsBoxHybrid.cpp",
+          "line": 1096,
+          "message": "unused variable 'CoefRest'",
+          "verdict": null
+        },
+        {
+          "column": 20,
+          "file": "Simbody/tests/adhoc/TimsBoxHybrid.cpp",
+          "line": 1097,
+          "message": "unused variable 'TargetVelocity'",
+          "verdict": null
+        },
+        {
+          "column": 15,
+          "file": "Simbody/tests/adhoc/TimsBoxHybrid.cpp",
+          "line": 1519,
+          "message": "unused variable 'ReviseNormalNIters'",
+          "verdict": null
+        },
+        {
+          "column": 17,
+          "file": "Simbody/tests/adhoc/TimsBoxHybrid.cpp",
+          "line": 1539,
+          "message": "variable 'nStictionDisabled' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 13,
+          "file": "Simbody/tests/adhoc/TimsBoxHybrid.cpp",
+          "line": 1701,
+          "message": "unused function 'stribeck'",
+          "verdict": null
+        },
+        {
+          "column": 10,
+          "file": "SimTKmath/Integrators/src/CPodes/nvector_SimTK.h",
+          "line": 89,
+          "message": "private field 'treatAsConst' is not used",
+          "verdict": null
+        },
+        {
+          "column": 19,
+          "file": "Simbody/tests/adhoc/ContactBrickTest.cpp",
+          "line": 44,
+          "message": "unused variable 'MomentScale'",
+          "verdict": null
+        },
+        {
+          "column": 20,
+          "file": "Simbody/tests/adhoc/ContactBrickTest.cpp",
+          "line": 54,
+          "message": "unused variable 'frcColors'",
+          "verdict": null
+        },
+        {
+          "column": 20,
+          "file": "Simbody/tests/adhoc/ContactBrickTest.cpp",
+          "line": 55,
+          "message": "unused variable 'momColors'",
+          "verdict": null
+        },
+        {
+          "column": 39,
+          "file": "Simbody/tests/adhoc/ContactBrickTest.cpp",
+          "line": 57,
+          "message": "unused variable 'matter'",
+          "verdict": null
+        },
+        {
+          "column": 20,
+          "file": "Simbody/tests/adhoc/ContactBrickTest.cpp",
+          "line": 58,
+          "message": "unused variable 'TextScale'",
+          "verdict": null
+        },
+        {
+          "column": 24,
+          "file": "Simbody/tests/adhoc/ContactBrickTest.cpp",
+          "line": 97,
+          "message": "unused variable 'found'",
+          "verdict": null
+        },
+        {
+          "column": 38,
+          "file": "Simbody/tests/adhoc/ContactBrickTest.cpp",
+          "line": 145,
+          "message": "private field 'm_system' is not used",
+          "verdict": null
+        },
+        {
+          "column": 38,
+          "file": "Simbody/tests/adhoc/ContactBrickTest.cpp",
+          "line": 146,
+          "message": "private field 'm_compliant' is not used",
+          "verdict": null
+        },
+        {
+          "column": 31,
+          "file": "SimTKmath/Integrators/src/CPodes/sundials/src/cpodes/cpodes_ic.c",
+          "line": 416,
+          "message": "variable 'ratio' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 20,
+          "file": "SimTKmath/Integrators/src/CPodes/sundials/src/sundials/sundials_spgmr.c",
+          "line": 439,
+          "message": "variable 'givens' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 29,
+          "file": "SimTKmath/Integrators/src/CPodes/sundials/src/sundials/sundials_spgmr.c",
+          "line": 439,
+          "message": "variable 'yg' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 20,
+          "file": "Simbody/tests/TestCustomConstraints.cpp",
+          "line": 210,
+          "message": "unused variable 'first'",
+          "verdict": null
+        },
+        {
+          "column": 20,
+          "file": "Simbody/tests/TestCustomConstraints.cpp",
+          "line": 250,
+          "message": "unused variable 'first'",
+          "verdict": null
+        },
+        {
+          "column": 23,
+          "file": "Simbody/tests/TestCustomConstraints.cpp",
+          "line": 286,
+          "message": "unused variable 'u'",
+          "verdict": null
+        },
+        {
+          "column": 20,
+          "file": "Simbody/tests/TestCustomConstraints.cpp",
+          "line": 316,
+          "message": "unused variable 'first'",
+          "verdict": null
+        },
+        {
+          "column": 20,
+          "file": "Simbody/tests/TestCustomConstraints.cpp",
+          "line": 374,
+          "message": "unused variable 'first'",
+          "verdict": null
+        },
+        {
+          "column": 20,
+          "file": "Simbody/tests/TestCustomConstraints.cpp",
+          "line": 409,
+          "message": "unused variable 'first'",
+          "verdict": null
+        },
+        {
+          "column": 20,
+          "file": "Simbody/tests/TestCustomConstraints.cpp",
+          "line": 469,
+          "message": "unused variable 'first'",
+          "verdict": null
+        },
+        {
+          "column": 20,
+          "file": "Simbody/tests/TestCustomConstraints.cpp",
+          "line": 513,
+          "message": "unused variable 'power'",
+          "verdict": null
+        },
+        {
+          "column": 20,
+          "file": "Simbody/tests/TestCustomConstraints.cpp",
+          "line": 572,
+          "message": "unused variable 'power'",
+          "verdict": null
+        },
+        {
+          "column": 20,
+          "file": "Simbody/tests/TestCustomConstraints.cpp",
+          "line": 643,
+          "message": "unused variable 'power1'",
+          "verdict": null
+        },
+        {
+          "column": 20,
+          "file": "Simbody/tests/TestCustomConstraints.cpp",
+          "line": 645,
+          "message": "unused variable 'power2'",
+          "verdict": null
+        },
+        {
+          "column": 13,
+          "file": "SimTKmath/Integrators/src/RungeKuttaFeldbergIntegrator.cpp",
+          "line": 113,
+          "message": "unused variable 'ysave'",
+          "verdict": null
+        },
+        {
+          "column": 13,
+          "file": "SimTKmath/Integrators/src/RungeKuttaFeldbergIntegrator.cpp",
+          "line": 114,
+          "message": "unused variable 'fa'",
+          "verdict": null
+        },
+        {
+          "column": 13,
+          "file": "SimTKmath/Integrators/src/RungeKuttaFeldbergIntegrator.cpp",
+          "line": 115,
+          "message": "unused variable 'fb'",
+          "verdict": null
+        },
+        {
+          "column": 15,
+          "file": "SimTKmath/Integrators/src/CPodes/sundials/tests/newton.c",
+          "line": 387,
+          "message": "variable 'L' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 18,
+          "file": "SimTKmath/Integrators/src/CPodes/sundials/tests/newton.c",
+          "line": 387,
+          "message": "variable 'm' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 21,
+          "file": "SimTKmath/Integrators/src/CPodes/sundials/tests/newton.c",
+          "line": 387,
+          "message": "variable 'g' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 7,
+          "file": "SimTKmath/Integrators/src/CPodes/sundials/tests/newton.c",
+          "line": 458,
+          "message": "variable 'flag' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 10,
+          "file": "SimTKmath/Geometry/src/ContactTracker.cpp",
+          "line": 1309,
+          "message": "unused variable 'converged'",
+          "verdict": null
+        },
+        {
+          "column": 7,
+          "file": "SimTKmath/Integrators/src/CPodes/sundials/tests/pendEs.c",
+          "line": 175,
+          "message": "variable 'flag' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 33,
+          "file": "SimTKcommon/tests/TestArray.cpp",
+          "line": 632,
+          "message": "unused typedef 'AType'",
+          "verdict": null
+        },
+        {
+          "column": 6,
+          "file": "SimTKcommon/tests/TestArray.cpp",
+          "line": 949,
+          "message": "unused function 'argConversion'",
+          "verdict": null
+        },
+        {
+          "column": 7,
+          "file": "SimTKmath/Integrators/src/CPodes/sundials/tests/pendLr.c",
+          "line": 139,
+          "message": "variable 'flag' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 33,
+          "file": "Simbody/tests/adhoc/ElasticFoundation.cpp",
+          "line": 53,
+          "message": "unused variable 'id'",
+          "verdict": null
+        },
+        {
+          "column": 19,
+          "file": "Simbody/tests/adhoc/ElasticFoundation.cpp",
+          "line": 84,
+          "message": "unused variable 'nylon_density'",
+          "verdict": null
+        },
+        {
+          "column": 12,
+          "file": "Simbody/tests/adhoc/ElasticFoundation.cpp",
+          "line": 126,
+          "message": "unused variable 'NormalLength'",
+          "verdict": null
+        },
+        {
+          "column": 17,
+          "file": "SimTKcommon/tests/TestMassProperties.cpp",
+          "line": 101,
+          "message": "unused variable 'full22'",
+          "verdict": null
+        },
+        {
+          "column": 26,
+          "file": "Simbody/tests/adhoc/UnilateralPointContact.cpp",
+          "line": 323,
+          "message": "unused variable 'PG'",
+          "verdict": null
+        },
+        {
+          "column": 45,
+          "file": "Simbody/tests/adhoc/UnilateralPointContact.cpp",
+          "line": 346,
+          "message": "private field 'm_unis' is not used",
+          "verdict": null
+        },
+        {
+          "column": 45,
+          "file": "Simbody/tests/adhoc/UnilateralPointContact.cpp",
+          "line": 347,
+          "message": "private field 'm_integ' is not used",
+          "verdict": null
+        },
+        {
+          "column": 39,
+          "file": "Simbody/tests/adhoc/UnilateralPointContact.cpp",
+          "line": 373,
+          "message": "unused variable 'matter'",
+          "verdict": null
+        },
+        {
+          "column": 39,
+          "file": "Simbody/tests/adhoc/UnilateralPointContact.cpp",
+          "line": 1189,
+          "message": "unused variable 'uni'",
+          "verdict": null
+        },
+        {
+          "column": 22,
+          "file": "Simbody/tests/adhoc/UnilateralPointContact.cpp",
+          "line": 1210,
+          "message": "variable 'nPasses' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 7,
+          "file": "SimTKmath/Integrators/src/CPodes/sundials/src/cpodes/cpodes_nls.c",
+          "line": 656,
+          "message": "variable 'convfail' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 19,
+          "file": "examples/ExampleKneeJoint.cpp",
+          "line": 42,
+          "message": "unused variable 'm'",
+          "verdict": null
+        },
+        {
+          "column": 19,
+          "file": "examples/ExampleKneeJoint.cpp",
+          "line": 43,
+          "message": "unused variable 'g'",
+          "verdict": null
+        },
+        {
+          "column": 19,
+          "file": "examples/ExampleKneeJoint.cpp",
+          "line": 44,
+          "message": "unused variable 'd'",
+          "verdict": null
+        },
+        {
+          "column": 19,
+          "file": "examples/ExampleKneeJoint.cpp",
+          "line": 45,
+          "message": "unused variable 'Deg2Rad'",
+          "verdict": null
+        },
+        {
+          "column": 9,
+          "file": "examples/ExampleKneeJoint.cpp",
+          "line": 110,
+          "message": "unused variable 'i'",
+          "verdict": null
+        },
+        {
+          "column": 7,
+          "file": "SimTKmath/tests/adhoc/nlpqlp.cpp",
+          "line": 330,
+          "message": "unused variable 'failures'",
+          "verdict": null
+        },
+        {
+          "column": 8,
+          "file": "SimTKmath/tests/adhoc/nlpqlp.cpp",
+          "line": 333,
+          "message": "unused variable 'fail64bit'",
+          "verdict": null
+        },
+        {
+          "column": 16,
+          "file": "SimTKmath/tests/adhoc/nlpqlp.cpp",
+          "line": 13653,
+          "message": "variable 'lsum' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 16,
+          "file": "SimTKmath/tests/adhoc/nlpqlp.cpp",
+          "line": 18134,
+          "message": "variable 'ninl' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 16,
+          "file": "SimTKmath/tests/adhoc/nlpqlp.cpp",
+          "line": 18350,
+          "message": "variable 'ninl' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 16,
+          "file": "SimTKmath/tests/adhoc/nlpqlp.cpp",
+          "line": 18786,
+          "message": "variable 'ninl' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 16,
+          "file": "SimTKmath/tests/adhoc/nlpqlp.cpp",
+          "line": 23243,
+          "message": "variable 'ninl' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 19,
+          "file": "Simbody/tests/adhoc/ContactBigMeshes.cpp",
+          "line": 45,
+          "message": "unused variable 'MomentScale'",
+          "verdict": null
+        },
+        {
+          "column": 33,
+          "file": "Simbody/tests/adhoc/ContactBigMeshes.cpp",
+          "line": 110,
+          "message": "unused variable 'force'",
+          "verdict": null
+        },
+        {
+          "column": 27,
+          "file": "Simbody/tests/adhoc/ContactBigMeshes.cpp",
+          "line": 138,
+          "message": "unused variable 'OLDcontactSet'",
+          "verdict": null
+        },
+        {
+          "column": 16,
+          "file": "Simbody/tests/adhoc/ContactBigMeshes.cpp",
+          "line": 153,
+          "message": "unused variable 'NormalLength'",
+          "verdict": null
+        },
+        {
+          "column": 10,
+          "file": "Simbody/tests/adhoc/ContactBigMeshes.cpp",
+          "line": 241,
+          "message": "variable 'c' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 19,
+          "file": "SimTKmath/Integrators/src/ExplicitEulerIntegrator.cpp",
+          "line": 97,
+          "message": "unused variable 'system'",
+          "verdict": null
+        },
+        {
+          "column": 19,
+          "file": "Simbody/tests/adhoc/RigidContact1.cpp",
+          "line": 158,
+          "message": "unused variable 'MaxRollingTangVel'",
+          "verdict": null
+        },
+        {
+          "column": 19,
+          "file": "Simbody/tests/adhoc/RigidContact1.cpp",
+          "line": 184,
+          "message": "unused variable 'nLtdFrictions'",
+          "verdict": null
+        },
+        {
+          "column": 20,
+          "file": "Simbody/tests/adhoc/RigidContact1.cpp",
+          "line": 377,
+          "message": "unused variable 'RunTime'",
+          "verdict": null
+        },
+        {
+          "column": 38,
+          "file": "Simbody/tests/adhoc/RigidContact1.cpp",
+          "line": 395,
+          "message": "unused variable 'matter'",
+          "verdict": null
+        },
+        {
+          "column": 19,
+          "file": "Simbody/tests/adhoc/RigidContact1.cpp",
+          "line": 454,
+          "message": "unused variable 'nStepsWithEvent'",
+          "verdict": null
+        },
+        {
+          "column": 20,
+          "file": "Simbody/tests/adhoc/RigidContact1.cpp",
+          "line": 573,
+          "message": "unused variable 'RunTime'",
+          "verdict": null
+        },
+        {
+          "column": 20,
+          "file": "Simbody/tests/adhoc/RigidContact1.cpp",
+          "line": 574,
+          "message": "unused variable 'Stiffness'",
+          "verdict": null
+        },
+        {
+          "column": 20,
+          "file": "Simbody/tests/adhoc/RigidContact1.cpp",
+          "line": 576,
+          "message": "unused variable 'TargetVelocity'",
+          "verdict": null
+        },
+        {
+          "column": 20,
+          "file": "Simbody/tests/adhoc/RigidContact1.cpp",
+          "line": 578,
+          "message": "unused variable 'Dissipation'",
+          "verdict": null
+        },
+        {
+          "column": 16,
+          "file": "Simbody/tests/adhoc/RigidContact1.cpp",
+          "line": 764,
+          "message": "unused variable 'rubber_density'",
+          "verdict": null
+        },
+        {
+          "column": 16,
+          "file": "Simbody/tests/adhoc/RigidContact1.cpp",
+          "line": 772,
+          "message": "unused variable 'nylon_density'",
+          "verdict": null
+        },
+        {
+          "column": 16,
+          "file": "Simbody/tests/adhoc/RigidContact1.cpp",
+          "line": 910,
+          "message": "unused variable 'rubber_density'",
+          "verdict": null
+        },
+        {
+          "column": 16,
+          "file": "Simbody/tests/adhoc/RigidContact1.cpp",
+          "line": 918,
+          "message": "unused variable 'nylon_density'",
+          "verdict": null
+        },
+        {
+          "column": 16,
+          "file": "Simbody/tests/adhoc/RigidContact1.cpp",
+          "line": 1071,
+          "message": "unused variable 'Kp1'",
+          "verdict": null
+        },
+        {
+          "column": 16,
+          "file": "Simbody/tests/adhoc/RigidContact1.cpp",
+          "line": 1072,
+          "message": "unused variable 'Kp2'",
+          "verdict": null
+        },
+        {
+          "column": 16,
+          "file": "Simbody/tests/adhoc/RigidContact1.cpp",
+          "line": 1073,
+          "message": "unused variable 'Cd1'",
+          "verdict": null
+        },
+        {
+          "column": 16,
+          "file": "Simbody/tests/adhoc/RigidContact1.cpp",
+          "line": 1074,
+          "message": "unused variable 'Cd2'",
+          "verdict": null
+        },
+        {
+          "column": 16,
+          "file": "Simbody/tests/adhoc/RigidContact1.cpp",
+          "line": 1077,
+          "message": "unused variable 'Target1'",
+          "verdict": null
+        },
+        {
+          "column": 16,
+          "file": "Simbody/tests/adhoc/RigidContact1.cpp",
+          "line": 1078,
+          "message": "unused variable 'Target2'",
+          "verdict": null
+        },
+        {
+          "column": 37,
+          "file": "Simbody/./include/simbody/internal/ConditionalConstraint.h",
+          "line": 380,
+          "message": "private field 'm_defaultUpperLimit' is not used",
+          "verdict": null
+        },
+        {
+          "column": 37,
+          "file": "Simbody/./include/simbody/internal/ConditionalConstraint.h",
+          "line": 437,
+          "message": "private field 'm_defaultLowerLimit' is not used",
+          "verdict": null
+        },
+        {
+          "column": 9,
+          "file": "SimTKmath/Geometry/src/ContactGeometry.cpp",
+          "line": 1410,
+          "message": "variable 'stepcnt' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 9,
+          "file": "SimTKmath/Geometry/src/ContactGeometry.cpp",
+          "line": 1497,
+          "message": "variable 'stepcnt' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 26,
+          "file": "SimTKmath/Geometry/src/ContactGeometry.cpp",
+          "line": 1594,
+          "message": "unused variable 'P'",
+          "verdict": null
+        },
+        {
+          "column": 26,
+          "file": "SimTKmath/Geometry/src/ContactGeometry.cpp",
+          "line": 1595,
+          "message": "unused variable 'tP'",
+          "verdict": null
+        },
+        {
+          "column": 26,
+          "file": "SimTKmath/Geometry/src/ContactGeometry.cpp",
+          "line": 1658,
+          "message": "unused variable 'P'",
+          "verdict": null
+        },
+        {
+          "column": 26,
+          "file": "SimTKmath/Geometry/src/ContactGeometry.cpp",
+          "line": 1659,
+          "message": "unused variable 'tP'",
+          "verdict": null
+        },
+        {
+          "column": 19,
+          "file": "SimTKmath/Geometry/src/ContactGeometry.cpp",
+          "line": 1871,
+          "message": "variable 'dist' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 24,
+          "file": "SimTKmath/Geometry/src/ContactGeometry.cpp",
+          "line": 1941,
+          "message": "unused variable 'jt'",
+          "verdict": null
+        },
+        {
+          "column": 24,
+          "file": "SimTKmath/Geometry/src/ContactGeometry.cpp",
+          "line": 1942,
+          "message": "unused variable 'jtd'",
+          "verdict": null
+        },
+        {
+          "column": 21,
+          "file": "SimTKmath/Geometry/src/ContactGeometry.cpp",
+          "line": 2251,
+          "message": "unused variable 'tPhat'",
+          "verdict": null
+        },
+        {
+          "column": 21,
+          "file": "SimTKmath/Geometry/src/ContactGeometry.cpp",
+          "line": 2253,
+          "message": "unused variable 'nPhat'",
+          "verdict": null
+        },
+        {
+          "column": 56,
+          "file": "SimTKmath/Geometry/src/ContactGeometry.cpp",
+          "line": 2253,
+          "message": "unused variable 'nQhat'",
+          "verdict": null
+        },
+        {
+          "column": 32,
+          "file": "SimTKmath/Geometry/src/GeodesicEquations.h",
+          "line": 248,
+          "message": "private field 'geom' is not used",
+          "verdict": null
+        },
+        {
+          "column": 14,
+          "file": "Simbody/tests/TestNoseHooverThermostat.cpp",
+          "line": 179,
+          "message": "unused variable 'expectedMeanAbsVelocity'",
+          "verdict": null
+        },
+        {
+          "column": 14,
+          "file": "Simbody/tests/TestNoseHooverThermostat.cpp",
+          "line": 181,
+          "message": "unused variable 'measuredMeanAbsVelocity'",
+          "verdict": null
+        },
+        {
+          "column": 36,
+          "file": "SimTKmath/LinearAlgebra/src/FactorSVD.cpp",
+          "line": 249,
+          "message": "unused typedef 'RealType'",
+          "verdict": null
+        },
+        {
+          "column": 18,
+          "file": "SimTKmath/LinearAlgebra/src/FactorSVD.cpp",
+          "line": 323,
+          "message": "variable 'rank' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 19,
+          "file": "Simbody/tests/adhoc/PendulumExample.cpp",
+          "line": 34,
+          "message": "unused variable 'Deg2Rad'",
+          "verdict": null
+        },
+        {
+          "column": 19,
+          "file": "Simbody/tests/adhoc/PendulumExample.cpp",
+          "line": 35,
+          "message": "unused variable 'Rad2Deg'",
+          "verdict": null
+        },
+        {
+          "column": 19,
+          "file": "Simbody/tests/adhoc/PendulumExample.cpp",
+          "line": 39,
+          "message": "unused variable 'm'",
+          "verdict": null
+        },
+        {
+          "column": 27,
+          "file": "SimTKcommon/src/Xml.cpp",
+          "line": 139,
+          "message": "unused variable 'decl'",
+          "verdict": null
+        },
+        {
+          "column": 15,
+          "file": "SimTKcommon/tests/TestSimulation.cpp",
+          "line": 456,
+          "message": "variable 'timescale' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 7,
+          "file": "SimTKmath/Integrators/src/CPodes/sundials/tests/cpsAdvDiff_non.c",
+          "line": 169,
+          "message": "variable 'flag' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 19,
+          "file": "SimTKmath/Integrators/src/SemiExplicitEuler2Integrator.cpp",
+          "line": 101,
+          "message": "unused variable 'system'",
+          "verdict": null
+        },
+        {
+          "column": 19,
+          "file": "SimTKmath/Integrators/src/SemiExplicitEuler2Integrator.cpp",
+          "line": 156,
+          "message": "unused variable 'q0'",
+          "verdict": null
+        },
+        {
+          "column": 19,
+          "file": "SimTKmath/Integrators/src/SemiExplicitEuler2Integrator.cpp",
+          "line": 157,
+          "message": "unused variable 'u0'",
+          "verdict": null
+        },
+        {
+          "column": 19,
+          "file": "SimTKmath/Integrators/src/SemiExplicitEuler2Integrator.cpp",
+          "line": 158,
+          "message": "unused variable 'z0'",
+          "verdict": null
+        },
+        {
+          "column": 19,
+          "file": "SimTKmath/Integrators/src/SemiExplicitEuler2Integrator.cpp",
+          "line": 159,
+          "message": "unused variable 'qdot0'",
+          "verdict": null
+        },
+        {
+          "column": 19,
+          "file": "SimTKmath/Integrators/src/SemiExplicitEuler2Integrator.cpp",
+          "line": 160,
+          "message": "unused variable 'udot0'",
+          "verdict": null
+        },
+        {
+          "column": 19,
+          "file": "SimTKmath/Integrators/src/SemiExplicitEuler2Integrator.cpp",
+          "line": 161,
+          "message": "unused variable 'zdot0'",
+          "verdict": null
+        },
+        {
+          "column": 19,
+          "file": "SimTKmath/Integrators/src/SemiExplicitEuler2Integrator.cpp",
+          "line": 162,
+          "message": "unused variable 'qdotdot0'",
+          "verdict": null
+        },
+        {
+          "column": 19,
+          "file": "Simbody/tests/adhoc/LockUnlockConstraint.cpp",
+          "line": 319,
+          "message": "unused variable 'Rad2Deg'",
+          "verdict": null
+        },
+        {
+          "column": 18,
+          "file": "Simbody/tests/adhoc/TimsBox.cpp",
+          "line": 50,
+          "message": "unused variable 'NTries'",
+          "verdict": null
+        },
+        {
+          "column": 26,
+          "file": "Simbody/tests/adhoc/TimsBox.cpp",
+          "line": 792,
+          "message": "unused variable 'PG'",
+          "verdict": null
+        },
+        {
+          "column": 45,
+          "file": "Simbody/tests/adhoc/TimsBox.cpp",
+          "line": 807,
+          "message": "private field 'm_unis' is not used",
+          "verdict": null
+        },
+        {
+          "column": 45,
+          "file": "Simbody/tests/adhoc/TimsBox.cpp",
+          "line": 808,
+          "message": "private field 'm_integ' is not used",
+          "verdict": null
+        },
+        {
+          "column": 39,
+          "file": "Simbody/tests/adhoc/TimsBox.cpp",
+          "line": 858,
+          "message": "unused variable 'matter'",
+          "verdict": null
+        },
+        {
+          "column": 20,
+          "file": "Simbody/tests/adhoc/TimsBox.cpp",
+          "line": 1600,
+          "message": "unused variable 'Stiffness'",
+          "verdict": null
+        },
+        {
+          "column": 20,
+          "file": "Simbody/tests/adhoc/TimsBox.cpp",
+          "line": 1602,
+          "message": "unused variable 'TargetVelocity'",
+          "verdict": null
+        },
+        {
+          "column": 20,
+          "file": "Simbody/tests/adhoc/TimsBox.cpp",
+          "line": 1604,
+          "message": "unused variable 'Dissipation'",
+          "verdict": null
+        },
+        {
+          "column": 15,
+          "file": "Simbody/tests/adhoc/TimsBox.cpp",
+          "line": 2156,
+          "message": "unused variable 'ReviseNormalNIters'",
+          "verdict": null
+        },
+        {
+          "column": 9,
+          "file": "Simbody/tests/adhoc/TimsBox.cpp",
+          "line": 2177,
+          "message": "variable 'pass' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 17,
+          "file": "Simbody/tests/adhoc/TimsBox.cpp",
+          "line": 2177,
+          "message": "variable 'nContactsDisabled' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 38,
+          "file": "Simbody/tests/adhoc/TimsBox.cpp",
+          "line": 2177,
+          "message": "variable 'nStictionDisabled' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 59,
+          "file": "Simbody/tests/adhoc/TimsBox.cpp",
+          "line": 2177,
+          "message": "unused variable 'nContactsReenabled'",
+          "verdict": null
+        },
+        {
+          "column": 37,
+          "file": "Simbody/tests/adhoc/TimsBox.cpp",
+          "line": 2222,
+          "message": "unused variable 'cont'",
+          "verdict": null
+        },
+        {
+          "column": 33,
+          "file": "Simbody/tests/adhoc/TimsBox.cpp",
+          "line": 2394,
+          "message": "unused variable 'uni'",
+          "verdict": null
+        },
+        {
+          "column": 15,
+          "file": "Simbody/tests/adhoc/TimsBox.cpp",
+          "line": 2586,
+          "message": "unused variable 'ReviseNormalNIters'",
+          "verdict": null
+        },
+        {
+          "column": 9,
+          "file": "Simbody/tests/adhoc/TimsBox.cpp",
+          "line": 2604,
+          "message": "variable 'pass' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 17,
+          "file": "Simbody/tests/adhoc/TimsBox.cpp",
+          "line": 2604,
+          "message": "variable 'nContactsDisabled' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 38,
+          "file": "Simbody/tests/adhoc/TimsBox.cpp",
+          "line": 2604,
+          "message": "variable 'nStictionDisabled' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 59,
+          "file": "Simbody/tests/adhoc/TimsBox.cpp",
+          "line": 2604,
+          "message": "unused variable 'nContactsReenabled'",
+          "verdict": null
+        },
+        {
+          "column": 37,
+          "file": "Simbody/tests/adhoc/TimsBox.cpp",
+          "line": 2655,
+          "message": "unused variable 'cont'",
+          "verdict": null
+        },
+        {
+          "column": 19,
+          "file": "Simbody/tests/adhoc/CoarseRNA.cpp",
+          "line": 43,
+          "message": "unused variable 'Deg2Rad'",
+          "verdict": null
+        },
+        {
+          "column": 19,
+          "file": "Simbody/tests/adhoc/CoarseRNA.cpp",
+          "line": 44,
+          "message": "unused variable 'GroundBodyNum'",
+          "verdict": null
+        },
+        {
+          "column": 10,
+          "file": "Simbody/tests/adhoc/CoarseRNA.cpp",
+          "line": 310,
+          "message": "unused variable 'suppressProject'",
+          "verdict": null
+        },
+        {
+          "column": 19,
+          "file": "Simbody/tests/adhoc/FreeWater.cpp",
+          "line": 42,
+          "message": "unused variable 'Rad2Deg'",
+          "verdict": null
+        },
+        {
+          "column": 13,
+          "file": "Simbody/tests/adhoc/FreeWater.cpp",
+          "line": 44,
+          "message": "unused variable 'g'",
+          "verdict": null
+        },
+        {
+          "column": 19,
+          "file": "Simbody/tests/adhoc/RadusDrifter.cpp",
+          "line": 43,
+          "message": "unused variable 'm'",
+          "verdict": null
+        },
+        {
+          "column": 19,
+          "file": "Simbody/tests/adhoc/RadusDrifter.cpp",
+          "line": 45,
+          "message": "unused variable 'd'",
+          "verdict": null
+        },
+        {
+          "column": 13,
+          "file": "Simbody/tests/GazeboReactionForceWithAppliedForceRigid.cpp",
+          "line": 397,
+          "message": "unused function 'dumpIntegratorStats'",
+          "verdict": null
+        },
+        {
+          "column": 29,
+          "file": "Simbody/src/PGSImpulseSolver.cpp",
+          "line": 83,
+          "message": "unused variable 'n'",
+          "verdict": null
+        },
+        {
+          "column": 15,
+          "file": "Simbody/src/PGSImpulseSolver.cpp",
+          "line": 356,
+          "message": "unused variable 'mUniSpeed'",
+          "verdict": null
+        },
+        {
+          "column": 10,
+          "file": "Simbody/src/PGSImpulseSolver.cpp",
+          "line": 394,
+          "message": "variable 'normRMSall' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 10,
+          "file": "SimTKmath/Geometry/src/ContactGeometry_TriangleMesh.cpp",
+          "line": 380,
+          "message": "unused variable 'intersects'",
+          "verdict": null
+        },
+        {
+          "column": 16,
+          "file": "SimTKmath/Geometry/src/ContactGeometry_TriangleMesh.cpp",
+          "line": 680,
+          "message": "unused variable 'f'",
+          "verdict": null
+        },
+        {
+          "column": 16,
+          "file": "SimTKcommon/tests/OrientationTest.cpp",
+          "line": 85,
+          "message": "unused variable 'pi2'",
+          "verdict": null
+        },
+        {
+          "column": 10,
+          "file": "SimTKcommon/tests/OrientationTest.cpp",
+          "line": 341,
+          "message": "unused variable 'aax'",
+          "verdict": null
+        },
+        {
+          "column": 17,
+          "file": "SimTKcommon/tests/OrientationTest.cpp",
+          "line": 375,
+          "message": "unused function 'aboutXThenOldY'",
+          "verdict": null
+        },
+        {
+          "column": 17,
+          "file": "SimTKcommon/tests/OrientationTest.cpp",
+          "line": 383,
+          "message": "unused function 'aboutZThenOldX'",
+          "verdict": null
+        },
+        {
+          "column": 17,
+          "file": "SimTKcommon/tests/OrientationTest.cpp",
+          "line": 391,
+          "message": "unused function 'aboutYThenOldZ'",
+          "verdict": null
+        },
+        {
+          "column": 17,
+          "file": "SimTKcommon/tests/OrientationTest.cpp",
+          "line": 400,
+          "message": "unused function 'aboutYThenOldX'",
+          "verdict": null
+        },
+        {
+          "column": 17,
+          "file": "SimTKcommon/tests/OrientationTest.cpp",
+          "line": 408,
+          "message": "unused function 'aboutXThenOldZ'",
+          "verdict": null
+        },
+        {
+          "column": 17,
+          "file": "SimTKcommon/tests/OrientationTest.cpp",
+          "line": 417,
+          "message": "unused function 'aboutZThenOldY'",
+          "verdict": null
+        },
+        {
+          "column": 19,
+          "file": "Simbody/tests/adhoc/TwoPendulums.cpp",
+          "line": 40,
+          "message": "unused variable 'Deg2Rad'",
+          "verdict": null
+        },
+        {
+          "column": 19,
+          "file": "examples/ExampleContactPlayground.cpp",
+          "line": 71,
+          "message": "unused variable 'MomentScale'",
+          "verdict": null
+        },
+        {
+          "column": 24,
+          "file": "examples/ExampleContactPlayground.cpp",
+          "line": 110,
+          "message": "unused variable 'found'",
+          "verdict": null
+        },
+        {
+          "column": 33,
+          "file": "examples/ExampleContactPlayground.cpp",
+          "line": 160,
+          "message": "unused variable 'force'",
+          "verdict": null
+        },
+        {
+          "column": 27,
+          "file": "examples/ExampleContactPlayground.cpp",
+          "line": 216,
+          "message": "unused variable 'OLDcontactSet'",
+          "verdict": null
+        },
+        {
+          "column": 13,
+          "file": "examples/ExampleContactPlayground.cpp",
+          "line": 533,
+          "message": "unused function 'makePyramid'",
+          "verdict": null
+        },
+        {
+          "column": 13,
+          "file": "examples/ExampleContactPlayground.cpp",
+          "line": 559,
+          "message": "unused function 'makeTetrahedron'",
+          "verdict": null
+        },
+        {
+          "column": 13,
+          "file": "examples/ExampleContactPlayground.cpp",
+          "line": 599,
+          "message": "unused function 'makeOctahedron'",
+          "verdict": null
+        },
+        {
+          "column": 13,
+          "file": "examples/ExampleContactPlayground.cpp",
+          "line": 612,
+          "message": "unused function 'makeCube'",
+          "verdict": null
+        },
+        {
+          "column": 13,
+          "file": "examples/ExampleWrapping.cpp",
+          "line": 174,
+          "message": "unused function 'maxabs'",
+          "verdict": null
+        },
+        {
+          "column": 10,
+          "file": "examples/ExampleWrapping.cpp",
+          "line": 210,
+          "message": "unused variable 'tP'",
+          "verdict": null
+        },
+        {
+          "column": 10,
+          "file": "examples/ExampleWrapping.cpp",
+          "line": 211,
+          "message": "unused variable 'tQ'",
+          "verdict": null
+        },
+        {
+          "column": 22,
+          "file": "SimTKcommon/tests/SFMTTest.cpp",
+          "line": 39,
+          "message": "unused variable 'expected'",
+          "verdict": null
+        },
+        {
+          "column": 37,
+          "file": "Simbody/src/RigidBodyNodeSpec_Custom.h",
+          "line": 93,
+          "message": "unused variable 'mv'",
+          "verdict": null
+        },
+        {
+          "column": 37,
+          "file": "Simbody/src/RigidBodyNodeSpec_Custom.h",
+          "line": 94,
+          "message": "unused variable 'pc'",
+          "verdict": null
+        },
+        {
+          "column": 13,
+          "file": "SimTKmath/Integrators/src/CPodes/sundials/tests/cpsAdvDiff_bndL.c",
+          "line": 59,
+          "message": "variable 'flag' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 7,
+          "file": "SimTKmath/Integrators/src/CPodes/sundials/tests/cpsAdvDiff_bndL.c",
+          "line": 244,
+          "message": "variable 'flag' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 17,
+          "file": "Simbody/src/RigidBodyNodeSpec_FreeLine.h",
+          "line": 434,
+          "message": "unused variable 'v_FM'",
+          "verdict": null
+        },
+        {
+          "column": 13,
+          "file": "SimTKcommon/tests/MatVecTest.cpp",
+          "line": 41,
+          "message": "unused function 'dummy'",
+          "verdict": null
+        },
+        {
+          "column": 12,
+          "file": "SimTKcommon/tests/MatVecTest.cpp",
+          "line": 506,
+          "message": "unused variable 'nvorig'",
+          "verdict": null
+        },
+        {
+          "column": 21,
+          "file": "SimTKcommon/tests/MatVecTest.cpp",
+          "line": 507,
+          "message": "unused variable 'nv2orig'",
+          "verdict": null
+        },
+        {
+          "column": 10,
+          "file": "Simbody/tests/adhoc/PrescribedMotionPlayground.cpp",
+          "line": 209,
+          "message": "variable 'c' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 15,
+          "file": "SimTKmath/Integrators/src/Integrator.cpp",
+          "line": 352,
+          "message": "unused variable 'ny'",
+          "verdict": null
+        },
+        {
+          "column": 15,
+          "file": "SimTKmath/Integrators/src/Integrator.cpp",
+          "line": 353,
+          "message": "unused variable 'nc'",
+          "verdict": null
+        },
+        {
+          "column": 15,
+          "file": "SimTKmath/Integrators/src/Integrator.cpp",
+          "line": 354,
+          "message": "unused variable 'ne'",
+          "verdict": null
+        },
+        {
+          "column": 37,
+          "file": "Simbody/tests/adhoc/MovingMusclePointMomentArm.cpp",
+          "line": 166,
+          "message": "private field 'm_matter' is not used",
+          "verdict": null
+        },
+        {
+          "column": 37,
+          "file": "Simbody/tests/adhoc/MovingMusclePointMomentArm.cpp",
+          "line": 271,
+          "message": "private field 'm_matter' is not used",
+          "verdict": null
+        },
+        {
+          "column": 9,
+          "file": "Simbody/src/SimbodyMatterSubtree.cpp",
+          "line": 1053,
+          "message": "variable 'nSubtreeQ' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 22,
+          "file": "Simbody/src/SimbodyMatterSubtree.cpp",
+          "line": 1053,
+          "message": "variable 'nSubtreeU' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 24,
+          "file": "Simbody/src/SimbodyMatterSubtree.cpp",
+          "line": 1266,
+          "message": "unused variable 'v_AB_G'",
+          "verdict": null
+        },
+        {
+          "column": 21,
+          "file": "SimTKmath/tests/FactorSVDTest.cpp",
+          "line": 84,
+          "message": "unused variable 'EPS'",
+          "verdict": null
+        },
+        {
+          "column": 49,
+          "file": "Simbody/src/Assembler.cpp",
+          "line": 394,
+          "message": "private field 'totalNEqns' is not used",
+          "verdict": null
+        },
+        {
+          "column": 15,
+          "file": "Simbody/src/Assembler.cpp",
+          "line": 836,
+          "message": "unused variable 'nfreeq'",
+          "verdict": null
+        },
+        {
+          "column": 15,
+          "file": "Simbody/src/Assembler.cpp",
+          "line": 837,
+          "message": "unused variable 'nqerr'",
+          "verdict": null
+        },
+        {
+          "column": 15,
+          "file": "Simbody/src/Assembler.cpp",
+          "line": 933,
+          "message": "unused variable 'nfreeq'",
+          "verdict": null
+        },
+        {
+          "column": 15,
+          "file": "Simbody/src/Assembler.cpp",
+          "line": 934,
+          "message": "unused variable 'nqerr'",
+          "verdict": null
+        },
+        {
+          "column": 11,
+          "file": "SimTKmath/Optimizers/src/IpOpt/IpCompoundSymMatrix.cpp",
+          "line": 297,
+          "message": "variable 'total_dim' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 10,
+          "file": "SimTKmath/Integrators/src/CPodes/sundials/tests/pend_test.c",
+          "line": 36,
+          "message": "variable 'flag' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 21,
+          "file": "SimTKmath/Integrators/src/CPodes/sundials/tests/pend_test.c",
+          "line": 77,
+          "message": "variable 'xd' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 25,
+          "file": "SimTKmath/Integrators/src/CPodes/sundials/tests/pend_test.c",
+          "line": 77,
+          "message": "variable 'yd' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 7,
+          "file": "SimTKmath/Integrators/src/CPodes/sundials/tests/pend_test.c",
+          "line": 78,
+          "message": "variable 'flag' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 7,
+          "file": "SimTKmath/Integrators/src/CPodes/sundials/tests/pend_test.c",
+          "line": 138,
+          "message": "variable 'flag' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 15,
+          "file": "examples/TaskSpaceControl-Atlas/TaskSpaceControl-Atlas.cpp",
+          "line": 412,
+          "message": "unused variable 'mnq'",
+          "verdict": null
+        },
+        {
+          "column": 19,
+          "file": "Simbody/tests/adhoc/CompliantBlockImpact.cpp",
+          "line": 51,
+          "message": "unused variable 'ForceScale'",
+          "verdict": null
+        },
+        {
+          "column": 19,
+          "file": "Simbody/tests/adhoc/CompliantBlockImpact.cpp",
+          "line": 52,
+          "message": "unused variable 'MomentScale'",
+          "verdict": null
+        },
+        {
+          "column": 20,
+          "file": "Simbody/tests/adhoc/CompliantBlockImpact.cpp",
+          "line": 81,
+          "message": "unused variable 'frcColors'",
+          "verdict": null
+        },
+        {
+          "column": 20,
+          "file": "Simbody/tests/adhoc/CompliantBlockImpact.cpp",
+          "line": 82,
+          "message": "unused variable 'momColors'",
+          "verdict": null
+        },
+        {
+          "column": 39,
+          "file": "Simbody/tests/adhoc/CompliantBlockImpact.cpp",
+          "line": 84,
+          "message": "unused variable 'matter'",
+          "verdict": null
+        },
+        {
+          "column": 20,
+          "file": "Simbody/tests/adhoc/CompliantBlockImpact.cpp",
+          "line": 85,
+          "message": "unused variable 'TextScale'",
+          "verdict": null
+        },
+        {
+          "column": 20,
+          "file": "Simbody/tests/adhoc/CompliantBlockImpact.cpp",
+          "line": 87,
+          "message": "unused variable 'KE'",
+          "verdict": null
+        },
+        {
+          "column": 20,
+          "file": "Simbody/tests/adhoc/CompliantBlockImpact.cpp",
+          "line": 89,
+          "message": "unused variable 'PE'",
+          "verdict": null
+        },
+        {
+          "column": 33,
+          "file": "Simbody/tests/adhoc/CompliantBlockImpact.cpp",
+          "line": 126,
+          "message": "unused variable 'pt'",
+          "verdict": null
+        },
+        {
+          "column": 24,
+          "file": "Simbody/tests/adhoc/CompliantBlockImpact.cpp",
+          "line": 132,
+          "message": "unused variable 'offs'",
+          "verdict": null
+        },
+        {
+          "column": 24,
+          "file": "Simbody/tests/adhoc/CompliantBlockImpact.cpp",
+          "line": 152,
+          "message": "unused variable 'found'",
+          "verdict": null
+        },
+        {
+          "column": 28,
+          "file": "Simbody/tests/adhoc/CompliantBlockImpact.cpp",
+          "line": 163,
+          "message": "unused variable 'forceMag'",
+          "verdict": null
+        },
+        {
+          "column": 41,
+          "file": "Simbody/tests/adhoc/CompliantBlockImpact.cpp",
+          "line": 217,
+          "message": "private field 'm_brick' is not used",
+          "verdict": null
+        },
+        {
+          "column": 17,
+          "file": "SimTKcommon/tests/TestScalar.cpp",
+          "line": 222,
+          "message": "unused variable 'nfltNaN'",
+          "verdict": null
+        },
+        {
+          "column": 18,
+          "file": "SimTKcommon/tests/TestScalar.cpp",
+          "line": 223,
+          "message": "unused variable 'ndblNaN'",
+          "verdict": null
+        },
+        {
+          "column": 27,
+          "file": "SimTKcommon/tests/TestScalar.cpp",
+          "line": 513,
+          "message": "unused variable 'nfn'",
+          "verdict": null
+        },
+        {
+          "column": 27,
+          "file": "SimTKcommon/tests/TestScalar.cpp",
+          "line": 514,
+          "message": "unused variable 'nfe'",
+          "verdict": null
+        },
+        {
+          "column": 54,
+          "file": "SimTKcommon/tests/TestScalar.cpp",
+          "line": 623,
+          "message": "unused variable 'ull'",
+          "verdict": null
+        },
+        {
+          "column": 13,
+          "file": "SimTKmath/Integrators/src/CPodes/sundials/tests/cpsbanx_lap.c",
+          "line": 59,
+          "message": "variable 'flag' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 7,
+          "file": "SimTKmath/Integrators/src/CPodes/sundials/tests/cpsbanx_lap.c",
+          "line": 244,
+          "message": "variable 'flag' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 13,
+          "file": "SimTKmath/Integrators/src/CPodes/sundials/tests/cpsRoberts_dnsL.c",
+          "line": 60,
+          "message": "variable 'flagr' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 12,
+          "file": "SimTKmath/Integrators/src/CPodes/sundials/tests/cpsRoberts_dnsL.c",
+          "line": 197,
+          "message": "variable 'y1' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 12,
+          "file": "SimTKmath/Integrators/src/CPodes/sundials/tests/cpsRoberts_dnsL.c",
+          "line": 225,
+          "message": "variable 'y1' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 7,
+          "file": "SimTKmath/Integrators/src/CPodes/sundials/tests/cpsRoberts_dnsL.c",
+          "line": 268,
+          "message": "variable 'flag' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 16,
+          "file": "Simbody/src/Force.cpp",
+          "line": 359,
+          "message": "unused variable 'frc'",
+          "verdict": null
+        },
+        {
+          "column": 30,
+          "file": "Simbody/src/Force.cpp",
+          "line": 1040,
+          "message": "unused variable 'loc_G'",
+          "verdict": null
+        },
+        {
+          "column": 13,
+          "file": "examples/ExampleTwoBoxCollide.cpp",
+          "line": 263,
+          "message": "unused function 'makePyramid'",
+          "verdict": null
+        },
+        {
+          "column": 13,
+          "file": "examples/ExampleTwoBoxCollide.cpp",
+          "line": 289,
+          "message": "unused function 'makeTetrahedron'",
+          "verdict": null
+        },
+        {
+          "column": 13,
+          "file": "examples/ExampleTwoBoxCollide.cpp",
+          "line": 329,
+          "message": "unused function 'makeOctahedron'",
+          "verdict": null
+        },
+        {
+          "column": 13,
+          "file": "examples/ExampleTwoBoxCollide.cpp",
+          "line": 342,
+          "message": "unused function 'makeCube'",
+          "verdict": null
+        },
+        {
+          "column": 15,
+          "file": "Simbody/src/SemiExplicitEulerTimeStepper.cpp",
+          "line": 678,
+          "message": "unused variable 'm'",
+          "verdict": null
+        },
+        {
+          "column": 35,
+          "file": "Simbody/src/SemiExplicitEulerTimeStepper.cpp",
+          "line": 1074,
+          "message": "unused variable 'matter'",
+          "verdict": null
+        },
+        {
+          "column": 9,
+          "file": "SimTKmath/Optimizers/src/LBFGSOptimizer.cpp",
+          "line": 53,
+          "message": "unused variable 'iflag'",
+          "verdict": null
+        },
+        {
+          "column": 22,
+          "file": "Simbody/src/SimbodyMatterSubsystemRep.cpp",
+          "line": 1502,
+          "message": "unused variable 'dc'",
+          "verdict": null
+        },
+        {
+          "column": 15,
+          "file": "Simbody/src/SimbodyMatterSubsystemRep.cpp",
+          "line": 1952,
+          "message": "unused variable 'nq'",
+          "verdict": null
+        },
+        {
+          "column": 15,
+          "file": "Simbody/src/SimbodyMatterSubsystemRep.cpp",
+          "line": 2034,
+          "message": "unused variable 'nu'",
+          "verdict": null
+        },
+        {
+          "column": 15,
+          "file": "Simbody/src/SimbodyMatterSubsystemRep.cpp",
+          "line": 2241,
+          "message": "unused variable 'm'",
+          "verdict": null
+        },
+        {
+          "column": 19,
+          "file": "Simbody/src/SimbodyMatterSubsystemRep.cpp",
+          "line": 3011,
+          "message": "unused variable 'ncb'",
+          "verdict": null
+        },
+        {
+          "column": 28,
+          "file": "Simbody/src/SimbodyMatterSubsystemRep.cpp",
+          "line": 3777,
+          "message": "unused variable 'mc'",
+          "verdict": null
+        },
+        {
+          "column": 28,
+          "file": "Simbody/src/SimbodyMatterSubsystemRep.cpp",
+          "line": 3801,
+          "message": "unused variable 'mc'",
+          "verdict": null
+        },
+        {
+          "column": 13,
+          "file": "Simbody/src/SimbodyMatterSubsystemRep.cpp",
+          "line": 3839,
+          "message": "unused function 'calcQErrestWeightedNormU'",
+          "verdict": null
+        },
+        {
+          "column": 13,
+          "file": "Simbody/src/SimbodyMatterSubsystemRep.cpp",
+          "line": 3846,
+          "message": "unused function 'calcQErrestWeightedNormQ'",
+          "verdict": null
+        },
+        {
+          "column": 10,
+          "file": "Simbody/src/SimbodyMatterSubsystemRep.cpp",
+          "line": 3884,
+          "message": "variable 'anyChange' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 10,
+          "file": "Simbody/src/SimbodyMatterSubsystemRep.cpp",
+          "line": 3917,
+          "message": "variable 'lastChangeMadeWRMS' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 16,
+          "file": "Simbody/src/SimbodyMatterSubsystemRep.cpp",
+          "line": 4205,
+          "message": "unused variable 'forceFullNewton'",
+          "verdict": null
+        },
+        {
+          "column": 10,
+          "file": "Simbody/src/SimbodyMatterSubsystemRep.cpp",
+          "line": 4247,
+          "message": "variable 'lastChangeMadeWRMS' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 10,
+          "file": "Simbody/src/SimbodyMatterSubsystemRep.cpp",
+          "line": 4512,
+          "message": "variable 'anyChange' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 10,
+          "file": "Simbody/src/SimbodyMatterSubsystemRep.cpp",
+          "line": 4538,
+          "message": "variable 'lastChangeMadeWRMS' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 16,
+          "file": "Simbody/src/SimbodyMatterSubsystemRep.cpp",
+          "line": 4748,
+          "message": "unused variable 'forceFullNewton'",
+          "verdict": null
+        },
+        {
+          "column": 15,
+          "file": "Simbody/src/SimbodyMatterSubsystemRep.cpp",
+          "line": 4753,
+          "message": "unused variable 'nq'",
+          "verdict": null
+        },
+        {
+          "column": 10,
+          "file": "Simbody/src/SimbodyMatterSubsystemRep.cpp",
+          "line": 4786,
+          "message": "variable 'lastChangeMadeWRMS' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 33,
+          "file": "Simbody/src/SimbodyMatterSubsystemRep.cpp",
+          "line": 4980,
+          "message": "unused variable 'tpc'",
+          "verdict": null
+        },
+        {
+          "column": 33,
+          "file": "Simbody/src/SimbodyMatterSubsystemRep.cpp",
+          "line": 4981,
+          "message": "unused variable 'tvc'",
+          "verdict": null
+        },
+        {
+          "column": 15,
+          "file": "Simbody/src/SimbodyMatterSubsystemRep.cpp",
+          "line": 5103,
+          "message": "unused variable 'nq'",
+          "verdict": null
+        },
+        {
+          "column": 15,
+          "file": "Simbody/src/SimbodyMatterSubsystemRep.cpp",
+          "line": 6048,
+          "message": "unused variable 'nb'",
+          "verdict": null
+        },
+        {
+          "column": 15,
+          "file": "Simbody/src/SimbodyMatterSubsystemRep.cpp",
+          "line": 6049,
+          "message": "unused variable 'nu'",
+          "verdict": null
+        },
+        {
+          "column": 26,
+          "file": "Simbody/src/SimbodyMatterSubsystemRep.cpp",
+          "line": 6229,
+          "message": "unused variable 'n'",
+          "verdict": null
+        },
+        {
+          "column": 26,
+          "file": "Simbody/src/SimbodyMatterSubsystemRep.cpp",
+          "line": 6247,
+          "message": "unused variable 'n'",
+          "verdict": null
+        },
+        {
+          "column": 12,
+          "file": "examples/ExampleGeodesic.cpp",
+          "line": 38,
+          "message": "unused variable 'vizInterval'",
+          "verdict": null
+        },
+        {
+          "column": 10,
+          "file": "examples/ExampleGeodesic.cpp",
+          "line": 176,
+          "message": "unused variable 'r_PQ'",
+          "verdict": null
+        },
+        {
+          "column": 9,
+          "file": "SimTKmath/LinearAlgebra/src/Eigen.cpp",
+          "line": 306,
+          "message": "unused variable 'computeLwork'",
+          "verdict": null
+        },
+        {
+          "column": 19,
+          "file": "Simbody/tests/adhoc/MiscConstraints.cpp",
+          "line": 38,
+          "message": "unused variable 'Deg2Rad'",
+          "verdict": null
+        },
+        {
+          "column": 19,
+          "file": "Simbody/tests/adhoc/MiscConstraints.cpp",
+          "line": 39,
+          "message": "unused variable 'Rad2Deg'",
+          "verdict": null
+        },
+        {
+          "column": 19,
+          "file": "Simbody/tests/adhoc/MiscConstraints.cpp",
+          "line": 45,
+          "message": "unused variable 'd'",
+          "verdict": null
+        },
+        {
+          "column": 23,
+          "file": "Simbody/tests/adhoc/MiscConstraints.cpp",
+          "line": 263,
+          "message": "unused variable 'c'",
+          "verdict": null
+        },
+        {
+          "column": 18,
+          "file": "Simbody/tests/adhoc/TimsBoxBristle.cpp",
+          "line": 52,
+          "message": "unused variable 'NTries'",
+          "verdict": null
+        },
+        {
+          "column": 26,
+          "file": "Simbody/tests/adhoc/TimsBoxBristle.cpp",
+          "line": 655,
+          "message": "unused variable 'PG'",
+          "verdict": null
+        },
+        {
+          "column": 45,
+          "file": "Simbody/tests/adhoc/TimsBoxBristle.cpp",
+          "line": 669,
+          "message": "private field 'm_unis' is not used",
+          "verdict": null
+        },
+        {
+          "column": 45,
+          "file": "Simbody/tests/adhoc/TimsBoxBristle.cpp",
+          "line": 670,
+          "message": "private field 'm_integ' is not used",
+          "verdict": null
+        },
+        {
+          "column": 20,
+          "file": "Simbody/tests/adhoc/TimsBoxBristle.cpp",
+          "line": 811,
+          "message": "unused variable 'CoefRest'",
+          "verdict": null
+        },
+        {
+          "column": 20,
+          "file": "Simbody/tests/adhoc/TimsBoxBristle.cpp",
+          "line": 812,
+          "message": "unused variable 'TargetVelocity'",
+          "verdict": null
+        },
+        {
+          "column": 11,
+          "file": "SimTKmath/Optimizers/src/IpOpt/IpCompoundMatrix.cpp",
+          "line": 555,
+          "message": "variable 'total_nrows' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 11,
+          "file": "SimTKmath/Optimizers/src/IpOpt/IpCompoundMatrix.cpp",
+          "line": 556,
+          "message": "variable 'total_ncols' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 22,
+          "file": "Simbody/src/CompliantContactSubsystem.cpp",
+          "line": 115,
+          "message": "unused variable 'X_S1S2'",
+          "verdict": null
+        },
+        {
+          "column": 35,
+          "file": "Simbody/src/CompliantContactSubsystem.cpp",
+          "line": 268,
+          "message": "unused variable 'matter'",
+          "verdict": null
+        },
+        {
+          "column": 26,
+          "file": "Simbody/src/CompliantContactSubsystem.cpp",
+          "line": 454,
+          "message": "unused variable 'X_S1S2'",
+          "verdict": null
+        },
+        {
+          "column": 20,
+          "file": "Simbody/src/CompliantContactSubsystem.cpp",
+          "line": 641,
+          "message": "unused function 'step5d'",
+          "verdict": null
+        },
+        {
+          "column": 20,
+          "file": "Simbody/src/CompliantContactSubsystem.cpp",
+          "line": 698,
+          "message": "unused function 'hollars'",
+          "verdict": null
+        },
+        {
+          "column": 21,
+          "file": "Simbody/src/CompliantContactSubsystem.cpp",
+          "line": 734,
+          "message": "unused variable 'R12'",
+          "verdict": null
+        },
+        {
+          "column": 13,
+          "file": "Simbody/src/CompliantContactSubsystem.cpp",
+          "line": 1009,
+          "message": "unused function 'numContactEllipseRatio'",
+          "verdict": null
+        },
+        {
+          "column": 13,
+          "file": "Simbody/src/CompliantContactSubsystem.cpp",
+          "line": 1049,
+          "message": "unused function 'calcContactInfo'",
+          "verdict": null
+        },
+        {
+          "column": 9,
+          "file": "Simbody/src/CompliantContactSubsystem.cpp",
+          "line": 1299,
+          "message": "variable 'nActiveVertices' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 21,
+          "file": "Simbody/src/CompliantContactSubsystem.cpp",
+          "line": 1854,
+          "message": "unused variable 'RMO'",
+          "verdict": null
+        },
+        {
+          "column": 17,
+          "file": "SimTKcommon/tests/TestBigMatrix.cpp",
+          "line": 39,
+          "message": "unused function 'isNaN<double>'",
+          "verdict": null
+        },
+        {
+          "column": 17,
+          "file": "SimTKcommon/tests/TestBigMatrix.cpp",
+          "line": 40,
+          "message": "unused function 'isNaN<float>'",
+          "verdict": null
+        },
+        {
+          "column": 17,
+          "file": "SimTKcommon/tests/TestBigMatrix.cpp",
+          "line": 41,
+          "message": "unused function 'isNaN<SimTK::negator<double>>'",
+          "verdict": null
+        },
+        {
+          "column": 17,
+          "file": "SimTKcommon/tests/TestBigMatrix.cpp",
+          "line": 42,
+          "message": "unused function 'isNaN<SimTK::negator<float>>'",
+          "verdict": null
+        },
+        {
+          "column": 39,
+          "file": "Simbody/tests/adhoc/BilateralContactConstraints.cpp",
+          "line": 53,
+          "message": "unused variable 'matter'",
+          "verdict": null
+        },
+        {
+          "column": 20,
+          "file": "Simbody/tests/adhoc/BilateralContactConstraints.cpp",
+          "line": 54,
+          "message": "unused variable 'TextScale'",
+          "verdict": null
+        },
+        {
+          "column": 10,
+          "file": "Simbody/tests/adhoc/BilateralContactConstraints.cpp",
+          "line": 162,
+          "message": "unused variable 'pmass'",
+          "verdict": null
+        },
+        {
+          "column": 7,
+          "file": "SimTKmath/Integrators/src/CPodes/sundials/tests/cpsadamsx.c",
+          "line": 265,
+          "message": "variable 'flag' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 9,
+          "file": "Simbody/tests/TestMobilizerReactionForces.cpp",
+          "line": 122,
+          "message": "unused variable 'nq'",
+          "verdict": null
+        },
+        {
+          "column": 22,
+          "file": "Simbody/tests/TestMobilizerReactionForces.cpp",
+          "line": 262,
+          "message": "unused variable 'p2x'",
+          "verdict": null
+        },
+        {
+          "column": 22,
+          "file": "Simbody/tests/TestMobilizerReactionForces.cpp",
+          "line": 263,
+          "message": "unused variable 'p2bx'",
+          "verdict": null
+        },
+        {
+          "column": 17,
+          "file": "SimTKmath/Geometry/src/Geodesic.cpp",
+          "line": 303,
+          "message": "unused variable 'ep'",
+          "verdict": null
+        },
+        {
+          "column": 17,
+          "file": "SimTKmath/Geometry/src/Geodesic.cpp",
+          "line": 305,
+          "message": "unused variable 'ev'",
+          "verdict": null
+        },
+        {
+          "column": 13,
+          "file": "SimTKmath/Geometry/src/Geodesic.cpp",
+          "line": 326,
+          "message": "unused function 'wrms'",
+          "verdict": null
+        },
+        {
+          "column": 16,
+          "file": "SimTKmath/Geometry/src/Geodesic.cpp",
+          "line": 416,
+          "message": "unused variable 'consAccuracy'",
+          "verdict": null
+        },
+        {
+          "column": 14,
+          "file": "examples/JaredsDude.cpp",
+          "line": 84,
+          "message": "unused variable 'control'",
+          "verdict": null
+        },
+        {
+          "column": 12,
+          "file": "examples/TheoJansenStrandbeest.cpp",
+          "line": 95,
+          "message": "unused variable 'concrete_density'",
+          "verdict": null
+        },
+        {
+          "column": 28,
+          "file": "Simbody/tests/adhoc/RattleBack_ReverseEllipsoid.cpp",
+          "line": 66,
+          "message": "private field 'body' is not used",
+          "verdict": null
+        },
+        {
+          "column": 19,
+          "file": "examples/Rattleback.cpp",
+          "line": 51,
+          "message": "unused variable 'MomentScale'",
+          "verdict": null
+        },
+        {
+          "column": 24,
+          "file": "examples/Rattleback.cpp",
+          "line": 90,
+          "message": "unused variable 'found'",
+          "verdict": null
+        },
+        {
+          "column": 33,
+          "file": "examples/Rattleback.cpp",
+          "line": 141,
+          "message": "unused variable 'force'",
+          "verdict": null
+        },
+        {
+          "column": 21,
+          "file": "Simbody/src/Force_LinearBushing.cpp",
+          "line": 459,
+          "message": "unused variable 'p'",
+          "verdict": null
+        },
+        {
+          "column": 22,
+          "file": "Simbody/src/Force_LinearBushing.cpp",
+          "line": 512,
+          "message": "unused variable 'R_GB1'",
+          "verdict": null
+        },
+        {
+          "column": 22,
+          "file": "Simbody/src/Force_LinearBushing.cpp",
+          "line": 515,
+          "message": "unused variable 'R_GB2'",
+          "verdict": null
+        },
+        {
+          "column": 22,
+          "file": "Simbody/src/Force_LinearBushing.cpp",
+          "line": 517,
+          "message": "unused variable 'p_B1F'",
+          "verdict": null
+        },
+        {
+          "column": 22,
+          "file": "Simbody/src/Force_LinearBushing.cpp",
+          "line": 518,
+          "message": "unused variable 'p_B2M'",
+          "verdict": null
+        },
+        {
+          "column": 22,
+          "file": "Simbody/src/Force_LinearBushing.cpp",
+          "line": 521,
+          "message": "unused variable 'p_GF'",
+          "verdict": null
+        },
+        {
+          "column": 22,
+          "file": "Simbody/src/Force_LinearBushing.cpp",
+          "line": 524,
+          "message": "unused variable 'p_GM'",
+          "verdict": null
+        },
+        {
+          "column": 22,
+          "file": "Simbody/src/Force_LinearBushing.cpp",
+          "line": 526,
+          "message": "unused variable 'R_FM'",
+          "verdict": null
+        },
+        {
+          "column": 22,
+          "file": "Simbody/src/Force_LinearBushing.cpp",
+          "line": 527,
+          "message": "unused variable 'p_FM'",
+          "verdict": null
+        },
+        {
+          "column": 16,
+          "file": "Simbody/tests/GazeboReactionForce.cpp",
+          "line": 213,
+          "message": "unused variable 'state'",
+          "verdict": null
+        },
+        {
+          "column": 12,
+          "file": "SimTKmath/Integrators/src/CPodes/sundials/tests/pend.c",
+          "line": 152,
+          "message": "unused function 'proj'",
+          "verdict": null
+        },
+        {
+          "column": 7,
+          "file": "SimTKmath/Integrators/src/CPodes/sundials/tests/pend.c",
+          "line": 232,
+          "message": "variable 'flag' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 15,
+          "file": "Simbody/tests/TestMassMatrix.cpp",
+          "line": 573,
+          "message": "unused variable 'nb'",
+          "verdict": null
+        },
+        {
+          "column": 15,
+          "file": "Simbody/tests/TestMassMatrix.cpp",
+          "line": 1363,
+          "message": "unused variable 'nu'",
+          "verdict": null
+        },
+        {
+          "column": 15,
+          "file": "Simbody/tests/TestMassMatrix.cpp",
+          "line": 1364,
+          "message": "unused variable 'nb'",
+          "verdict": null
+        },
+        {
+          "column": 15,
+          "file": "Simbody/tests/TestMassMatrix.cpp",
+          "line": 1423,
+          "message": "unused variable 'nb'",
+          "verdict": null
+        },
+        {
+          "column": 23,
+          "file": "Simbody/src/Constraint_Rod.cpp",
+          "line": 301,
+          "message": "unused variable 'length'",
+          "verdict": null
+        },
+        {
+          "column": 17,
+          "file": "Simbody/src/Constraint_Rod.cpp",
+          "line": 307,
+          "message": "unused variable 'p_AF'",
+          "verdict": null
+        },
+        {
+          "column": 17,
+          "file": "Simbody/src/Constraint_Rod.cpp",
+          "line": 308,
+          "message": "unused variable 'p_AB'",
+          "verdict": null
+        },
+        {
+          "column": 15,
+          "file": "examples/TaskSpaceControl-UR10/TaskSpaceControl-UR10.cpp",
+          "line": 360,
+          "message": "unused variable 'nu'",
+          "verdict": null
+        },
+        {
+          "column": 20,
+          "file": "Simbody/tests/adhoc/LookAtPolygonalMesh.cpp",
+          "line": 47,
+          "message": "unused variable 'TextScale'",
+          "verdict": null
+        },
+        {
+          "column": 22,
+          "file": "Simbody/tests/../src/ConstraintImpl.h",
+          "line": 1542,
+          "message": "unused variable 'p_PC'",
+          "verdict": null
+        },
+        {
+          "column": 22,
+          "file": "Simbody/tests/../src/ConstraintImpl.h",
+          "line": 1573,
+          "message": "unused variable 'p_PC'",
+          "verdict": null
+        },
+        {
+          "column": 19,
+          "file": "Simbody/tests/../src/SimbodyTreeState.h",
+          "line": 709,
+          "message": "unused variable 'maxNQs'",
+          "verdict": null
+        },
+        {
+          "column": 19,
+          "file": "Simbody/tests/../src/SimbodyTreeState.h",
+          "line": 886,
+          "message": "unused variable 'maxNQs'",
+          "verdict": null
+        },
+        {
+          "column": 19,
+          "file": "Simbody/tests/../src/SimbodyTreeState.h",
+          "line": 978,
+          "message": "unused variable 'maxNQs'",
+          "verdict": null
+        },
+        {
+          "column": 9,
+          "file": "SimTKmath/Optimizers/src/CFSQPOptimizer.cpp",
+          "line": 295,
+          "message": "unused variable 'nc'",
+          "verdict": null
+        },
+        {
+          "column": 9,
+          "file": "SimTKmath/Optimizers/src/CFSQPOptimizer.cpp",
+          "line": 383,
+          "message": "unused variable 'nc'",
+          "verdict": null
+        },
+        {
+          "column": 9,
+          "file": "SimTKmath/Optimizers/src/CFSQPOptimizer.cpp",
+          "line": 413,
+          "message": "unused variable 'nc'",
+          "verdict": null
+        },
+        {
+          "column": 21,
+          "file": "SimTKmath/tests/EigenTest.cpp",
+          "line": 117,
+          "message": "unused variable 'EPS'",
+          "verdict": null
+        },
+        {
+          "column": 35,
+          "file": "Simbody/src/Constraint.cpp",
+          "line": 318,
+          "message": "unused variable 'system'",
+          "verdict": null
+        },
+        {
+          "column": 35,
+          "file": "Simbody/src/Constraint.cpp",
+          "line": 394,
+          "message": "unused variable 'system'",
+          "verdict": null
+        },
+        {
+          "column": 35,
+          "file": "Simbody/src/Constraint.cpp",
+          "line": 424,
+          "message": "unused variable 'system'",
+          "verdict": null
+        },
+        {
+          "column": 35,
+          "file": "Simbody/src/Constraint.cpp",
+          "line": 506,
+          "message": "unused variable 'system'",
+          "verdict": null
+        },
+        {
+          "column": 35,
+          "file": "Simbody/src/Constraint.cpp",
+          "line": 536,
+          "message": "unused variable 'system'",
+          "verdict": null
+        },
+        {
+          "column": 35,
+          "file": "Simbody/src/Constraint.cpp",
+          "line": 602,
+          "message": "unused variable 'system'",
+          "verdict": null
+        },
+        {
+          "column": 42,
+          "file": "Simbody/src/Constraint.cpp",
+          "line": 775,
+          "message": "unused variable 'matterRep'",
+          "verdict": null
+        },
+        {
+          "column": 42,
+          "file": "Simbody/src/Constraint.cpp",
+          "line": 920,
+          "message": "unused variable 'matterRep'",
+          "verdict": null
+        },
+        {
+          "column": 42,
+          "file": "Simbody/src/Constraint.cpp",
+          "line": 1067,
+          "message": "unused variable 'matterRep'",
+          "verdict": null
+        },
+        {
+          "column": 42,
+          "file": "Simbody/src/Constraint.cpp",
+          "line": 1668,
+          "message": "unused variable 'matterRep'",
+          "verdict": null
+        },
+        {
+          "column": 39,
+          "file": "Simbody/src/Constraint.cpp",
+          "line": 2079,
+          "message": "unused variable 'impImpl'",
+          "verdict": null
+        },
+        {
+          "column": 27,
+          "file": "Simbody/src/Constraint.cpp",
+          "line": 2815,
+          "message": "unused variable 'instanceVars'",
+          "verdict": null
+        },
+        {
+          "column": 15,
+          "file": "Simbody/src/Constraint.cpp",
+          "line": 3422,
+          "message": "unused variable 'nq'",
+          "verdict": null
+        },
+        {
+          "column": 15,
+          "file": "Simbody/src/Constraint.cpp",
+          "line": 3447,
+          "message": "unused variable 'nu'",
+          "verdict": null
+        },
+        {
+          "column": 15,
+          "file": "Simbody/src/Constraint.cpp",
+          "line": 3477,
+          "message": "unused variable 'ncq'",
+          "verdict": null
+        },
+        {
+          "column": 10,
+          "file": "SimTKmath/tests/LBFGSBDiffTest.cpp",
+          "line": 144,
+          "message": "unused variable 'fail'",
+          "verdict": null
+        },
+        {
+          "column": 9,
+          "file": "examples/Differentiator.cpp",
+          "line": 256,
+          "message": "unused variable 'returnValue'",
+          "verdict": null
+        },
+        {
+          "column": 10,
+          "file": "Simbody/tests/TestForces.cpp",
+          "line": 144,
+          "message": "unused variable 'pe'",
+          "verdict": null
+        },
+        {
+          "column": 21,
+          "file": "SimTKmath/tests/FactorQTZTest.cpp",
+          "line": 128,
+          "message": "unused variable 'SignificantFloat'",
+          "verdict": null
+        },
+        {
+          "column": 10,
+          "file": "SimTKmath/tests/CMAESTest.cpp",
+          "line": 119,
+          "message": "unused variable 'f'",
+          "verdict": null
+        },
+        {
+          "column": 10,
+          "file": "SimTKmath/tests/CMAESTest.cpp",
+          "line": 194,
+          "message": "unused variable 'f1'",
+          "verdict": null
+        },
+        {
+          "column": 10,
+          "file": "SimTKmath/tests/CMAESTest.cpp",
+          "line": 259,
+          "message": "unused variable 'f1'",
+          "verdict": null
+        },
+        {
+          "column": 18,
+          "file": "SimTKmath/tests/CMAESTest.cpp",
+          "line": 291,
+          "message": "unused variable 'f'",
+          "verdict": null
+        },
+        {
+          "column": 10,
+          "file": "SimTKmath/tests/CMAESTest.cpp",
+          "line": 303,
+          "message": "unused variable 'f1'",
+          "verdict": null
+        },
+        {
+          "column": 22,
+          "file": "Simbody/src/ContactTrackerSubsystem.cpp",
+          "line": 65,
+          "message": "unused function 'operator<<'",
+          "verdict": null
+        },
+        {
+          "column": 22,
+          "file": "Simbody/src/ContactTrackerSubsystem.cpp",
+          "line": 81,
+          "message": "unused function 'operator<<'",
+          "verdict": null
+        },
+        {
+          "column": 15,
+          "file": "Simbody/src/ContactTrackerSubsystem.cpp",
+          "line": 110,
+          "message": "unused function 'operator<<'",
+          "verdict": null
+        },
+        {
+          "column": 28,
+          "file": "Simbody/src/ContactTrackerSubsystem.cpp",
+          "line": 502,
+          "message": "unused variable 'nextActive'",
+          "verdict": null
+        },
+        {
+          "column": 28,
+          "file": "Simbody/src/ContactTrackerSubsystem.cpp",
+          "line": 503,
+          "message": "unused variable 'prevPredicted'",
+          "verdict": null
+        },
+        {
+          "column": 22,
+          "file": "Simbody/src/ContactTrackerSubsystem.cpp",
+          "line": 504,
+          "message": "unused variable 'nextPredicted'",
+          "verdict": null
+        },
+        {
+          "column": 17,
+          "file": "SimTKcommon/tests/TestSmallMatrix.cpp",
+          "line": 70,
+          "message": "unused variable 'vpx'",
+          "verdict": null
+        },
+        {
+          "column": 17,
+          "file": "SimTKcommon/tests/TestSmallMatrix.cpp",
+          "line": 71,
+          "message": "unused variable 'wpx'",
+          "verdict": null
+        },
+        {
+          "column": 42,
+          "file": "Simbody/src/Constraint_PointOnPlaneContact.cpp",
+          "line": 161,
+          "message": "unused variable 'matterRep'",
+          "verdict": null
+        },
+        {
+          "column": 26,
+          "file": "Simbody/tests/adhoc/UnilateralPointContactWithFriction.cpp",
+          "line": 610,
+          "message": "unused variable 'PG'",
+          "verdict": null
+        },
+        {
+          "column": 45,
+          "file": "Simbody/tests/adhoc/UnilateralPointContactWithFriction.cpp",
+          "line": 625,
+          "message": "private field 'm_unis' is not used",
+          "verdict": null
+        },
+        {
+          "column": 45,
+          "file": "Simbody/tests/adhoc/UnilateralPointContactWithFriction.cpp",
+          "line": 626,
+          "message": "private field 'm_integ' is not used",
+          "verdict": null
+        },
+        {
+          "column": 39,
+          "file": "Simbody/tests/adhoc/UnilateralPointContactWithFriction.cpp",
+          "line": 676,
+          "message": "unused variable 'matter'",
+          "verdict": null
+        },
+        {
+          "column": 15,
+          "file": "Simbody/tests/adhoc/UnilateralPointContactWithFriction.cpp",
+          "line": 1942,
+          "message": "unused variable 'ReviseNormalNIters'",
+          "verdict": null
+        },
+        {
+          "column": 9,
+          "file": "Simbody/tests/adhoc/UnilateralPointContactWithFriction.cpp",
+          "line": 1991,
+          "message": "variable 'pass' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 17,
+          "file": "Simbody/tests/adhoc/UnilateralPointContactWithFriction.cpp",
+          "line": 1991,
+          "message": "variable 'nContactsDisabled' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 38,
+          "file": "Simbody/tests/adhoc/UnilateralPointContactWithFriction.cpp",
+          "line": 1991,
+          "message": "variable 'nStictionDisabled' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 59,
+          "file": "Simbody/tests/adhoc/UnilateralPointContactWithFriction.cpp",
+          "line": 1991,
+          "message": "unused variable 'nContactsReenabled'",
+          "verdict": null
+        },
+        {
+          "column": 37,
+          "file": "Simbody/tests/adhoc/UnilateralPointContactWithFriction.cpp",
+          "line": 2036,
+          "message": "unused variable 'cont'",
+          "verdict": null
+        },
+        {
+          "column": 33,
+          "file": "Simbody/tests/adhoc/UnilateralPointContactWithFriction.cpp",
+          "line": 2209,
+          "message": "unused variable 'uni'",
+          "verdict": null
+        },
+        {
+          "column": 9,
+          "file": "Simbody/tests/adhoc/UnilateralPointContactWithFriction.cpp",
+          "line": 2419,
+          "message": "variable 'pass' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 17,
+          "file": "Simbody/tests/adhoc/UnilateralPointContactWithFriction.cpp",
+          "line": 2419,
+          "message": "variable 'nContactsDisabled' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 38,
+          "file": "Simbody/tests/adhoc/UnilateralPointContactWithFriction.cpp",
+          "line": 2419,
+          "message": "variable 'nStictionDisabled' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 59,
+          "file": "Simbody/tests/adhoc/UnilateralPointContactWithFriction.cpp",
+          "line": 2419,
+          "message": "unused variable 'nContactsReenabled'",
+          "verdict": null
+        },
+        {
+          "column": 37,
+          "file": "Simbody/tests/adhoc/UnilateralPointContactWithFriction.cpp",
+          "line": 2467,
+          "message": "unused variable 'cont'",
+          "verdict": null
+        },
+        {
+          "column": 10,
+          "file": "examples/Gazebo2Simbody/Gazebo2Simbody.cpp",
+          "line": 923,
+          "message": "unused variable 'assemblyTol'",
+          "verdict": null
+        },
+        {
+          "column": 42,
+          "file": "Simbody/src/Constraint_SphereOnSphereContact.cpp",
+          "line": 488,
+          "message": "unused variable 'matterRep'",
+          "verdict": null
+        },
+        {
+          "column": 30,
+          "file": "examples/ChainExample.cpp",
+          "line": 44,
+          "message": "unused variable 'GravityY'",
+          "verdict": null
+        },
+        {
+          "column": 42,
+          "file": "examples/ChainExample.cpp",
+          "line": 44,
+          "message": "unused variable 'GravityZ'",
+          "verdict": null
+        },
+        {
+          "column": 19,
+          "file": "Simbody/tests/adhoc/PassThrough.cpp",
+          "line": 34,
+          "message": "unused variable 'MomentScale'",
+          "verdict": null
+        },
+        {
+          "column": 24,
+          "file": "Simbody/tests/adhoc/PassThrough.cpp",
+          "line": 74,
+          "message": "unused variable 'found'",
+          "verdict": null
+        },
+        {
+          "column": 16,
+          "file": "Simbody/tests/adhoc/PassThrough.cpp",
+          "line": 344,
+          "message": "unused variable 'cpuStart'",
+          "verdict": null
+        },
+        {
+          "column": 22,
+          "file": "Simbody/tests/adhoc/PassThrough.cpp",
+          "line": 349,
+          "message": "unused variable 'timeInSec'",
+          "verdict": null
+        },
+        {
+          "column": 19,
+          "file": "Simbody/tests/adhoc/PassThrough.cpp",
+          "line": 350,
+          "message": "unused variable 'evals'",
+          "verdict": null
+        },
+        {
+          "column": 20,
+          "file": "Simbody/tests/adhoc/WristMomentArm.cpp",
+          "line": 202,
+          "message": "unused variable 'tptA_W'",
+          "verdict": null
+        },
+        {
+          "column": 20,
+          "file": "Simbody/tests/adhoc/WristMomentArm.cpp",
+          "line": 203,
+          "message": "unused variable 'tptB_W'",
+          "verdict": null
+        },
+        {
+          "column": 10,
+          "file": "Simbody/tests/adhoc/WristMomentArm.cpp",
+          "line": 561,
+          "message": "variable 'ch' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 13,
+          "file": "Simbody/tests/adhoc/WristMomentArm.cpp",
+          "line": 888,
+          "message": "unused function 'testmain'",
+          "verdict": null
+        }
+      ],
+      "duration_seconds": 50.099466,
+      "project": "simbody",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 5.170649,
+      "project": "stdexec",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [
+        {
+          "column": 9,
+          "file": "symengine/parser/parser.tab.cc",
+          "line": 954,
+          "message": "variable 'yynerrs' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 14,
+          "file": "symengine/visitor.cpp",
+          "line": 248,
+          "message": "variable 'i' set but not used",
+          "verdict": null
+        }
+      ],
+      "duration_seconds": 8.958601,
+      "project": "symengine",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 2.080524,
+      "project": "tinyspline",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [
+        {
+          "column": 20,
+          "file": "qemu/target/i386/cpu.c",
+          "line": 3834,
+          "message": "unused function 'feat2prop'",
+          "verdict": null
+        },
+        {
+          "column": 14,
+          "file": "qemu/tcg/tcg-op-gvec.c",
+          "line": 39,
+          "message": "unused variable 'opr_align'",
+          "verdict": null
+        },
+        {
+          "column": 14,
+          "file": "qemu/tcg/tcg-op-gvec.c",
+          "line": 40,
+          "message": "unused variable 'max_align'",
+          "verdict": null
+        },
+        {
+          "column": 13,
+          "file": "qemu/tcg/tcg.c",
+          "line": 854,
+          "message": "unused variable 'result'",
+          "verdict": null
+        },
+        {
+          "column": 18,
+          "file": "qemu/tcg/tcg.c",
+          "line": 3095,
+          "message": "unused variable 'ts'",
+          "verdict": null
+        },
+        {
+          "column": 10,
+          "file": "qemu/tcg/tcg.c",
+          "line": 3264,
+          "message": "variable 'ok' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 13,
+          "file": "qemu/tcg/tcg-op-vec.c",
+          "line": 353,
+          "message": "unused variable 'type'",
+          "verdict": null
+        },
+        {
+          "column": 10,
+          "file": "qemu/tcg/tcg-op-vec.c",
+          "line": 607,
+          "message": "unused variable 'ok'",
+          "verdict": null
+        }
+      ],
+      "duration_seconds": 4.041603,
+      "project": "unicorn",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 3.08584,
+      "project": "yaml-cpp",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [
+        {
+          "column": 22,
+          "file": "src/util/warning.cpp",
+          "line": 71,
+          "message": "variable 'g_error_stream' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 22,
+          "file": "src/test/arith_rewriter.cpp",
+          "line": 102,
+          "message": "ignoring return value of function declared with 'nodiscard' attribute",
+          "verdict": null
+        },
+        {
+          "column": 22,
+          "file": "src/test/arith_rewriter.cpp",
+          "line": 103,
+          "message": "ignoring return value of function declared with 'nodiscard' attribute",
+          "verdict": null
+        },
+        {
+          "column": 18,
+          "file": "src/test/arith_rewriter.cpp",
+          "line": 106,
+          "message": "ignoring return value of function declared with 'nodiscard' attribute",
+          "verdict": null
+        },
+        {
+          "column": 18,
+          "file": "src/test/arith_rewriter.cpp",
+          "line": 107,
+          "message": "ignoring return value of function declared with 'nodiscard' attribute",
+          "verdict": null
+        },
+        {
+          "column": 18,
+          "file": "src/test/arith_rewriter.cpp",
+          "line": 108,
+          "message": "ignoring return value of function declared with 'nodiscard' attribute",
+          "verdict": null
+        },
+        {
+          "column": 18,
+          "file": "src/test/arith_rewriter.cpp",
+          "line": 110,
+          "message": "ignoring return value of function declared with 'nodiscard' attribute",
+          "verdict": null
+        },
+        {
+          "column": 18,
+          "file": "src/test/arith_rewriter.cpp",
+          "line": 111,
+          "message": "ignoring return value of function declared with 'nodiscard' attribute",
+          "verdict": null
+        },
+        {
+          "column": 13,
+          "file": "src/util/tbv.cpp",
+          "line": 25,
+          "message": "variable 's_debug_alloc' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 18,
+          "file": "src/ast/sls/sls_arith_lookahead.h",
+          "line": 73,
+          "message": "private field 'm_global_search_count' is not used",
+          "verdict": null
+        },
+        {
+          "column": 13,
+          "file": "src/util/memory_manager.cpp",
+          "line": 168,
+          "message": "variable 'g_finalizing' set but not used",
+          "verdict": null
+        },
+        {
+          "column": 20,
+          "file": "src/util/mpz.h",
+          "line": 298,
+          "message": "private field 'm_a' is not used",
+          "verdict": null
+        },
+        {
+          "column": 21,
+          "file": "src/shell/main.cpp",
+          "line": 55,
+          "message": "variable 'g_display_istatistics' set but not used",
+          "verdict": null
+        }
+      ],
+      "duration_seconds": 255.166272,
+      "project": "z3",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 2.097819,
+      "project": "zstd",
+      "status": "COMPLETED"
+    }
+  ],
+  "runner_arch": "ARM64",
+  "started_at": "2026-11-18T00:10:06+00:00",
+  "status": "COMPLETED"
+}
