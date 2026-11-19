@@ -1,0 +1,542 @@
+{
+  "artifact_url": "https://github.com/clang-tidy-infra/CTIT/actions/runs/44546601012/artifacts/14559000974",
+  "baseline": {
+    "llvm_revision": "44363d89505530cced306b134c8753ac6c8a952b",
+    "project_runs": [
+      {
+        "check_profile": null,
+        "diagnostics": [],
+        "duration_seconds": 11.066483,
+        "project": "abseil-cpp",
+        "status": "COMPLETED"
+      },
+      {
+        "check_profile": null,
+        "diagnostics": [],
+        "duration_seconds": 29.161264,
+        "project": "assimp",
+        "status": "COMPLETED"
+      },
+      {
+        "check_profile": null,
+        "diagnostics": [],
+        "duration_seconds": 0.668789,
+        "project": "box2d",
+        "status": "COMPLETED"
+      },
+      {
+        "check_profile": null,
+        "diagnostics": [],
+        "duration_seconds": 19.489942,
+        "project": "capnproto",
+        "status": "COMPLETED"
+      },
+      {
+        "check_profile": null,
+        "diagnostics": [],
+        "duration_seconds": 4.674138,
+        "project": "catch2",
+        "status": "COMPLETED"
+      },
+      {
+        "check_profile": null,
+        "diagnostics": [],
+        "duration_seconds": 15.404816,
+        "project": "cppcheck",
+        "status": "COMPLETED"
+      },
+      {
+        "check_profile": null,
+        "diagnostics": [],
+        "duration_seconds": 2.963977,
+        "project": "curl",
+        "status": "COMPLETED"
+      },
+      {
+        "check_profile": null,
+        "diagnostics": [],
+        "duration_seconds": 6.220959,
+        "project": "cxxopts",
+        "status": "COMPLETED"
+      },
+      {
+        "check_profile": null,
+        "diagnostics": [],
+        "duration_seconds": 34.380243,
+        "project": "doxygen",
+        "status": "COMPLETED"
+      },
+      {
+        "check_profile": null,
+        "diagnostics": [],
+        "duration_seconds": 60.229095,
+        "project": "duckdb",
+        "status": "COMPLETED"
+      },
+      {
+        "check_profile": null,
+        "diagnostics": [],
+        "duration_seconds": 33.768156,
+        "project": "flatbuffers",
+        "status": "COMPLETED"
+      },
+      {
+        "check_profile": null,
+        "diagnostics": [],
+        "duration_seconds": 11.476793,
+        "project": "fmt",
+        "status": "COMPLETED"
+      },
+      {
+        "check_profile": null,
+        "diagnostics": [],
+        "duration_seconds": 17.560971,
+        "project": "harfbuzz",
+        "status": "COMPLETED"
+      },
+      {
+        "check_profile": null,
+        "diagnostics": [],
+        "duration_seconds": 0.319636,
+        "project": "hidapi",
+        "status": "COMPLETED"
+      },
+      {
+        "check_profile": null,
+        "diagnostics": [],
+        "duration_seconds": 1.854992,
+        "project": "libgit2",
+        "status": "COMPLETED"
+      },
+      {
+        "check_profile": null,
+        "diagnostics": [],
+        "duration_seconds": 0.576655,
+        "project": "libsoundio",
+        "status": "COMPLETED"
+      },
+      {
+        "check_profile": null,
+        "diagnostics": [],
+        "duration_seconds": 0.816667,
+        "project": "libuv",
+        "status": "COMPLETED"
+      },
+      {
+        "check_profile": null,
+        "diagnostics": [],
+        "duration_seconds": 5.24894,
+        "project": "libzmq",
+        "status": "COMPLETED"
+      },
+      {
+        "check_profile": null,
+        "diagnostics": [],
+        "duration_seconds": 417.611164,
+        "project": "llvm-project",
+        "status": "COMPLETED"
+      },
+      {
+        "check_profile": null,
+        "diagnostics": [],
+        "duration_seconds": 10.343105,
+        "project": "oatpp",
+        "status": "COMPLETED"
+      },
+      {
+        "check_profile": null,
+        "diagnostics": [],
+        "duration_seconds": 3.075201,
+        "project": "open62541",
+        "status": "COMPLETED"
+      },
+      {
+        "check_profile": null,
+        "diagnostics": [],
+        "duration_seconds": 54.25801,
+        "project": "poco",
+        "status": "COMPLETED"
+      },
+      {
+        "check_profile": null,
+        "diagnostics": [],
+        "duration_seconds": 17.13697,
+        "project": "re2",
+        "status": "COMPLETED"
+      },
+      {
+        "check_profile": null,
+        "diagnostics": [],
+        "duration_seconds": 50.505521,
+        "project": "simbody",
+        "status": "COMPLETED"
+      },
+      {
+        "check_profile": null,
+        "diagnostics": [],
+        "duration_seconds": 8.037232,
+        "project": "stdexec",
+        "status": "COMPLETED"
+      },
+      {
+        "check_profile": null,
+        "diagnostics": [],
+        "duration_seconds": 10.035533,
+        "project": "symengine",
+        "status": "COMPLETED"
+      },
+      {
+        "check_profile": null,
+        "diagnostics": [],
+        "duration_seconds": 2.25388,
+        "project": "tinyspline",
+        "status": "COMPLETED"
+      },
+      {
+        "check_profile": null,
+        "diagnostics": [],
+        "duration_seconds": 4.044685,
+        "project": "unicorn",
+        "status": "COMPLETED"
+      },
+      {
+        "check_profile": null,
+        "diagnostics": [],
+        "duration_seconds": 2.814663,
+        "project": "yaml-cpp",
+        "status": "COMPLETED"
+      },
+      {
+        "check_profile": null,
+        "diagnostics": [],
+        "duration_seconds": 252.60424,
+        "project": "z3",
+        "status": "COMPLETED"
+      },
+      {
+        "check_profile": null,
+        "diagnostics": [],
+        "duration_seconds": 2.469871,
+        "project": "zstd",
+        "status": "COMPLETED"
+      }
+    ]
+  },
+  "check_config": {},
+  "check_name": "clang-diagnostic-fenv-access",
+  "duration_seconds": 3969.436293,
+  "finished_at": "2026-11-19T17:42:28.436293Z",
+  "github_run_attempt": 1,
+  "github_run_id": 44546601012,
+  "llvm_revision": "44363d89505530cced306b134c8753ac6c8a952b+patch:956ec7abc3bdc44aa8024f9e12616ec8d6baf4f7824f255e0c01649773cfab86",
+  "pr_number": 199009,
+  "project_runs": [
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 13.143981,
+      "project": "abseil-cpp",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 31.00653,
+      "project": "assimp",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 0.627667,
+      "project": "box2d",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 19.790768,
+      "project": "capnproto",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 6.448193,
+      "project": "catch2",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [
+        {
+          "column": 9,
+          "file": "test/signal/test-signalhandler.cpp",
+          "line": 62,
+          "message": "'feraiseexcept' used without enabling strict floating-point exception semantics and dynamic rounding mode; use '#pragma STDC FENV_ACCESS ON' or compile with '-ftrapping-math -frounding-math'",
+          "verdict": "TP"
+        }
+      ],
+      "duration_seconds": 15.493884,
+      "project": "cppcheck",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 2.879068,
+      "project": "curl",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 6.036013,
+      "project": "cxxopts",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 41.314443,
+      "project": "doxygen",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 56.00777,
+      "project": "duckdb",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 35.657524,
+      "project": "flatbuffers",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 12.877715,
+      "project": "fmt",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 17.521779,
+      "project": "harfbuzz",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 0.317189,
+      "project": "hidapi",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 1.810504,
+      "project": "libgit2",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 0.468759,
+      "project": "libsoundio",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 0.884556,
+      "project": "libuv",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 5.516428,
+      "project": "libzmq",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 429.62064,
+      "project": "llvm-project",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 11.812209,
+      "project": "oatpp",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 2.745214,
+      "project": "open62541",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [
+        {
+          "column": 2,
+          "file": "Foundation/src/FPEnvironment_C99.cpp",
+          "line": 23,
+          "message": "'fegetenv' used without enabling strict floating-point exception semantics and dynamic rounding mode; use '#pragma STDC FENV_ACCESS ON' or compile with '-ftrapping-math -frounding-math'",
+          "verdict": "TP"
+        },
+        {
+          "column": 2,
+          "file": "Foundation/src/FPEnvironment_C99.cpp",
+          "line": 35,
+          "message": "'fesetenv' used without enabling strict floating-point exception semantics and dynamic rounding mode; use '#pragma STDC FENV_ACCESS ON' or compile with '-ftrapping-math -frounding-math'",
+          "verdict": "TP"
+        },
+        {
+          "column": 2,
+          "file": "Foundation/src/FPEnvironment_C99.cpp",
+          "line": 48,
+          "message": "'fegetenv' used without enabling strict floating-point exception semantics and dynamic rounding mode; use '#pragma STDC FENV_ACCESS ON' or compile with '-ftrapping-math -frounding-math'",
+          "verdict": "TP"
+        },
+        {
+          "column": 2,
+          "file": "Foundation/src/FPEnvironment_C99.cpp",
+          "line": 54,
+          "message": "'feclearexcept' used without enabling strict floating-point exception semantics and dynamic rounding mode; use '#pragma STDC FENV_ACCESS ON' or compile with '-ftrapping-math -frounding-math'",
+          "verdict": "TP"
+        },
+        {
+          "column": 9,
+          "file": "Foundation/src/FPEnvironment_C99.cpp",
+          "line": 60,
+          "message": "'fetestexcept' used without enabling strict floating-point exception semantics and dynamic rounding mode; use '#pragma STDC FENV_ACCESS ON' or compile with '-ftrapping-math -frounding-math'",
+          "verdict": "TP"
+        },
+        {
+          "column": 2,
+          "file": "Foundation/src/FPEnvironment_C99.cpp",
+          "line": 66,
+          "message": "'fesetround' used without enabling strict floating-point exception semantics and dynamic rounding mode; use '#pragma STDC FENV_ACCESS ON' or compile with '-ftrapping-math -frounding-math'",
+          "verdict": "TP"
+        },
+        {
+          "column": 28,
+          "file": "Foundation/src/FPEnvironment_C99.cpp",
+          "line": 72,
+          "message": "'fegetround' used without enabling strict floating-point exception semantics and dynamic rounding mode; use '#pragma STDC FENV_ACCESS ON' or compile with '-ftrapping-math -frounding-math'",
+          "verdict": "TP"
+        }
+      ],
+      "duration_seconds": 57.086987,
+      "project": "poco",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 16.056893,
+      "project": "re2",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 50.371876,
+      "project": "simbody",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 7.780666,
+      "project": "stdexec",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 9.718902,
+      "project": "symengine",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 2.269873,
+      "project": "tinyspline",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 4.483524,
+      "project": "unicorn",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 3.037423,
+      "project": "yaml-cpp",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [
+        {
+          "column": 9,
+          "file": "src/util/hwf.cpp",
+          "line": 597,
+          "message": "'fesetround' used without enabling strict floating-point exception semantics and dynamic rounding mode; use '#pragma STDC FENV_ACCESS ON' or compile with '-ftrapping-math -frounding-math'",
+          "verdict": "TP"
+        },
+        {
+          "column": 9,
+          "file": "src/util/hwf.cpp",
+          "line": 600,
+          "message": "'fesetround' used without enabling strict floating-point exception semantics and dynamic rounding mode; use '#pragma STDC FENV_ACCESS ON' or compile with '-ftrapping-math -frounding-math'",
+          "verdict": "TP"
+        },
+        {
+          "column": 9,
+          "file": "src/util/hwf.cpp",
+          "line": 603,
+          "message": "'fesetround' used without enabling strict floating-point exception semantics and dynamic rounding mode; use '#pragma STDC FENV_ACCESS ON' or compile with '-ftrapping-math -frounding-math'",
+          "verdict": "TP"
+        },
+        {
+          "column": 9,
+          "file": "src/util/hwf.cpp",
+          "line": 606,
+          "message": "'fesetround' used without enabling strict floating-point exception semantics and dynamic rounding mode; use '#pragma STDC FENV_ACCESS ON' or compile with '-ftrapping-math -frounding-math'",
+          "verdict": "TP"
+        }
+      ],
+      "duration_seconds": 256.637707,
+      "project": "z3",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 2.516231,
+      "project": "zstd",
+      "status": "COMPLETED"
+    }
+  ],
+  "runner_arch": "ARM64",
+  "started_at": "2026-11-19T16:36:19+00:00",
+  "status": "COMPLETED"
+}
