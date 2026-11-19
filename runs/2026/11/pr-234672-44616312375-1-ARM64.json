@@ -1,0 +1,227 @@
+{
+  "artifact_url": "https://github.com/clang-tidy-infra/CTIT/actions/runs/44616312375/artifacts/14580605580",
+  "baseline": null,
+  "check_config": {},
+  "check_name": "clang-analyzer-unix.fsetpos",
+  "duration_seconds": 4149.616006,
+  "finished_at": "2026-11-19T22:21:27.616006Z",
+  "github_run_attempt": 1,
+  "github_run_id": 44616312375,
+  "llvm_revision": "44363d89505530cced306b134c8753ac6c8a952b+patch:d29242efffe175adcf984d1eb62f78d26812207870564b17dcda3eb85295802d",
+  "pr_number": 234672,
+  "project_runs": [
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 32.694558,
+      "project": "abseil-cpp",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 121.326575,
+      "project": "assimp",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 9.615158,
+      "project": "box2d",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 90.757313,
+      "project": "capnproto",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 15.306273,
+      "project": "catch2",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 143.002659,
+      "project": "cppcheck",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 46.165592,
+      "project": "curl",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 45.054309,
+      "project": "cxxopts",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 406.480638,
+      "project": "doxygen",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 88.097465,
+      "project": "duckdb",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 258.555667,
+      "project": "flatbuffers",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 203.51111,
+      "project": "fmt",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 26.415329,
+      "project": "harfbuzz",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 3.700401,
+      "project": "hidapi",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 19.889106,
+      "project": "libgit2",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 10.881974,
+      "project": "libsoundio",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 18.75722,
+      "project": "libuv",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 11.063331,
+      "project": "libzmq",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 14.152845,
+      "project": "oatpp",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 18.678436,
+      "project": "open62541",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 371.155916,
+      "project": "poco",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 16.145718,
+      "project": "re2",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 227.649928,
+      "project": "simbody",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 7.479021,
+      "project": "stdexec",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 120.927808,
+      "project": "symengine",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 12.332509,
+      "project": "tinyspline",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 413.233241,
+      "project": "unicorn",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 14.01127,
+      "project": "yaml-cpp",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 485.015007,
+      "project": "z3",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 70.502956,
+      "project": "zstd",
+      "status": "COMPLETED"
+    }
+  ],
+  "runner_arch": "ARM64",
+  "started_at": "2026-11-19T21:12:18+00:00",
+  "status": "COMPLETED"
+}
