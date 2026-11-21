@@ -1,0 +1,375 @@
+{
+  "artifact_url": "https://github.com/clang-tidy-infra/CTIT/actions/runs/44943582524/artifacts/14723277813",
+  "baseline": null,
+  "check_config": {},
+  "check_name": "readability-redundant-override",
+  "duration_seconds": 1943.540814,
+  "finished_at": "2026-11-21T20:29:08.540814Z",
+  "github_run_attempt": 1,
+  "github_run_id": 44943582524,
+  "llvm_revision": "3a0a2e196087bcfa15cebf61bf8b8360d50d984b+patch:3eb7dc0419dc4700a95fae052d5537dccbe19fcc231e8e92770c55038646aea6",
+  "pr_number": 242955,
+  "project_runs": [
+    {
+      "check_profile": {
+        "readability-redundant-override": 0.3622
+      },
+      "diagnostics": [],
+      "duration_seconds": 12.78954,
+      "project": "abseil-cpp",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": {
+        "readability-redundant-override": 0.3311
+      },
+      "diagnostics": [],
+      "duration_seconds": 34.249831,
+      "project": "assimp",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": {
+        "readability-redundant-override": 0.0451
+      },
+      "diagnostics": [],
+      "duration_seconds": 0.833731,
+      "project": "box2d",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": {
+        "readability-redundant-override": 0.9025
+      },
+      "diagnostics": [],
+      "duration_seconds": 14.753254,
+      "project": "capnproto",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": {
+        "readability-redundant-override": 0.0463
+      },
+      "diagnostics": [],
+      "duration_seconds": 4.820307,
+      "project": "catch2",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": {
+        "readability-redundant-override": 0.5411
+      },
+      "diagnostics": [],
+      "duration_seconds": 16.008513,
+      "project": "cppcheck",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 3.106861,
+      "project": "curl",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": {
+        "readability-redundant-override": 0.009
+      },
+      "diagnostics": [],
+      "duration_seconds": 5.376346,
+      "project": "cxxopts",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": {
+        "readability-redundant-override": 1.4783
+      },
+      "diagnostics": [],
+      "duration_seconds": 41.852421,
+      "project": "doxygen",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": {
+        "readability-redundant-override": 1.2554
+      },
+      "diagnostics": [
+        {
+          "column": 21,
+          "file": "src/parser/tableref/emptytableref.cpp",
+          "line": 8,
+          "message": "redundant override of 'Equals'",
+          "verdict": "TP"
+        },
+        {
+          "column": 21,
+          "file": "src/parser/tableref/emptytableref.cpp",
+          "line": 16,
+          "message": "redundant override of 'Serialize'",
+          "verdict": "TP"
+        },
+        {
+          "column": 28,
+          "file": "src/parser/expression/constant_expression.cpp",
+          "line": 22,
+          "message": "redundant override of 'Hash'",
+          "verdict": "TP"
+        }
+      ],
+      "duration_seconds": 55.252077,
+      "project": "duckdb",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": {
+        "readability-redundant-override": 0.5105
+      },
+      "diagnostics": [],
+      "duration_seconds": 30.125373,
+      "project": "flatbuffers",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": {
+        "readability-redundant-override": 0.2445
+      },
+      "diagnostics": [],
+      "duration_seconds": 14.189562,
+      "project": "fmt",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": {
+        "readability-redundant-override": 0.5253
+      },
+      "diagnostics": [],
+      "duration_seconds": 15.574711,
+      "project": "harfbuzz",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 0.417222,
+      "project": "hidapi",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 1.840452,
+      "project": "libgit2",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 0.487654,
+      "project": "libsoundio",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 0.872719,
+      "project": "libuv",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": {
+        "readability-redundant-override": 0.1207
+      },
+      "diagnostics": [],
+      "duration_seconds": 5.738411,
+      "project": "libzmq",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": {
+        "readability-redundant-override": 86.8404
+      },
+      "diagnostics": [
+        {
+          "column": 31,
+          "file": "clang/lib/Analysis/PathDiagnostic.cpp",
+          "line": 1138,
+          "message": "redundant override of 'Profile'",
+          "verdict": "TP"
+        },
+        {
+          "column": 32,
+          "file": "clang/lib/Analysis/PathDiagnostic.cpp",
+          "line": 1142,
+          "message": "redundant override of 'Profile'",
+          "verdict": "TP"
+        }
+      ],
+      "duration_seconds": 390.94816,
+      "project": "llvm-project",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": {
+        "readability-redundant-override": 0.3403
+      },
+      "diagnostics": [],
+      "duration_seconds": 13.502227,
+      "project": "oatpp",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 2.654717,
+      "project": "open62541",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": {
+        "readability-redundant-override": 1.513
+      },
+      "diagnostics": [],
+      "duration_seconds": 52.717045,
+      "project": "poco",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": {
+        "readability-redundant-override": 0.0521
+      },
+      "diagnostics": [],
+      "duration_seconds": 14.491712,
+      "project": "re2",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": {
+        "readability-redundant-override": 14.6501
+      },
+      "diagnostics": [
+        {
+          "column": 25,
+          "file": "Simbody/src/AssemblyCondition_OrientationSensors.cpp",
+          "line": 149,
+          "message": "redundant override of 'calcErrors'",
+          "verdict": "TP"
+        },
+        {
+          "column": 25,
+          "file": "Simbody/src/AssemblyCondition_OrientationSensors.cpp",
+          "line": 153,
+          "message": "redundant override of 'calcErrorJacobian'",
+          "verdict": "TP"
+        },
+        {
+          "column": 25,
+          "file": "Simbody/src/AssemblyCondition_OrientationSensors.cpp",
+          "line": 155,
+          "message": "redundant override of 'getNumErrors'",
+          "verdict": "TP"
+        },
+        {
+          "column": 14,
+          "file": "Simbody/src/AssemblyCondition_Markers.cpp",
+          "line": 141,
+          "message": "redundant override of 'calcErrors'",
+          "verdict": "TP"
+        },
+        {
+          "column": 14,
+          "file": "Simbody/src/AssemblyCondition_Markers.cpp",
+          "line": 145,
+          "message": "redundant override of 'calcErrorJacobian'",
+          "verdict": "TP"
+        },
+        {
+          "column": 14,
+          "file": "Simbody/src/AssemblyCondition_Markers.cpp",
+          "line": 147,
+          "message": "redundant override of 'getNumErrors'",
+          "verdict": "TP"
+        }
+      ],
+      "duration_seconds": 52.422562,
+      "project": "simbody",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": {
+        "readability-redundant-override": 0.0143
+      },
+      "diagnostics": [],
+      "duration_seconds": 10.421215,
+      "project": "stdexec",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": {
+        "readability-redundant-override": 0.3905
+      },
+      "diagnostics": [],
+      "duration_seconds": 10.124191,
+      "project": "symengine",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": {
+        "readability-redundant-override": 0.0012
+      },
+      "diagnostics": [],
+      "duration_seconds": 2.118706,
+      "project": "tinyspline",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 5.168757,
+      "project": "unicorn",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": {
+        "readability-redundant-override": 0.0207
+      },
+      "diagnostics": [],
+      "duration_seconds": 3.444185,
+      "project": "yaml-cpp",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": {
+        "readability-redundant-override": 30.6045
+      },
+      "diagnostics": [
+        {
+          "column": 14,
+          "file": "src/ast/simplifiers/bv_slice.h",
+          "line": 51,
+          "message": "redundant override of 'push'",
+          "verdict": "TP"
+        },
+        {
+          "column": 14,
+          "file": "src/ast/simplifiers/bv_slice.h",
+          "line": 52,
+          "message": "redundant override of 'pop'",
+          "verdict": "TP"
+        }
+      ],
+      "duration_seconds": 255.373208,
+      "project": "z3",
+      "status": "COMPLETED"
+    },
+    {
+      "check_profile": null,
+      "diagnostics": [],
+      "duration_seconds": 3.153611,
+      "project": "zstd",
+      "status": "COMPLETED"
+    }
+  ],
+  "runner_arch": "ARM64",
+  "started_at": "2026-11-21T19:56:45+00:00",
+  "status": "COMPLETED"
+}
